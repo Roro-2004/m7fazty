@@ -399,10 +399,10 @@ QPushButton:pressed {
    <widget class="QLabel" name="label_bg">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>0</y>
-      <width>951</width>
-      <height>651</height>
+      <width>971</width>
+      <height>671</height>
      </rect>
     </property>
     <property name="text">

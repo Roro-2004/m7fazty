@@ -23,6 +23,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(m7fazty
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        user.h user.cpp user.ui
+        admin.h admin.cpp admin.ui
+
+        sign_up.h sign_up.cpp sign_up.ui
+        login.h login.cpp login.ui
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET m7fazty APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
