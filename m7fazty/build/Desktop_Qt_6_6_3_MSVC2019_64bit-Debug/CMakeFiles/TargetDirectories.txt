@@ -1,0 +1,8 @@
+C:/Users/Nrmeen Araby/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/m7fazty.dir
+C:/Users/Nrmeen Araby/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Nrmeen Araby/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Nrmeen Araby/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/Nrmeen Araby/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/install.dir
+C:/Users/Nrmeen Araby/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/install/local.dir
+C:/Users/Nrmeen Araby/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/m7fazty_autogen_timestamp_deps.dir
+C:/Users/Nrmeen Araby/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/CMakeFiles/m7fazty_autogen.dir

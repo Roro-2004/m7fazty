@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap background("D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/bg.png");
+    QPixmap background("C:/Users/Nrmeen Araby/Documents/GitHub/m7fazty/m7fazty/photos/bg.png");
     ui->label_bg->setPixmap(background);
 
 }
