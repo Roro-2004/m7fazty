@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap background("D:/Projects/2nd Year/DS/Screenshot 2024-04-17 004234.png");
+    QPixmap background("D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/bg.png");
     ui->label_bg->setPixmap(background);
 
 }
@@ -17,13 +17,15 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_clicked()
+
+
+void MainWindow::on_login_clicked()
 {
 
 }
 
 
-void MainWindow::on_pushButton_2_clicked()
+void MainWindow::on_sign_up_clicked()
 {
 
 }

@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="login">
     <property name="geometry">
      <rect>
       <x>700</x>
@@ -159,7 +159,7 @@ QPushButton:pressed {
      <string>Login</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="sign_up">
     <property name="geometry">
      <rect>
       <x>700</x>
@@ -410,8 +410,8 @@ QPushButton:pressed {
     </property>
    </widget>
    <zorder>label_bg</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
+   <zorder>login</zorder>
+   <zorder>sign_up</zorder>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
   </widget>
