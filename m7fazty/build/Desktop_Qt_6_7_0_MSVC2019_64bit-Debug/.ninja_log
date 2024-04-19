@@ -1,0 +1,35 @@
+# ninja log v5
+9	325	7352434471264068	m7fazty_autogen/timestamp	3aac58687b1db7a1
+9	325	7352434471264068	m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+9	325	7352434471264068	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/timestamp	3aac58687b1db7a1
+9	325	7352434471264068	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+325	1925	7352434487626023	CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj	8ffaff9bbc823c58
+329	1953	7352434487935064	CMakeFiles/m7fazty.dir/main.cpp.obj	358761918e13f164
+27	168	7352434703036457	m7fazty_autogen/timestamp	3aac58687b1db7a1
+27	168	7352434703036457	m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+27	168	7352434703036457	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/timestamp	3aac58687b1db7a1
+27	168	7352434703036457	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+22	336	7352434965774497	m7fazty_autogen/timestamp	3aac58687b1db7a1
+22	336	7352434965774497	m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+22	336	7352434965774497	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/timestamp	3aac58687b1db7a1
+22	336	7352434965774497	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+341	2049	7352434983209439	CMakeFiles/m7fazty.dir/main.cpp.obj	358761918e13f164
+336	2056	7352434983279203	CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj	8ffaff9bbc823c58
+345	2061	7352434983339000	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	1d18552cb0eb94e1
+2061	2363	7352434986273689	m7fazty.exe	f0687e44d4038a63
+26	125	7352436164453333	m7fazty_autogen/timestamp	3aac58687b1db7a1
+26	125	7352436164453333	m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+26	125	7352436164453333	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/timestamp	3aac58687b1db7a1
+26	125	7352436164453333	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+20	142	7352436547330097	m7fazty_autogen/timestamp	3aac58687b1db7a1
+20	142	7352436547330097	m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+20	142	7352436547330097	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/timestamp	3aac58687b1db7a1
+20	142	7352436547330097	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+151	1732	7352436563167183	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	1d18552cb0eb94e1
+1732	1899	7352436564532617	m7fazty.exe	f0687e44d4038a63
+31	135	7352436743033821	m7fazty_autogen/timestamp	3aac58687b1db7a1
+31	135	7352436743033821	m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+31	135	7352436743033821	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/timestamp	3aac58687b1db7a1
+31	135	7352436743033821	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+148	1999	7352436761640363	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	1d18552cb0eb94e1
+1999	2170	7352436763055628	m7fazty.exe	f0687e44d4038a63

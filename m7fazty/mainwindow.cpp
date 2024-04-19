@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->label->setHidden(1);
+
 }
 
 MainWindow::~MainWindow()
@@ -15,6 +17,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-
+    ui->label->setHidden(0);
+    ui->label->setText("hello");
 }
 
