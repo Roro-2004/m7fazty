@@ -1,0 +1,23 @@
+# ninja log v5
+12	474	7352593280123661	m7fazty_autogen/timestamp	bfef33da359c017
+12	474	7352593280123661	m7fazty_autogen/mocs_compilation.cpp	bfef33da359c017
+12	474	7352593280123661	D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/timestamp	bfef33da359c017
+6024	6598	7352593341514663	m7fazty.exe	264a77a5f53d3903
+12	474	7352593280123661	D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/mocs_compilation.cpp	bfef33da359c017
+1664	5453	7352502150931596	CMakeFiles/m7fazty.dir/main.cpp.obj	9da497ac8a25bae7
+221	3055	7352592132628052	CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj	c3537b63c36e9fb2
+551	6023	7352593335845274	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	4a7c322061189f9e
+563	5916	7352593334786811	CMakeFiles/m7fazty.dir/admin.cpp.obj	991da916cdd16808
+557	5952	7352593335158491	CMakeFiles/m7fazty.dir/user.cpp.obj	175fb036de03a682
+568	5896	7352593334534987	CMakeFiles/m7fazty.dir/sign_up.cpp.obj	1eff45f89db1d9ea
+11	1003	7352594640345349	m7fazty_autogen/timestamp	bfef33da359c017
+11	1003	7352594640345349	m7fazty_autogen/mocs_compilation.cpp	bfef33da359c017
+11	1003	7352594640345349	D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/timestamp	bfef33da359c017
+11	1003	7352594640345349	D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/mocs_compilation.cpp	bfef33da359c017
+1020	5595	7352594686954570	CMakeFiles/m7fazty.dir/sign_up.cpp.obj	1eff45f89db1d9ea
+1007	5597	7352594686949431	CMakeFiles/m7fazty.dir/admin.cpp.obj	991da916cdd16808
+1013	5623	7352594687235637	CMakeFiles/m7fazty.dir/user.cpp.obj	175fb036de03a682
+1017	5640	7352594687402718	CMakeFiles/m7fazty.dir/login.cpp.obj	134f9bcdaf32016a
+1009	5912	7352594690142009	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	4a7c322061189f9e
+1004	6008	7352594691105036	CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj	c3537b63c36e9fb2
+6008	6401	7352594694944678	m7fazty.exe	6cf23593dc320900
