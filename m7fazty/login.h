@@ -1,3 +1,5 @@
+
+
 #ifndef LOGIN_H
 #define LOGIN_H
 
@@ -14,6 +16,14 @@ class Login : public QWidget
 public:
     explicit Login(QWidget *parent = nullptr);
     ~Login();
+
+
+signals:
+    void switchToMain();
+
+private slots:
+    void on_back_button_clicked();
+
 
 private:
     Ui::Login *ui;

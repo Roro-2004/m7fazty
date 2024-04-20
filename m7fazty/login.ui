@@ -33,19 +33,6 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>610</x>
-     <y>710</y>
-     <width>269</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Username</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="Login_2">
    <property name="geometry">
     <rect>
@@ -431,12 +418,41 @@ QPushButton:pressed {
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="back_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>680</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_button">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>680</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <zorder>label_plain_bg</zorder>
   <zorder>pushButton</zorder>
-  <zorder>label_2</zorder>
   <zorder>Login_2</zorder>
   <zorder>userName_textBox</zorder>
   <zorder>username_label</zorder>
@@ -445,6 +461,8 @@ QPushButton:pressed {
   <zorder>logo_label</zorder>
   <zorder>label</zorder>
   <zorder>personlogo_label</zorder>
+  <zorder>back_label</zorder>
+  <zorder>back_button</zorder>
  </widget>
  <resources/>
  <connections/>
