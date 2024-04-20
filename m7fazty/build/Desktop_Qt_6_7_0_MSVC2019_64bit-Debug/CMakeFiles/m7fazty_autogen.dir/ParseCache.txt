@@ -144,19 +144,24 @@ D:/Projects/2nd Year/DS/m7fazty/m7fazty/mainwindow.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs_win.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QMainWindow
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QStackedWidget
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QWidget
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qframe.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qmainwindow.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qsizepolicy.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qstackedwidget.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtabwidget.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h
+ mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/mainwindow.h
 D:/Projects/2nd Year/DS/m7fazty/m7fazty/main.cpp
 D:/Projects/2nd Year/DS/m7fazty/m7fazty/admin.cpp
  uic:ui_admin.h
 D:/Projects/2nd Year/DS/m7fazty/m7fazty/mainwindow.cpp
- uic:./ui_mainwindow.h
+ uic:ui_mainwindow.h
 D:/Projects/2nd Year/DS/m7fazty/m7fazty/admin.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h
@@ -310,12 +315,10 @@ D:/Projects/2nd Year/DS/m7fazty/m7fazty/admin.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/admin.h
 D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.h
  mmc:Q_OBJECT
- mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/QAbstractItemModel
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20type_traits.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/q23utility.h
- mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qabstractitemmodel.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qalgorithms.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qanystringview.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qarraydata.h
@@ -344,6 +347,7 @@ D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdarwinhelpers.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdatastream.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdebug.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qendian.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qexceptionhandling.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qflags.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qfloat16.h
@@ -359,10 +363,12 @@ D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qiterable.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qiterator.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlatin1stringview.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qline.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlist.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlogging.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qmalloc.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qmap.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qmargins.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qmath.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qmetacontainer.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qmetatype.h
@@ -375,7 +381,9 @@ D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qobjectdefs_impl.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qoverload.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qpair.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qpoint.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qprocessordetection.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qrect.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qrefcount.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qscopedpointer.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qscopeguard.h
@@ -384,6 +392,7 @@ D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qshareddata_impl.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qsharedpointer.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qsharedpointer_impl.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qsize.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qstring.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qstringalgorithms.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qstringbuilder.h
@@ -423,6 +432,37 @@ D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qversiontagging.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qxptype_traits.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qyieldcpu.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qaction.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qbitmap.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qbrush.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qcolor.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qcursor.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qfont.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qfontinfo.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qfontmetrics.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qicon.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qimage.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qkeysequence.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qpaintdevice.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qpalette.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qpixelformat.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qpixmap.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qpolygon.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qregion.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qrgb.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qrgba64.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qtgui-config.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qtguiexports.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qtguiglobal.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qtransform.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QWidget
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qsizepolicy.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.h
 D:/Projects/2nd Year/DS/m7fazty/m7fazty/user.h
  mmc:Q_OBJECT
@@ -576,6 +616,7 @@ D:/Projects/2nd Year/DS/m7fazty/m7fazty/user.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/user.h
 D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.cpp
+ uic:ui_login.h
 D:/Projects/2nd Year/DS/m7fazty/m7fazty/user.cpp
  uic:ui_user.h
 D:/Projects/2nd Year/DS/m7fazty/m7fazty/sign_up.h
