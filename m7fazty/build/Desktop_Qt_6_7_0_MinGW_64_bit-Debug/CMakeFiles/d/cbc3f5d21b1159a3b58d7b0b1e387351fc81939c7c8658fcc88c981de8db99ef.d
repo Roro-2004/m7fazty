@@ -164,9 +164,12 @@ m7fazty_autogen/timestamp: \
   D:/qt_cereator/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
+  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QWidget \
+  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qframe.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
+  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qstackedwidget.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
