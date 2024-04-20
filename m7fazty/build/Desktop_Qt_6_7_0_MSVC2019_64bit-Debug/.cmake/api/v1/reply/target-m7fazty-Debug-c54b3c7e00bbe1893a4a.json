@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 69,
+				"line" : 70,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 52,
+				"line" : 53,
 				"parent" : 0
 			},
 			{
@@ -371,7 +371,8 @@
 				2,
 				6,
 				9,
-				12
+				12,
+				15
 			]
 		}
 	],
@@ -492,7 +493,8 @@
 				2,
 				6,
 				9,
-				12
+				12,
+				15
 			]
 		},
 		{
@@ -504,9 +506,11 @@
 				8,
 				11,
 				14,
-				15,
-				16,
-				17
+				17,
+				18,
+				19,
+				20,
+				21
 			]
 		},
 		{
@@ -517,14 +521,15 @@
 				7,
 				10,
 				13,
-				18
+				16,
+				22
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				19
+				23
 			]
 		}
 	],
@@ -608,6 +613,22 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"path" : "login.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "login.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "login.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/include/ui_mainwindow.h",
@@ -629,6 +650,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/include/ui_sign_up.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/include/ui_login.h",
 			"sourceGroupIndex" : 1
 		},
 		{
