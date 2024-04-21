@@ -1,0 +1,23 @@
+# ninja log v5
+1	686	7352677500102822	m7fazty_autogen/timestamp	72961a0d257a848b
+1	686	7352677500102822	m7fazty_autogen/mocs_compilation_Debug.cpp	72961a0d257a848b
+1	686	7352677500102822	D:/ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/timestamp	72961a0d257a848b
+1	686	7352677500102822	D:/ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/mocs_compilation_Debug.cpp	72961a0d257a848b
+686	3022	7352677523934152	CMakeFiles/m7fazty.dir/Debug/sign_up.cpp.obj	4de0e73d77da940a
+709	3104	7352677524757502	CMakeFiles/m7fazty.dir/Debug/user.cpp.obj	c56a79f5626b50e1
+689	3109	7352677524809188	CMakeFiles/m7fazty.dir/Debug/login.cpp.obj	bbc93e42ff0e270a
+705	3173	7352677525457810	CMakeFiles/m7fazty.dir/Debug/main.cpp.obj	ee2ac10528046946
+700	3216	7352677525883151	CMakeFiles/m7fazty.dir/Debug/m7fazty_autogen/mocs_compilation_Debug.cpp.obj	31ccbdf4d5a7d
+696	3260	7352677526321420	CMakeFiles/m7fazty.dir/Debug/mainwindow.cpp.obj	d94e534748fe1cf
+692	3279	7352677526523346	CMakeFiles/m7fazty.dir/Debug/admin.cpp.obj	99e48a9f2851cae0
+3280	3536	7352677529045823	Debug/m7fazty.exe	2fed62937b641f70
+12	222	7352679942636543	m7fazty_autogen/timestamp	72961a0d257a848b
+12	222	7352679942636543	m7fazty_autogen/mocs_compilation_Debug.cpp	72961a0d257a848b
+12	222	7352679942636543	D:/ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/timestamp	72961a0d257a848b
+12	222	7352679942636543	D:/ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/mocs_compilation_Debug.cpp	72961a0d257a848b
+239	4257	7352679983015084	CMakeFiles/m7fazty.dir/Debug/admin.cpp.obj	99e48a9f2851cae0
+227	4342	7352679983861139	CMakeFiles/m7fazty.dir/Debug/sign_up.cpp.obj	4de0e73d77da940a
+262	4526	7352679985715574	CMakeFiles/m7fazty.dir/Debug/user.cpp.obj	c56a79f5626b50e1
+232	4631	7352679986764152	CMakeFiles/m7fazty.dir/Debug/login.cpp.obj	bbc93e42ff0e270a
+246	4871	7352679989162817	CMakeFiles/m7fazty.dir/Debug/mainwindow.cpp.obj	d94e534748fe1cf
+4871	5140	7352679991798343	Debug/m7fazty.exe	2fed62937b641f70
