@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-6a6c50d16d1864f9329d.json",
+					"jsonFile" : "directory-.-MinSizeRel-d11e1b43ee4d903cde0d.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -22,7 +22,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "MinSizeRel",
 			"projects" : 
 			[
 				{
@@ -44,21 +44,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "m7fazty::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-m7fazty-Debug-88ea5331185f08a7e2ea.json",
+					"jsonFile" : "target-m7fazty-MinSizeRel-c37ca2e3769057cc8eea.json",
 					"name" : "m7fazty",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "m7fazty_autogen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-m7fazty_autogen-Debug-0dee4615a07c2d7b0503.json",
+					"jsonFile" : "target-m7fazty_autogen-MinSizeRel-d01f4e7b476157d9ea4e.json",
 					"name" : "m7fazty_autogen",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "m7fazty_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-m7fazty_autogen_timestamp_deps-Debug-aa5241f1e4e97b218e9b.json",
+					"jsonFile" : "target-m7fazty_autogen_timestamp_deps-MinSizeRel-a1ae05c07ee8ed6a9012.json",
 					"name" : "m7fazty_autogen_timestamp_deps",
 					"projectIndex" : 0
 				}
@@ -68,7 +68,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug",
+		"build" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-MinSizeRel",
 		"source" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty"
 	},
 	"version" : 

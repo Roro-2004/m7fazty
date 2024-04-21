@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d13ca8aaa1c6256012b8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "m7fazty",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "m7fazty::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-m7fazty-Debug-c54b3c7e00bbe1893a4a.json",
+					"name" : "m7fazty",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "m7fazty_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-m7fazty_autogen-Debug-0dee4615a07c2d7b0503.json",
+					"name" : "m7fazty_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "m7fazty_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-m7fazty_autogen_timestamp_deps-Debug-aa5241f1e4e97b218e9b.json",
+					"name" : "m7fazty_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug",
+		"source" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

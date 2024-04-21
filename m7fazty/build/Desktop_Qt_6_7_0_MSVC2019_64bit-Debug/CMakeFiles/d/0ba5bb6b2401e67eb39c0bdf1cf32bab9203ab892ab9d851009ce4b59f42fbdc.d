@@ -142,9 +142,12 @@ m7fazty_autogen/timestamp: \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QStackedWidget \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QWidget \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qframe.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qsizepolicy.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qstackedwidget.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
@@ -341,6 +344,9 @@ m7fazty_autogen/timestamp: \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/login.cpp \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/login.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/login.ui \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/main.cpp \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/mainwindow.cpp \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/mainwindow.h \
