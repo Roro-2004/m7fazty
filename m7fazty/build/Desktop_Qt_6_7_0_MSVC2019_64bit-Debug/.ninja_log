@@ -1,37 +1,25 @@
 # ninja log v5
-28	462	7352844779012207	m7fazty_autogen/timestamp	3aac58687b1db7a1
-28	462	7352844779012207	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/timestamp	3aac58687b1db7a1
-28	462	7352844779012207	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
-28	462	7352844779012207	m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
-462	3525	7352844810072918	CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj	8ffaff9bbc823c58
-466	3517	7352844809942108	CMakeFiles/m7fazty.dir/main.cpp.obj	358761918e13f164
-469	3529	7352844810135745	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	1d18552cb0eb94e1
-3529	3690	7352844811420806	m7fazty.exe	888a0d0ea3224c34
-474	3499	7352844809708905	CMakeFiles/m7fazty.dir/user.cpp.obj	827d3c7efbcbcef9
-478	3515	7352844809942108	CMakeFiles/m7fazty.dir/admin.cpp.obj	8cfd0e611ce09c15
-484	3497	7352844809770360	CMakeFiles/m7fazty.dir/sign_up.cpp.obj	2c0f281421276adb
-492	3513	7352844809922124	CMakeFiles/m7fazty.dir/login.cpp.obj	fe6cccfc84a07dc4
-22	386	7353374663382851	m7fazty_autogen/timestamp	3aac58687b1db7a1
-22	386	7353374663382851	m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
-22	386	7353374663382851	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/timestamp	3aac58687b1db7a1
-22	386	7353374663382851	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
-389	2945	7353374689133885	CMakeFiles/m7fazty.dir/main.cpp.obj	358761918e13f164
-400	2948	7353374689133885	CMakeFiles/m7fazty.dir/admin.cpp.obj	8cfd0e611ce09c15
-386	2950	7353374689234814	CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj	8ffaff9bbc823c58
-404	2952	7353374689133885	CMakeFiles/m7fazty.dir/sign_up.cpp.obj	2c0f281421276adb
-397	2956	7353374689234814	CMakeFiles/m7fazty.dir/user.cpp.obj	827d3c7efbcbcef9
-393	2957	7353374689317941	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	1d18552cb0eb94e1
-408	2959	7353374689317941	CMakeFiles/m7fazty.dir/login.cpp.obj	fe6cccfc84a07dc4
-2959	3210	7353374691379964	m7fazty.exe	888a0d0ea3224c34
 43	497	7356144229751315	m7fazty_autogen/timestamp	3aac58687b1db7a1
-43	497	7356144229751315	m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
 43	497	7356144229751315	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/timestamp	3aac58687b1db7a1
 43	497	7356144229751315	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
-513	3895	7356144263973362	CMakeFiles/m7fazty.dir/admin.cpp.obj	8cfd0e611ce09c15
+43	497	7356144229751315	m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
 497	3898	7356144264073017	CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj	8ffaff9bbc823c58
 501	3901	7356144263953416	CMakeFiles/m7fazty.dir/main.cpp.obj	358761918e13f164
-509	3903	7356144264003252	CMakeFiles/m7fazty.dir/user.cpp.obj	827d3c7efbcbcef9
-518	3905	7356144264023188	CMakeFiles/m7fazty.dir/sign_up.cpp.obj	2c0f281421276adb
-523	3908	7356144264202578	CMakeFiles/m7fazty.dir/login.cpp.obj	fe6cccfc84a07dc4
 506	3909	7356144264202578	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	1d18552cb0eb94e1
 3909	4323	7356144267804385	m7fazty.exe	888a0d0ea3224c34
+509	3903	7356144264003252	CMakeFiles/m7fazty.dir/user.cpp.obj	827d3c7efbcbcef9
+513	3895	7356144263973362	CMakeFiles/m7fazty.dir/admin.cpp.obj	8cfd0e611ce09c15
+518	3905	7356144264023188	CMakeFiles/m7fazty.dir/sign_up.cpp.obj	2c0f281421276adb
+523	3908	7356144264202578	CMakeFiles/m7fazty.dir/login.cpp.obj	fe6cccfc84a07dc4
+25	551	7356195527994257	m7fazty_autogen/timestamp	3aac58687b1db7a1
+25	551	7356195527994257	m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+25	551	7356195527994257	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/timestamp	3aac58687b1db7a1
+25	551	7356195527994257	D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	3aac58687b1db7a1
+566	3669	7356195559471413	CMakeFiles/m7fazty.dir/admin.cpp.obj	8cfd0e611ce09c15
+563	3697	7356195559730559	CMakeFiles/m7fazty.dir/user.cpp.obj	827d3c7efbcbcef9
+551	3699	7356195559561119	CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj	8ffaff9bbc823c58
+559	3708	7356195559860114	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	1d18552cb0eb94e1
+575	3710	7356195559860114	CMakeFiles/m7fazty.dir/login.cpp.obj	fe6cccfc84a07dc4
+570	3712	7356195559860114	CMakeFiles/m7fazty.dir/sign_up.cpp.obj	2c0f281421276adb
+554	3714	7356195559740516	CMakeFiles/m7fazty.dir/main.cpp.obj	358761918e13f164
+3715	4130	7356195563574316	m7fazty.exe	888a0d0ea3224c34
