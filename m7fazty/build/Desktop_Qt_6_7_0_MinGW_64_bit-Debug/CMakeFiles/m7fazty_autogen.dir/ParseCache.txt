@@ -352,6 +352,7 @@ D:/m7fazty/m7fazty/login.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
 D:/m7fazty/m7fazty/mainwindow.h
  mmc:Q_OBJECT
+ mdp:D:/m7fazty/m7fazty/login.h
  mdp:D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h
  mdp:D:/m7fazty/m7fazty/mainwindow.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20functional.h
@@ -497,8 +498,12 @@ D:/m7fazty/m7fazty/mainwindow.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtGui/qwindowdefs.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QMainWindow
+ mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QStackedWidget
+ mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QWidget
+ mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qframe.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h
+ mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qstackedwidget.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h
@@ -704,7 +709,7 @@ D:/m7fazty/m7fazty/mainwindow.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
 D:/m7fazty/m7fazty/mainwindow.cpp
- uic:./ui_mainwindow.h
+ uic:ui_mainwindow.h
 D:/m7fazty/m7fazty/main.cpp
 D:/m7fazty/m7fazty/sign_up.h
  mmc:Q_OBJECT

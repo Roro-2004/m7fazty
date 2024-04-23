@@ -23,7 +23,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(loginWidget, &Login::switchToMain, this, &MainWindow::switchToMain);
 
     // Set background image
-    QPixmap background("D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/bg.png");
+    QPixmap background("D:/m7fazty/m7fazty/photos/bg.png");
     ui->label_bg->setPixmap(background);
 
     stackedWidget->show();
