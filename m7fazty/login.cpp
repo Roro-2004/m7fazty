@@ -1,5 +1,6 @@
 #include "login.h"
 #include "ui_login.h"
+#include "mainwindow.h"
 
 Login::Login(QWidget *parent) :
     QWidget(parent),
@@ -28,7 +29,8 @@ Login::~Login()
 
 void Login::on_back_button_clicked()
 {
-    emit switchToMain();
+    MainWindow::stackedWidget->setCurrentIndex(0);
+
 }
 
 

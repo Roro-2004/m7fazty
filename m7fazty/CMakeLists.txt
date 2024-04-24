@@ -28,6 +28,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
         sign_up.h sign_up.cpp sign_up.ui
         login.h login.cpp login.ui
+        admin_c.h admin_c.cpp
+        user_c.h user_c.cpp
+        transiction.h transiction.cpp
+        account.h account.cpp
 
 
     )

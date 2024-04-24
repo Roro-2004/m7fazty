@@ -2,6 +2,9 @@
 #include "ui_mainwindow.h"
 #include <QPixmap>
 
+
+QStackedWidget* MainWindow::stackedWidget = nullptr;
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -19,9 +22,6 @@ MainWindow::MainWindow(QWidget *parent)
     // Set the central widget to the stacked widget
     setCentralWidget(stackedWidget);
 
-    // Connect signals from the login widget to slots in main window
-    connect(loginWidget, &Login::switchToMain, this, &MainWindow::switchToMain);
-
     // Set background image
     QPixmap background("D:/m7fazty/m7fazty/photos/bg.png");
     ui->label_bg->setPixmap(background);
@@ -35,10 +35,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::switchToMain()
-{
-    stackedWidget->setCurrentIndex(0); // Index of the main window widget
-}
 
 void MainWindow::on_login_clicked()
 {

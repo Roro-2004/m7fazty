@@ -6,6 +6,7 @@ using namespace std;
 class account
 {
 public:
+
     string username;
     string password;
     string address;
