@@ -18,9 +18,6 @@ public:
     ~Login();
 
 
-signals:
-    void switchToMain();
-
 private slots:
     void on_back_button_clicked();
 

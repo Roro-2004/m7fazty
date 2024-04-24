@@ -16,17 +16,16 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    QStackedWidget static *stackedWidget;
+
 
 private slots:
-    void switchToMain();
-
     void on_login_clicked();
 
 private:
     Ui::MainWindow *ui;
     Login *loginWidget;
 
-    QStackedWidget *stackedWidget;
 };
 
 #endif // MAINWINDOW_H
