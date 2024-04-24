@@ -2,7 +2,7 @@
 #define ADMIN_C_H
 
 #include "account.h"
-#include"user.h"
+#include"user_c.h"
 #include<vector>
 
 class admin_c
@@ -11,7 +11,7 @@ public:
     admin_c();
 
     account admin_acc;
-    vector <user> users;
+    vector <user_c> users;
 
     /*void traverse_users_tranisctions();
     void edit_acc(account acc);

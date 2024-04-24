@@ -1,8 +1,10 @@
 #ifndef USER_C_H
 #define USER_C_H
 #include "account.h"
-#include "transiction.h"
 #include<vector>
+using namespace std;
+
+class transiction;
 
 class user_c
 {
@@ -12,7 +14,7 @@ public:
     account user_acc;
     float balance;
     int points;
-    //vector <transiction> transictions;
+    vector <transiction*> transictions;
 
     //float balance_calc();
     //float points_calc();

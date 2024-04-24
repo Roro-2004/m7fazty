@@ -4,6 +4,9 @@
 #include<string>
 #include"user_c.h"
 
+
+class user_c;
+
 using namespace std;
 
 struct date{
@@ -16,8 +19,8 @@ public:
     transiction();
 
     string id;
-    //user_c * sender;
-    //user_c * receiver;
+    user_c  sender;
+    user_c  receiver;
     float amount;
     date trans_date;
     bool status;
