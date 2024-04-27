@@ -1,13 +1,19 @@
 m7fazty_autogen/timestamp: \
   D:/m7fazty/m7fazty/CMakeLists.txt \
+  D:/m7fazty/m7fazty/account.cpp \
+  D:/m7fazty/m7fazty/account.h \
   D:/m7fazty/m7fazty/admin.cpp \
   D:/m7fazty/m7fazty/admin.h \
   D:/m7fazty/m7fazty/admin.ui \
+  D:/m7fazty/m7fazty/admin_c.cpp \
+  D:/m7fazty/m7fazty/admin_c.h \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
   m7fazty_autogen/moc_predefs.h \
+  D:/m7fazty/m7fazty/files.cpp \
+  D:/m7fazty/m7fazty/files.h \
   D:/m7fazty/m7fazty/login.cpp \
   D:/m7fazty/m7fazty/login.h \
   D:/m7fazty/m7fazty/login.ui \
@@ -18,9 +24,13 @@ m7fazty_autogen/timestamp: \
   D:/m7fazty/m7fazty/sign_up.cpp \
   D:/m7fazty/m7fazty/sign_up.h \
   D:/m7fazty/m7fazty/sign_up.ui \
+  D:/m7fazty/m7fazty/transiction.cpp \
+  D:/m7fazty/m7fazty/transiction.h \
   D:/m7fazty/m7fazty/user.cpp \
   D:/m7fazty/m7fazty/user.h \
   D:/m7fazty/m7fazty/user.ui \
+  D:/m7fazty/m7fazty/user_c.cpp \
+  D:/m7fazty/m7fazty/user_c.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20type_traits.h \

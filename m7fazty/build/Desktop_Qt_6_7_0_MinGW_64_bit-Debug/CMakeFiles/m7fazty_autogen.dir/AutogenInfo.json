@@ -254,7 +254,20 @@
 	"DEP_FILE_RULE_NAME" : "m7fazty_autogen/timestamp",
 	"HEADERS" : 
 	[
+		[
+			"D:/m7fazty/m7fazty/account.h",
+			"MU",
+			"EWIEGA46WW/moc_account.cpp",
+			null
+		],
 		[ "D:/m7fazty/m7fazty/admin.h", "MU", "EWIEGA46WW/moc_admin.cpp", null ],
+		[
+			"D:/m7fazty/m7fazty/admin_c.h",
+			"MU",
+			"EWIEGA46WW/moc_admin_c.cpp",
+			null
+		],
+		[ "D:/m7fazty/m7fazty/files.h", "MU", "EWIEGA46WW/moc_files.cpp", null ],
 		[ "D:/m7fazty/m7fazty/login.h", "MU", "EWIEGA46WW/moc_login.cpp", null ],
 		[
 			"D:/m7fazty/m7fazty/mainwindow.h",
@@ -268,7 +281,19 @@
 			"EWIEGA46WW/moc_sign_up.cpp",
 			null
 		],
-		[ "D:/m7fazty/m7fazty/user.h", "MU", "EWIEGA46WW/moc_user.cpp", null ]
+		[
+			"D:/m7fazty/m7fazty/transiction.h",
+			"MU",
+			"EWIEGA46WW/moc_transiction.cpp",
+			null
+		],
+		[ "D:/m7fazty/m7fazty/user.h", "MU", "EWIEGA46WW/moc_user.cpp", null ],
+		[
+			"D:/m7fazty/m7fazty/user_c.h",
+			"MU",
+			"EWIEGA46WW/moc_user_c.cpp",
+			null
+		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/include",
@@ -341,12 +366,17 @@
 	"SETTINGS_FILE" : "D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/m7fazty_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "D:/m7fazty/m7fazty/account.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/admin.cpp", "MU", null ],
+		[ "D:/m7fazty/m7fazty/admin_c.cpp", "MU", null ],
+		[ "D:/m7fazty/m7fazty/files.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/login.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/main.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/mainwindow.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/sign_up.cpp", "MU", null ],
-		[ "D:/m7fazty/m7fazty/user.cpp", "MU", null ]
+		[ "D:/m7fazty/m7fazty/transiction.cpp", "MU", null ],
+		[ "D:/m7fazty/m7fazty/user.cpp", "MU", null ],
+		[ "D:/m7fazty/m7fazty/user_c.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
