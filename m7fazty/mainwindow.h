@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QStackedWidget>
 #include "Login.h"
+#include"sign_up.h"
 
 namespace fs = std::filesystem;
 using namespace std;
@@ -26,9 +27,12 @@ public:
 private slots:
     void on_login_clicked();
 
+    void on_sign_up_clicked();
+
 private:
     Ui::MainWindow *ui;
     Login *loginWidget;
+    sign_up * signup_Widget;
 
 };
 
