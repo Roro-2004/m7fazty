@@ -37,6 +37,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         viewbalance_dialog.h viewbalance_dialog.cpp viewbalance_dialog.ui
         viewtranshistory_dialog.h viewtranshistory_dialog.cpp viewtranshistory_dialog.ui
         editprofile_dialog.h editprofile_dialog.cpp editprofile_dialog.ui
+        files.h files.cpp
 
 
 
