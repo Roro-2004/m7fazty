@@ -2,6 +2,4 @@
 #include <filesystem>
 #include<fstream>
 #include<string>
-Files::Files() {
-
-}
+files::files() {}

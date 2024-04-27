@@ -8,6 +8,7 @@
 class user_c;
 
 using namespace std;
+// comment
 
 struct date{
     int day,month,year;
