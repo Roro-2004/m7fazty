@@ -353,6 +353,8 @@ m7fazty_autogen/timestamp: \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/editprofile_dialog.cpp \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/editprofile_dialog.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/editprofile_dialog.ui \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/files.cpp \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/files.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/login.cpp \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/login.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/login.ui \
