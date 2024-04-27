@@ -9,7 +9,7 @@ class sign_up;
 
 class sign_up : public QWidget
 {
-    Q_OBJECT
+    Q_OBJECT//comment
 
 public:
     explicit sign_up(QWidget *parent = nullptr);
