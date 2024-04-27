@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>sign_up</class>
- <widget class="QWidget" name="sign_up">
+ <class>viewBalance_dialog</class>
+ <widget class="QDialog" name="viewBalance_dialog">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>971</width>
-    <height>724</height>
+    <width>475</width>
+    <height>410</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Dialog</string>
   </property>
   <widget class="QLabel" name="label_bg">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>971</width>
-     <height>724</height>
+     <width>475</width>
+     <height>412</height>
     </rect>
    </property>
    <property name="text">

@@ -32,6 +32,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         user_c.h user_c.cpp
         transiction.h transiction.cpp
         account.h account.cpp
+        requestmoney_dialog.h requestmoney_dialog.cpp requestmoney_dialog.ui
+        sendmoney_dialog.h sendmoney_dialog.cpp sendmoney_dialog.ui
+        viewbalance_dialog.h viewbalance_dialog.cpp viewbalance_dialog.ui
+        viewtranshistory_dialog.h viewtranshistory_dialog.cpp viewtranshistory_dialog.ui
+        editprofile_dialog.h editprofile_dialog.cpp editprofile_dialog.ui
+
 
 
     )
@@ -79,3 +85,6 @@ install(TARGETS m7fazty
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(m7fazty)
 endif()
+
+
+
