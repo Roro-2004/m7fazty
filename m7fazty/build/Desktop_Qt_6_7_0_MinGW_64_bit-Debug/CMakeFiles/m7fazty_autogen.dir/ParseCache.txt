@@ -350,6 +350,8 @@ D:/m7fazty/m7fazty/login.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+D:/m7fazty/m7fazty/transiction.cpp
+D:/m7fazty/m7fazty/user_c.h
 D:/m7fazty/m7fazty/mainwindow.h
  mmc:Q_OBJECT
  mdp:D:/m7fazty/m7fazty/login.h
@@ -708,13 +710,14 @@ D:/m7fazty/m7fazty/mainwindow.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+D:/m7fazty/m7fazty/user_c.cpp
 D:/m7fazty/m7fazty/mainwindow.cpp
  uic:ui_mainwindow.h
 D:/m7fazty/m7fazty/main.cpp
-D:/m7fazty/m7fazty/sign_up.h
+D:/m7fazty/m7fazty/admin.h
  mmc:Q_OBJECT
+ mdp:D:/m7fazty/m7fazty/admin.h
  mdp:D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h
- mdp:D:/m7fazty/m7fazty/sign_up.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20functional.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20memory.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20type_traits.h
@@ -1062,10 +1065,10 @@ D:/m7fazty/m7fazty/sign_up.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
-D:/m7fazty/m7fazty/admin.h
+D:/m7fazty/m7fazty/sign_up.h
  mmc:Q_OBJECT
- mdp:D:/m7fazty/m7fazty/admin.h
  mdp:D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h
+ mdp:D:/m7fazty/m7fazty/sign_up.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20functional.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20memory.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20type_traits.h
@@ -1772,3 +1775,10 @@ D:/m7fazty/m7fazty/sign_up.cpp
  uic:ui_sign_up.h
 D:/m7fazty/m7fazty/user.cpp
  uic:ui_user.h
+D:/m7fazty/m7fazty/account.h
+D:/m7fazty/m7fazty/admin_c.h
+D:/m7fazty/m7fazty/transiction.h
+D:/m7fazty/m7fazty/account.cpp
+D:/m7fazty/m7fazty/admin_c.cpp
+D:/m7fazty/m7fazty/files.h
+D:/m7fazty/m7fazty/files.cpp

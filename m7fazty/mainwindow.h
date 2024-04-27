@@ -5,6 +5,9 @@
 #include <QStackedWidget>
 #include "Login.h"
 
+namespace fs = std::filesystem;
+using namespace std;
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -17,6 +20,7 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     QStackedWidget static *stackedWidget;
+
 
 
 private slots:
