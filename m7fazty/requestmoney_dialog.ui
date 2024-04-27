@@ -203,7 +203,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="send_Button">
+  <widget class="QPushButton" name="request_Button">
    <property name="geometry">
     <rect>
      <x>160</x>
@@ -355,7 +355,7 @@ QPushButton:pressed {
   <zorder>userName_textBox</zorder>
   <zorder>amount_label</zorder>
   <zorder>username_label</zorder>
-  <zorder>send_Button</zorder>
+  <zorder>request_Button</zorder>
  </widget>
  <resources/>
  <connections/>

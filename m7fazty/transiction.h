@@ -8,11 +8,10 @@
 class user_c;
 
 using namespace std;
-// comment
 
-struct date{
+/*struct date{
     int day,month,year;
-};
+};*/
 
 class transiction
 {
@@ -23,8 +22,9 @@ public:
     string  sender;
     string  receiver;
     float amount;
-    date trans_date;
-    bool status;
+    string date;
+    string time;
+    string status;
 
     //bool status();
 };

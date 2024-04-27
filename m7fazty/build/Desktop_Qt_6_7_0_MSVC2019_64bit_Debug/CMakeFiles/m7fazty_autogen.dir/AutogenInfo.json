@@ -294,6 +294,12 @@
 			null
 		],
 		[
+			"D:/Projects/2nd Year/DS/m7fazty/m7fazty/files.h",
+			"MU",
+			"EWIEGA46WW/moc_files.cpp",
+			null
+		],
+		[
 			"D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.h",
 			"MU",
 			"EWIEGA46WW/moc_login.cpp",
@@ -417,6 +423,7 @@
 			"MU",
 			null
 		],
+		[ "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files.cpp", "MU", null ],
 		[ "D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.cpp", "MU", null ],
 		[ "D:/Projects/2nd Year/DS/m7fazty/m7fazty/main.cpp", "MU", null ],
 		[ "D:/Projects/2nd Year/DS/m7fazty/m7fazty/mainwindow.cpp", "MU", null ],

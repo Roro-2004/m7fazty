@@ -6,8 +6,8 @@ class files
 {
 public:
     files();
-    void read_from_file(string file_path);
-    void write_in_file(string file_path);
+    void static read_from_file(string file_path);
+    void static write_in_file(string file_path);
 };
 
 #endif // FILES_H
