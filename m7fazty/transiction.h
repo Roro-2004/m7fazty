@@ -8,6 +8,7 @@
 class user_c;
 
 using namespace std;
+// comment
 
 struct date{
     int day,month,year;
@@ -19,8 +20,8 @@ public:
     transiction();
 
     string id;
-    user_c  sender;
-    user_c  receiver;
+    string  sender;
+    string  receiver;
     float amount;
     date trans_date;
     bool status;

@@ -444,8 +444,23 @@ QPushButton:pressed {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
-</string>
+    <string notr="true">QPushButton{
+	color: rgb(226, 226, 255);
+   
+ background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+text-align: left;
+    border-radius: 13px;
+    border: 1px solid rgba(0, 0, 0,0);
+}
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background color when hovered */
+
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.3); 
+
+}</string>
    </property>
    <property name="text">
     <string/>
