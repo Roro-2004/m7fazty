@@ -24,6 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     setCentralWidget(stackedWidget);
 
     // Set background image
+    QPixmap background("D:/m7fazty/m7fazty/photos/bg.png");
     ui->label_bg->setPixmap(background);
 
     stackedWidget->show();
@@ -49,6 +50,7 @@ MainWindow::MainWindow(QWidget *parent)
     string path = "D:/m7fazty/m7fazty/files/login.csv";
     files f ;
     f.read_from_file(path);
+
 
 }
 

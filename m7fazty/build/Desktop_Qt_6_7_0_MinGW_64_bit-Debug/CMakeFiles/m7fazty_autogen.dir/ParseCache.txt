@@ -1424,8 +1424,11 @@ D:/m7fazty/m7fazty/admin.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
 D:/m7fazty/m7fazty/sendmoney_dialog.h
  mmc:Q_OBJECT
+ mdp:D:/m7fazty/m7fazty/account.h
  mdp:D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h
  mdp:D:/m7fazty/m7fazty/sendmoney_dialog.h
+ mdp:D:/m7fazty/m7fazty/transiction.h
+ mdp:D:/m7fazty/m7fazty/user_c.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20functional.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20memory.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20type_traits.h
@@ -3199,8 +3202,11 @@ D:/m7fazty/m7fazty/editprofile_dialog.h
  mdp:D:/qt_cereator/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
 D:/m7fazty/m7fazty/requestmoney_dialog.h
  mmc:Q_OBJECT
+ mdp:D:/m7fazty/m7fazty/account.h
  mdp:D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h
  mdp:D:/m7fazty/m7fazty/requestmoney_dialog.h
+ mdp:D:/m7fazty/m7fazty/transiction.h
+ mdp:D:/m7fazty/m7fazty/user_c.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20functional.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20memory.h
  mdp:D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20type_traits.h

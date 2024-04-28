@@ -14,14 +14,14 @@ using namespace std;
 namespace fs = std::filesystem;
 
 
-files::files() {}
+//files::files() {}
 
 void files::write_in_file(string file_path)
 {
     // Specify the file path
     fs::path path = file_path;
     ofstream file(path);
-    if(path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv"){
+    if(path == "D:/m7fazty/m7fazty/files/Transiction.csv"){
         if (file.is_open()){
             file << "Trans ID" <<"," <<"Reciver"<<"," << "Sender" <<","<<"Amount" <<","<<"Date"<<","<<"Time"<<","<<"Status"<< endl;
 
