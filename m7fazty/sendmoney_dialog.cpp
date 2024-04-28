@@ -5,7 +5,7 @@
 #include "login.h"
 #include"requestmoney_dialog.h"
 #include <ctime>
-#include<iostream>
+//#include<iostream>
 using namespace std;
 
 
@@ -75,7 +75,4 @@ sendMoney_dialog::~sendMoney_dialog()
 {
     delete ui;
     //delete t;
-    for (auto& pair : requestMoney_dialog::trans_data) {
-        delete pair.second;
-    }
 }

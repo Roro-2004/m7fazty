@@ -19,7 +19,7 @@ public:
     explicit requestMoney_dialog(QWidget *parent = nullptr);
     ~requestMoney_dialog();
     static unordered_map <string,transiction*> trans_data;
-    static unordered_map <string,transiction*> ::iterator it;
+    //static unordered_map <string,transiction*> ::iterator it;
     transiction* t;
 
     string generateID();

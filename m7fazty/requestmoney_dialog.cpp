@@ -8,7 +8,7 @@
 using namespace std;
 
 unordered_map<string, transiction*> requestMoney_dialog::trans_data;
-unordered_map<string, transiction*>::iterator requestMoney_dialog::it;
+//unordered_map<string, transiction*>::iterator requestMoney_dialog::it;
 
 
 
@@ -74,10 +74,7 @@ void requestMoney_dialog::on_request_Button_clicked()
 requestMoney_dialog::~requestMoney_dialog()
 {
     delete ui;
-    delete t;
-    for (auto& pair : requestMoney_dialog::trans_data) {
-        delete pair.second; // Delete the transiction objects
-    }
+    //delete t;
 }
 
 

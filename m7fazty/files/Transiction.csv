@@ -1,6 +1,2 @@
 Trans ID,Reciver,Sender,Amount,Date,Time,Status
-<<<<<<< HEAD
-S100,menna,roro,50,28/04/2024,03:19 AM,Successful
-=======
-R100,g,d,5,28/04/2024,06:46 AM,Successful
->>>>>>> origin/menna
+S100,menna,roaa,900,28/04/2024,08:31 AM,Successful

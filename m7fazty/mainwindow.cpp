@@ -5,6 +5,7 @@
 #include <filesystem>
 #include <iostream>
 #include"files.h"
+#include"requestmoney_dialog.h"
 using namespace std;
 namespace fs = std::filesystem;
 
@@ -28,33 +29,20 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_bg->setPixmap(background);
 
     stackedWidget->show();
-
-
-
-    // Specify the file path
-    //fs::path transiction_filePath = "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv";
-    /*ofstream transiction_file(transiction_filePath);
-
-    if (transiction_file.is_open()) {
-        transiction_file << "Hello, world" << endl;
-        transiction_file << "This is a line written to the file." << endl;
-
-        transiction_file.close();
-
-        cout << "Data has been written to the file successfully." << endl;
-    } else {
-        cerr << "Error: Unable to open the file for writing." << endl;
-    }*/
-
-    // Specify the file path
-    string path = "D:/m7fazty/m7fazty/files/login.csv";
-    files f ;
-    f.read_from_file(path);
+    files::read_from_file("D:/m7fazty/m7fazty/files/Transiction.csv");
+    for (const auto& pair : requestMoney_dialog::trans_data) {
+        if (pair.second != nullptr) {
+            transiction* t = pair.second;
+            cout << pair.first << " " << t->receiver << " " << t->sender << " " << t->amount << " " << t->date << " " << t->time << " " << t->status << endl;
+        }
+        else {
+            cout << "Error: Null pointer encountered in trans_data map." << endl;
+        }
+    }
+    cout<<requestMoney_dialog::trans_data.size()<<endl;
 
 
 }
-
-
 MainWindow::~MainWindow()
 {
     delete ui;
@@ -68,7 +56,8 @@ void MainWindow::on_login_clicked()
     loginWidget = new Login();
     stackedWidget->addWidget(loginWidget);
     stackedWidget->setCurrentWidget(loginWidget);
-}
+
+    }
 
 
 void MainWindow::on_sign_up_clicked()
