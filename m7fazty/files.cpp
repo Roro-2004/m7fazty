@@ -11,17 +11,21 @@ namespace fs = std::filesystem;
 
 files::files() {}
 
+
+
+
 void files::write_in_file(string file_path)
 {
     // Specify the file path
     fs::path path = file_path;
     ofstream file(path);
+
     if(path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv"){
         if (file.is_open()){
             file << "Trans ID" <<"," <<"Reciver"<<"," << "Sender" <<","<<"Amount" <<","<<"Date"<<","<<"Time"<<","<<"Status"<< endl;
 
             for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
-                transiction* t = trans.second; // Get the transiction object pointer
+                transiction* t = trans.second;
                 file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
             }
 
@@ -54,5 +58,11 @@ void files::write_in_file(string file_path)
             inputFile.close();
         } else {
             cout << "Error: Unable to open file '" << file_path << "'." << endl;
+        }
+    }
+
+    files::~files() {
+        for (auto& pair : requestMoney_dialog::trans_data) {
+            delete pair.second; // Delete the transiction objects
         }
     }
