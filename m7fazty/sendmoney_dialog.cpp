@@ -67,9 +67,15 @@ void sendMoney_dialog::on_send_Button_clicked()
     t->date=getCurrentDate();
     t->time=getCurrentTime();
     requestMoney_dialog::trans_data[generateID()] = t;
+
+    close();
 }
 
 sendMoney_dialog::~sendMoney_dialog()
 {
     delete ui;
+    delete t;
+    for (auto& pair : requestMoney_dialog::trans_data) {
+        delete pair.second;
+    }
 }
