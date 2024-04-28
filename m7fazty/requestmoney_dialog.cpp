@@ -3,12 +3,12 @@
 #include <unordered_map>
 #include "transiction.h"
 #include "login.h"
+#include "viewtranshistory_dialog.h"
 #include <ctime>
 #include<iostream>
 using namespace std;
 
 unordered_map<string, transiction*> requestMoney_dialog::trans_data;
-unordered_map<string, transiction*>::iterator requestMoney_dialog::it;
 
 
 
@@ -68,16 +68,14 @@ void requestMoney_dialog::on_request_Button_clicked()
     t->date=getCurrentDate();
     t->time=getCurrentTime();
     trans_data[generateID()] = t;
+
     close();
 }
 
 requestMoney_dialog::~requestMoney_dialog()
 {
     delete ui;
-    delete t;
-    for (auto& pair : requestMoney_dialog::trans_data) {
-        delete pair.second; // Delete the transiction objects
-    }
+
 }
 
 

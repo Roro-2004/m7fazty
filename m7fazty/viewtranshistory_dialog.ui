@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>475</width>
-    <height>410</height>
+    <width>756</width>
+    <height>512</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,13 +18,42 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>475</width>
-     <height>412</height>
+     <width>756</width>
+     <height>512</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
+  </widget>
+  <widget class="QTableWidget" name="history_table">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>711</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="gridStyle">
+    <enum>Qt::SolidLine</enum>
+   </property>
+   <property name="columnCount">
+    <number>7</number>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
   </widget>
  </widget>
  <resources/>

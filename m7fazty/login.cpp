@@ -29,7 +29,6 @@ Login::Login(QWidget *parent) :
 Login::~Login()
 {
     delete ui;
-    delete user_widget;
 }
 
 void Login::on_back_button_clicked()

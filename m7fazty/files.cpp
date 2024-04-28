@@ -61,8 +61,3 @@ void files::write_in_file(string file_path)
         }
     }
 
-    files::~files() {
-        for (auto& pair : requestMoney_dialog::trans_data) {
-            delete pair.second; // Delete the transiction objects
-        }
-    }

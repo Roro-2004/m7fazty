@@ -88,6 +88,7 @@ void user::on_close_list_Button_clicked()
 void user::on_viewBalance_Button_clicked()
 {
     viewBalance_dialog d;
+    d.setWindowTitle("Balance");
     d.exec();
 }
 
@@ -95,6 +96,7 @@ void user::on_viewBalance_Button_clicked()
 void user::on_sendMoney_Button_clicked()
 {
     sendMoney_dialog d;
+    d.setWindowTitle("Send Money");
     d.exec();
 }
 
@@ -102,6 +104,7 @@ void user::on_sendMoney_Button_clicked()
 void user::on_requestMoney_Button_clicked()
 {
     requestMoney_dialog d;
+    d.setWindowTitle("Request Money");
     d.exec();
 }
 
@@ -109,6 +112,7 @@ void user::on_requestMoney_Button_clicked()
 void user::on_viewHistory_Button_clicked()
 {
     viewTransHistory_dialog d;
+    d.setWindowTitle("Transiction History");
     d.exec();
 }
 
@@ -116,6 +120,7 @@ void user::on_viewHistory_Button_clicked()
 void user::on_editProfile_Button_clicked()
 {
     editProfile_dialog d;
+    d.setWindowTitle("Edit Profile");
     d.exec();
 }
 

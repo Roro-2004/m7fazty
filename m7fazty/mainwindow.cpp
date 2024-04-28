@@ -4,6 +4,7 @@
 #include <fstream>
 #include <filesystem>
 #include <iostream>
+#include"requestmoney_dialog.h"
 using namespace std;
 namespace fs = std::filesystem;
 
@@ -14,7 +15,6 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
     stackedWidget = new QStackedWidget(this);
     // Add the main window UI created with Qt Designer to the stacked widget
     stackedWidget->addWidget(ui->centralwidget);
@@ -30,12 +30,6 @@ MainWindow::MainWindow(QWidget *parent)
 }
 
 
-MainWindow::~MainWindow()
-{
-    delete ui;
-    delete loginWidget;
-    delete signup_Widget;
-}
 
 
 void MainWindow::on_login_clicked()
@@ -54,3 +48,7 @@ void MainWindow::on_sign_up_clicked()
 
 }
 
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
