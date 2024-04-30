@@ -1,8 +1,6 @@
 D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/EWIEGA46WW/moc_mainwindow.cpp: D:/m7fazty/m7fazty/mainwindow.h \
   D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h \
   D:/m7fazty/m7fazty/Login.h \
-  D:/m7fazty/m7fazty/sign_up.h \
-  D:/m7fazty/m7fazty/user.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20type_traits.h \

@@ -1,7 +1,6 @@
 #include "login.h"
 #include "ui_login.h"
 #include "mainwindow.h"
-#include "user.h"
 
 Login::Login(QWidget *parent) :
     QWidget(parent),
@@ -18,8 +17,9 @@ Login::Login(QWidget *parent) :
     QPixmap person_logo("D:/m7fazty/m7fazty/photos/person logo.png");
     ui->personlogo_label->setPixmap(person_logo);
 
-    QPixmap back("D:/m7fazty/m7fazty/photos/white back button.png");
+    QPixmap back ("D:/m7fazty/m7fazty/photos/white back button.png");
     ui->back_label->setPixmap(back);
+
 }
 
 Login::~Login()
@@ -33,12 +33,4 @@ void Login::on_back_button_clicked()
 
 }
 
-
-
-void Login::on_Login_2_clicked()
-{
-    user_widget=new user();
-    MainWindow::stackedWidget->addWidget(user_widget);
-    MainWindow::stackedWidget->setCurrentWidget(user_widget);
-}
 
