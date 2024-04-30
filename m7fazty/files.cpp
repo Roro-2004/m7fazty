@@ -48,6 +48,7 @@ void files::write_in_file(string file_path)
                 file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status <<","<< endl;
             }
 
+    if (path.string() == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv") {
         if (file.is_open()){
             cout<< requestMoney_dialog::trans_data.size()<<endl;
             for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
@@ -83,6 +84,7 @@ void files::split(string s)
     transiction* t = new transiction();
     if (v.size() >= 6) {
         t->id = v[0];
+=======
     v.push_back(temp);
 
     if (v.size() <= 7)
@@ -116,6 +118,8 @@ void files::split(string s)
     }
 
     // Insert the transiction object into the trans_data map
+    requestMoney_dialog::trans_read[v[0]] = t;
+
     cout <<requestMoney_dialog::trans_read.size()<<endl;
 }
 

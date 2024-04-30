@@ -56,7 +56,6 @@ MainWindow::~MainWindow()
 {
     delete ui;
     //delete loginWidget;
-    //delete signup_Widget;
 }
 
 
