@@ -1,7 +1,7 @@
 #ifndef FILES_H
 #define FILES_H
 #include <string>
-//#include"transiction.h"
+#include"transiction.h"
 using namespace std;
 
 class files

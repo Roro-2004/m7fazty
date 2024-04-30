@@ -27,12 +27,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     QPixmap background("D:/m7fazty/m7fazty/photos/bg.png");
     ui->label_bg->setPixmap(background);
 
+    stackedWidget = new QStackedWidget(this);
+    stackedWidget->addWidget(ui->centralwidget);
+    setCentralWidget(stackedWidget);
     stackedWidget->show();
 
 
     files::read_from_file("D:/m7fazty/m7fazty/files/Transiction.csv");
-     cout<<requestMoney_dialog::trans_data.size()<<endl;
-    for (const auto& pair : requestMoney_dialog::trans_data) {
+    for (const auto& pair : requestMoney_dialog::trans_read) {
         if (pair.second != nullptr) {
             transiction* t = pair.second;
             cout << pair.first << " " << t->receiver << " " << t->sender << " " << t->amount << " " << t->date << " " << t->time << " " << t->status << endl;
@@ -41,21 +43,13 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
             cout << "Error: Null pointer encountered in trans_data map." << endl;
         }
     }
-    files::read_from_file("D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv");
-
-    for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
-        transiction* t = trans.second;
-        cout << trans.first << " " << t->receiver << " " << t->sender << " " << t->amount << " " << t->date << " " << t->time << " " << t->status << endl;
-    }
-    cout << requestMoney_dialog::trans_read.size() << endl;
-
 
 }
+
 
 MainWindow::~MainWindow()
 {
     delete ui;
-    //delete loginWidget;
 }
 
 

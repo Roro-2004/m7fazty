@@ -6,9 +6,11 @@
 #include<QTableWidgetItem>
 #include<iostream>
 using namespace  std;
+
 viewTransHistory_dialog::viewTransHistory_dialog(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::viewTransHistory_dialog)
+
 {
     ui->setupUi(this);
 

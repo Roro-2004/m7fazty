@@ -1,6 +1,4 @@
-Trans ID,Receiver,Sender,Amount,Date,Time,Status,
 Trans ID,Receiver,Sender,Amount,Date,Time,Status
-{ebb96d30-454f-4300-b77d-2862b153a2f1},MENNA,AD352,55,01/05/2024,12:26 AM,Successful
-S141,mnn,menna,150,01/05/2024,12:40 AM,Successful
-R567,menna,fdc,302,01/05/2024,12:40 AM,Successful
-R567,menna,fdc,302,01/05/2024,12:40 AM,Successful
+S990,menna,roro,50,01/05/2024,01:26 AM,Successful
+R165,habiba,lelo,5555,01/05/2024,01:27 AM,Successful
+R302,malak,menna,10,01/05/2024,01:27 AM,Successful

@@ -20,7 +20,7 @@ unordered_set<string> requestMoney_dialog::usedIDs;
 requestMoney_dialog::requestMoney_dialog(QWidget *parent) : QDialog(parent), ui(new Ui::requestMoney_dialog) {
     ui->setupUi(this);
 
-    QPixmap dialog_bg("D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/dialog_bg.png");
+    QPixmap dialog_bg("D:/m7fazty/m7fazty/photos/dialog_bg.png");
     ui->label_bg->setPixmap(dialog_bg);
     cout<<trans_data.size()<<endl;
 }
@@ -62,8 +62,6 @@ string requestMoney_dialog::getCurrentTime() {
     std::strftime(buffer, sizeof(buffer), "%I:%M", timeinfo); // %I for 12-hour format
     return std::string(buffer) + " " + am_pm;
 }
-
-
 void requestMoney_dialog::on_request_Button_clicked() {
     t = new transiction();
     t->receiver = Login::current_user;
