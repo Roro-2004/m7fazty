@@ -1,6 +1,6 @@
 Trans ID,Receiver,Sender,Amount,Date,Time,Status,
-S100,mohameed,m,80,01/05/2024,12:18 AM,Successful,
-S100,malak,dana,80,01/05/2024,12:19 AM,Successful,
 Trans ID,Receiver,Sender,Amount,Date,Time,Status
+{ebb96d30-454f-4300-b77d-2862b153a2f1},MENNA,AD352,55,01/05/2024,12:26 AM,Successful
 S141,mnn,menna,150,01/05/2024,12:40 AM,Successful
+R567,menna,fdc,302,01/05/2024,12:40 AM,Successful
 R567,menna,fdc,302,01/05/2024,12:40 AM,Successful
