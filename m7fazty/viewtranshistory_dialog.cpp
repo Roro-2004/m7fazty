@@ -1,6 +1,6 @@
 #include "viewtranshistory_dialog.h"
 #include "ui_viewtranshistory_dialog.h"
-
+#include"requestmoney_dialog.h"
 viewTransHistory_dialog::viewTransHistory_dialog(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::viewTransHistory_dialog)

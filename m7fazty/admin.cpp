@@ -1,6 +1,6 @@
 #include "admin.h"
 #include "ui_admin.h"
-
+#include"requestmoney_dialog.h"
 admin::admin(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::admin)

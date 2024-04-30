@@ -3,6 +3,7 @@
 #include "mainwindow.h"
 #include "user.h"
 #include <iostream>
+#include"requestmoney_dialog.h"
 using namespace std;
 
 string Login::current_user;
@@ -24,6 +25,7 @@ Login::Login(QWidget *parent) :
 
     QPixmap back("D:/m7fazty/m7fazty/photos/white back button.png");
     ui->back_label->setPixmap(back);
+    cout<<requestMoney_dialog::trans_data.size()<<endl;
 }
 
 Login::~Login()

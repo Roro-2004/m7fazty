@@ -5,7 +5,8 @@
 #include "login.h"
 #include"requestmoney_dialog.h"
 #include <ctime>
-//#include<iostream>
+#include<iostream>
+#include<iostream>
 using namespace std;
 
 
@@ -17,6 +18,7 @@ sendMoney_dialog::sendMoney_dialog(QWidget *parent): QDialog(parent), ui(new Ui:
     QPixmap dialog_bg("D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/dialog_bg.png");
     ui->label_bg->setPixmap(dialog_bg);
 
+    cout<<requestMoney_dialog::trans_data.size()<<endl;
 }
 
 
@@ -67,7 +69,7 @@ void sendMoney_dialog::on_send_Button_clicked()
     t->date=getCurrentDate();
     t->time=getCurrentTime();
     requestMoney_dialog::trans_data[generateID()] = t;
-
+    cout<<"trans done\n";
     close();
 }
 

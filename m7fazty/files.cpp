@@ -5,33 +5,37 @@
 #include<iostream>
 #include<unordered_map>
 #include<vector>
+#include "transiction.h"
+#include <unordered_map>
+#include"requestmoney_dialog.h"
 using namespace std;
 namespace fs = std::filesystem;
 files::files() {
 }
-#include <unordered_map>
-#include"requestmoney_dialog.h"
 using namespace std;
 namespace fs = std::filesystem;
 
 
 void files::write_in_file(string file_path)
 {
+    cout<<"the no f data in file is "<<requestMoney_dialog::trans_data.size()<<endl;
     // Specify the file path
     fs::path path = file_path;
     ofstream file(path);
+    if(path == "D:/m7fazty/m7fazty/files/Transiction.csv"){
         if (file.is_open()){
             file << "Trans ID" <<"," <<"Reciver"<<"," << "Sender" <<","<<"Amount" <<","<<"Date"<<","<<"Time"<<","<<"Status"<< endl;
 
-            for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
+            for (auto &trans : requestMoney_dialog::trans_data) {
+                cout<<"in the loop\n";
                 transiction* t = trans.second;
                 file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
             }
-
-            file.close();
             cout << "Data has been written to the file successfully." << endl;
         }
         else cerr << "Error: Unable to open the file for writing." << endl;
+    }
+    file.close();
 }
 
 
@@ -74,27 +78,27 @@ void files::split(string s) {
 }
 
 
-void files::read_from_file(string file_path){
+void files::read_from_file(string file_path) {
     ifstream inputFile(file_path); // Open the file
-    files f;
-    bool fline = true;
     if (inputFile.is_open()) {
         string line;
-        if(file_path == "D:/m7fazty/m7fazty/files/Transiction.csv"){
-            cout << "Trans ID" <<" " <<"Reciver"<<" " << "Sender" <<" "<<"Amount" <<" "<<"Date"<<" "<<"Time"<<" "<<"Status"<< endl;
+        if (file_path == "D:/m7fazty/m7fazty/files/Transiction.csv") {
+            cout << "Trans ID" << " " << "Receiver" << " " << "Sender" << " " << "Amount" << " " << "Date" << " " << "Time" << " " << "Status" << endl;
         }
+        bool firstLine = true;
         while (getline(inputFile, line)) {
-            if(fline){
-                fline = false;
+            if (firstLine) {
+                firstLine = false;
                 continue;
             }
-            f.split(line);
+            split(line); // Call the split function on the current object
         }
+        inputFile.close();
+    } else {
+        cerr << "Error: Unable to open the file for reading." << endl;
     }
-    inputFile.close();
-    //cout<<"read succesfully\n";
-
 }
+
 
 
     files::~files() {
