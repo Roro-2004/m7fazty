@@ -76,5 +76,5 @@ void sendMoney_dialog::on_send_Button_clicked()
 sendMoney_dialog::~sendMoney_dialog()
 {
     delete ui;
-    //delete t;
+
 }

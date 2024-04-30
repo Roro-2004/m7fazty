@@ -7,7 +7,7 @@ sign_up::sign_up(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QPixmap background("D:/m7fazty/m7fazty/photos/bg.png");
+    QPixmap background("D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/bg.png");
     ui->label_bg->setPixmap(background);
 
 }

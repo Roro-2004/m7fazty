@@ -1,2 +1,6 @@
 Trans ID,Reciver,Sender,Amount,Date,Time,Status
 S100,l,R,10,30/04/2024,10:02 PM,Successful
+S100,hh,cccc,10,30/04/2024,09:43 PM,Successful
+R100,cccc,hh20,80,30/04/2024,09:43 PM,Successful
+S100,tt,dds,20,30/04/2024,09:43 PM,Successful
+R100,dds,dffb,21,30/04/2024,09:43 PM,Successful
