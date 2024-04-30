@@ -23,7 +23,6 @@ public:
     static unordered_map <string,transiction*> trans_read;
     static unordered_set<string> usedIDs;
 
-
     transiction* t;
 
     string generateID();

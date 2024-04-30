@@ -11,6 +11,8 @@
 using namespace std;
 
 
+unordered_set<string> sendMoney_dialog::usedIDs;
+
 sendMoney_dialog::sendMoney_dialog(QWidget *parent): QDialog(parent), ui(new Ui::sendMoney_dialog)
 {
     ui->setupUi(this);
@@ -21,14 +23,14 @@ sendMoney_dialog::sendMoney_dialog(QWidget *parent): QDialog(parent), ui(new Ui:
 
 }
 
-string sendMoney_dialog::generateID() {
+string sendMoney_dialog::generateID()
+{
     string id;
+    int randomNumber;
     do {
-        // Generate a random number between 100 and 999 (inclusive)
-        int randomNumber = rand() % 900 + 100;
-        id = "S" + to_string(randomNumber);
-    } while (requestMoney_dialog::usedIDs.count(id) > 0); // Check if the generated ID already exists in the set
-    requestMoney_dialog::usedIDs.insert(id);
+        randomNumber = rand() % 900 + 100;
+        id = "R" + to_string(randomNumber);
+    } while(usedIDs.count(id) > 0); // Check if the generated ID already exists in the set
 
     return id;
 }

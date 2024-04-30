@@ -2,6 +2,7 @@
 #define SENDMONEY_DIALOG_H
 #include <QDialog>
 #include <unordered_map>
+#include <unordered_set>
 #include "transiction.h"
 using namespace std;
 
@@ -16,6 +17,8 @@ class sendMoney_dialog : public QDialog
 public:
     explicit sendMoney_dialog(QWidget *parent = nullptr);
     ~sendMoney_dialog();
+
+    static unordered_set<string> usedIDs;
 
     transiction* t;
 

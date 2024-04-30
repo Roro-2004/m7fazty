@@ -6,6 +6,7 @@
 #include <iostream>
 #include"files.h"
 #include"requestmoney_dialog.h"
+#include "sendmoney_dialog.h"
 using namespace std;
 namespace fs = std::filesystem;
 
@@ -30,10 +31,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
         transiction* t = trans.second;
         cout << trans.first << " " << t->receiver << " " << t->sender << " " << t->amount << " " << t->date << " " << t->time << " " << t->status << endl;
+        requestMoney_dialog::usedIDs.insert( trans.first);
+        sendMoney_dialog::usedIDs.insert( trans.first);
     }
     cout << requestMoney_dialog::trans_read.size() << endl;
-
-
 }
 
 
