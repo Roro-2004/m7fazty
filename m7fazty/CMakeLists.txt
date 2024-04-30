@@ -32,6 +32,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         user_c.h user_c.cpp
         transiction.h transiction.cpp
         account.h account.cpp
+        context.h context.cpp
 
 
     )

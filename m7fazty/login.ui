@@ -215,7 +215,7 @@ QPushButton:pressed {
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>280</y>
+     <y>290</y>
      <width>251</width>
      <height>31</height>
     </rect>
