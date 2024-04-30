@@ -1,6 +1,5 @@
 #ifndef SIGN_UP_H
 #define SIGN_UP_H
-
 #include <QWidget>
 
 namespace Ui {

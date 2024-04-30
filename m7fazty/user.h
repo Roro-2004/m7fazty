@@ -1,6 +1,5 @@
 #ifndef USER_H
 #define USER_H
-
 #include <QWidget>
 
 namespace Ui {
@@ -14,6 +13,7 @@ class user : public QWidget
 public:
     explicit user(QWidget *parent = nullptr);
     ~user();
+
     void hideAllElements();
 
 

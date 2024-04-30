@@ -6,6 +6,8 @@
 #include"requestmoney_dialog.h"
 #include <ctime>
 #include<iostream>
+#include <QUuid>
+#include <unordered_set>
 using namespace std;
 
 
@@ -20,11 +22,16 @@ sendMoney_dialog::sendMoney_dialog(QWidget *parent): QDialog(parent), ui(new Ui:
     cout<<requestMoney_dialog::trans_data.size()<<endl;
 }
 
-
-
 string sendMoney_dialog::generateID() {
-    static atomic<int> counter(100); // Static counter for generating unique IDs
-    return "S" + to_string(counter++);
+    string id;
+    do {
+        // Generate a random number between 100 and 999 (inclusive)
+        int randomNumber = rand() % 900 + 100;
+        id = "S" + to_string(randomNumber);
+    } while (requestMoney_dialog::usedIDs.count(id) > 0); // Check if the generated ID already exists in the set
+    requestMoney_dialog::usedIDs.insert(id);
+
+    return id;
 }
 
 string sendMoney_dialog::getCurrentDate() {
@@ -53,6 +60,7 @@ string sendMoney_dialog::getCurrentTime() {
     return std::string(buffer) + " " + am_pm;
 }
 
+
 void sendMoney_dialog::on_send_Button_clicked()
 {
     t = new transiction();
@@ -75,5 +83,4 @@ void sendMoney_dialog::on_send_Button_clicked()
 sendMoney_dialog::~sendMoney_dialog()
 {
     delete ui;
-
 }

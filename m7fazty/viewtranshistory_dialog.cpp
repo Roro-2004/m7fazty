@@ -22,6 +22,7 @@ viewTransHistory_dialog::viewTransHistory_dialog(QWidget *parent)
 
    for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
         cout<<"mmmmmmmmmmmmmmmmm";
+   /*for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
         int row = ui->history_table->rowCount(); // Get the current row index
 
         QTableWidgetItem *transIDItem = new QTableWidgetItem(QString::fromStdString(trans.first));
@@ -46,6 +47,7 @@ viewTransHistory_dialog::viewTransHistory_dialog(QWidget *parent)
         ui->history_table->setItem(row, 6, statusItem);
     }
 
+    }*/
 
     ui->history_table->show();
 }
