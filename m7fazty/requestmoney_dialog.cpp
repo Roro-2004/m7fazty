@@ -8,7 +8,6 @@
 #include <iostream>
 #include <QUuid>
 #include <unordered_set>
-
 using namespace std;
 
 
@@ -25,42 +24,48 @@ requestMoney_dialog::requestMoney_dialog(QWidget *parent) : QDialog(parent), ui(
     cout<<trans_data.size()<<endl;
 }
 
-string requestMoney_dialog::generateID() {
+string requestMoney_dialog::generateID()
+{
     string id;
+    int randomNumber;
     do {
-        // Generate a random number between 100 and 999 (inclusive)
-        int randomNumber = rand() % 900 + 100;
+        randomNumber = rand() % 900 + 100;
         id = "R" + to_string(randomNumber);
-    } while (usedIDs.count(id) > 0); // Check if the generated ID already exists in the set
-    usedIDs.insert(id);
+    } while(usedIDs.count(id) > 0); // Check if the generated ID already exists in the set
 
     return id;
 }
 
-string requestMoney_dialog::getCurrentDate() {
+
+string requestMoney_dialog::getCurrentDate()
+{
     // Get the current time
-    std::time_t currentTime = std::time(nullptr);
+    time_t currentTime = time(nullptr);
 
     // Format the current date as a string (DD/MM/YYYY)
     char buffer[11]; // Buffer to store the formatted date
-    std::strftime(buffer, sizeof(buffer), "%d/%m/%Y", std::localtime(&currentTime));
-    return std::string(buffer);
+    strftime(buffer, sizeof(buffer), "%d/%m/%Y", localtime(&currentTime));
+    return string(buffer);
 }
 
-string requestMoney_dialog::getCurrentTime() {
+string requestMoney_dialog::getCurrentTime()
+{
     // Get the current time
-    std::time_t currentTime = std::time(nullptr);
+    time_t currentTime = time(nullptr);
 
     // Format the current time as a string (HH:MM AM/PM)
-    std::tm* timeinfo = std::localtime(&currentTime);
-    std::string am_pm = (timeinfo->tm_hour < 12) ? "AM" : "PM";
-    int hour = (timeinfo->tm_hour < 12) ? timeinfo->tm_hour : timeinfo->tm_hour - 12;
-    if (hour == 0) {
-        hour = 12;  // Convert midnight (0) to 12 AM
+    tm* timeinfo = localtime(&currentTime);
+
+    string am_pm = (timeinfo->tm_hour < 12) ? "AM" : "PM";
+    int hour = (timeinfo->tm_hour < 12) ? timeinfo->tm_hour : timeinfo->tm_hour - 12; //to convert it to the 12-hour format.
+    if (hour == 0)
+    {
+        hour = 12;
     }
-    char buffer[9]; // Buffer to store the formatted time
-    std::strftime(buffer, sizeof(buffer), "%I:%M", timeinfo); // %I for 12-hour format
-    return std::string(buffer) + " " + am_pm;
+
+    char buffer[9];
+    strftime(buffer, sizeof(buffer), "%I:%M", timeinfo); // %I for 12-hour format
+    return string(buffer) + " " + am_pm;
 }
 void requestMoney_dialog::on_request_Button_clicked() {
     t = new transiction();

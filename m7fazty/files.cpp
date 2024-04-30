@@ -38,7 +38,6 @@ void files::write_in_file(string file_path)
     ofstream file(path, ios::app);
     if (path.string() == "D:/m7fazty/m7fazty/files/Transiction.csv") {
         if (file.is_open()){
-            cout<< requestMoney_dialog::trans_data.size()<<endl;
             for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
                 transiction* t = trans.second;
                 file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
@@ -75,9 +74,12 @@ void files::split(string s)
         t->sender = v[2];
         if (!v[3].empty())
         {
-            try {
-                t->amount = stof(v[3]);
-            } catch (const invalid_argument& e) {
+            try
+            {
+                t->amount = stof(v[3]); //convert the string to a float
+            }
+            catch (const invalid_argument& e)
+            {
                 cerr << "Error converting amount to float: " << e.what() << endl;
                 t->amount = 0;
             }
@@ -96,8 +98,6 @@ void files::split(string s)
     }
 
     requestMoney_dialog::trans_read[v[0]] = t;
-
-    cout <<requestMoney_dialog::trans_read.size()<<endl;
 }
 
 

@@ -6,6 +6,7 @@
 #include <iostream>
 #include"files.h"
 #include"requestmoney_dialog.h"
+#include "sendmoney_dialog.h"
 using namespace std;
 namespace fs = std::filesystem;
 
