@@ -2,6 +2,7 @@
 #define USER_C_H
 #include "account.h"
 #include<vector>
+#include<QString>
 using namespace std;
 
 class transiction;
@@ -15,7 +16,7 @@ public:
     float balance;
     int points;
     vector <transiction*> transictions;
-
+     QString View_current_balance();
     //float balance_calc();
     //float points_calc();
     //void transiction_history();

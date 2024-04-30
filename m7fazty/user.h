@@ -1,6 +1,6 @@
 #ifndef USER_H
 #define USER_H
-
+#include"viewbalance_dialog.h"
 #include <QWidget>
 
 namespace Ui {
@@ -36,6 +36,7 @@ private slots:
 
 private:
     Ui::user *ui;
+    viewBalance_dialog *viewBalance_dialog_widget;
 };
 
 #endif // USER_H

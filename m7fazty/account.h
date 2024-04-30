@@ -1,15 +1,15 @@
 #ifndef ACCOUNT_H
 #define ACCOUNT_H
-#include <string>
+#include <QString>
 using namespace std;
 
 class account
 {
 public:
 
-    string username;
-    string password;
-    string address;
+    QString username;
+    QString password;
+    QString address;
     int age;
     bool status;
 

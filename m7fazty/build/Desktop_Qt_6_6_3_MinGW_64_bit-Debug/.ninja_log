@@ -1,0 +1,29 @@
+# ninja log v5
+8	1513	7361537494088148	m7fazty_autogen/timestamp	eaa7f3ebf7917a5a
+1516	6332	7361537543273248	CMakeFiles/m7fazty.dir/admin.cpp.obj	edc5a3ee49e7b44f
+1532	5015	7361537520028471	CMakeFiles/m7fazty.dir/admin_c.cpp.obj	a45cf1020c40df11
+1529	5586	7361537535003105	CMakeFiles/m7fazty.dir/sign_up.cpp.obj	c6b32088f88306ab
+8	1513	7361537494088148	m7fazty_autogen/mocs_compilation.cpp	eaa7f3ebf7917a5a
+1543	6499	7361537544927516	CMakeFiles/m7fazty.dir/sendmoney_dialog.cpp.obj	4701d6ed1f76ab8e
+8	1513	7361537494088148	D:/level 2 projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/timestamp	eaa7f3ebf7917a5a
+8	1513	7361537494088148	D:/level 2 projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/mocs_compilation.cpp	eaa7f3ebf7917a5a
+2241	5659	7361518687596386	CMakeFiles/m7fazty.dir/user_c.cpp.obj	f75b020287bded6d
+2244	6046	7361518696557853	CMakeFiles/m7fazty.dir/transiction.cpp.obj	89822862b8bfc377
+761	5159	7361521662515774	CMakeFiles/m7fazty.dir/main.cpp.obj	3d2400eeeef2154
+2249	5822	7361518694184025	CMakeFiles/m7fazty.dir/account.cpp.obj	7c0648ffd4064440
+5103	6396	7361447600489688	CMakeFiles/m7fazty.dir/files.cpp.obj	2a1fab69e347b4b1
+1541	6227	7361537542206101	CMakeFiles/m7fazty.dir/requestmoney_dialog.cpp.obj	b55fcde6c6abd9a7
+1526	6476	7361537544708103	CMakeFiles/m7fazty.dir/login.cpp.obj	bd04620427a203d3
+1546	5925	7361537539191754	CMakeFiles/m7fazty.dir/viewbalance_dialog.cpp.obj	34525301585baf4
+1519	6750	7361537547451258	CMakeFiles/m7fazty.dir/user.cpp.obj	725edd6bb72970f5
+1513	5082	7361537530163666	CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj	a42cc6a19f24078f
+1574	6136	7361537541278052	CMakeFiles/m7fazty.dir/nadminn.cpp.obj	971238536e2ee2d0
+1568	5874	7361537538671991	CMakeFiles/m7fazty.dir/editprofile_dialog.cpp.obj	43a646191f49bcb8
+1571	6221	7361537542155703	CMakeFiles/m7fazty.dir/viewtranshistory_dialog.cpp.obj	c8374a0ae3b1a8b1
+1523	5484	7361537534712664	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	5300e8093c4e15d3
+1603	2128	7361534778681989	m7fazty.exe	93d2fe7b6e27f65f
+5822	7746	7361518714046999	CMakeFiles/m7fazty.dir/context.cpp.obj	80d0016b7e835831
+5	1565	7361538058030873	CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj	a42cc6a19f24078f
+1566	2111	7361538063446203	m7fazty.exe	93d2fe7b6e27f65f
+4	1559	7361538379145488	CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj	a42cc6a19f24078f
+1560	2134	7361538384853052	m7fazty.exe	93d2fe7b6e27f65f

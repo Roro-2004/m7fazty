@@ -23,7 +23,7 @@ MainWindow::MainWindow(QWidget *parent)
     setCentralWidget(stackedWidget);
 
     // Set background image
-    QPixmap background("D:/m7fazty/m7fazty/photos/bg.png");
+    QPixmap background("D:/level 2 projects/m7fazty/m7fazty/photos/bg.png");
     ui->label_bg->setPixmap(background);
 
     stackedWidget->show();
@@ -31,7 +31,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 
     // Specify the file path
-    fs::path transiction_filePath = "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv";
+    fs::path transiction_filePath = "D:/level 2 projects/m7fazty/m7fazty/files/Transiction.csv";
     ofstream transiction_file(transiction_filePath);
 
     if (transiction_file.is_open()) {
@@ -46,7 +46,7 @@ MainWindow::MainWindow(QWidget *parent)
     }
 
     // Specify the file path
-    fs::path filePath = "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv";
+    fs::path filePath = "D:/level 2 projects/m7fazty/m7fazty/files/Transiction.csv";
 
     // Check if the file exists
     if (fs::exists(filePath)) {

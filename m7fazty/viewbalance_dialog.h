@@ -15,6 +15,9 @@ public:
     explicit viewBalance_dialog(QWidget *parent = nullptr);
     ~viewBalance_dialog();
 
+private slots:
+    void on_viewCurrentBalance_pushButton_clicked();
+
 private:
     Ui::viewBalance_dialog *ui;
 };
