@@ -12,8 +12,10 @@ user::user(QWidget *parent): QWidget(parent), ui(new Ui::user)
 {
     ui->setupUi(this);
 
+    QPixmap plain_background("D:/m7fazty/m7fazty/photos/bg2.png");
     ui->label_bg->setPixmap(plain_background);
 
+    QPixmap menu_icon("D:/m7fazty/m7fazty/photos/menu.png");
     ui->menu_label->setPixmap(menu_icon);
 
     hideAllElements();
@@ -125,9 +127,8 @@ void user::on_editProfile_Button_clicked()
 
 void user::on_logout_Button_clicked()
 {
-    files::write_in_file("D:/m7fazty/m7fazty/files/Transiction.csv");
     MainWindow::stackedWidget->setCurrentIndex(0);
-
+    files::write_in_file("D:/m7fazty/m7fazty/files/Transiction.csv");
 
 }
 

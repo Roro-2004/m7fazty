@@ -6,7 +6,6 @@
 #include"requestmoney_dialog.h"
 #include <ctime>
 #include<iostream>
-#include<iostream>
 using namespace std;
 
 

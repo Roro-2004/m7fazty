@@ -5,45 +5,17 @@
 #include<iostream>
 #include<unordered_map>
 #include<vector>
-#include "transiction.h"
 #include <unordered_map>
 #include"requestmoney_dialog.h"
 using namespace std;
 namespace fs = std::filesystem;
 files::files() {
 }
-#include <unordered_map>
-#include"requestmoney_dialog.h"
-using namespace std;
-namespace fs = std::filesystem;
-files::files() {
-}
-
-
-files f;
-
-
 void files::write_in_file(string file_path)
 {
-    cout<<"the no f data in file is "<<requestMoney_dialog::trans_data.size()<<endl;
+    // Specify the file path
     // Specify the file path
     fs::path path = file_path;
-    ofstream file(path);
-    if(path == "D:/m7fazty/m7fazty/files/Transiction.csv"){
-        if (file.is_open()){
-            file << "Trans ID" <<"," <<"Reciver"<<"," << "Sender" <<","<<"Amount" <<","<<"Date"<<","<<"Time"<<","<<"Status"<< endl;
-
-            for (auto &trans : requestMoney_dialog::trans_data) {
-                cout<<"in the loop\n";
-                transiction* t = trans.second;
-                file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
-            }
-            cout << "Data has been written to the file successfully." << endl;
-        }
-        else cerr << "Error: Unable to open the file for writing." << endl;
-    }
-    file.close();
-}
 
     // Check if the file exists
     if (!fs::exists(path))
@@ -54,7 +26,7 @@ void files::write_in_file(string file_path)
         if (file.is_open())
         {
             // Write the headers
-            file << "Trans ID" << "," << "Receiver" << "," << "Sender" << "," << "Amount" << "," << "Date" << "," << "Time" << "," << "Status" << endl;
+            file << "Trans ID" << "," << "Receiver" << "," << "Sender" << "," << "Amount" << "," << "Date" << "," << "Time" << "," << "Status" <<","<<endl;
             cout << "Headers have been written to the file successfully." << endl;
             file.close();
         }
@@ -67,23 +39,21 @@ void files::write_in_file(string file_path)
 
     ofstream file(path, ios::app);
 
-    if(path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv"){
+    if(path == "D:/m7fazty/m7fazty/files/Transiction.csv"){
 
-    if (file.is_open()){
-        cout<< requestMoney_dialog::trans_data.size();
-        for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
-            transiction* t = trans.second;
-            file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
+        if (file.is_open()){
+            cout<< requestMoney_dialog::trans_data.size();
+            for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
+                transiction* t = trans.second;
+                file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status <<","<< endl;
+            }
+
+            file.close();
+            cout << "Data has been written to the file successfully." << endl;
         }
-
-        file.close();
-        cout << "Data has been written to the file successfully." << endl;
+        else cerr << "Error: Unable to open the file for writing." << endl;
     }
-    else cerr << "Error: Unable to open the file for writing." << endl;
 }
-}
-
-
 void files::split(string s) {
     vector<string> v;
     string temp = "";
@@ -95,9 +65,10 @@ void files::split(string s) {
             temp += c;
         }
     }
-    v.push_back(temp);
+    //v.push_back(temp);
     transiction* t = new transiction();
-    if (v.size() >= 7) {
+    if (v.size() >= 6) {
+        t->id = v[0];
         t->receiver = v[1];
         t->sender = v[2];
         if (!v[3].empty()) {
@@ -121,40 +92,34 @@ void files::split(string s) {
     requestMoney_dialog::trans_data[v[0]] = t;
 }
 
-
 void files::read_from_file(string file_path) {
     ifstream inputFile(file_path); // Open the file
     if (inputFile.is_open()) {
         string line;
+
+        // Output headers if the file path matches the specific file
         if (file_path == "D:/m7fazty/m7fazty/files/Transiction.csv") {
-            cout << "Trans ID" << " " << "Receiver" << " " << "Sender" << " " << "Amount" << " " << "Date" << " " << "Time" << " " << "Status" << endl;
-    bool fline = true;
-    if (inputFile.is_open()) {
-        string line;
-        if(file_path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv"){
-            cout << "Trans ID" <<" " <<"Reciver"<<" " << "Sender" <<" "<<"Amount" <<" "<<"Date"<<" "<<"Time"<<" "<<"Status"<< endl;
+            cout << "Trans ID Receiver Sender Amount Date Time Status" << endl;
         }
+
         bool firstLine = true;
         while (getline(inputFile, line)) {
             if (firstLine) {
                 firstLine = false;
-                continue;
+                continue; // Skip the first line (header)
             }
-            split(line); // Call the split function on the current object
+            split(line); // Call the split function for each line
         }
         inputFile.close();
+        cout << "Total records in the map: " << requestMoney_dialog::trans_data.size() << endl;
     } else {
         cerr << "Error: Unable to open the file for reading." << endl;
     }
 }
 
-
-
-    files::~files() {
-        /*for (auto& pair : requestMoney_dialog::trans_data) {
 files::~files() {
+    /*for (auto& pair : requestMoney_dialog::trans_data) {
             delete pair.second; // Delete the transiction objects
         }*/
 
-    }
 }
