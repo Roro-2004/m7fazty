@@ -129,7 +129,6 @@ void user::on_logout_Button_clicked()
 {
     MainWindow::stackedWidget->setCurrentIndex(0);
     files::write_in_file("D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv");
-
 }
 
 

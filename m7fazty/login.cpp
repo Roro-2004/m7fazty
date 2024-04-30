@@ -3,15 +3,13 @@
 #include "mainwindow.h"
 #include "user.h"
 #include <iostream>
-
 #include"requestmoney_dialog.h"
 using namespace std;
 
+
 string Login::current_user;
 
-Login::Login(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::Login)
+Login::Login(QWidget *parent) :QWidget(parent),ui(new Ui::Login)
 {
     ui->setupUi(this);
 
@@ -28,18 +26,11 @@ Login::Login(QWidget *parent) :
     ui->back_label->setPixmap(back);
 }
 
-Login::~Login()
-{
-    delete ui;
-}
-
 void Login::on_back_button_clicked()
 {
     MainWindow::stackedWidget->setCurrentIndex(0);
 
 }
-
-
 
 void Login::on_Login_2_clicked()
 {
@@ -48,6 +39,9 @@ void Login::on_Login_2_clicked()
     MainWindow::stackedWidget->setCurrentWidget(user_widget);
     current_user = ui->userName_textBox->text().toStdString();
     cout <<current_user<<endl;
-
 }
 
+Login::~Login()
+{
+    delete ui;
+}

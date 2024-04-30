@@ -3,8 +3,8 @@
 #include "account.h"
 #include<vector>
 using namespace std;
-
 class transiction;
+
 
 class user_c
 {

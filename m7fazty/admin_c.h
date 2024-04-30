@@ -1,6 +1,5 @@
 #ifndef ADMIN_C_H
 #define ADMIN_C_H
-
 #include "account.h"
 #include"user_c.h"
 #include<vector>

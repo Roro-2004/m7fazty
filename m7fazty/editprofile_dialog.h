@@ -1,6 +1,5 @@
 #ifndef EDITPROFILE_DIALOG_H
 #define EDITPROFILE_DIALOG_H
-
 #include <QDialog>
 
 namespace Ui {

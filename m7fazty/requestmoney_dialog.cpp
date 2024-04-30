@@ -6,11 +6,16 @@
 #include "viewtranshistory_dialog.h"
 #include <ctime>
 #include <iostream>
-
+#include <QUuid>
+#include <unordered_set>
 
 using namespace std;
 
+
 unordered_map<string, transiction*> requestMoney_dialog::trans_data;
+unordered_map<string, transiction*> requestMoney_dialog::trans_read;
+unordered_set<string> requestMoney_dialog::usedIDs;
+
 
 requestMoney_dialog::requestMoney_dialog(QWidget *parent) : QDialog(parent), ui(new Ui::requestMoney_dialog) {
     ui->setupUi(this);
@@ -20,8 +25,15 @@ requestMoney_dialog::requestMoney_dialog(QWidget *parent) : QDialog(parent), ui(
 }
 
 string requestMoney_dialog::generateID() {
-    static atomic<int> counter(100); // Static counter for generating unique IDs
-    return "R" + to_string(counter++);
+    string id;
+    do {
+        // Generate a random number between 100 and 999 (inclusive)
+        int randomNumber = rand() % 900 + 100;
+        id = "R" + to_string(randomNumber);
+    } while (usedIDs.count(id) > 0); // Check if the generated ID already exists in the set
+    usedIDs.insert(id);
+
+    return id;
 }
 
 string requestMoney_dialog::getCurrentDate() {
@@ -50,6 +62,7 @@ string requestMoney_dialog::getCurrentTime() {
     return std::string(buffer) + " " + am_pm;
 }
 
+
 void requestMoney_dialog::on_request_Button_clicked() {
     t = new transiction();
     t->receiver = Login::current_user;
@@ -65,15 +78,9 @@ void requestMoney_dialog::on_request_Button_clicked() {
     t->time = getCurrentTime();
     trans_data[generateID()] = t;
 
-    cout <<trans_data.size();
     close();
 }
 
-requestMoney_dialog::~requestMoney_dialog() {
-    // Delete dynamically allocated transiction objects before destroying the dialog
-    /*for (auto& pair : trans_data) {
-        delete pair.second;
-    }
-    trans_data.clear();
-    delete ui;*/
-}
+requestMoney_dialog::~requestMoney_dialog()
+{
+    delete ui;}

@@ -1,5 +1,6 @@
 Trans ID,Receiver,Sender,Amount,Date,Time,Status
-S100,hh,cccc,10,30/04/2024,09:43 PM,Successful
-R100,cccc,hh20,80,30/04/2024,09:43 PM,Successful
-S100,tt,dds,20,30/04/2024,09:43 PM,Successful
-R100,dds,dffb,21,30/04/2024,09:43 PM,Successful
+{b5b430cb-dccd-4a94-bc36-cc8c76d5c99f},JJJ,MENNA,500,01/05/2024,12:26 AM,Successful
+{ebb96d30-454f-4300-b77d-2862b153a2f1},MENNA,AD352,55,01/05/2024,12:26 AM,Successful
+{c96fa161-c894-4919-844a-420df4d54f7e},DED,DDD,2200,01/05/2024,12:26 AM,Successful
+S141,mnn,menna,150,01/05/2024,12:40 AM,Successful
+R567,menna,fdc,302,01/05/2024,12:40 AM,Successful
