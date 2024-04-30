@@ -6,6 +6,8 @@
 #include "viewtranshistory_dialog.h"
 #include <ctime>
 #include <iostream>
+
+
 using namespace std;
 
 unordered_map<string, transiction*> requestMoney_dialog::trans_data;
@@ -63,14 +65,15 @@ void requestMoney_dialog::on_request_Button_clicked() {
     t->time = getCurrentTime();
     trans_data[generateID()] = t;
 
+    cout <<trans_data.size();
     close();
 }
 
 requestMoney_dialog::~requestMoney_dialog() {
     // Delete dynamically allocated transiction objects before destroying the dialog
-    for (auto& pair : trans_data) {
+    /*for (auto& pair : trans_data) {
         delete pair.second;
     }
     trans_data.clear();
-    delete ui;
+    delete ui;*/
 }

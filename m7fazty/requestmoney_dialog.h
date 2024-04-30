@@ -19,6 +19,7 @@ public:
     explicit requestMoney_dialog(QWidget *parent = nullptr);
     ~requestMoney_dialog();
     static unordered_map <string,transiction*> trans_data;
+
     transiction* t;
 
     string generateID();

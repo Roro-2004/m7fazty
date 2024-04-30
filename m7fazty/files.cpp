@@ -5,35 +5,60 @@
 #include<iostream>
 #include<unordered_map>
 #include<vector>
-using namespace std;
-namespace fs = std::filesystem;
-files::files() {
-}
 #include <unordered_map>
 #include"requestmoney_dialog.h"
 using namespace std;
 namespace fs = std::filesystem;
+files::files() {
+}
+
+
+files f;
 
 
 void files::write_in_file(string file_path)
 {
     // Specify the file path
+    // Specify the file path
     fs::path path = file_path;
-    ofstream file(path);
-        if (file.is_open()){
-            file << "Trans ID" <<"," <<"Reciver"<<"," << "Sender" <<","<<"Amount" <<","<<"Date"<<","<<"Time"<<","<<"Status"<< endl;
 
-            for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
-                transiction* t = trans.second;
-                file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
-            }
+    // Check if the file exists
+    if (!fs::exists(path))
+    {
+        // Open the file in write mode
+        ofstream file(path);
 
+        if (file.is_open())
+        {
+            // Write the headers
+            file << "Trans ID" << "," << "Receiver" << "," << "Sender" << "," << "Amount" << "," << "Date" << "," << "Time" << "," << "Status" << endl;
+            cout << "Headers have been written to the file successfully." << endl;
             file.close();
-            cout << "Data has been written to the file successfully." << endl;
         }
-        else cerr << "Error: Unable to open the file for writing." << endl;
-}
+        else
+        {
+            cerr << "Error: Unable to open the file for writing." << endl;
+            return;
+        }
+    }
 
+    ofstream file(path, ios::app);
+
+    if(path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv"){
+
+    if (file.is_open()){
+        cout<< requestMoney_dialog::trans_data.size();
+        for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
+            transiction* t = trans.second;
+            file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
+        }
+
+        file.close();
+        cout << "Data has been written to the file successfully." << endl;
+    }
+    else cerr << "Error: Unable to open the file for writing." << endl;
+}
+}
 
 
 void files::split(string s) {
@@ -76,11 +101,10 @@ void files::split(string s) {
 
 void files::read_from_file(string file_path){
     ifstream inputFile(file_path); // Open the file
-    files f;
     bool fline = true;
     if (inputFile.is_open()) {
         string line;
-        if(file_path == "D:/m7fazty/m7fazty/files/Transiction.csv"){
+        if(file_path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv"){
             cout << "Trans ID" <<" " <<"Reciver"<<" " << "Sender" <<" "<<"Amount" <<" "<<"Date"<<" "<<"Time"<<" "<<"Status"<< endl;
         }
         while (getline(inputFile, line)) {
@@ -97,9 +121,9 @@ void files::read_from_file(string file_path){
 }
 
 
-    files::~files() {
-        /*for (auto& pair : requestMoney_dialog::trans_data) {
+files::~files() {
+    /*for (auto& pair : requestMoney_dialog::trans_data) {
             delete pair.second; // Delete the transiction objects
         }*/
 
-    }
+}

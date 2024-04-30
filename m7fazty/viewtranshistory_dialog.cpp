@@ -14,15 +14,15 @@ viewTransHistory_dialog::viewTransHistory_dialog(QWidget *parent)
     ui->setupUi(this);
 
 
-    QPixmap dialog_bg("D:/m7fazty/m7fazty/photos/dialog_bg.png");
+    QPixmap dialog_bg("D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/dialog_bg.png");
     ui->label_bg->setPixmap(dialog_bg);
 
     ui->history_table->setHorizontalHeaderLabels({"Trans ID", "Receiver", "Sender", "Amount", "Date", "Time", "Status"});
 
     ui->history_table->resizeColumnsToContents();
 
-   /*for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
-
+   for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
+        cout<<"mmmmmmmmmmmmmmmmm";
         int row = ui->history_table->rowCount(); // Get the current row index
 
         QTableWidgetItem *transIDItem = new QTableWidgetItem(QString::fromStdString(trans.first));
@@ -45,7 +45,7 @@ viewTransHistory_dialog::viewTransHistory_dialog(QWidget *parent)
 
         QTableWidgetItem *statusItem = new QTableWidgetItem(QString::fromStdString(trans.second->status));
         ui->history_table->setItem(row, 6, statusItem);
-    }*/
+    }
 
 
     ui->history_table->show();
