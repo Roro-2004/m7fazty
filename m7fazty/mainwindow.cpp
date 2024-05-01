@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QPixmap>
+#include"login.h"
 
 
 QStackedWidget* MainWindow::stackedWidget = nullptr;
@@ -23,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     setCentralWidget(stackedWidget);
 
     // Set background image
-    QPixmap background("D:/m7fazty/m7fazty/photos/bg.png");
+    QPixmap background("D:/new ds/m7fazty/m7fazty/photos/bg.png");
     ui->label_bg->setPixmap(background);
 
     stackedWidget->show();
@@ -40,3 +41,12 @@ void MainWindow::on_login_clicked()
 {
     stackedWidget->setCurrentWidget(loginWidget);
 }
+
+void MainWindow::on_sign_up_clicked()
+{
+    sign_up_widget = new sign_up(this);
+    stackedWidget->addWidget(sign_up_widget);
+    stackedWidget->setCurrentWidget(sign_up_widget);
+
+}
+
