@@ -11,17 +11,21 @@ viewTransHistory_dialog::viewTransHistory_dialog(QWidget *parent): QDialog(paren
 {
     ui->setupUi(this);
 
-
     QPixmap dialog_bg("D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/dialog_bg.png");
     ui->label_bg->setPixmap(dialog_bg);
 
     ui->history_table->setHorizontalHeaderLabels({"Trans ID", "Receiver", "Sender", "Amount", "Date", "Time", "Status"});
 
-    ui->history_table->resizeColumnsToContents();
+    // Clear existing table content
+    ui->history_table->clearContents();
+    ui->history_table->setRowCount(0); // Reset row count
 
-   /*for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
-        int row = ui->history_table->rowCount(); // Get the current row index
+    // Loop through the transactions and populate the table
+    int row = 0; // Initialize row index
+    for (const auto& trans : requestMoney_dialog::trans_read) {
+        ui->history_table->insertRow(row); // Add a new row
 
+        // Populate the table with transaction data
         QTableWidgetItem *transIDItem = new QTableWidgetItem(QString::fromStdString(trans.first));
         ui->history_table->setItem(row, 0, transIDItem);
 
@@ -42,10 +46,18 @@ viewTransHistory_dialog::viewTransHistory_dialog(QWidget *parent): QDialog(paren
 
         QTableWidgetItem *statusItem = new QTableWidgetItem(QString::fromStdString(trans.second->status));
         ui->history_table->setItem(row, 6, statusItem);
-    }*/
+
+        // Set text alignment for each item in the row
+        for (int column = 0; column < ui->history_table->columnCount(); ++column) {
+            ui->history_table->item(row, column)->setTextAlignment(Qt::AlignCenter);
+        }
+
+        ++row; // Increment row index for the next transaction
+    }
 
     ui->history_table->show();
 }
+
 
 viewTransHistory_dialog::~viewTransHistory_dialog()
 {

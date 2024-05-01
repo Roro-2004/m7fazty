@@ -1,6 +1,7 @@
 #ifndef LOGIN_H
 #define LOGIN_H
 #include <QWidget>
+#include"user_c.h"
 #include"user.h"
 #include<string>
 using namespace std;
@@ -16,7 +17,7 @@ class Login : public QWidget
 public:
     explicit Login(QWidget *parent = nullptr);
     ~Login();
-    string static current_user;
+    user_c static current_user;
 
 
 private slots:

@@ -70,7 +70,7 @@ string requestMoney_dialog::getCurrentTime()
 
 void requestMoney_dialog::on_request_Button_clicked() {
     t = new transiction();
-    t->receiver = Login::current_user;
+    t->receiver = Login::current_user.user_acc.username;
     t->sender = ui->userName_textBox->text().toStdString();
     t->amount = ui->amount_textBox->text().toFloat();
 
@@ -81,6 +81,7 @@ void requestMoney_dialog::on_request_Button_clicked() {
 
     t->date = getCurrentDate();
     t->time = getCurrentTime();
+
     trans_data[generateID()] = t;
 
     close();
