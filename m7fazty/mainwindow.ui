@@ -590,14 +590,8 @@ QPushButton:pressed {
       <height>724</height>
      </rect>
     </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-      <horstretch>100</horstretch>
-      <verstretch>100</verstretch>
-     </sizepolicy>
-    </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="styleSheet">
      <string notr="true">background-image: url(:/material/photos/bg.png);</string>
@@ -609,11 +603,23 @@ QPushButton:pressed {
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>230</y>
+      <width>361</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout"/>
+   </widget>
    <zorder>label_bg</zorder>
    <zorder>login</zorder>
    <zorder>sign_up</zorder>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
+   <zorder>gridLayoutWidget</zorder>
   </widget>
  </widget>
  <resources/>

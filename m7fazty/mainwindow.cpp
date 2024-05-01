@@ -33,13 +33,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     loginWidget = new Login();
     stackedWidget->addWidget(loginWidget);
 
-    files::read_from_file("D:/m7fazty/m7fazty/files/Transiction.csv");
+    files::read_from_file("D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv");
     for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
         transiction* t = trans.second;
         cout << trans.first << " " << t->receiver << " " << t->sender << " " << t->amount << " " << t->date << " " << t->time << " " << t->status << endl;
         requestMoney_dialog::usedIDs.insert( trans.first);
         sendMoney_dialog::usedIDs.insert( trans.first);
     }
+    cout << requestMoney_dialog::trans_read.size() << endl;
 
 }
 

@@ -75,21 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-<<<<<<<< HEAD:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-2a5448c33dff4d59e7cd.json
-				"line" : 73,
-========
 				"line" : 88,
->>>>>>>> Roaa-lotfy:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-b695061312a207953a17.json
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-<<<<<<<< HEAD:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-2a5448c33dff4d59e7cd.json
-				"line" : 56,
-========
 				"line" : 71,
->>>>>>>> Roaa-lotfy:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-b695061312a207953a17.json
 				"parent" : 0
 			},
 			{
@@ -381,12 +373,6 @@
 				9,
 				12,
 				15,
-<<<<<<<< HEAD:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-2a5448c33dff4d59e7cd.json
-				18,
-				20,
-				22,
-				24
-========
 				17,
 				19,
 				21,
@@ -403,7 +389,6 @@
 				53,
 				56,
 				74
->>>>>>>> Roaa-lotfy:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-b695061312a207953a17.json
 			]
 		}
 	],
@@ -526,12 +511,6 @@
 				9,
 				12,
 				15,
-<<<<<<<< HEAD:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-2a5448c33dff4d59e7cd.json
-				18,
-				20,
-				22,
-				24
-========
 				17,
 				19,
 				21,
@@ -548,7 +527,6 @@
 				53,
 				56,
 				74
->>>>>>>> Roaa-lotfy:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-b695061312a207953a17.json
 			]
 		},
 		{
@@ -565,12 +543,7 @@
 				20,
 				22,
 				25,
-				26,
-				27,
 				28,
-<<<<<<<< HEAD:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-2a5448c33dff4d59e7cd.json
-				29
-========
 				31,
 				34,
 				37,
@@ -595,7 +568,6 @@
 				70,
 				71,
 				72
->>>>>>>> Roaa-lotfy:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-b695061312a207953a17.json
 			]
 		},
 		{
@@ -606,10 +578,6 @@
 				7,
 				10,
 				13,
-<<<<<<<< HEAD:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-2a5448c33dff4d59e7cd.json
-				16,
-				30
-========
 				24,
 				27,
 				30,
@@ -623,19 +591,14 @@
 				54,
 				57,
 				73
->>>>>>>> Roaa-lotfy:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-b695061312a207953a17.json
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-<<<<<<<< HEAD:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-2a5448c33dff4d59e7cd.json
-				31
-========
 				75,
 				76
->>>>>>>> Roaa-lotfy:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-b695061312a207953a17.json
 			]
 		}
 	],
@@ -763,8 +726,6 @@
 			"sourceGroupIndex" : 0
 		},
 		{
-<<<<<<<< HEAD:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-2a5448c33dff4d59e7cd.json
-========
 			"backtrace" : 4,
 			"path" : "requestmoney_dialog.h",
 			"sourceGroupIndex" : 1
@@ -957,7 +918,6 @@
 			"sourceGroupIndex" : 2
 		},
 		{
->>>>>>>> Roaa-lotfy:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-b695061312a207953a17.json
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/include/ui_mainwindow.h",
@@ -984,8 +944,6 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-<<<<<<<< HEAD:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-2a5448c33dff4d59e7cd.json
-========
 			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/include/ui_requestmoney_dialog.h",
 			"sourceGroupIndex" : 1
 		},
@@ -1052,7 +1010,6 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
->>>>>>>> Roaa-lotfy:m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/.cmake/api/v1/reply/target-m7fazty-Debug-b695061312a207953a17.json
 			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/timestamp",
 			"sourceGroupIndex" : 2
 		},
