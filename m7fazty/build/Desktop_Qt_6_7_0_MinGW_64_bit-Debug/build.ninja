@@ -81,14 +81,6 @@ build CMakeFiles/m7fazty.dir/user.cpp.obj: CXX_COMPILER__m7fazty_unscanned_Debug
   OBJECT_DIR = CMakeFiles\m7fazty.dir
   OBJECT_FILE_DIR = CMakeFiles\m7fazty.dir
 
-build CMakeFiles/m7fazty.dir/admin.cpp.obj: CXX_COMPILER__m7fazty_unscanned_Debug D$:/m7fazty/m7fazty/admin.cpp || cmake_object_order_depends_target_m7fazty
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\m7fazty.dir\admin.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/include -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtCore -isystem D:/qt_cereator/6.7.0/mingw_64/include -isystem D:/qt_cereator/6.7.0/mingw_64/mkspecs/win32-g++ -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtGui
-  OBJECT_DIR = CMakeFiles\m7fazty.dir
-  OBJECT_FILE_DIR = CMakeFiles\m7fazty.dir
-
 build CMakeFiles/m7fazty.dir/sign_up.cpp.obj: CXX_COMPILER__m7fazty_unscanned_Debug D$:/m7fazty/m7fazty/sign_up.cpp || cmake_object_order_depends_target_m7fazty
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\m7fazty.dir\sign_up.cpp.obj.d
@@ -185,6 +177,54 @@ build CMakeFiles/m7fazty.dir/files.cpp.obj: CXX_COMPILER__m7fazty_unscanned_Debu
   OBJECT_DIR = CMakeFiles\m7fazty.dir
   OBJECT_FILE_DIR = CMakeFiles\m7fazty.dir
 
+build CMakeFiles/m7fazty.dir/admin.cpp.obj: CXX_COMPILER__m7fazty_unscanned_Debug D$:/m7fazty/m7fazty/admin.cpp || cmake_object_order_depends_target_m7fazty
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\m7fazty.dir\admin.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/include -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtCore -isystem D:/qt_cereator/6.7.0/mingw_64/include -isystem D:/qt_cereator/6.7.0/mingw_64/mkspecs/win32-g++ -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\m7fazty.dir
+  OBJECT_FILE_DIR = CMakeFiles\m7fazty.dir
+
+build CMakeFiles/m7fazty.dir/add_edit_dialog.cpp.obj: CXX_COMPILER__m7fazty_unscanned_Debug D$:/m7fazty/m7fazty/add_edit_dialog.cpp || cmake_object_order_depends_target_m7fazty
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\m7fazty.dir\add_edit_dialog.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/include -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtCore -isystem D:/qt_cereator/6.7.0/mingw_64/include -isystem D:/qt_cereator/6.7.0/mingw_64/mkspecs/win32-g++ -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\m7fazty.dir
+  OBJECT_FILE_DIR = CMakeFiles\m7fazty.dir
+
+build CMakeFiles/m7fazty.dir/delete_suspend_dialog.cpp.obj: CXX_COMPILER__m7fazty_unscanned_Debug D$:/m7fazty/m7fazty/delete_suspend_dialog.cpp || cmake_object_order_depends_target_m7fazty
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\m7fazty.dir\delete_suspend_dialog.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/include -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtCore -isystem D:/qt_cereator/6.7.0/mingw_64/include -isystem D:/qt_cereator/6.7.0/mingw_64/mkspecs/win32-g++ -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\m7fazty.dir
+  OBJECT_FILE_DIR = CMakeFiles\m7fazty.dir
+
+build CMakeFiles/m7fazty.dir/adjust_balance_dialog.cpp.obj: CXX_COMPILER__m7fazty_unscanned_Debug D$:/m7fazty/m7fazty/adjust_balance_dialog.cpp || cmake_object_order_depends_target_m7fazty
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\m7fazty.dir\adjust_balance_dialog.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/include -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtCore -isystem D:/qt_cereator/6.7.0/mingw_64/include -isystem D:/qt_cereator/6.7.0/mingw_64/mkspecs/win32-g++ -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\m7fazty.dir
+  OBJECT_FILE_DIR = CMakeFiles\m7fazty.dir
+
+build CMakeFiles/m7fazty.dir/view_users_dialog.cpp.obj: CXX_COMPILER__m7fazty_unscanned_Debug D$:/m7fazty/m7fazty/view_users_dialog.cpp || cmake_object_order_depends_target_m7fazty
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\m7fazty.dir\view_users_dialog.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/include -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtCore -isystem D:/qt_cereator/6.7.0/mingw_64/include -isystem D:/qt_cereator/6.7.0/mingw_64/mkspecs/win32-g++ -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\m7fazty.dir
+  OBJECT_FILE_DIR = CMakeFiles\m7fazty.dir
+
+build CMakeFiles/m7fazty.dir/view_trans_dialog.cpp.obj: CXX_COMPILER__m7fazty_unscanned_Debug D$:/m7fazty/m7fazty/view_trans_dialog.cpp || cmake_object_order_depends_target_m7fazty
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\m7fazty.dir\view_trans_dialog.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/include -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtCore -isystem D:/qt_cereator/6.7.0/mingw_64/include -isystem D:/qt_cereator/6.7.0/mingw_64/mkspecs/win32-g++ -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets -isystem D:/qt_cereator/6.7.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\m7fazty.dir
+  OBJECT_FILE_DIR = CMakeFiles\m7fazty.dir
+
 build CMakeFiles/m7fazty.dir/m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp.obj: CXX_COMPILER__m7fazty_unscanned_Debug D$:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp || cmake_object_order_depends_target_m7fazty
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\m7fazty.dir\m7fazty_autogen\EWIEGA46WW\qrc_matrial.cpp.obj.d
@@ -201,7 +241,7 @@ build CMakeFiles/m7fazty.dir/m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp.obj: CXX
 #############################################
 # Link the executable m7fazty.exe
 
-build m7fazty.exe: CXX_EXECUTABLE_LINKER__m7fazty_Debug CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj CMakeFiles/m7fazty.dir/main.cpp.obj CMakeFiles/m7fazty.dir/mainwindow.cpp.obj CMakeFiles/m7fazty.dir/user.cpp.obj CMakeFiles/m7fazty.dir/admin.cpp.obj CMakeFiles/m7fazty.dir/sign_up.cpp.obj CMakeFiles/m7fazty.dir/login.cpp.obj CMakeFiles/m7fazty.dir/admin_c.cpp.obj CMakeFiles/m7fazty.dir/user_c.cpp.obj CMakeFiles/m7fazty.dir/transiction.cpp.obj CMakeFiles/m7fazty.dir/account.cpp.obj CMakeFiles/m7fazty.dir/requestmoney_dialog.cpp.obj CMakeFiles/m7fazty.dir/sendmoney_dialog.cpp.obj CMakeFiles/m7fazty.dir/viewbalance_dialog.cpp.obj CMakeFiles/m7fazty.dir/viewtranshistory_dialog.cpp.obj CMakeFiles/m7fazty.dir/editprofile_dialog.cpp.obj CMakeFiles/m7fazty.dir/files.cpp.obj CMakeFiles/m7fazty.dir/m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp.obj | D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Widgets.a D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Gui.a D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Core.a D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6EntryPoint.a || m7fazty_autogen m7fazty_autogen_timestamp_deps
+build m7fazty.exe: CXX_EXECUTABLE_LINKER__m7fazty_Debug CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj CMakeFiles/m7fazty.dir/main.cpp.obj CMakeFiles/m7fazty.dir/mainwindow.cpp.obj CMakeFiles/m7fazty.dir/user.cpp.obj CMakeFiles/m7fazty.dir/sign_up.cpp.obj CMakeFiles/m7fazty.dir/login.cpp.obj CMakeFiles/m7fazty.dir/admin_c.cpp.obj CMakeFiles/m7fazty.dir/user_c.cpp.obj CMakeFiles/m7fazty.dir/transiction.cpp.obj CMakeFiles/m7fazty.dir/account.cpp.obj CMakeFiles/m7fazty.dir/requestmoney_dialog.cpp.obj CMakeFiles/m7fazty.dir/sendmoney_dialog.cpp.obj CMakeFiles/m7fazty.dir/viewbalance_dialog.cpp.obj CMakeFiles/m7fazty.dir/viewtranshistory_dialog.cpp.obj CMakeFiles/m7fazty.dir/editprofile_dialog.cpp.obj CMakeFiles/m7fazty.dir/files.cpp.obj CMakeFiles/m7fazty.dir/admin.cpp.obj CMakeFiles/m7fazty.dir/add_edit_dialog.cpp.obj CMakeFiles/m7fazty.dir/delete_suspend_dialog.cpp.obj CMakeFiles/m7fazty.dir/adjust_balance_dialog.cpp.obj CMakeFiles/m7fazty.dir/view_users_dialog.cpp.obj CMakeFiles/m7fazty.dir/view_trans_dialog.cpp.obj CMakeFiles/m7fazty.dir/m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp.obj | D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Widgets.a D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Gui.a D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Core.a D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6EntryPoint.a || m7fazty_autogen m7fazty_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = D:/qt_cereator/6.7.0/mingw_64/lib/libQt6Widgets.a  D:/qt_cereator/6.7.0/mingw_64/lib/libQt6Gui.a  D:/qt_cereator/6.7.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  D:/qt_cereator/6.7.0/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -288,7 +328,7 @@ build m7fazty_autogen_timestamp_deps: phony CMakeFiles/m7fazty_autogen_timestamp
 #############################################
 # Utility command for m7fazty_autogen
 
-build m7fazty_autogen: phony CMakeFiles/m7fazty_autogen m7fazty_autogen/include/ui_mainwindow.h m7fazty_autogen/include/ui_user.h m7fazty_autogen/include/ui_admin.h m7fazty_autogen/include/ui_sign_up.h m7fazty_autogen/include/ui_login.h m7fazty_autogen/include/ui_requestmoney_dialog.h m7fazty_autogen/include/ui_sendmoney_dialog.h m7fazty_autogen/include/ui_viewbalance_dialog.h m7fazty_autogen/include/ui_viewtranshistory_dialog.h m7fazty_autogen/include/ui_editprofile_dialog.h m7fazty_autogen/timestamp m7fazty_autogen/mocs_compilation.cpp m7fazty_autogen_timestamp_deps
+build m7fazty_autogen: phony CMakeFiles/m7fazty_autogen m7fazty_autogen/include/ui_mainwindow.h m7fazty_autogen/include/ui_user.h m7fazty_autogen/include/ui_sign_up.h m7fazty_autogen/include/ui_login.h m7fazty_autogen/include/ui_requestmoney_dialog.h m7fazty_autogen/include/ui_sendmoney_dialog.h m7fazty_autogen/include/ui_viewbalance_dialog.h m7fazty_autogen/include/ui_viewtranshistory_dialog.h m7fazty_autogen/include/ui_editprofile_dialog.h m7fazty_autogen/include/ui_admin.h m7fazty_autogen/include/ui_add_edit_dialog.h m7fazty_autogen/include/ui_delete_suspend_dialog.h m7fazty_autogen/include/ui_adjust_balance_dialog.h m7fazty_autogen/include/ui_view_users_dialog.h m7fazty_autogen/include/ui_view_trans_dialog.h m7fazty_autogen/timestamp m7fazty_autogen/mocs_compilation.cpp m7fazty_autogen_timestamp_deps
 
 
 #############################################
@@ -304,7 +344,7 @@ build m7fazty_autogen/timestamp m7fazty_autogen/mocs_compilation.cpp | ${cmake_n
 #############################################
 # Custom command for m7fazty_autogen\EWIEGA46WW\qrc_matrial.cpp
 
-build m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp | ${cmake_ninja_workdir}m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp: CUSTOM_COMMAND D$:/m7fazty/m7fazty/matrial.qrc CMakeFiles/m7fazty_autogen.dir/AutoRcc_matrial_EWIEGA46WW_Info.json D$:/m7fazty/m7fazty/photos/white$ back$ button.png D$:/m7fazty/m7fazty/photos/person$ logo.png D$:/m7fazty/m7fazty/photos/logo.png D$:/m7fazty/m7fazty/photos/dialog_bg.png D$:/m7fazty/m7fazty/photos/plain_bg.png D$:/m7fazty/m7fazty/photos/menu.png D$:/m7fazty/m7fazty/photos/bg2.png D$:/m7fazty/m7fazty/photos/icon.png D$:/m7fazty/m7fazty/photos/bg.png D$:/m7fazty/m7fazty/photos/arrow.png D$:/qt_cereator/6.7.0/mingw_64/./bin/rcc.exe || m7fazty_autogen m7fazty_autogen_timestamp_deps
+build m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp | ${cmake_ninja_workdir}m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp: CUSTOM_COMMAND D$:/m7fazty/m7fazty/matrial.qrc CMakeFiles/m7fazty_autogen.dir/AutoRcc_matrial_EWIEGA46WW_Info.json D$:/m7fazty/m7fazty/photos/arrow.png D$:/m7fazty/m7fazty/photos/white$ back$ button.png D$:/m7fazty/m7fazty/photos/person$ logo.png D$:/m7fazty/m7fazty/photos/logo.png D$:/m7fazty/m7fazty/photos/dialog_bg.png D$:/m7fazty/m7fazty/photos/plain_bg.png D$:/m7fazty/m7fazty/photos/menu.png D$:/m7fazty/m7fazty/photos/bg2.png D$:/m7fazty/m7fazty/photos/icon.png D$:/m7fazty/m7fazty/photos/bg.png D$:/qt_cereator/6.7.0/mingw_64/./bin/rcc.exe || m7fazty_autogen m7fazty_autogen_timestamp_deps
   COMMAND = cmd.exe /C "cd /D D:\m7fazty\m7fazty\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug && D:\qt_cereator\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/m7fazty_autogen.dir/AutoRcc_matrial_EWIEGA46WW_Info.json Debug"
   DESC = Automatic RCC for matrial.qrc
   restat = 1
@@ -313,13 +353,13 @@ build m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp | ${cmake_ninja_workdir}m7fazty
 #############################################
 # Phony custom command for CMakeFiles\m7fazty_autogen_timestamp_deps
 
-build CMakeFiles/m7fazty_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/m7fazty_autogen_timestamp_deps: phony D$:/qt_cereator/6.7.0/mingw_64/./bin/uic.exe D$:/qt_cereator/6.7.0/mingw_64/./bin/moc.exe D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Widgets.a D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Core.a
+build CMakeFiles/m7fazty_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/m7fazty_autogen_timestamp_deps: phony D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Core.a D$:/qt_cereator/6.7.0/mingw_64/./bin/moc.exe D$:/qt_cereator/6.7.0/mingw_64/./bin/uic.exe D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Widgets.a
 
 
 #############################################
 # Phony custom command for CMakeFiles\m7fazty_autogen
 
-build CMakeFiles/m7fazty_autogen m7fazty_autogen/include/ui_mainwindow.h m7fazty_autogen/include/ui_user.h m7fazty_autogen/include/ui_admin.h m7fazty_autogen/include/ui_sign_up.h m7fazty_autogen/include/ui_login.h m7fazty_autogen/include/ui_requestmoney_dialog.h m7fazty_autogen/include/ui_sendmoney_dialog.h m7fazty_autogen/include/ui_viewbalance_dialog.h m7fazty_autogen/include/ui_viewtranshistory_dialog.h m7fazty_autogen/include/ui_editprofile_dialog.h | ${cmake_ninja_workdir}CMakeFiles/m7fazty_autogen ${cmake_ninja_workdir}m7fazty_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_user.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_admin.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_sign_up.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_login.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_requestmoney_dialog.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_sendmoney_dialog.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_viewbalance_dialog.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_viewtranshistory_dialog.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_editprofile_dialog.h: phony m7fazty_autogen/timestamp || m7fazty_autogen_timestamp_deps
+build CMakeFiles/m7fazty_autogen m7fazty_autogen/include/ui_mainwindow.h m7fazty_autogen/include/ui_user.h m7fazty_autogen/include/ui_sign_up.h m7fazty_autogen/include/ui_login.h m7fazty_autogen/include/ui_requestmoney_dialog.h m7fazty_autogen/include/ui_sendmoney_dialog.h m7fazty_autogen/include/ui_viewbalance_dialog.h m7fazty_autogen/include/ui_viewtranshistory_dialog.h m7fazty_autogen/include/ui_editprofile_dialog.h m7fazty_autogen/include/ui_admin.h m7fazty_autogen/include/ui_add_edit_dialog.h m7fazty_autogen/include/ui_delete_suspend_dialog.h m7fazty_autogen/include/ui_adjust_balance_dialog.h m7fazty_autogen/include/ui_view_users_dialog.h m7fazty_autogen/include/ui_view_trans_dialog.h | ${cmake_ninja_workdir}CMakeFiles/m7fazty_autogen ${cmake_ninja_workdir}m7fazty_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_user.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_sign_up.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_login.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_requestmoney_dialog.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_sendmoney_dialog.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_viewbalance_dialog.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_viewtranshistory_dialog.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_editprofile_dialog.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_admin.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_add_edit_dialog.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_delete_suspend_dialog.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_adjust_balance_dialog.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_view_users_dialog.h ${cmake_ninja_workdir}m7fazty_autogen/include/ui_view_trans_dialog.h: phony m7fazty_autogen/timestamp || m7fazty_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

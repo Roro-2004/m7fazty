@@ -14,7 +14,6 @@ public:
     bool status;
 
     account();
-
     //string change_password(string);
 };
 

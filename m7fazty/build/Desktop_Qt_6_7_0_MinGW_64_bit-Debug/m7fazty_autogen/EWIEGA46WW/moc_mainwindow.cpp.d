@@ -2,6 +2,7 @@ D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/EWI
   D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h \
   D:/m7fazty/m7fazty/Login.h \
   D:/m7fazty/m7fazty/account.h \
+  D:/m7fazty/m7fazty/admin.h \
   D:/m7fazty/m7fazty/sign_up.h \
   D:/m7fazty/m7fazty/user.h \
   D:/m7fazty/m7fazty/user_c.h \
