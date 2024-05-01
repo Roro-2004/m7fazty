@@ -13,6 +13,7 @@ namespace fs = std::filesystem;
 QStackedWidget* MainWindow::stackedWidget = nullptr;
 
 
+
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
@@ -29,6 +30,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     setCentralWidget(stackedWidget);
     stackedWidget->show();
 
+    loginWidget = new Login();
+    stackedWidget->addWidget(loginWidget);
 
     files::read_from_file("D:/m7fazty/m7fazty/files/Transiction.csv");
     for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
@@ -37,7 +40,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
         requestMoney_dialog::usedIDs.insert( trans.first);
         sendMoney_dialog::usedIDs.insert( trans.first);
     }
-    cout << requestMoney_dialog::trans_read.size() << endl;
 
 }
 
@@ -50,11 +52,10 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_login_clicked()
 {
-    loginWidget = new Login();
-    stackedWidget->addWidget(loginWidget);
-    stackedWidget->setCurrentWidget(loginWidget);
 
-    }
+    stackedWidget->setCurrentWidget(loginWidget);
+    requestMoney_dialog::trans_data.clear();
+}
 
 
 void MainWindow::on_sign_up_clicked()

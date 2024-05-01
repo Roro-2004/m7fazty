@@ -1,1 +1,15 @@
-<RCC/>
+<RCC>
+    <qresource prefix="/Resources">
+        <file>photos/arrow.png</file>
+        <file>photos/bg.png</file>
+        <file>photos/bg2.png</file>
+        <file>photos/dialog_bg.png</file>
+        <file>photos/icon.png</file>
+        <file>photos/logo.png</file>
+        <file>photos/menu.png</file>
+        <file>photos/person logo.png</file>
+        <file>photos/plain_bg.png</file>
+        <file>photos/white back button.png</file>
+        <file>files/Transiction.csv</file>
+    </qresource>
+</RCC>

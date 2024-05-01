@@ -341,6 +341,12 @@ m7fazty_autogen/timestamp: \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/CMakeLists.txt \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/account.cpp \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/account.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/add_edit_dialog.cpp \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/add_edit_dialog.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/add_edit_dialog.ui \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/adjust_balance_dialog.cpp \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/adjust_balance_dialog.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/adjust_balance_dialog.ui \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/admin.cpp \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/admin.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/admin.ui \
@@ -350,6 +356,9 @@ m7fazty_autogen/timestamp: \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/delete_suspend_dialog.cpp \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/delete_suspend_dialog.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/delete_suspend_dialog.ui \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/editprofile_dialog.cpp \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/editprofile_dialog.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/editprofile_dialog.ui \
@@ -362,6 +371,7 @@ m7fazty_autogen/timestamp: \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/mainwindow.cpp \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/mainwindow.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/mainwindow.ui \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/matrial.qrc \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/requestmoney_dialog.cpp \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/requestmoney_dialog.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/requestmoney_dialog.ui \
@@ -378,6 +388,12 @@ m7fazty_autogen/timestamp: \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user.ui \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user_c.cpp \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user_c.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/view_trans_dialog.cpp \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/view_trans_dialog.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/view_trans_dialog.ui \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/view_users_dialog.cpp \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/view_users_dialog.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/view_users_dialog.ui \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/viewbalance_dialog.cpp \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/viewbalance_dialog.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/viewbalance_dialog.ui \

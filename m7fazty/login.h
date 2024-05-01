@@ -5,6 +5,7 @@
 #include"user.h"
 #include<string>
 #include"user_c.h"
+#include"admin.h"
 using namespace std;
 
 namespace Ui {
@@ -30,6 +31,7 @@ private slots:
 private:
     Ui::Login *ui;
     user *user_widget;
+    admin *admin_widget;
 };
 
 #endif // LOGIN_H

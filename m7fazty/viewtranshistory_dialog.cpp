@@ -13,9 +13,6 @@ viewTransHistory_dialog::viewTransHistory_dialog(QWidget *parent) : QDialog(pare
 
     ui->setupUi(this);
 
-    QPixmap dialog_bg("D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/dialog_bg.png");
-    ui->label_bg->setPixmap(dialog_bg);
-
     ui->history_table->setHorizontalHeaderLabels({"Trans ID", "Receiver", "Sender", "Amount", "Date", "Time", "Status"});
 
     transiction_history();
