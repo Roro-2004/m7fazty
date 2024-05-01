@@ -24,7 +24,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         user.h user.cpp user.ui
-        admin.h admin.cpp admin.ui
+
 
         sign_up.h sign_up.cpp sign_up.ui
         login.h login.cpp login.ui
@@ -39,6 +39,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         editprofile_dialog.h editprofile_dialog.cpp editprofile_dialog.ui
         files.h files.cpp
         matrial.qrc
+        admin.h admin.cpp admin.ui
+        add_edit_dialog.h add_edit_dialog.cpp add_edit_dialog.ui
+        delete_suspend_dialog.h delete_suspend_dialog.cpp delete_suspend_dialog.ui
+        adjust_balance_dialog.h adjust_balance_dialog.cpp adjust_balance_dialog.ui
+        view_users_dialog.h view_users_dialog.cpp view_users_dialog.ui
+        view_trans_dialog.h view_trans_dialog.cpp view_trans_dialog.ui
 
 
 

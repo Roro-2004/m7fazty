@@ -1,4 +1,4 @@
-D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/EWIEGA46WW/moc_mainwindow.cpp: D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/mainwindow.h \
+D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/EWIEGA46WW/moc_delete_suspend_dialog.cpp: D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/delete_suspend_dialog.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20type_traits.h \
@@ -141,21 +141,10 @@ D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_D
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qtransform.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs_win.h \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QMainWindow \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QStackedWidget \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QWidget \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qframe.h \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QDialog \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qsizepolicy.h \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qstackedwidget.h \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/Login.h \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/account.h \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/admin.h \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/sign_up.h \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user.h \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user_c.h
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h

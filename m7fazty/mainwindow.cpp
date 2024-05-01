@@ -13,6 +13,7 @@ namespace fs = std::filesystem;
 QStackedWidget* MainWindow::stackedWidget = nullptr;
 
 
+
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
@@ -29,8 +30,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     setCentralWidget(stackedWidget);
     stackedWidget->show();
 
+    loginWidget = new Login();
+    stackedWidget->addWidget(loginWidget);
 
-    files::read_from_file("D:/m7fazty/m7fazty/files/Transiction.csv");
+    files::read_from_file("D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv");
     for (const auto& pair : requestMoney_dialog::trans_read) {
         if (pair.second != nullptr) {
             transiction* t = pair.second;
@@ -52,8 +55,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_login_clicked()
 {
-    loginWidget = new Login();
-    stackedWidget->addWidget(loginWidget);
+
     stackedWidget->setCurrentWidget(loginWidget);
 
     }
