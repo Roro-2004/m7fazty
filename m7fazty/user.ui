@@ -71,7 +71,7 @@ QPushButton:pressed {
   <widget class="QListView" name="user_listView">
    <property name="geometry">
     <rect>
-     <x>-20</x>
+     <x>-10</x>
      <y>10</y>
      <width>371</width>
      <height>701</height>
@@ -239,6 +239,9 @@ border-radius: 15px;</string>
      <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/material/photos/menu.png);</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -279,13 +282,14 @@ QPushButton:pressed {
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>-10</y>
+     <y>0</y>
      <width>611</width>
      <height>731</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
+	background-image: url(:/material/photos/plain_bg.png);
  background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
 
 }
@@ -300,7 +304,7 @@ QPushButton:pressed {
     <rect>
      <x>10</x>
      <y>50</y>
-     <width>321</width>
+     <width>385</width>
      <height>601</height>
     </rect>
    </property>
@@ -1809,24 +1813,7 @@ QPushButton:pressed {
      </widget>
     </item>
    </layout>
-   <zorder>line_4</zorder>
-   <zorder>line_3</zorder>
-   <zorder>line_5</zorder>
-   <zorder>line_2</zorder>
-   <zorder>line</zorder>
-   <zorder>requestMoney_Button</zorder>
-   <zorder>viewBalance_Button</zorder>
-   <zorder>logout_Button</zorder>
-   <zorder>sendMoney_Button</zorder>
-   <zorder>editProfile_Button</zorder>
-   <zorder>viewHistory_Button</zorder>
   </widget>
-  <zorder>label_bg</zorder>
-  <zorder>user_listView</zorder>
-  <zorder>menu_label</zorder>
-  <zorder>layoutWidget</zorder>
-  <zorder>close_list_Button</zorder>
-  <zorder>menu_Button</zorder>
  </widget>
  <resources/>
  <connections/>

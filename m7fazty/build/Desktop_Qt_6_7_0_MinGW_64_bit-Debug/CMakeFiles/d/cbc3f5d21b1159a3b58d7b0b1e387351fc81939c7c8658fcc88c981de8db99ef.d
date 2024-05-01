@@ -24,6 +24,7 @@ m7fazty_autogen/timestamp: \
   D:/m7fazty/m7fazty/mainwindow.cpp \
   D:/m7fazty/m7fazty/mainwindow.h \
   D:/m7fazty/m7fazty/mainwindow.ui \
+  D:/m7fazty/m7fazty/matrial.qrc \
   D:/m7fazty/m7fazty/requestmoney_dialog.cpp \
   D:/m7fazty/m7fazty/requestmoney_dialog.h \
   D:/m7fazty/m7fazty/requestmoney_dialog.ui \

@@ -247,7 +247,8 @@
 		"D:/qt_cereator/6.7.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake",
 		"D:/qt_cereator/6.7.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake",
 		"D:/qt_cereator/6.7.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
-		"D:/qt_cereator/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+		"D:/qt_cereator/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake",
+		"D:/m7fazty/m7fazty/matrial.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "D:/m7fazty/m7fazty",
 	"DEP_FILE" : "D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/deps",
