@@ -24,10 +24,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     // Set the central widget to the stacked widget
     setCentralWidget(stackedWidget);
 
-    // Set background image
-    QPixmap background("D:/m7fazty/m7fazty/photos/bg.png");
-    ui->label_bg->setPixmap(background);
-
     stackedWidget = new QStackedWidget(this);
     stackedWidget->addWidget(ui->centralwidget);
     setCentralWidget(stackedWidget);

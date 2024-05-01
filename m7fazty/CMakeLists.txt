@@ -38,6 +38,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         viewtranshistory_dialog.h viewtranshistory_dialog.cpp viewtranshistory_dialog.ui
         editprofile_dialog.h editprofile_dialog.cpp editprofile_dialog.ui
         files.h files.cpp
+        matrial.qrc
 
 
 

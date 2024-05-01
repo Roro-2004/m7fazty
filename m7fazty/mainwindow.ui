@@ -590,6 +590,9 @@ QPushButton:pressed {
       <height>724</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/material/photos/bg.png);</string>
+    </property>
     <property name="text">
      <string/>
     </property>

@@ -207,6 +207,9 @@ QPushButton:pressed {
      <height>724</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/material/photos/plain_bg.png);</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -358,6 +361,9 @@ QPushButton:pressed {
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/material/photos/logo.png);</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -417,6 +423,9 @@ QPushButton:pressed {
      <height>111</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/material/photos/person logo.png);</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -445,6 +454,7 @@ QPushButton:pressed {
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
+	image: url(:/material/photos/white back button.png);
 	color: rgb(226, 226, 255);
    
  background-color: rgba(255, 255, 255, 0); /* Fully transparent background */

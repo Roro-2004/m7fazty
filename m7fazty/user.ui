@@ -239,6 +239,9 @@ border-radius: 15px;</string>
      <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/material/photos/menu.png);</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -286,6 +289,7 @@ QPushButton:pressed {
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
+	background-image: url(:/material/photos/plain_bg.png);
  background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
 
 }
@@ -300,7 +304,7 @@ QPushButton:pressed {
     <rect>
      <x>10</x>
      <y>50</y>
-     <width>331</width>
+     <width>385</width>
      <height>601</height>
     </rect>
    </property>

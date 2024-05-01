@@ -11,13 +11,6 @@
 user::user(QWidget *parent): QWidget(parent), ui(new Ui::user)
 {
     ui->setupUi(this);
-
-    QPixmap plain_background("D:/m7fazty/m7fazty/photos/bg2.png");
-    ui->label_bg->setPixmap(plain_background);
-
-    QPixmap menu_icon("D:/m7fazty/m7fazty/photos/menu.png");
-    ui->menu_label->setPixmap(menu_icon);
-
     hideAllElements();
 }
 
