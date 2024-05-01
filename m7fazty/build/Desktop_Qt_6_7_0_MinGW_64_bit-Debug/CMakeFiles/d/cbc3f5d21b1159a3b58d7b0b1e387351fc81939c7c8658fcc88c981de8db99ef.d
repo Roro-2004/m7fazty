@@ -18,8 +18,6 @@ m7fazty_autogen/timestamp: \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
   m7fazty_autogen/moc_predefs.h \
-<<<<<<< HEAD
-=======
   D:/m7fazty/m7fazty/delete_suspend_dialog.cpp \
   D:/m7fazty/m7fazty/delete_suspend_dialog.h \
   D:/m7fazty/m7fazty/delete_suspend_dialog.ui \
@@ -28,7 +26,6 @@ m7fazty_autogen/timestamp: \
   D:/m7fazty/m7fazty/editprofile_dialog.ui \
   D:/m7fazty/m7fazty/files.cpp \
   D:/m7fazty/m7fazty/files.h \
->>>>>>> Roaa-lotfy
   D:/m7fazty/m7fazty/login.cpp \
   D:/m7fazty/m7fazty/login.h \
   D:/m7fazty/m7fazty/login.ui \
@@ -36,8 +33,6 @@ m7fazty_autogen/timestamp: \
   D:/m7fazty/m7fazty/mainwindow.cpp \
   D:/m7fazty/m7fazty/mainwindow.h \
   D:/m7fazty/m7fazty/mainwindow.ui \
-<<<<<<< HEAD
-=======
   D:/m7fazty/m7fazty/matrial.qrc \
   D:/m7fazty/m7fazty/requestmoney_dialog.cpp \
   D:/m7fazty/m7fazty/requestmoney_dialog.h \
@@ -45,7 +40,6 @@ m7fazty_autogen/timestamp: \
   D:/m7fazty/m7fazty/sendmoney_dialog.cpp \
   D:/m7fazty/m7fazty/sendmoney_dialog.h \
   D:/m7fazty/m7fazty/sendmoney_dialog.ui \
->>>>>>> Roaa-lotfy
   D:/m7fazty/m7fazty/sign_up.cpp \
   D:/m7fazty/m7fazty/sign_up.h \
   D:/m7fazty/m7fazty/sign_up.ui \
@@ -56,8 +50,6 @@ m7fazty_autogen/timestamp: \
   D:/m7fazty/m7fazty/user.ui \
   D:/m7fazty/m7fazty/user_c.cpp \
   D:/m7fazty/m7fazty/user_c.h \
-<<<<<<< HEAD
-=======
   D:/m7fazty/m7fazty/view_trans_dialog.cpp \
   D:/m7fazty/m7fazty/view_trans_dialog.h \
   D:/m7fazty/m7fazty/view_trans_dialog.ui \
@@ -70,7 +62,6 @@ m7fazty_autogen/timestamp: \
   D:/m7fazty/m7fazty/viewtranshistory_dialog.cpp \
   D:/m7fazty/m7fazty/viewtranshistory_dialog.h \
   D:/m7fazty/m7fazty/viewtranshistory_dialog.ui \
->>>>>>> Roaa-lotfy
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
@@ -213,9 +204,11 @@ m7fazty_autogen/timestamp: \
   D:/qt_cereator/6.7.0/mingw_64/include/QtGui/qtransform.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QDialog \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QWidget \
+  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qdialog.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qframe.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
