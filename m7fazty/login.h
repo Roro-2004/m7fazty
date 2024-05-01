@@ -3,6 +3,7 @@
 #include <QWidget>
 #include"user.h"
 #include<string>
+#include"user_c.h"
 using namespace std;
 
 namespace Ui {
@@ -16,7 +17,7 @@ class Login : public QWidget
 public:
     explicit Login(QWidget *parent = nullptr);
     ~Login();
-    string static current_user;
+    user_c static current_user;
 
 
 private slots:

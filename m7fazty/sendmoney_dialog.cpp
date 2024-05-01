@@ -66,7 +66,7 @@ string sendMoney_dialog::getCurrentTime() {
 void sendMoney_dialog::on_send_Button_clicked()
 {
     t = new transiction();
-    t->sender=Login::current_user;
+    t->sender=Login::current_user.user_acc.username;
     t->receiver = ui->userName_textBox->text().toStdString();
     t->amount = ui->amount_textBox->text().toFloat();
 
