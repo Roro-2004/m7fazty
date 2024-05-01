@@ -1,11 +1,5 @@
-D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/EWIEGA46WW/moc_mainwindow.cpp: D:/m7fazty/m7fazty/mainwindow.h \
+D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/EWIEGA46WW/moc_adjust_balance_dialog.cpp: D:/m7fazty/m7fazty/adjust_balance_dialog.h \
   D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h \
-  D:/m7fazty/m7fazty/Login.h \
-  D:/m7fazty/m7fazty/account.h \
-  D:/m7fazty/m7fazty/admin.h \
-  D:/m7fazty/m7fazty/sign_up.h \
-  D:/m7fazty/m7fazty/user.h \
-  D:/m7fazty/m7fazty/user_c.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
@@ -148,14 +142,9 @@ D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/EWI
   D:/qt_cereator/6.7.0/mingw_64/include/QtGui/qtransform.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
-  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
-  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
-  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QWidget \
-  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qframe.h \
-  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
+  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QDialog \
+  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qdialog.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
-  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qstackedwidget.h \
-  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

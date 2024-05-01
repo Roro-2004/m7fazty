@@ -261,11 +261,29 @@
 			"EWIEGA46WW/moc_account.cpp",
 			null
 		],
+		[
+			"D:/m7fazty/m7fazty/add_edit_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_add_edit_dialog.cpp",
+			null
+		],
+		[
+			"D:/m7fazty/m7fazty/adjust_balance_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_adjust_balance_dialog.cpp",
+			null
+		],
 		[ "D:/m7fazty/m7fazty/admin.h", "MU", "EWIEGA46WW/moc_admin.cpp", null ],
 		[
 			"D:/m7fazty/m7fazty/admin_c.h",
 			"MU",
 			"EWIEGA46WW/moc_admin_c.cpp",
+			null
+		],
+		[
+			"D:/m7fazty/m7fazty/delete_suspend_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_delete_suspend_dialog.cpp",
 			null
 		],
 		[
@@ -311,6 +329,18 @@
 			"D:/m7fazty/m7fazty/user_c.h",
 			"MU",
 			"EWIEGA46WW/moc_user_c.cpp",
+			null
+		],
+		[
+			"D:/m7fazty/m7fazty/view_trans_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_view_trans_dialog.cpp",
+			null
+		],
+		[
+			"D:/m7fazty/m7fazty/view_users_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_view_users_dialog.cpp",
 			null
 		],
 		[
@@ -398,8 +428,11 @@
 	"SOURCES" : 
 	[
 		[ "D:/m7fazty/m7fazty/account.cpp", "MU", null ],
+		[ "D:/m7fazty/m7fazty/add_edit_dialog.cpp", "MU", null ],
+		[ "D:/m7fazty/m7fazty/adjust_balance_dialog.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/admin.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/admin_c.cpp", "MU", null ],
+		[ "D:/m7fazty/m7fazty/delete_suspend_dialog.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/editprofile_dialog.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/files.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/login.cpp", "MU", null ],
@@ -411,6 +444,8 @@
 		[ "D:/m7fazty/m7fazty/transiction.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/user.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/user_c.cpp", "MU", null ],
+		[ "D:/m7fazty/m7fazty/view_trans_dialog.cpp", "MU", null ],
+		[ "D:/m7fazty/m7fazty/view_users_dialog.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/viewbalance_dialog.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/viewtranshistory_dialog.cpp", "MU", null ]
 	],
