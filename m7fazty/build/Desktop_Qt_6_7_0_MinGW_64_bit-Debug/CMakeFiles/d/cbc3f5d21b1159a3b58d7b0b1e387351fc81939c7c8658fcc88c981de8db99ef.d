@@ -2,6 +2,12 @@ m7fazty_autogen/timestamp: \
   D:/m7fazty/m7fazty/CMakeLists.txt \
   D:/m7fazty/m7fazty/account.cpp \
   D:/m7fazty/m7fazty/account.h \
+  D:/m7fazty/m7fazty/add_edit_dialog.cpp \
+  D:/m7fazty/m7fazty/add_edit_dialog.h \
+  D:/m7fazty/m7fazty/add_edit_dialog.ui \
+  D:/m7fazty/m7fazty/adjust_balance_dialog.cpp \
+  D:/m7fazty/m7fazty/adjust_balance_dialog.h \
+  D:/m7fazty/m7fazty/adjust_balance_dialog.ui \
   D:/m7fazty/m7fazty/admin.cpp \
   D:/m7fazty/m7fazty/admin.h \
   D:/m7fazty/m7fazty/admin.ui \
@@ -12,6 +18,17 @@ m7fazty_autogen/timestamp: \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
   m7fazty_autogen/moc_predefs.h \
+<<<<<<< HEAD
+=======
+  D:/m7fazty/m7fazty/delete_suspend_dialog.cpp \
+  D:/m7fazty/m7fazty/delete_suspend_dialog.h \
+  D:/m7fazty/m7fazty/delete_suspend_dialog.ui \
+  D:/m7fazty/m7fazty/editprofile_dialog.cpp \
+  D:/m7fazty/m7fazty/editprofile_dialog.h \
+  D:/m7fazty/m7fazty/editprofile_dialog.ui \
+  D:/m7fazty/m7fazty/files.cpp \
+  D:/m7fazty/m7fazty/files.h \
+>>>>>>> Roaa-lotfy
   D:/m7fazty/m7fazty/login.cpp \
   D:/m7fazty/m7fazty/login.h \
   D:/m7fazty/m7fazty/login.ui \
@@ -19,6 +36,16 @@ m7fazty_autogen/timestamp: \
   D:/m7fazty/m7fazty/mainwindow.cpp \
   D:/m7fazty/m7fazty/mainwindow.h \
   D:/m7fazty/m7fazty/mainwindow.ui \
+<<<<<<< HEAD
+=======
+  D:/m7fazty/m7fazty/matrial.qrc \
+  D:/m7fazty/m7fazty/requestmoney_dialog.cpp \
+  D:/m7fazty/m7fazty/requestmoney_dialog.h \
+  D:/m7fazty/m7fazty/requestmoney_dialog.ui \
+  D:/m7fazty/m7fazty/sendmoney_dialog.cpp \
+  D:/m7fazty/m7fazty/sendmoney_dialog.h \
+  D:/m7fazty/m7fazty/sendmoney_dialog.ui \
+>>>>>>> Roaa-lotfy
   D:/m7fazty/m7fazty/sign_up.cpp \
   D:/m7fazty/m7fazty/sign_up.h \
   D:/m7fazty/m7fazty/sign_up.ui \
@@ -29,6 +56,21 @@ m7fazty_autogen/timestamp: \
   D:/m7fazty/m7fazty/user.ui \
   D:/m7fazty/m7fazty/user_c.cpp \
   D:/m7fazty/m7fazty/user_c.h \
+<<<<<<< HEAD
+=======
+  D:/m7fazty/m7fazty/view_trans_dialog.cpp \
+  D:/m7fazty/m7fazty/view_trans_dialog.h \
+  D:/m7fazty/m7fazty/view_trans_dialog.ui \
+  D:/m7fazty/m7fazty/view_users_dialog.cpp \
+  D:/m7fazty/m7fazty/view_users_dialog.h \
+  D:/m7fazty/m7fazty/view_users_dialog.ui \
+  D:/m7fazty/m7fazty/viewbalance_dialog.cpp \
+  D:/m7fazty/m7fazty/viewbalance_dialog.h \
+  D:/m7fazty/m7fazty/viewbalance_dialog.ui \
+  D:/m7fazty/m7fazty/viewtranshistory_dialog.cpp \
+  D:/m7fazty/m7fazty/viewtranshistory_dialog.h \
+  D:/m7fazty/m7fazty/viewtranshistory_dialog.ui \
+>>>>>>> Roaa-lotfy
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
@@ -435,6 +477,7 @@ m7fazty_autogen/timestamp: \
   D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
   D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_ptr.h \
   D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_map.h \
+  D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_set.h \
   D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uses_allocator.h \
   D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc \
   D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype \
@@ -499,6 +542,7 @@ m7fazty_autogen/timestamp: \
   D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
   D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo \
   D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_map \
+  D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_set \
   D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility \
   D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/variant \
   D:/qt_cereator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector \

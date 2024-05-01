@@ -191,6 +191,9 @@ QPushButton:pressed {
    <property name="text">
     <string/>
    </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
    <property name="placeholderText">
     <string>Enter Password</string>
    </property>
@@ -207,6 +210,9 @@ QPushButton:pressed {
      <height>724</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/material/photos/plain_bg.png);</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -219,6 +225,9 @@ QPushButton:pressed {
      <width>251</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
    </property>
    <property name="inputMask">
     <string/>
@@ -358,6 +367,9 @@ QPushButton:pressed {
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/material/photos/logo.png);</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -417,6 +429,9 @@ QPushButton:pressed {
      <height>111</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/material/photos/person logo.png);</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -444,8 +459,24 @@ QPushButton:pressed {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
-</string>
+    <string notr="true">QPushButton{
+	image: url(:/material/photos/white back button.png);
+	color: rgb(226, 226, 255);
+   
+ background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+text-align: left;
+    border-radius: 13px;
+    border: 1px solid rgba(0, 0, 0,0);
+}
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background color when hovered */
+
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.3); 
+
+}</string>
    </property>
    <property name="text">
     <string/>
