@@ -4,6 +4,7 @@
 #include"user_c.h"
 #include"user.h"
 #include<string>
+#include"user_c.h"
 using namespace std;
 
 namespace Ui {

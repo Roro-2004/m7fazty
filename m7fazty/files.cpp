@@ -36,12 +36,11 @@ void files::write_in_file(string file_path)
     }
 
     ofstream file(path, ios::app);
-
-    if (path.string() == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv") {
+    if (path.string() == "D:/m7fazty/m7fazty/files/Transiction.csv") {
         if (file.is_open()){
             for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
-                 transiction* t = trans.second;
-                 file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
+                transiction* t = trans.second;
+                file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
             }
             file.close();
             cout << "Data has been written to the file successfully." << endl;
