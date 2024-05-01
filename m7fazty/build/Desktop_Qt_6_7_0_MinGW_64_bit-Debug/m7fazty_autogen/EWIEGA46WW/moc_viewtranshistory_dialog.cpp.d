@@ -1,5 +1,8 @@
 D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/EWIEGA46WW/moc_viewtranshistory_dialog.cpp: D:/m7fazty/m7fazty/viewtranshistory_dialog.h \
   D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h \
+  D:/m7fazty/m7fazty/account.h \
+  D:/m7fazty/m7fazty/transiction.h \
+  D:/m7fazty/m7fazty/user_c.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/q20type_traits.h \

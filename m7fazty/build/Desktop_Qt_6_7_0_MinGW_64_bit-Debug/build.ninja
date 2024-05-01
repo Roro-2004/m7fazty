@@ -313,7 +313,7 @@ build m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp | ${cmake_ninja_workdir}m7fazty
 #############################################
 # Phony custom command for CMakeFiles\m7fazty_autogen_timestamp_deps
 
-build CMakeFiles/m7fazty_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/m7fazty_autogen_timestamp_deps: phony D$:/qt_cereator/6.7.0/mingw_64/./bin/moc.exe D$:/qt_cereator/6.7.0/mingw_64/./bin/uic.exe D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Widgets.a D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Core.a
+build CMakeFiles/m7fazty_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/m7fazty_autogen_timestamp_deps: phony D$:/qt_cereator/6.7.0/mingw_64/./bin/uic.exe D$:/qt_cereator/6.7.0/mingw_64/./bin/moc.exe D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Widgets.a D$:/qt_cereator/6.7.0/mingw_64/lib/libQt6Core.a
 
 
 #############################################
