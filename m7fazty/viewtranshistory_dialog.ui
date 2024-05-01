@@ -30,7 +30,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>40</y>
+     <y>70</y>
      <width>711</width>
      <height>431</height>
     </rect>
@@ -359,7 +359,7 @@ QTableView QTableCornerButton::section {
     <bool>true</bool>
    </attribute>
    <attribute name="verticalHeaderVisible">
-    <bool>true</bool>
+    <bool>false</bool>
    </attribute>
    <column/>
    <column/>
@@ -368,6 +368,117 @@ QTableView QTableCornerButton::section {
    <column/>
    <column/>
    <column/>
+  </widget>
+  <widget class="QComboBox" name="month_cb">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>131</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    background-color: rgba(255, 170, 190, 0.9); /* Background color */
+    border-radius: 5px; /* Border radius */
+    border: 1px solid rgb(0, 0, 10); /* Border */
+}
+
+QComboBox::drop-down {
+    width: 20px;
+    border: none;
+    border-radius: 5px; /* Border radius */
+    background-color: rgba(255, 170, 190, 0.7);
+}
+
+QComboBox::down-arrow {
+    image: url(&quot;D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/arrow.png&quot;); /* Provide the path to your arrow image */
+}
+
+QComboBox QAbstractItemView {
+    background-color: rgba(255, 170, 190, 0.7); /* Background color of the drop-down list */
+    selection-background-color: rgba(255, 150, 200, 0.7); /* Background color of selected item */
+}
+
+QComboBox:pressed {
+    background-color: rgba(255, 150, 200, 0.7); /* Semi-transparent background color when pressed */
+    border: 1px solid black; /* You can customize the border for the pressed state if needed */
+}
+</string>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+   <property name="currentIndex">
+    <number>-1</number>
+   </property>
+   <property name="maxVisibleItems">
+    <number>12</number>
+   </property>
+   <property name="placeholderText">
+    <string>Choose Month</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>January</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>February</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>March</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>April</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>May</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>June</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>July</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>August</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Septemper</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>October</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>November</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>December</string>
+    </property>
+   </item>
   </widget>
  </widget>
  <resources/>

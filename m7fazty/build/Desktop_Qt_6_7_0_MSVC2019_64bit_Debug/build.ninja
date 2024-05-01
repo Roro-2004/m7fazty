@@ -302,7 +302,7 @@ build m7fazty_autogen\timestamp m7fazty_autogen\mocs_compilation.cpp | ${cmake_n
 #############################################
 # Phony custom command for CMakeFiles\m7fazty_autogen_timestamp_deps
 
-build CMakeFiles\m7fazty_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\m7fazty_autogen_timestamp_deps: phony C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Cored.lib C$:\Qt\6.7.0\msvc2019_64\.\bin\uic.exe C$:\Qt\6.7.0\msvc2019_64\.\bin\moc.exe C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Widgetsd.lib
+build CMakeFiles\m7fazty_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\m7fazty_autogen_timestamp_deps: phony C$:\Qt\6.7.0\msvc2019_64\.\bin\uic.exe C$:\Qt\6.7.0\msvc2019_64\.\bin\moc.exe C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Cored.lib C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Widgetsd.lib
 
 
 #############################################

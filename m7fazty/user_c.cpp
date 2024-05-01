@@ -9,7 +9,7 @@ using namespace std;
 
 user_c::user_c() {}
 
-string user_c::encoding(string s) {
+/*string user_c::encoding(string s) {
     if (s == "01")
         return "January";
     else if (s == "02")
@@ -82,4 +82,4 @@ void user_c::transiction_history() {
                  << ", Status: " << t->status << endl;
         }
     }
-}
+}*/
