@@ -18,9 +18,6 @@ sendMoney_dialog::sendMoney_dialog(QWidget *parent): QDialog(parent), ui(new Ui:
     ui->setupUi(this);
 
 
-    QPixmap dialog_bg("D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/dialog_bg.png");
-    ui->label_bg->setPixmap(dialog_bg);
-
     cout<<requestMoney_dialog::trans_data.size()<<endl;
 }
 

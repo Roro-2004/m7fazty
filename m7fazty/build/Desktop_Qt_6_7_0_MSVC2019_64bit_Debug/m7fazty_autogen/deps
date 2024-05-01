@@ -338,7 +338,6 @@ m7fazty_autogen/timestamp: \
 	C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/CMakeLists.txt \
-	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/Resources.qrc \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/account.cpp \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/account.h \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/admin.cpp \
@@ -358,6 +357,7 @@ m7fazty_autogen/timestamp: \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/main.cpp \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/mainwindow.cpp \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/mainwindow.h \
+	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/matrial.qrc \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/requestmoney_dialog.cpp \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/requestmoney_dialog.h \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/sendmoney_dialog.cpp \

@@ -1,0 +1,31 @@
+{
+	"BUILD_DIR" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen",
+	"CMAKE_BINARY_DIR" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty",
+	"CMAKE_SOURCE_DIR" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty",
+	"INCLUDE_DIR" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/include",
+	"INPUTS" : 
+	[
+		"D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/arrow.png",
+		"D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/white back button.png",
+		"D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/person logo.png",
+		"D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/logo.png",
+		"D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/dialog_bg.png",
+		"D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/plain_bg.png",
+		"D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/menu.png",
+		"D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/bg2.png",
+		"D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/icon.png",
+		"D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/bg.png"
+	],
+	"LOCK_FILE" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/CMakeFiles/m7fazty_autogen.dir/AutoRcc_matrial_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "matrial" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_matrial.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.7.0/msvc2019_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/CMakeFiles/m7fazty_autogen.dir/AutoRcc_matrial_EWIEGA46WW_Used.txt",
+	"SOURCE" : "D:/Projects/2nd Year/DS/m7fazty/m7fazty/matrial.qrc",
+	"VERBOSITY" : 0
+}

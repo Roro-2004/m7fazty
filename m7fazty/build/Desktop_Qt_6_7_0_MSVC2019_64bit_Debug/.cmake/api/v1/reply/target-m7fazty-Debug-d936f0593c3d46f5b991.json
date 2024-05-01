@@ -390,11 +390,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "m7fazty_autogen::@6890427a1f51a3e7e1df"
+			"id" : "m7fazty_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "m7fazty_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "m7fazty_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "m7fazty::@6890427a1f51a3e7e1df",
@@ -809,7 +809,7 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "Resources.qrc",
+			"path" : "matrial.qrc",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -882,7 +882,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/EWIEGA46WW/qrc_Resources.cpp",
+			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -894,7 +894,7 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/EWIEGA46WW/qrc_Resources.cpp.rule",
+			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

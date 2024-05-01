@@ -9,6 +9,7 @@
         <file>photos/person logo.png</file>
         <file>photos/plain_bg.png</file>
         <file>photos/white back button.png</file>
+        <file>photos/arrow.png</file>
     </qresource>
     <qresource prefix="/new/prefix1"/>
 </RCC>
