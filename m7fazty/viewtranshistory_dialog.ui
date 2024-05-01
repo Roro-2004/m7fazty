@@ -16,11 +16,14 @@
   <widget class="QLabel" name="label_bg">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>756</width>
-     <height>512</height>
+     <x>-30</x>
+     <y>-29</y>
+     <width>791</width>
+     <height>541</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Resources/photos/dialog_bg.png);</string>
    </property>
    <property name="text">
     <string/>

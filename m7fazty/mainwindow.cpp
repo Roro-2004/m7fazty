@@ -25,7 +25,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     setCentralWidget(stackedWidget);
 
     // Set background image
-    QPixmap background("D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/bg.png");
+    QPixmap background("bg.png");
     ui->label_bg->setPixmap(background);
 
     stackedWidget = new QStackedWidget(this);
@@ -34,7 +34,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     stackedWidget->show();
 
 
-    files::read_from_file("D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv");
+    files::read_from_file("D:\Projects\2nd Year\DS\m7fazty\m7fazty\files\Transiction.csv");
     for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
         transiction* t = trans.second;
         cout << trans.first << " " << t->receiver << " " << t->sender << " " << t->amount << " " << t->date << " " << t->time << " " << t->status << endl;
