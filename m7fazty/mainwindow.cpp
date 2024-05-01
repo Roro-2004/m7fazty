@@ -57,8 +57,8 @@ void MainWindow::on_login_clicked()
 {
 
     stackedWidget->setCurrentWidget(loginWidget);
-
-    }
+    requestMoney_dialog::trans_data.clear();
+}
 
 
 void MainWindow::on_sign_up_clicked()

@@ -191,6 +191,9 @@ QPushButton:pressed {
    <property name="text">
     <string/>
    </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
    <property name="placeholderText">
     <string>Enter Password</string>
    </property>
@@ -222,6 +225,9 @@ QPushButton:pressed {
      <width>251</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
    </property>
    <property name="inputMask">
     <string/>

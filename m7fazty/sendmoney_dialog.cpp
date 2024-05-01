@@ -18,7 +18,6 @@ sendMoney_dialog::sendMoney_dialog(QWidget *parent): QDialog(parent), ui(new Ui:
     ui->setupUi(this);
 
 
-    cout<<requestMoney_dialog::trans_data.size()<<endl;
 }
 
 string sendMoney_dialog::generateID()
@@ -27,7 +26,7 @@ string sendMoney_dialog::generateID()
     int randomNumber;
     do {
         randomNumber = rand() % 900 + 100;
-        id = "R" + to_string(randomNumber);
+        id = "S" + to_string(randomNumber);
     } while(usedIDs.count(id) > 0); // Check if the generated ID already exists in the set
 
     return id;

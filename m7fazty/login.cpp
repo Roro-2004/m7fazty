@@ -36,6 +36,8 @@ void Login::on_Login_2_clicked()
         MainWindow::stackedWidget->addWidget(user_widget);
         MainWindow::stackedWidget->setCurrentWidget(user_widget);
     }
+    ui->userName_textBox->clear();
+    ui->password_textBox->clear();
 }
 
 
