@@ -18,8 +18,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>756</width>
-     <height>512</height>
+     <width>759</width>
+     <height>511</height>
     </rect>
    </property>
    <property name="text">
@@ -393,7 +393,7 @@ QComboBox::drop-down {
 }
 
 QComboBox::down-arrow {
-    image: url(&quot;D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/arrow.png&quot;); /* Provide the path to your arrow image */
+    image: url(:/photos/arrow.png);
 }
 
 QComboBox QAbstractItemView {

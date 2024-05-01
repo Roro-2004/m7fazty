@@ -11,4 +11,7 @@
         <file>photos/white back button.png</file>
     </qresource>
     <qresource prefix="/new/prefix1"/>
+    <qresource prefix="/">
+        <file>photos/arrow.png</file>
+    </qresource>
 </RCC>
