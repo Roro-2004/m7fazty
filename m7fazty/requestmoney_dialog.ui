@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/Resources/photos/dialog_bg.png);</string>
+    <string notr="true">background-image: url(:/material/photos/dialog_bg.png);</string>
    </property>
    <property name="text">
     <string/>
