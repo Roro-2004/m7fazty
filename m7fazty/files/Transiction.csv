@@ -1,8 +1,8 @@
 Trans ID,Receiver,Sender,Amount,Date,Time,Status
-R141,menna,roaa,44,01/05/2024,01:52 AM,Successful
-R567,mona,menna,120,01/05/2024,01:52 AM,Successful
-R134,menna,roaa,200,01/05/2024,01:53 AM,Successful
-R500,roaa,hasona,120,01/05/2024,01:53 AM,Successful
-R369,ahmed,roaa,20,01/05/2024,01:53 AM,Successful
-R112,malak,maya,60,01/05/2024,02:12 AM,Successful
-R175,menna,malak,50,01/05/2024,02:12 AM,Successful
+R141,menna,roaa,44,01-02-24,1:52 AM,Successful
+R567,mona,menna,120,01-02-24,1:52 AM,Successful
+R134,menna,roaa,200,01-05-24,1:53 AM,Successful
+R500,roaa,hasona,120,01-05-24,1:53 AM,Successful
+R369,ahmed,roaa,20,01-05-24,1:53 AM,Successful
+R112,malak,maya,60,01-05-24,2:12 AM,Successful
+R175,menna,malak,50,01-05-24,2:12 AM,Successful

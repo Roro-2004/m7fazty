@@ -19,7 +19,7 @@ unordered_set<string> requestMoney_dialog::usedIDs;
 requestMoney_dialog::requestMoney_dialog(QWidget *parent) : QDialog(parent), ui(new Ui::requestMoney_dialog) {
     ui->setupUi(this);
 
-    QPixmap dialog_bg("D:/m7fazty/m7fazty/photos/dialog_bg.png");
+    QPixmap dialog_bg("D:/Projects/2nd Year/DS/m7fazty/m7fazty/photos/dialog_bg.png");
     ui->label_bg->setPixmap(dialog_bg);
     cout<<trans_data.size()<<endl;
 }
@@ -69,6 +69,7 @@ string requestMoney_dialog::getCurrentTime()
 }
 void requestMoney_dialog::on_request_Button_clicked() {
     t = new transiction();
+    t->id=generateID();
     t->receiver = Login::current_user.user_acc.username;
     t->sender = ui->userName_textBox->text().toStdString();
     t->amount = ui->amount_textBox->text().toFloat();
@@ -80,6 +81,7 @@ void requestMoney_dialog::on_request_Button_clicked() {
 
     t->date = getCurrentDate();
     t->time = getCurrentTime();
+
     trans_data[generateID()] = t;
 
     close();

@@ -1,6 +1,7 @@
 #ifndef LOGIN_H
 #define LOGIN_H
 #include <QWidget>
+#include"user_c.h"
 #include"user.h"
 #include<string>
 #include"user_c.h"

@@ -26,9 +26,8 @@ void Login::on_Login_2_clicked()
     MainWindow::stackedWidget->addWidget(user_widget);
     MainWindow::stackedWidget->setCurrentWidget(user_widget);
     current_user.user_acc.username = ui->userName_textBox->text().toStdString();
-   cout <<current_user.user_acc.username<<endl;
-    current_user.transiction_history();
-   current_user.search_by_month("May");
+    cout <<current_user.user_acc.username<<endl;
+
 }
 
 Login::~Login()
