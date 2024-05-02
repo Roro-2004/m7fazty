@@ -4,6 +4,8 @@
 #include"account.h"
 #include<QString>
 #include<QMessageBox>
+#include<iostream>
+using namespace std;
 NadminN::NadminN(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::NadminN)
@@ -18,6 +20,8 @@ NadminN::~NadminN()
 
 void NadminN::on_add_acc_pushButton_clicked()
 {
+
+    cout<<"ADD\n";
     account new_account;
     new_account.username=ui->username_add_lineEdit->text();
     new_account.password=ui->password_add_lineEdit->text();
@@ -56,6 +60,7 @@ void NadminN::on_add_acc_pushButton_clicked()
 
 void NadminN::on_editBalance_pushButton_clicked()
 {
+    cout<<"edit balance\n";
     admin_c current_admin;
     QString username=ui->username_editBalance_lineEdit->text();
     float new_balance=ui->newBalance_editBalance_lineEdit->text().toFloat();
@@ -74,23 +79,29 @@ void NadminN::on_editBalance_pushButton_clicked()
 
 void NadminN::on_Activate_pushButton_clicked()
 {
+    cout<<"Activate\n";
     admin_c current_admin;
-    current_admin.actviate(ui->username_Activate_lineEdit->text());
+    QString username=ui->username_Activate_lineEdit->text();
+    current_admin.actviate(username);
 }
 
 
 void NadminN::on_suspend_pushButton_clicked()
 {
+    cout<<"suspend\n";
     admin_c current_admin;
-    current_admin.suspend(ui->username_suspend_lineEdit->text());
+    QString username=ui->username_suspend_lineEdit->text();
+    current_admin.suspend(username);
 }
 
 
 void NadminN::on_deleteacc_pushButton_clicked()
 {
+    cout<<"deletttttte\n";
     admin_c current_admin;
-    bool is_exist=current_admin.delete_acc(ui->username_deleteacc_lineEdit->text());
-    if(is_exist)
+    QString username=ui->username_deleteacc_lineEdit->text();
+    bool flag=current_admin.delete_acc(username);
+    if(flag)
     {
         QMessageBox::information(this,"Delete Account","Done Successfuly");
     }

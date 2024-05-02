@@ -40,6 +40,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         files.h files.cpp
         context.h context.cpp
         nadminn.h nadminn.cpp nadminn.ui
+        admin_edits.h admin_edits.cpp admin_edits.ui
 
 
 

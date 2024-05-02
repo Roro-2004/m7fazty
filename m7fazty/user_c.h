@@ -11,7 +11,7 @@ class user_c
 {
 public:
     user_c();
-
+ user_c(float, account);
     account user_acc;
     float balance;
     int points;

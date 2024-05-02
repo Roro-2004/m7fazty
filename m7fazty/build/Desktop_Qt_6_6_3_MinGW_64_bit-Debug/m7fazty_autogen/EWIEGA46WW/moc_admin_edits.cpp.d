@@ -1,4 +1,4 @@
-D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/EWIEGA46WW/moc_mainwindow.cpp: D:/level\ 2\ projects/m7fazty/m7fazty/mainwindow.h \
+D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/EWIEGA46WW/moc_admin_edits.cpp: D:/level\ 2\ projects/m7fazty/m7fazty/admin_edits.h \
   D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
@@ -139,15 +139,8 @@ D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/
   C:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/QDialog \
-  C:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
-  C:/Qt/6.6.3/mingw_64/include/QtWidgets/QStackedWidget \
-  C:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialog.h \
-  C:/Qt/6.6.3/mingw_64/include/QtWidgets/qframe.h \
-  C:/Qt/6.6.3/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h \
-  C:/Qt/6.6.3/mingw_64/include/QtWidgets/qstackedwidget.h \
-  C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -350,10 +343,4 @@ D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-  D:/level\ 2\ projects/m7fazty/m7fazty/Login.h \
-  D:/level\ 2\ projects/m7fazty/m7fazty/admin_edits.h \
-  D:/level\ 2\ projects/m7fazty/m7fazty/nadminn.h \
-  D:/level\ 2\ projects/m7fazty/m7fazty/sign_up.h \
-  D:/level\ 2\ projects/m7fazty/m7fazty/user.h \
-  D:/level\ 2\ projects/m7fazty/m7fazty/viewbalance_dialog.h
+  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h

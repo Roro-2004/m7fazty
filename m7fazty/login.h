@@ -6,6 +6,10 @@
 #include <QWidget>
 #include"user.h"
 
+#include"admin_edits.h"        //
+#include"nadminn.h"           //
+#include <QWidget>           //
+
 namespace Ui {
 class Login;
 }
@@ -28,6 +32,9 @@ private slots:
 private:
     Ui::Login *ui;
     user *user_widget;
+   // NadminN* NadminNWidget;  //
+    admin_edits* admin_edits_widget;
+
 };
 
 #endif // LOGIN_H

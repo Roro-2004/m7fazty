@@ -17,8 +17,9 @@ public:
     void actviate(QString);
     void suspend(QString);
      bool delete_acc(QString);
+    account View_current_account_data(QString); //helper function
+    bool edit_acc(QString ,account);
     /*void traverse_users_tranisctions();
-    void edit_acc(account acc);
     void traverse_transiction_history(user user);*/
 };
 

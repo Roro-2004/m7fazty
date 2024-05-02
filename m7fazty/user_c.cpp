@@ -1,6 +1,11 @@
 #include "user_c.h"
 #include"context.h"
 user_c::user_c() {}
+user_c::user_c(float val, account acc)
+{
+    balance = val;
+    user_acc = acc;
+}
 QString user_c::View_current_balance()
 {
     QString Current_balance;

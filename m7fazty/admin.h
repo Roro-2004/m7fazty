@@ -1,6 +1,6 @@
 #ifndef ADMIN_H
 #define ADMIN_H
-#include"nadminn.h"
+//#include"nadminn.h" ////////////////
 #include <QWidget>
 
 namespace Ui {
@@ -17,7 +17,7 @@ public:
 
 private:
     Ui::admin *ui;
-    NadminN* NadminNWidget;
+  //  NadminN* NadminNWidget;           ////////////
 };
 
 #endif // ADMIN_H

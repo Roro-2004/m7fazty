@@ -526,6 +526,9 @@ m7fazty_autogen/timestamp: \
   D:/level\ 2\ projects/m7fazty/m7fazty/admin.ui \
   D:/level\ 2\ projects/m7fazty/m7fazty/admin_c.cpp \
   D:/level\ 2\ projects/m7fazty/m7fazty/admin_c.h \
+  D:/level\ 2\ projects/m7fazty/m7fazty/admin_edits.cpp \
+  D:/level\ 2\ projects/m7fazty/m7fazty/admin_edits.h \
+  D:/level\ 2\ projects/m7fazty/m7fazty/admin_edits.ui \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \

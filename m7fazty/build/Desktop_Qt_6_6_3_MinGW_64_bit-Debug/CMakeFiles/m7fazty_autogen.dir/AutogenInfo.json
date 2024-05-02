@@ -273,6 +273,12 @@
 			null
 		],
 		[
+			"D:/level 2 projects/m7fazty/m7fazty/admin_edits.h",
+			"MU",
+			"EWIEGA46WW/moc_admin_edits.cpp",
+			null
+		],
+		[
 			"D:/level 2 projects/m7fazty/m7fazty/context.h",
 			"MU",
 			"EWIEGA46WW/moc_context.cpp",
@@ -430,6 +436,7 @@
 		[ "D:/level 2 projects/m7fazty/m7fazty/account.cpp", "MU", null ],
 		[ "D:/level 2 projects/m7fazty/m7fazty/admin.cpp", "MU", null ],
 		[ "D:/level 2 projects/m7fazty/m7fazty/admin_c.cpp", "MU", null ],
+		[ "D:/level 2 projects/m7fazty/m7fazty/admin_edits.cpp", "MU", null ],
 		[ "D:/level 2 projects/m7fazty/m7fazty/context.cpp", "MU", null ],
 		[
 			"D:/level 2 projects/m7fazty/m7fazty/editprofile_dialog.cpp",

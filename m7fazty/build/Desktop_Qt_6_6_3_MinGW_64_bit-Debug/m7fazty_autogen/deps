@@ -524,6 +524,8 @@ m7fazty_autogen/timestamp: \
 	D:/level\ 2\ projects/m7fazty/m7fazty/admin.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/admin_c.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/admin_c.h \
+	D:/level\ 2\ projects/m7fazty/m7fazty/admin_edits.cpp \
+	D:/level\ 2\ projects/m7fazty/m7fazty/admin_edits.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
 	D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
@@ -559,6 +561,7 @@ m7fazty_autogen/timestamp: \
 	D:/level\ 2\ projects/m7fazty/m7fazty/viewtranshistory_dialog.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/viewtranshistory_dialog.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/admin.ui \
+	D:/level\ 2\ projects/m7fazty/m7fazty/admin_edits.ui \
 	D:/level\ 2\ projects/m7fazty/m7fazty/editprofile_dialog.ui \
 	D:/level\ 2\ projects/m7fazty/m7fazty/login.ui \
 	D:/level\ 2\ projects/m7fazty/m7fazty/mainwindow.ui \

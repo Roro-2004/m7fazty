@@ -2,7 +2,7 @@
 #include "ui_login.h"
 #include "mainwindow.h"
 #include "user.h"
-
+#include"nadminn.h"
 Login::Login(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Login)
@@ -20,6 +20,12 @@ Login::Login(QWidget *parent) :
 
     QPixmap back("D:/level 2 projects/m7fazty/m7fazty/photos/white back button.png");
     ui->back_label->setPixmap(back);
+
+   // NadminNWidget=new NadminN();                              //
+    //MainWindow::stackedWidget->addWidget(NadminNWidget);     //
+
+    admin_edits_widget=new admin_edits();
+    MainWindow::stackedWidget->addWidget(admin_edits_widget);
 }
 
 Login::~Login()
@@ -37,9 +43,9 @@ void Login::on_back_button_clicked()
 
 void Login::on_Login_2_clicked()
 {
-
-    user_widget=new user();
+    MainWindow::stackedWidget->setCurrentWidget(admin_edits_widget);
+   /* user_widget=new user();
     MainWindow::stackedWidget->addWidget(user_widget);
-    MainWindow::stackedWidget->setCurrentWidget(user_widget);
+    MainWindow::stackedWidget->setCurrentWidget(user_widget);*/
 }
 
