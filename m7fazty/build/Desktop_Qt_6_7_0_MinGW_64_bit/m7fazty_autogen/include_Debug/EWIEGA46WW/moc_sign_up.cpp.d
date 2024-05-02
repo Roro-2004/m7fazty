@@ -346,7 +346,4 @@ D:/new\ ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/i
   D:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   D:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   D:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  D:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-  D:/new\ ds/m7fazty/m7fazty/Login.h \
-  D:/new\ ds/m7fazty/m7fazty/admin.h \
-  D:/new\ ds/m7fazty/m7fazty/user.h
+  D:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h

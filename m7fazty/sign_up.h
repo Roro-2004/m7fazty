@@ -19,6 +19,9 @@ public:
 private slots:
     void on_pushButton_clicked();
     bool isStrongPassword(const QString &password);
+    void on_back_button_clicked();
+
+    void on_sign_up2_button_clicked();
 
 private:
     Ui::sign_up *ui;

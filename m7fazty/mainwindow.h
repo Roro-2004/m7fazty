@@ -1,14 +1,16 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
 #include <QMainWindow>
 #include <QStackedWidget>
 #include "Login.h"
-#include "sign_up.h"
+#include"sign_up.h"
+namespace fs = std::filesystem;
+using namespace std;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
+
 
 class MainWindow : public QMainWindow
 {
@@ -20,6 +22,7 @@ public:
     QStackedWidget static *stackedWidget;
 
 
+
 private slots:
     void on_login_clicked();
 
@@ -29,6 +32,7 @@ private:
     Ui::MainWindow *ui;
     Login *loginWidget;
     sign_up *sign_up_widget;
+  //  sign_up * signup_Widget;
 
 };
 

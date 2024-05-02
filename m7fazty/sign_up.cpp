@@ -7,9 +7,7 @@
 #include <QRegularExpression>
 #include "mainwindow.h"
 
-sign_up::sign_up(QWidget *parent)
-    : QWidget(parent)
-    , ui(new Ui::sign_up)
+sign_up::sign_up(QWidget *parent): QWidget(parent), ui(new Ui::sign_up)
 {
     ui->setupUi(this);
 
@@ -64,5 +62,17 @@ void sign_up::on_pushButton_clicked()
          MainWindow::stackedWidget->setCurrentWidget(loginWidget);
      }
 
+}
+
+void sign_up::on_back_button_clicked()
+{
+    MainWindow::stackedWidget->setCurrentIndex(0);
+
+}
+
+
+void sign_up::on_sign_up2_button_clicked()
+{
+    MainWindow::stackedWidget->setCurrentIndex(1);
 }
 

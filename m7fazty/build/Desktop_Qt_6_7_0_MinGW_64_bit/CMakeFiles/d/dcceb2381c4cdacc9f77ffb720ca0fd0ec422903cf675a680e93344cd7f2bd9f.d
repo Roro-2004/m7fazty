@@ -141,9 +141,11 @@ m7fazty_autogen/timestamp: \
   D:/QTT/6.7.0/mingw_64/include/QtGui/qtransform.h \
   D:/QTT/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/QTT/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/QTT/6.7.0/mingw_64/include/QtWidgets/QDialog \
   D:/QTT/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
   D:/QTT/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
   D:/QTT/6.7.0/mingw_64/include/QtWidgets/QWidget \
+  D:/QTT/6.7.0/mingw_64/include/QtWidgets/qdialog.h \
   D:/QTT/6.7.0/mingw_64/include/QtWidgets/qframe.h \
   D:/QTT/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/QTT/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -465,6 +467,7 @@ m7fazty_autogen/timestamp: \
   D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
   D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_ptr.h \
   D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_map.h \
+  D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_set.h \
   D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uses_allocator.h \
   D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc \
   D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype \
@@ -529,6 +532,7 @@ m7fazty_autogen/timestamp: \
   D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
   D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo \
   D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_map \
+  D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_set \
   D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility \
   D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/variant \
   D:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector \
@@ -583,6 +587,12 @@ m7fazty_autogen/timestamp: \
   D:/new\ ds/m7fazty/m7fazty/CMakeLists.txt \
   D:/new\ ds/m7fazty/m7fazty/account.cpp \
   D:/new\ ds/m7fazty/m7fazty/account.h \
+  D:/new\ ds/m7fazty/m7fazty/add_edit_dialog.cpp \
+  D:/new\ ds/m7fazty/m7fazty/add_edit_dialog.h \
+  D:/new\ ds/m7fazty/m7fazty/add_edit_dialog.ui \
+  D:/new\ ds/m7fazty/m7fazty/adjust_balance_dialog.cpp \
+  D:/new\ ds/m7fazty/m7fazty/adjust_balance_dialog.h \
+  D:/new\ ds/m7fazty/m7fazty/adjust_balance_dialog.ui \
   D:/new\ ds/m7fazty/m7fazty/admin.cpp \
   D:/new\ ds/m7fazty/m7fazty/admin.h \
   D:/new\ ds/m7fazty/m7fazty/admin.ui \
@@ -593,6 +603,14 @@ m7fazty_autogen/timestamp: \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
   m7fazty_autogen/moc_predefs_Debug.h \
+  D:/new\ ds/m7fazty/m7fazty/delete_suspend_dialog.cpp \
+  D:/new\ ds/m7fazty/m7fazty/delete_suspend_dialog.h \
+  D:/new\ ds/m7fazty/m7fazty/delete_suspend_dialog.ui \
+  D:/new\ ds/m7fazty/m7fazty/editprofile_dialog.cpp \
+  D:/new\ ds/m7fazty/m7fazty/editprofile_dialog.h \
+  D:/new\ ds/m7fazty/m7fazty/editprofile_dialog.ui \
+  D:/new\ ds/m7fazty/m7fazty/files.cpp \
+  D:/new\ ds/m7fazty/m7fazty/files.h \
   D:/new\ ds/m7fazty/m7fazty/login.cpp \
   D:/new\ ds/m7fazty/m7fazty/login.h \
   D:/new\ ds/m7fazty/m7fazty/login.ui \
@@ -600,6 +618,13 @@ m7fazty_autogen/timestamp: \
   D:/new\ ds/m7fazty/m7fazty/mainwindow.cpp \
   D:/new\ ds/m7fazty/m7fazty/mainwindow.h \
   D:/new\ ds/m7fazty/m7fazty/mainwindow.ui \
+  D:/new\ ds/m7fazty/m7fazty/matrial.qrc \
+  D:/new\ ds/m7fazty/m7fazty/requestmoney_dialog.cpp \
+  D:/new\ ds/m7fazty/m7fazty/requestmoney_dialog.h \
+  D:/new\ ds/m7fazty/m7fazty/requestmoney_dialog.ui \
+  D:/new\ ds/m7fazty/m7fazty/sendmoney_dialog.cpp \
+  D:/new\ ds/m7fazty/m7fazty/sendmoney_dialog.h \
+  D:/new\ ds/m7fazty/m7fazty/sendmoney_dialog.ui \
   D:/new\ ds/m7fazty/m7fazty/sign_up.cpp \
   D:/new\ ds/m7fazty/m7fazty/sign_up.h \
   D:/new\ ds/m7fazty/m7fazty/sign_up.ui \
@@ -609,4 +634,16 @@ m7fazty_autogen/timestamp: \
   D:/new\ ds/m7fazty/m7fazty/user.h \
   D:/new\ ds/m7fazty/m7fazty/user.ui \
   D:/new\ ds/m7fazty/m7fazty/user_c.cpp \
-  D:/new\ ds/m7fazty/m7fazty/user_c.h
+  D:/new\ ds/m7fazty/m7fazty/user_c.h \
+  D:/new\ ds/m7fazty/m7fazty/view_trans_dialog.cpp \
+  D:/new\ ds/m7fazty/m7fazty/view_trans_dialog.h \
+  D:/new\ ds/m7fazty/m7fazty/view_trans_dialog.ui \
+  D:/new\ ds/m7fazty/m7fazty/view_users_dialog.cpp \
+  D:/new\ ds/m7fazty/m7fazty/view_users_dialog.h \
+  D:/new\ ds/m7fazty/m7fazty/view_users_dialog.ui \
+  D:/new\ ds/m7fazty/m7fazty/viewbalance_dialog.cpp \
+  D:/new\ ds/m7fazty/m7fazty/viewbalance_dialog.h \
+  D:/new\ ds/m7fazty/m7fazty/viewbalance_dialog.ui \
+  D:/new\ ds/m7fazty/m7fazty/viewtranshistory_dialog.cpp \
+  D:/new\ ds/m7fazty/m7fazty/viewtranshistory_dialog.h \
+  D:/new\ ds/m7fazty/m7fazty/viewtranshistory_dialog.ui
