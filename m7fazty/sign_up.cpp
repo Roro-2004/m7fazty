@@ -65,32 +65,30 @@ void sign_up::on_sign_up2_button_clicked()
    // users_read[user->user_acc.username] = user;
 
 
-    if (!isStrongPassword(user->user_acc.password)) {
-        QMessageBox::warning(this, "Password", "Password is not strong enough. Please use at least 8 characters including uppercase, lowercase, digits, and special characters.");
+    if (user->user_acc.username.empty() || user->user_acc.password.empty() || user->user_acc.address.empty() || user->user_acc.age == NULL){
+        QMessageBox::warning(this, "Empty Fields", "Please fill in all fields.");
         check = false;
     }
-    else if(user->user_acc.age < 16){
-        QMessageBox::warning(this, "Age", "Invalid age.The age must be greater than 16");
+    else if(users_read[user->user_acc.username] != NULL){
+        QMessageBox::warning(this, "Username", "Username already exists");
         check = false;
     }
     else if (user->user_acc.email.empty() || user->user_acc.email.find("@gmail.com") == std::string::npos) {
         QMessageBox::warning(this, "Email", "Invalid email address. Please enter a valid Gmail address.");
         check = false;
     }
-    else if(user->user_acc.username.empty() || user->user_acc.password.empty() || user->user_acc.address.empty() || user->user_acc.age == NULL){
-        QMessageBox::warning(this, "Empty Fields", "Please fill in all fields.");
+    else if(user->user_acc.age < 16){
+        QMessageBox::warning(this, "Age", "Invalid age.The age must be older than 16");
         check = false;
     }
-    else {
-        if(users_read[user->user_acc.username] != NULL){
-            QMessageBox::warning(this, "Username", "Username already exists");
-            check = false;
-        }
-    }
+     else if (!isStrongPassword(user->user_acc.password)) {
+    QMessageBox::warning(this, "Password", "Password is not strong enough. Please use at least 8 characters including uppercase, lowercase, digits, and special characters.");
+    check = false;
+}
     if (check){
         QMessageBox::information(this, "Sign up","Sign up successfully");
-        MainWindow::stackedWidget->setCurrentIndex(1);
         users_read[user->user_acc.username] = user;
+        MainWindow::stackedWidget->setCurrentIndex(1);
     }
 
 }
