@@ -121,7 +121,7 @@ void user::on_editProfile_Button_clicked()
 void user::on_logout_Button_clicked()
 {
     MainWindow::stackedWidget->setCurrentIndex(0);
-    files::write_in_file("D:/m7fazty/m7fazty/files/Transiction.csv");
+    files::write_in_file("C:/Users/Essam/Desktop/git test/m7fazty/m7fazty/files/Transiction.csv");
 
 }
 

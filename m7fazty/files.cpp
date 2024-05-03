@@ -36,7 +36,7 @@ void files::write_in_file(string file_path)
     }
 
     ofstream file(path, ios::app);
-    if (path.string() == "D:/m7fazty/m7fazty/files/Transiction.csv") {
+    if (path.string() == "C:/Users/Essam/Desktop/git test/m7fazty/m7fazty/files/Transiction.csv") {
         if (file.is_open()){
             for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
                 transiction* t = trans.second;
