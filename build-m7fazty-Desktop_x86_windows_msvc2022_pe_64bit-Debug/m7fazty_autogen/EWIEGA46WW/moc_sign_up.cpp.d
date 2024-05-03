@@ -1,4 +1,5 @@
 C:/Users/Essam/Desktop/git\ test/m7fazty/build-m7fazty-Desktop_x86_windows_msvc2022_pe_64bit-Debug/m7fazty_autogen/EWIEGA46WW/moc_sign_up.cpp: C:/Users/Essam/Desktop/git\ test/m7fazty/m7fazty/sign_up.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QString \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20type_traits.h \
@@ -146,4 +147,9 @@ C:/Users/Essam/Desktop/git\ test/m7fazty/build-m7fazty-Desktop_x86_windows_msvc2
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h \
+  C:/Users/Essam/Desktop/git\ test/m7fazty/m7fazty/Login.h \
+  C:/Users/Essam/Desktop/git\ test/m7fazty/m7fazty/account.h \
+  C:/Users/Essam/Desktop/git\ test/m7fazty/m7fazty/admin.h \
+  C:/Users/Essam/Desktop/git\ test/m7fazty/m7fazty/user.h \
+  C:/Users/Essam/Desktop/git\ test/m7fazty/m7fazty/user_c.h

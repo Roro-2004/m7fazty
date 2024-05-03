@@ -15,7 +15,6 @@ public:
     account admin_acc;
     //vector <user_c> users;
 
-    static unordered_map <string,user_c> users;
 
 
 

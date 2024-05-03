@@ -1,4 +1,5 @@
 C:/Users/Essam/Desktop/git\ test/m7fazty/build-m7fazty-Desktop_x86_windows_msvc2022_pe_64bit-Debug/m7fazty_autogen/EWIEGA46WW/moc_requestmoney_dialog.cpp: C:/Users/Essam/Desktop/git\ test/m7fazty/m7fazty/requestmoney_dialog.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QString \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20type_traits.h \

@@ -33,11 +33,26 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(971, 724);
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Expanding);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
+        MainWindow->setSizePolicy(sizePolicy);
+        MainWindow->setAutoFillBackground(true);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        QSizePolicy sizePolicy1(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Expanding);
+        sizePolicy1.setHorizontalStretch(100);
+        sizePolicy1.setVerticalStretch(100);
+        sizePolicy1.setHeightForWidth(centralwidget->sizePolicy().hasHeightForWidth());
+        centralwidget->setSizePolicy(sizePolicy1);
+        centralwidget->setSizeIncrement(QSize(1000, 1000));
+        centralwidget->setAutoFillBackground(true);
         login = new QPushButton(centralwidget);
         login->setObjectName("login");
         login->setGeometry(QRect(700, 390, 181, 51));
+        sizePolicy.setHeightForWidth(login->sizePolicy().hasHeightForWidth());
+        login->setSizePolicy(sizePolicy);
         QPalette palette;
         QBrush brush(QColor(67, 27, 55, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -99,6 +114,8 @@ public:
         sign_up = new QPushButton(centralwidget);
         sign_up->setObjectName("sign_up");
         sign_up->setGeometry(QRect(700, 470, 181, 51));
+        sizePolicy.setHeightForWidth(sign_up->sizePolicy().hasHeightForWidth());
+        sign_up->setSizePolicy(sizePolicy);
         QPalette palette1;
         palette1.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette1.setBrush(QPalette::Active, QPalette::Button, brush1);
@@ -152,6 +169,8 @@ public:
         label = new QLabel(centralwidget);
         label->setObjectName("label");
         label->setGeometry(QRect(730, 170, 161, 41));
+        sizePolicy.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
+        label->setSizePolicy(sizePolicy);
         QPalette palette2;
         QBrush brush5(QColor(229, 211, 255, 255));
         brush5.setStyle(Qt::SolidPattern);
@@ -165,6 +184,8 @@ public:
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(670, 220, 301, 91));
+        sizePolicy.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
+        label_2->setSizePolicy(sizePolicy);
         QPalette palette3;
         palette3.setBrush(QPalette::Active, QPalette::WindowText, brush5);
         palette3.setBrush(QPalette::Inactive, QPalette::WindowText, brush5);
@@ -176,20 +197,19 @@ public:
         label_bg = new QLabel(centralwidget);
         label_bg->setObjectName("label_bg");
         label_bg->setGeometry(QRect(0, 0, 971, 724));
-        QSizePolicy sizePolicy(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Expanding);
-        sizePolicy.setHorizontalStretch(100);
-        sizePolicy.setVerticalStretch(100);
         sizePolicy.setHeightForWidth(label_bg->sizePolicy().hasHeightForWidth());
         label_bg->setSizePolicy(sizePolicy);
-        label_bg->setAutoFillBackground(true);
+        label_bg->setMaximumSize(QSize(16777215, 16777215));
+        label_bg->setSizeIncrement(QSize(10000, 10000));
+        label_bg->setAutoFillBackground(false);
         label_bg->setStyleSheet(QString::fromUtf8("background-image: url(:/material/photos/bg.png);"));
-        label_bg->setScaledContents(true);
+        label_bg->setScaledContents(false);
         MainWindow->setCentralWidget(centralwidget);
         label_bg->raise();
-        login->raise();
-        sign_up->raise();
         label->raise();
         label_2->raise();
+        login->raise();
+        sign_up->raise();
 
         retranslateUi(MainWindow);
 
