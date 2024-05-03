@@ -9,6 +9,7 @@
 #include<QMessageBox>
 #include<iostream>
 #include"account.h"
+#include "files.h"
 #include"requestmoney_dialog.h"
 using namespace std;
 
@@ -26,56 +27,20 @@ void Login::on_back_button_clicked()
 
 }
 
-void Login::on_Login_2_clicked()
-{
-    current_user.user_acc.username = ui->userName_textBox->text().toStdString();
-    cout <<current_user.user_acc.username<<endl;
-    if( current_user.user_acc.username=="admin")
-    {
-        admin_widget=new admin();
-        MainWindow::stackedWidget->addWidget(admin_widget);
-        MainWindow::stackedWidget->setCurrentWidget(admin_widget);
-    }
-    else{
-        user_widget=new user();
-        MainWindow::stackedWidget->addWidget(user_widget);
-        MainWindow::stackedWidget->setCurrentWidget(user_widget);
-    }
-    ui->userName_textBox->clear();
-    ui->password_textBox->clear();
-}
 
 
 void Login::on_Login_2_clicked()
 {
    std::vector<account> users;
     bool check = false;
+    current_user.user_acc.username = ui->userName_textBox->text().toStdString();
     string Enteredusername = ui->userName_textBox->text().toStdString();
     string Enteredpassword = ui->password_textBox->text().toStdString();
 
-    QFile file("User.txt");
-    if (!file.open(QFile::ReadOnly | QFile::Text | QFile:: Append)){
-        QMessageBox::warning(this,"File", "File not open");
-    }
-    QTextStream in(&file);
-   // user user_info;
-    while (!in.atEnd()) {
-        QString line = in.readLine();
-        QStringList parts = line.split(" ");
-        if (parts.size() >= 2) {
-             account user_info;
-            user_info.username = parts[0].toStdString();
-            user_info.password = parts[1].toStdString();
-            users.push_back(user_info);
-            // users.emplace_back(parts[0], parts[1]);
-        }
-    }
-     file.close();
-
-    for (auto it = users.begin(); it != users.end(); ++it) {
-        const account& user = *it;
-        cout<<user.username<<" "<<user.password;
-        if (user.username == Enteredusername && user.password == Enteredpassword) {
+    files::read_from_file("D:/new ds/m7fazty/m7fazty/files/User.csv");
+    for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read) {
+        user_c* user = u.second;
+        if(u.first == Enteredusername && user->user_acc.password == Enteredpassword){
             check = true;
             break;
         }
@@ -83,13 +48,19 @@ void Login::on_Login_2_clicked()
 
     if (check) {
         QMessageBox::information(this, "Login", "Login successful");
-        MainWindow::stackedWidget->setCurrentWidget(userwidget);
+        user_widget=new user();
+        MainWindow::stackedWidget->addWidget(user_widget);
+        MainWindow::stackedWidget->setCurrentWidget(user_widget);
     } else if(!check && Enteredusername== "admin" && Enteredpassword == "admin") {
         QMessageBox::information(this, "Login", "Login successful");
-        MainWindow::stackedWidget->setCurrentWidget(adminwidget);
+        admin_widget=new admin();
+        MainWindow::stackedWidget->addWidget(admin_widget);
+        MainWindow::stackedWidget->setCurrentWidget(admin_widget);
     }else{
         QMessageBox::warning(this, "Login", "Login failed. Invalid username or password.");
     }
+    ui->userName_textBox->clear();
+    ui->password_textBox->clear();
 
 }
 

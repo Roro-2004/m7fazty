@@ -1,5 +1,6 @@
 D:/new\ ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/EWIEGA46WW/moc_sign_up.cpp: D:/new\ ds/m7fazty/m7fazty/sign_up.h \
   D:/new\ ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/moc_predefs_Debug.h \
+  D:/QTT/6.7.0/mingw_64/include/QtCore/QString \
   D:/QTT/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/QTT/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/QTT/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
@@ -346,4 +347,9 @@ D:/new\ ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/i
   D:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   D:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   D:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  D:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+  D:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+  D:/new\ ds/m7fazty/m7fazty/Login.h \
+  D:/new\ ds/m7fazty/m7fazty/account.h \
+  D:/new\ ds/m7fazty/m7fazty/admin.h \
+  D:/new\ ds/m7fazty/m7fazty/user.h \
+  D:/new\ ds/m7fazty/m7fazty/user_c.h

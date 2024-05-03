@@ -11,6 +11,7 @@ public:
     string username;
     string password;
     string address;
+    string email;
     int age;
     bool status;
 

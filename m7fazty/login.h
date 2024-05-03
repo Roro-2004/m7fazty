@@ -29,14 +29,14 @@ private slots:
 
     void on_Login_2_clicked();
 
-    void on_Login_2_clicked();
+    //void on_Login_2_clicked();
 
 private:
     Ui::Login *ui;
-    user *userwidget;
-    admin *adminwidget;
-   /* user *user_widget;
-    admin *admin_widget;*/
+   /* user *userwidget;
+    admin *adminwidget;*/
+    user *user_widget;
+    admin *admin_widget;
 };
 
 #endif // LOGIN_H

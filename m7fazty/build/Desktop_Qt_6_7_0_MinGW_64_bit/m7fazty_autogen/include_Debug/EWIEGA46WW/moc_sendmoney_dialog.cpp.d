@@ -1,5 +1,6 @@
 D:/new\ ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/EWIEGA46WW/moc_sendmoney_dialog.cpp: D:/new\ ds/m7fazty/m7fazty/sendmoney_dialog.h \
   D:/new\ ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/moc_predefs_Debug.h \
+  D:/QTT/6.7.0/mingw_64/include/QtCore/QString \
   D:/QTT/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/QTT/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/QTT/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
