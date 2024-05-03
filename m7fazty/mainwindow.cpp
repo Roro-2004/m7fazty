@@ -1,3 +1,4 @@
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QPixmap>
@@ -62,7 +63,7 @@ void MainWindow::on_login_clicked()
 {
 
     stackedWidget->setCurrentWidget(loginWidget);
-    //requestMoney_dialog::trans_read.clear();
+    // requestMoney_dialog::trans_data.clear();
 }
 
 void MainWindow::on_sign_up_clicked()
@@ -72,4 +73,11 @@ void MainWindow::on_sign_up_clicked()
     stackedWidget->setCurrentWidget(sign_up_widget);
 
 }
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    files::write_in_file("D:/m7fazty/m7fazty/files/User.csv");
+    files::write_in_file("D:/m7fazty/m7fazty/files/Transiction.csv");
 
+    qDebug() << "Closing the application...";
+    QMainWindow::closeEvent(event);
+}

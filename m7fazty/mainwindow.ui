@@ -597,7 +597,7 @@ QPushButton:pressed {
      </sizepolicy>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="styleSheet">
      <string notr="true">background-image: url(:/material/photos/bg.png);</string>
@@ -610,10 +610,10 @@ QPushButton:pressed {
     </property>
    </widget>
    <zorder>label_bg</zorder>
-   <zorder>login</zorder>
-   <zorder>sign_up</zorder>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
+   <zorder>login</zorder>
+   <zorder>sign_up</zorder>
   </widget>
  </widget>
  <resources/>

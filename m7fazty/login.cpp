@@ -33,11 +33,10 @@ void Login::on_Login_2_clicked()
 {
    std::vector<account> users;
     bool check = false;
-    current_user.user_acc.username = ui->userName_textBox->text().toStdString();
+    //current_user.user_acc.username = ui->userName_textBox->text().toStdString();
     string Enteredusername = ui->userName_textBox->text().toStdString();
     string Enteredpassword = ui->password_textBox->text().toStdString();
 
-    files::read_from_file("D:/m7fazty/m7fazty/files/User.csv");
     for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read) {
         user_c* user = u.second;
         if(u.first == Enteredusername && user->user_acc.password == Enteredpassword){
