@@ -1,4 +1,5 @@
 D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/EWIEGA46WW/moc_login.cpp: D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/login.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QString \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20type_traits.h \

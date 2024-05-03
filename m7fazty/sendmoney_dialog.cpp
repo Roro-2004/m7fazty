@@ -1,3 +1,4 @@
+
 #include "sendmoney_dialog.h"
 #include "ui_sendmoney_dialog.h"
 #include <unordered_map>
@@ -72,7 +73,7 @@ void sendMoney_dialog::on_send_Button_clicked()
 
     t->date=getCurrentDate();
     t->time=getCurrentTime();
-    requestMoney_dialog::trans_data[generateID()] = t;
+    requestMoney_dialog::trans_read[generateID()] = t;
     cout<<"trans done\n";
     close();
 }
