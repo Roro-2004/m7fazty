@@ -16,46 +16,44 @@ namespace fs = std::filesystem;
 files::files() {}
 
 
-void files::write_in_file(string file_path)
-{
+void files::write_in_file(string file_path) {
     fs::path path = file_path;
+    ofstream file(path);
 
-    if (!fs::exists(path))
-    {
-        ofstream file(path);
+    if (!file.is_open()) {
+        cerr << "Error: Unable to open the file for writing." << endl;
+        return;
+    }
 
-        if (path.string() == "D:/m7fazty/m7fazty/files/Transiction.csv" && file.is_open())
-        {
+    // Write headers only if the file is empty
+    if (fs::file_size(path) == 0) {
+        if (path.string() == "D:/Projects/2nd Year/DS/m7fazty//m7fazty/files/Transiction.csv") {
             file << "Trans ID" << "," << "Receiver" << "," << "Sender" << "," << "Amount" << "," << "Date" << "," << "Time" << "," << "Status" << endl;
-            cout << "Headers have been written to the file successfully." << endl;
-        }
-        else if(path.string() == "D:/m7fazty/m7fazty/files/User.csv" && file.is_open()){
+        } else if (path.string() == "D:/Projects/2nd Year/DS/m7fazty//m7fazty/files/User.csv") {
             file << "Username" << "," << "Password" << "," << "Address" << "," << "Email" << "," << "Age" << "," << "Balance" << "," << "Status" << endl;
-            cout << "Headers have been written to the file successfully." << endl;
-        }
-        else
-        {
-            cerr << "Error: Unable to open the file for writing." << endl;
+        } else {
+            cerr << "Error: Invalid file path." << endl;
+            file.close();
             return;
         }
-
-        file.close();
+        cout << "Headers have been written to the file successfully." << endl;
     }
 
-    ofstream file(path);
-    if (path.string() == "D:/m7fazty/m7fazty/files/Transiction.csv" && file.is_open()) {
-            for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
-                transiction* t = trans.second;
-                file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
-            }
-    }
-    else if(path.string() == "D:/m7fazty/m7fazty/files/User.csv" ){
-        for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read) {
-            user_c* user = u.second;
-            file << u.first  << "," << user->user_acc.password << "," << user->user_acc.address << "," << user->user_acc.email << "," << user->user_acc.age << "," << user->balance << "," << user->user_acc.status << endl;
+    // Write data
+    if (path.string() == "D:/Projects/2nd Year/DS/m7fazty//m7fazty/files/Transiction.csv") {
+        for (const auto& trans : requestMoney_dialog::trans_read) {
+            transiction* t = trans.second;
+            file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
         }
+    } else if (path.string() == "D:/Projects/2nd Year/DS/m7fazty//m7fazty/files/User.csv") {
+        for (const auto& u : sign_up::users_read) {
+            user_c* user = u.second;
+            file << u.first << "," << user->user_acc.password << "," << user->user_acc.address << "," << user->user_acc.email << "," << user->user_acc.age << "," << user->balance << "," << user->user_acc.status << endl;
+        }
+    } else {
+        cerr << "Error: Invalid file path." << endl;
     }
-     else cerr << "Error: Unable to open the file for writing." << endl;
+
     file.close();
     cout << "Data has been written to the file successfully." << endl;
 }
@@ -124,6 +122,7 @@ void files::split(const string& s, const string& path) {
 void files::read_from_file(const string& file_path) {
     ifstream inputFile(file_path);
     string line;
+    bool isFirstLine = true;
 
     if (!inputFile.is_open()) {
         cerr << "Error: Unable to open the file for reading." << endl;
@@ -131,10 +130,15 @@ void files::read_from_file(const string& file_path) {
     }
 
     while (getline(inputFile, line)) {
+        if (isFirstLine) {
+            // Skip the first line (header)
+            isFirstLine = false;
+            continue;
+        }
         if (!line.empty()) {
-            if (file_path == "D:/m7fazty/m7fazty/files/Transiction.csv") {
+            if (file_path == "D:/Projects/2nd Year/DS/m7fazty//m7fazty/files/Transiction.csv") {
                 split(line, "tr");
-            } else if (file_path == "D:/m7fazty/m7fazty/files/User.csv") {
+            } else if (file_path == "D:/Projects/2nd Year/DS/m7fazty//m7fazty/files/User.csv") {
                 split(line, "ur");
             }
         }
