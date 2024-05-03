@@ -7,6 +7,7 @@
 #include<vector>
 #include"requestmoney_dialog.h"
 #include "sign_up.h"
+#include"sstream"
 using namespace std;
 namespace fs = std::filesystem;
 
