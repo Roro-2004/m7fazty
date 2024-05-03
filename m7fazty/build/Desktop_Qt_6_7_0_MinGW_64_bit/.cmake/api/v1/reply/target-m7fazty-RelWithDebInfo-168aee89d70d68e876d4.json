@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/m7fazty.exe"
+			"path" : "RelWithDebInfo/m7fazty.exe"
 		},
 		{
-			"path" : "Debug/m7fazty.pdb"
+			"path" : "RelWithDebInfo/m7fazty.pdb"
 		}
 	],
 	"backtrace" : 4,
@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 88,
+				"line" : 89,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 71,
+				"line" : 72,
 				"parent" : 0
 			},
 			{
@@ -268,7 +268,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always"
+					"fragment" : "-DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always"
 				}
 			],
 			"defines" : 
@@ -288,6 +288,10 @@
 				{
 					"backtrace" : 14,
 					"define" : "QT_NEEDS_QMAIN"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "QT_NO_DEBUG"
 				},
 				{
 					"backtrace" : 6,
@@ -322,7 +326,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "D:/new ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug"
+					"path" : "D:/new ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo"
 				},
 				{
 					"backtrace" : 14,
@@ -418,7 +422,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-DQT_QML_DEBUG -g",
+				"fragment" : "-DQT_QML_DEBUG -O2 -g -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -609,7 +613,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/mocs_compilation_Debug.cpp",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/mocs_compilation_RelWithDebInfo.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -921,91 +925,91 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_mainwindow.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_mainwindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_user.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_user.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_sign_up.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_sign_up.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_login.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_login.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_requestmoney_dialog.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_requestmoney_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_sendmoney_dialog.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_sendmoney_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_viewbalance_dialog.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_viewbalance_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_viewtranshistory_dialog.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_viewtranshistory_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_editprofile_dialog.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_editprofile_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_admin.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_admin.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_add_edit_dialog.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_add_edit_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_delete_suspend_dialog.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_delete_suspend_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_adjust_balance_dialog.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_adjust_balance_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_view_users_dialog.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_view_users_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_view_trans_dialog.h",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_RelWithDebInfo/ui_view_trans_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
