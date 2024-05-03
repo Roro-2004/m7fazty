@@ -670,10 +670,10 @@ QPushButton:pressed {
     </property>
    </widget>
    <zorder>label_bg</zorder>
-   <zorder>login</zorder>
-   <zorder>sign_up</zorder>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
+   <zorder>login</zorder>
+   <zorder>sign_up</zorder>
   </widget>
  </widget>
  <resources/>

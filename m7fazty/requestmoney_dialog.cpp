@@ -11,14 +11,13 @@
 using namespace std;
 
 
-//unordered_map<string, transiction*> requestMoney_dialog::trans_data;
 unordered_map<string, transiction*> requestMoney_dialog::trans_read;
 unordered_set<string> requestMoney_dialog::usedIDs;
 
 
 requestMoney_dialog::requestMoney_dialog(QWidget *parent) : QDialog(parent), ui(new Ui::requestMoney_dialog) {
     ui->setupUi(this);
-    //cout<<trans_data.size()<<endl;
+    //cout<<trans_read.size()<<endl;
 }
 
 string requestMoney_dialog::generateID()

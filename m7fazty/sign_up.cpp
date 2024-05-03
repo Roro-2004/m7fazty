@@ -9,6 +9,7 @@
 #include "mainwindow.h"
 #include <string>
 #include <regex>
+#include <QMainWindow>
 using namespace std;
 //unordered_map<string, user_c*> sign_up::users_data;
 unordered_map<string, user_c*> sign_up::users_read;

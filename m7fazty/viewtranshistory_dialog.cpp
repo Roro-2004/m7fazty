@@ -111,16 +111,6 @@ void viewTransHistory_dialog::search_by_month(string s) {
 void viewTransHistory_dialog::transiction_history() {
     string name = Login::current_user.user_acc.username;
 
-    // Iterate over the transactions in requestMoney_dialog::trans_data
-  /*  for (auto& tr : requestMoney_dialog::trans_read) {
-        transiction* t = tr.second;
-        if (t != nullptr && (t->receiver == name || t->sender == name)) {
-            string key = encoding(t->date.substr(3, 2)); // Assuming month is two characters long
-            transactions_map[key].push_back(t);
-        }
-    }*/
-
-    // Iterate over the transactions in requestMoney_dialog::trans_read
     for (auto& tr : requestMoney_dialog::trans_read) {
         transiction* t = tr.second;
         if (t != nullptr && (t->receiver == name || t->sender == name)) {
@@ -182,3 +172,4 @@ void viewTransHistory_dialog::on_month_cb_currentTextChanged(const QString &mont
     search_by_month(month.toStdString());
 
 }
+
