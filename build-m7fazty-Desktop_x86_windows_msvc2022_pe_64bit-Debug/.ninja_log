@@ -1,69 +1,31 @@
 # ninja log v5
-131	587	7364661240891975	m7fazty_autogen/timestamp	32559a4dc8a0b323
+114	613	7364667597330682	m7fazty_autogen/timestamp	32559a4dc8a0b323
 43167	47327	7363720773223448	CMakeFiles/m7fazty.dir/m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp.obj	9b3e035208e76837
-632	12067	7364661355323062	CMakeFiles/m7fazty.dir/sign_up.cpp.obj	a8e245a73b0662ed
-131	587	7364661240891975	m7fazty_autogen/mocs_compilation.cpp	32559a4dc8a0b323
-14667	24967	7364661483834236	CMakeFiles/m7fazty.dir/delete_suspend_dialog.cpp.obj	7b1680ad1e47fcc8
-131	587	7364661240891975	C:/Users/Essam/Desktop/git test/m7fazty/build-m7fazty-Desktop_x86_windows_msvc2022_pe_64bit-Debug/m7fazty_autogen/timestamp	32559a4dc8a0b323
-701	12874	7364661363142951	CMakeFiles/m7fazty.dir/sendmoney_dialog.cpp.obj	937b9e0ba948537d
+661	13620	7364667726835947	CMakeFiles/m7fazty.dir/sign_up.cpp.obj	a8e245a73b0662ed
+114	613	7364667597330682	m7fazty_autogen/mocs_compilation.cpp	32559a4dc8a0b323
+16129	27391	7364667864785531	CMakeFiles/m7fazty.dir/delete_suspend_dialog.cpp.obj	7b1680ad1e47fcc8
+114	613	7364667597330682	C:/Users/Essam/Desktop/git test/m7fazty/build-m7fazty-Desktop_x86_windows_msvc2022_pe_64bit-Debug/m7fazty_autogen/timestamp	32559a4dc8a0b323
+769	14241	7364667732745957	CMakeFiles/m7fazty.dir/sendmoney_dialog.cpp.obj	937b9e0ba948537d
 5060	5261	7363720352581343	C:/Users/Essam/Desktop/git test/m7fazty/build-m7fazty-Desktop_x86_windows_msvc2022_pe_64bit-Debug/m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp	bfb63850960fc15b
 1242	10699	7364596278108529	CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj	bcf4f02d6a5adf3d
-131	587	7364661240891975	C:/Users/Essam/Desktop/git test/m7fazty/build-m7fazty-Desktop_x86_windows_msvc2022_pe_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	32559a4dc8a0b323
+114	613	7364667597330682	C:/Users/Essam/Desktop/git test/m7fazty/build-m7fazty-Desktop_x86_windows_msvc2022_pe_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	32559a4dc8a0b323
 5060	5261	7363720352581343	m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp	bfb63850960fc15b
-643	12500	7364661359672956	CMakeFiles/m7fazty.dir/login.cpp.obj	e5fb38e2d6d6914d
-11910	21916	7364661453897619	CMakeFiles/m7fazty.dir/viewbalance_dialog.cpp.obj	550b295eba164e25
-624	11908	7364661353662979	CMakeFiles/m7fazty.dir/user.cpp.obj	58d8f730b61fc908
-618	14666	7364661381592919	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	90c8f9f7d20e89ca
+675	14678	7364667737665960	CMakeFiles/m7fazty.dir/login.cpp.obj	e5fb38e2d6d6914d
+13621	25141	7364667841735527	CMakeFiles/m7fazty.dir/viewbalance_dialog.cpp.obj	550b295eba164e25
+652	15398	7364667744755978	CMakeFiles/m7fazty.dir/user.cpp.obj	58d8f730b61fc908
+645	16129	7364667752245983	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	90c8f9f7d20e89ca
 5266	18689	7363720486604875	CMakeFiles/m7fazty.dir/main.cpp.obj	680417516a1a5755
 455	3040	7363886624225775	CMakeFiles/m7fazty.dir/admin_c.cpp.obj	d4d8af78e712780
-12772	24275	7364661477568875	CMakeFiles/m7fazty.dir/admin.cpp.obj	832a00125a87cf85
+14679	27733	7364667868420855	CMakeFiles/m7fazty.dir/admin.cpp.obj	832a00125a87cf85
 16725	19486	7363720494660490	CMakeFiles/m7fazty.dir/transiction.cpp.obj	926c4aa17ea9da4
 17558	26886	7363720568410527	CMakeFiles/m7fazty.dir/account.cpp.obj	a44503f6f3b65718
 10870	20847	7363936803999658	CMakeFiles/m7fazty.dir/files.cpp.obj	ba30c6f58d5cb07a
 16590	27121	7363720570754311	CMakeFiles/m7fazty.dir/user_c.cpp.obj	243d91da658c6303
-694	12771	7364661362362942	CMakeFiles/m7fazty.dir/requestmoney_dialog.cpp.obj	6302e3eebda37ed7
-12067	25049	7364661485358230	CMakeFiles/m7fazty.dir/viewtranshistory_dialog.cpp.obj	94fbf5f8f36485e9
-12501	23457	7364661468776227	CMakeFiles/m7fazty.dir/editprofile_dialog.cpp.obj	49b3b7d361c0a3b2
-12875	23712	7364661471996206	CMakeFiles/m7fazty.dir/add_edit_dialog.cpp.obj	25ac2b6c6c4bc3c3
-21916	29315	7364661528136030	CMakeFiles/m7fazty.dir/adjust_balance_dialog.cpp.obj	1a3061ae46ef12a5
-23457	31599	7364661550935936	CMakeFiles/m7fazty.dir/view_users_dialog.cpp.obj	3af82874e2c9f7b5
-23712	30284	7364661537755964	CMakeFiles/m7fazty.dir/view_trans_dialog.cpp.obj	7542fa98014f8be4
-31599	32112	7364661555155932	m7fazty.exe	83efe8ae0dfba086
-157	606	7364665816147499	m7fazty_autogen/timestamp	32559a4dc8a0b323
-157	606	7364665816147499	m7fazty_autogen/mocs_compilation.cpp	32559a4dc8a0b323
-157	606	7364665816147499	C:/Users/Essam/Desktop/git test/m7fazty/build-m7fazty-Desktop_x86_windows_msvc2022_pe_64bit-Debug/m7fazty_autogen/timestamp	32559a4dc8a0b323
-157	606	7364665816147499	C:/Users/Essam/Desktop/git test/m7fazty/build-m7fazty-Desktop_x86_windows_msvc2022_pe_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	32559a4dc8a0b323
-652	11762	7364665927354115	CMakeFiles/m7fazty.dir/sign_up.cpp.obj	a8e245a73b0662ed
-659	12421	7364665932824134	CMakeFiles/m7fazty.dir/login.cpp.obj	e5fb38e2d6d6914d
-645	12527	7364665934944066	CMakeFiles/m7fazty.dir/user.cpp.obj	58d8f730b61fc908
-666	13188	7364665941534038	CMakeFiles/m7fazty.dir/requestmoney_dialog.cpp.obj	6302e3eebda37ed7
-638	15352	7364665963353632	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	90c8f9f7d20e89ca
-685	15912	7364665968263697	CMakeFiles/m7fazty.dir/sendmoney_dialog.cpp.obj	937b9e0ba948537d
-11764	22785	7364666037775385	CMakeFiles/m7fazty.dir/viewbalance_dialog.cpp.obj	550b295eba164e25
-12528	22896	7364666038185385	CMakeFiles/m7fazty.dir/editprofile_dialog.cpp.obj	49b3b7d361c0a3b2
-13189	25564	7364666065413201	CMakeFiles/m7fazty.dir/admin.cpp.obj	832a00125a87cf85
-15353	25631	7364666066093223	CMakeFiles/m7fazty.dir/add_edit_dialog.cpp.obj	25ac2b6c6c4bc3c3
-12422	26097	7364666070869418	CMakeFiles/m7fazty.dir/viewtranshistory_dialog.cpp.obj	94fbf5f8f36485e9
-15913	26327	7364666073259408	CMakeFiles/m7fazty.dir/delete_suspend_dialog.cpp.obj	7b1680ad1e47fcc8
-22786	30318	7364666113170720	CMakeFiles/m7fazty.dir/adjust_balance_dialog.cpp.obj	1a3061ae46ef12a5
-25565	31969	7364666129740746	CMakeFiles/m7fazty.dir/view_trans_dialog.cpp.obj	7542fa98014f8be4
-114	613	7364667597330682	m7fazty_autogen/timestamp	32559a4dc8a0b323
-114	613	7364667597330682	m7fazty_autogen/mocs_compilation.cpp	32559a4dc8a0b323
-114	613	7364667597330682	C:/Users/Essam/Desktop/git test/m7fazty/build-m7fazty-Desktop_x86_windows_msvc2022_pe_64bit-Debug/m7fazty_autogen/timestamp	32559a4dc8a0b323
-114	613	7364667597330682	C:/Users/Essam/Desktop/git test/m7fazty/build-m7fazty-Desktop_x86_windows_msvc2022_pe_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	32559a4dc8a0b323
-661	13620	7364667726835947	CMakeFiles/m7fazty.dir/sign_up.cpp.obj	a8e245a73b0662ed
-769	14241	7364667732745957	CMakeFiles/m7fazty.dir/sendmoney_dialog.cpp.obj	937b9e0ba948537d
 760	14334	7364667734036001	CMakeFiles/m7fazty.dir/requestmoney_dialog.cpp.obj	6302e3eebda37ed7
-675	14678	7364667737665960	CMakeFiles/m7fazty.dir/login.cpp.obj	e5fb38e2d6d6914d
-652	15398	7364667744755978	CMakeFiles/m7fazty.dir/user.cpp.obj	58d8f730b61fc908
-645	16129	7364667752245983	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	90c8f9f7d20e89ca
-13621	25141	7364667841735527	CMakeFiles/m7fazty.dir/viewbalance_dialog.cpp.obj	550b295eba164e25
+14242	28323	7364667874276032	CMakeFiles/m7fazty.dir/viewtranshistory_dialog.cpp.obj	94fbf5f8f36485e9
 14335	26134	7364667852435525	CMakeFiles/m7fazty.dir/editprofile_dialog.cpp.obj	49b3b7d361c0a3b2
 15398	26960	7364667860575618	CMakeFiles/m7fazty.dir/add_edit_dialog.cpp.obj	25ac2b6c6c4bc3c3
-16129	27391	7364667864785531	CMakeFiles/m7fazty.dir/delete_suspend_dialog.cpp.obj	7b1680ad1e47fcc8
-14679	27733	7364667868420855	CMakeFiles/m7fazty.dir/admin.cpp.obj	832a00125a87cf85
-14242	28323	7364667874276032	CMakeFiles/m7fazty.dir/viewtranshistory_dialog.cpp.obj	94fbf5f8f36485e9
 25142	33323	7364667924296053	CMakeFiles/m7fazty.dir/adjust_balance_dialog.cpp.obj	1a3061ae46ef12a5
-26961	34274	7364667933806043	CMakeFiles/m7fazty.dir/view_trans_dialog.cpp.obj	7542fa98014f8be4
 26134	35650	7364667947641516	CMakeFiles/m7fazty.dir/view_users_dialog.cpp.obj	3af82874e2c9f7b5
+26961	34274	7364667933806043	CMakeFiles/m7fazty.dir/view_trans_dialog.cpp.obj	7542fa98014f8be4
 35651	36251	7364667952501503	m7fazty.exe	83efe8ae0dfba086
