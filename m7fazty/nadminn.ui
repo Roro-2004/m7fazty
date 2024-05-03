@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NadminN</class>
+ <widget class="QDialog" name="NadminN">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>794</width>
+    <height>443</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="username_add_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>username</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="password_add_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>password</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="address_add_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>20</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Address</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="age_add_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>20</y>
+     <width>41</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Age</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="suspend_add_checkBox">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>10</y>
+     <width>91</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Suspend</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="Activate_add_checkBox">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>40</y>
+     <width>91</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Activate</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_acc_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>20</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="username_editBalance_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>username</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="newBalance_editBalance_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>100</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>New Balance</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="editBalance_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>100</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit Balance</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="username_Activate_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>username</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Activate_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>170</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Activate</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="username_suspend_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>username</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="suspend_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>240</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Suspend</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="username_deleteacc_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>290</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>username</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteacc_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>290</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+  <zorder>username_add_lineEdit</zorder>
+  <zorder>password_add_lineEdit</zorder>
+  <zorder>address_add_lineEdit</zorder>
+  <zorder>age_add_lineEdit</zorder>
+  <zorder>suspend_add_checkBox</zorder>
+  <zorder>Activate_add_checkBox</zorder>
+  <zorder>add_acc_pushButton</zorder>
+  <zorder>username_editBalance_lineEdit</zorder>
+  <zorder>newBalance_editBalance_lineEdit</zorder>
+  <zorder>editBalance_pushButton</zorder>
+  <zorder>username_Activate_lineEdit</zorder>
+  <zorder>username_suspend_lineEdit</zorder>
+  <zorder>username_deleteacc_lineEdit</zorder>
+  <zorder>Activate_pushButton</zorder>
+  <zorder>suspend_pushButton</zorder>
+  <zorder>deleteacc_pushButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

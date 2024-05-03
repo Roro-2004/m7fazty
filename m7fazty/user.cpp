@@ -11,6 +11,10 @@
 user::user(QWidget *parent): QWidget(parent), ui(new Ui::user)
 {
     ui->setupUi(this);
+
+// Create the viewBalance widget and add it to the stacked widget
+    viewBalance_dialog_widget=new viewBalance_dialog();
+    MainWindow::stackedWidget->addWidget(viewBalance_dialog_widget);
     hideAllElements();
 }
 

@@ -29,6 +29,32 @@
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="viewCurrentBalance_label">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>150</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="viewCurrentBalance_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>150</y>
+     <width>171</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>View Current Balance</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

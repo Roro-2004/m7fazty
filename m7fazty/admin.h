@@ -35,6 +35,7 @@ private slots:
 
 private:
     Ui::admin *ui;
+  //  NadminN* NadminNWidget;           ////////////
 };
 
 #endif // ADMIN_H

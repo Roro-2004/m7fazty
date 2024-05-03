@@ -46,6 +46,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         view_users_dialog.h view_users_dialog.cpp view_users_dialog.ui
         view_trans_dialog.h view_trans_dialog.cpp view_trans_dialog.ui
 
+        context.h context.cpp
+        nadminn.h nadminn.cpp nadminn.ui
+        admin_edits.h admin_edits.cpp admin_edits.ui
 
 
 
