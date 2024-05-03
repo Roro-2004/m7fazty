@@ -1,14 +1,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QPixmap>
-#include"login.h"
-
 #include <fstream>
 #include <filesystem>
 #include <iostream>
-#include"files.h"
-#include"requestmoney_dialog.h"
-#include "sendmoney_dialog.h"
 using namespace std;
 namespace fs = std::filesystem;
 

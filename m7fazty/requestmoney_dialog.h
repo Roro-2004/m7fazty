@@ -2,8 +2,9 @@
 #define REQUESTMONEY_DIALOG_H
 #include <QDialog>
 #include <unordered_map>
-#include "transiction.h"
 #include <unordered_set>
+#include"headers.h"
+
 using namespace std;
 
 

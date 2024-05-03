@@ -1,9 +1,8 @@
 #ifndef SIGN_UP_H
 #define SIGN_UP_H
-#include "Login.h"
-#include "user_c.h"
 #include<unordered_map>
 #include <QWidget>
+#include"headers.h"
 
 namespace Ui {
 class sign_up;

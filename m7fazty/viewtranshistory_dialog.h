@@ -1,10 +1,9 @@
 #ifndef VIEWTRANSHISTORY_DIALOG_H
 #define VIEWTRANSHISTORY_DIALOG_H
 #include <QDialog>
-#include "account.h"
 #include<vector>
 #include<unordered_map>
-#include "transiction.h"
+#include"headers.h"
 using namespace std;
 namespace Ui {
 class viewTransHistory_dialog;

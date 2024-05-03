@@ -1,6 +1,6 @@
 #ifndef DELETE_SUSPEND_DIALOG_H
 #define DELETE_SUSPEND_DIALOG_H
-
+#include"headers.h"
 #include <QDialog>
 
 namespace Ui {

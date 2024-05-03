@@ -1,8 +1,5 @@
 #include "viewtranshistory_dialog.h"
 #include "ui_viewtranshistory_dialog.h"
-#include "requestmoney_dialog.h"
-#include "transiction.h"
-#include "login.h"
 #include <QTableWidgetItem>
 #include <iostream>
 #include <vector>

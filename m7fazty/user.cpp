@@ -1,12 +1,5 @@
 #include "user.h"
 #include "ui_user.h"
-#include "mainwindow.h"
-#include"requestmoney_dialog.h"
-#include"sendmoney_dialog.h"
-#include"viewbalance_dialog.h"
-#include"viewtranshistory_dialog.h"
-#include"editprofile_dialog.h"
-#include "files.h"
 
 user::user(QWidget *parent): QWidget(parent), ui(new Ui::user)
 {

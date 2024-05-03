@@ -5,8 +5,7 @@
 #include<iostream>
 #include<unordered_map>
 #include<vector>
-#include"requestmoney_dialog.h"
-#include "sign_up.h"
+
 using namespace std;
 namespace fs = std::filesystem;
 

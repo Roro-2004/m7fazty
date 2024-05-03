@@ -2,8 +2,8 @@
 #define MAINWINDOW_H
 #include <QMainWindow>
 #include <QStackedWidget>
-#include "Login.h"
-#include"sign_up.h"
+#include"headers.h"
+
 namespace fs = std::filesystem;
 using namespace std;
 

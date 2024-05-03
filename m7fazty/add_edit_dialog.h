@@ -1,6 +1,6 @@
 #ifndef ADD_EDIT_DIALOG_H
 #define ADD_EDIT_DIALOG_H
-
+#include"headers.h"
 #include <QDialog>
 
 namespace Ui {

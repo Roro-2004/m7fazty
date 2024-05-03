@@ -2,6 +2,7 @@
 #define ACCOUNT_H
 #include <string>
 #include"QString"
+#include"headers.h"
 using namespace std;
 
 class account

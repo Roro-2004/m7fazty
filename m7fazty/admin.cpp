@@ -1,12 +1,5 @@
 #include "admin.h"
 #include "ui_admin.h"
-#include "mainwindow.h"
-#include "add_edit_dialog.h"
-#include"delete_suspend_dialog.h"
-#include"adjust_balance_dialog.h"
-#include"view_trans_dialog.h"
-#include"view_users_dialog.h"
-#include"files.h"
 
 admin::admin(QWidget *parent)
     : QWidget(parent)

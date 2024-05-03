@@ -1,8 +1,6 @@
 #include <QApplication>
 #include "mainwindow.h"
-#include "Login.h"
-#include"requestmoney_dialog.h"
-#include"files.h"
+#include"headers.h"
 #include"iostream"
 using namespace std;
 

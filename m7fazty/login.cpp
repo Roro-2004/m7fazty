@@ -1,16 +1,11 @@
 #include "login.h"
 #include "ui_login.h"
-#include "mainwindow.h"
-#include "user.h"
-#include "admin.h"
 #include <vector>
 #include <QFile>
 #include<QTextStream>
 #include<QMessageBox>
 #include<iostream>
-#include"account.h"
-#include "files.h"
-#include"requestmoney_dialog.h"
+
 using namespace std;
 
 

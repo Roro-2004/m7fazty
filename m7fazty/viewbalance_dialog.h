@@ -1,6 +1,7 @@
 #ifndef VIEWBALANCE_DIALOG_H
 #define VIEWBALANCE_DIALOG_H
 #include <QDialog>
+#include"headers.h"
 
 namespace Ui {
 class viewBalance_dialog;
