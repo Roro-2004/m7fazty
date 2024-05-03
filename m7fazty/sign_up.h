@@ -19,9 +19,10 @@ public:
 
     static unordered_map<string, user_c*> users_read;
     user_c *user;
+    bool static isStrongPassword(string &password);
+
 
 private slots:
-    bool isStrongPassword(string &password);
 
     void on_back_button_clicked();
 

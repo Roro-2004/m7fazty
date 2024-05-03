@@ -84,6 +84,10 @@ void sendMoney_dialog::on_send_Button_clicked()
 
     for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read)
     {
+        bool exist=false;
+        if(t->receiver==u.second->user_acc.username)
+            exist=true;
+        if(exist==true){
         if(t->receiver==t->sender)
         {
             cout <<"cant do transiction";
@@ -93,8 +97,9 @@ void sendMoney_dialog::on_send_Button_clicked()
         {
             if(t->receiver==u.second->user_acc.username)
                u.second->balance+=t->amount;
-            else if(t->sender==u.second->user_acc.username)
+            else if(t->sender==u.second->user_acc.username && u.second->balance>=t->amount)
                u.second->balance-=t->amount;
+        }
         }
     }
     close();

@@ -16,8 +16,8 @@ public:
     account user_acc;
     float balance;
     int points;
-    vector <transiction*> transictions;
-     QString View_current_balance();
+
+    string View_current_balance();
     //float balance_calc();
     //float points_calc();
 };

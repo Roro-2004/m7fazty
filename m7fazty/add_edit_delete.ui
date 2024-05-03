@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>add_edit_delete</class>
+ <widget class="QDialog" name="add_edit_delete">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>624</width>
+    <height>494</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>-1</y>
+     <width>631</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/material/photos/dialog_bg.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewAndEditAge_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>70</y>
+     <width>31</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewAndEditPassword_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>70</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewAndEditAddress_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>70</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewAndEditusername_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>70</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewCurrentAccData_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>121</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>current username</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="viewCurrentAccData_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>10</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>View</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="editAcc_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>170</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="viewAndEditEmail_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>180</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="username_add_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>240</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>username</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="age_add_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>240</y>
+     <width>41</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Age</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="address_add_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>240</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Address</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="password_add_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>240</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>password</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_acc_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>230</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="email_add_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>username</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="username_deleteacc_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>440</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>username</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteacc_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>440</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

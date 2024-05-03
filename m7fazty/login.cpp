@@ -20,10 +20,6 @@ user_c Login::current_user;
 Login::Login(QWidget *parent) :QWidget(parent),ui(new Ui::Login)
 {
     ui->setupUi(this);
-
-
-    admin_edits_widget=new admin_edits();
-    MainWindow::stackedWidget->addWidget(admin_edits_widget);
 }
 
 
@@ -68,6 +64,9 @@ void Login::on_Login_2_clicked()
     ui->userName_textBox->clear();
     ui->password_textBox->clear();
 
+   // MainWindow::stackedWidget->setCurrentWidget(admin_edits_widget);
+
+
 }
 
 
@@ -76,19 +75,4 @@ Login::~Login()
     delete ui;
 }
 
-void Login::on_back_button_clicked()
-{
-    MainWindow::stackedWidget->setCurrentIndex(0);
-
-}
-
-
-
-void Login::on_Login_2_clicked()
-{
-    MainWindow::stackedWidget->setCurrentWidget(admin_edits_widget);
-   /* user_widget=new user();
-    MainWindow::stackedWidget->addWidget(user_widget);
-    MainWindow::stackedWidget->setCurrentWidget(user_widget);*/
-}
 

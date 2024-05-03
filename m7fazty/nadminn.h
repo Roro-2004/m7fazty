@@ -16,17 +16,13 @@ public:
     ~NadminN();
 
 private slots:
-    void on_add_acc_pushButton_clicked();
 
     void on_editBalance_pushButton_clicked();
-
-    void on_NadminN_accepted();
 
     void on_Activate_pushButton_clicked();
 
     void on_suspend_pushButton_clicked();
 
-    void on_deleteacc_pushButton_clicked();
 
 private:
     Ui::NadminN *ui;

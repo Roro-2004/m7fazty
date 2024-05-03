@@ -19,11 +19,7 @@ private slots:
 
     void on_close_list_Button_clicked();
 
-    void on_add_edit_Button_clicked();
-
     void on_viewUsers_Button_clicked();
-
-    void on_delete_suspend_Button_clicked();
 
     void on_viewTransictions_Button_clicked();
 
@@ -33,9 +29,12 @@ private slots:
 
     void on_menu_Button_clicked();
 
+    void on_suspend_activate_Button_clicked();
+
+    void on_add_edit_delete_Button_clicked();
+
 private:
     Ui::admin *ui;
-  //  NadminN* NadminNWidget;           ////////////
 };
 
 #endif // ADMIN_H

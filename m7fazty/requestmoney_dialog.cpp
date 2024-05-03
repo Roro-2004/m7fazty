@@ -85,19 +85,25 @@ void requestMoney_dialog::on_request_Button_clicked() {
 
     cout<<"request done\n";
 
+
     for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read)
     {
-        if(t->receiver==t->sender)
-        {
-            cout <<"cant do transiction";
-            break;
-        }
-        else
-        {
-            if(t->receiver==u.second->user_acc.username )
-               u.second->balance+=t->amount;
-            else if(t->sender==u.second->user_acc.username)
-               u.second->balance-=t->amount;
+        bool exist=false;
+        if(t->sender==u.second->user_acc.username)
+            exist=true;
+        if(exist==true){
+            if(t->receiver==t->sender)
+            {
+                cout <<"cant do transiction";
+                break;
+            }
+            else
+            {
+                if(t->receiver==u.second->user_acc.username)
+                    u.second->balance+=t->amount;
+                else if(t->sender==u.second->user_acc.username && u.second->balance>=t->amount)
+                    u.second->balance-=t->amount;
+            }
         }
     }
     close();

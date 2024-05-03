@@ -233,7 +233,7 @@ QPushButton:pressed {
     <rect>
      <x>10</x>
      <y>50</y>
-     <width>321</width>
+     <width>373</width>
      <height>601</height>
     </rect>
    </property>
@@ -752,7 +752,7 @@ QPushButton:pressed {
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="add_edit_Button">
+     <widget class="QPushButton" name="add_edit_delete_Button">
       <property name="palette">
        <palette>
         <active>
@@ -978,7 +978,7 @@ QPushButton:pressed {
 }</string>
       </property>
       <property name="text">
-       <string>○ Add / Edit</string>
+       <string>○ Add / Edit / Delete</string>
       </property>
      </widget>
     </item>
@@ -1001,7 +1001,7 @@ QPushButton:pressed {
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="delete_suspend_Button">
+     <widget class="QPushButton" name="suspend_activate_Button">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
         <horstretch>0</horstretch>
@@ -1233,7 +1233,7 @@ QPushButton:pressed {
 }</string>
       </property>
       <property name="text">
-       <string>○ Delete / Suspend</string>
+       <string>○ Suspend / Activate</string>
       </property>
      </widget>
     </item>
@@ -1750,8 +1750,8 @@ QPushButton:pressed {
    <zorder>adjustBalance_Button</zorder>
    <zorder>logout_Button</zorder>
    <zorder>viewTransictions_Button</zorder>
-   <zorder>add_edit_Button</zorder>
-   <zorder>delete_suspend_Button</zorder>
+   <zorder>add_edit_delete_Button</zorder>
+   <zorder>suspend_activate_Button</zorder>
    <zorder>line_3</zorder>
   </widget>
   <widget class="QLabel" name="label_bg">

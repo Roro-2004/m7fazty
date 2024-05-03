@@ -1,4 +1,4 @@
-D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/EWIEGA46WW/moc_user.cpp: D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user.h \
+D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/EWIEGA46WW/moc_nadminn.cpp: D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/nadminn.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20type_traits.h \
@@ -142,11 +142,9 @@ D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_D
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QDialog \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QWidget \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/viewbalance_dialog.h
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h

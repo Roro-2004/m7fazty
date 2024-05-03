@@ -8,7 +8,6 @@
 #include"admin.h"
 using namespace std;
 
-#include"admin_edits.h"        //
 #include"nadminn.h"           //
 #include <QWidget>           //
 
@@ -36,7 +35,6 @@ private:
     user *user_widget;
     admin *admin_widget;
    // NadminN* NadminNWidget;  //
-    admin_edits* admin_edits_widget;
 
 };
 
