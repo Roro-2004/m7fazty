@@ -15,7 +15,7 @@ class sign_up : public QWidget
 public:
     explicit sign_up(QWidget *parent = nullptr);
     ~sign_up();
-    static unordered_map<string, user_c*> users_data;
+    //static unordered_map<string, user_c*> users_data;
     static unordered_map<string, user_c*> users_read;
     user_c *user;
 

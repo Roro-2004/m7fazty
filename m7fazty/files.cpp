@@ -22,12 +22,12 @@ void files::write_in_file(string file_path)
     {
         ofstream file(path);
 
-        if (path.string() == "D:/new ds/m7fazty/m7fazty/files/Transiction.csv" && file.is_open())
+        if (path.string() == "D:/m7fazty/m7fazty/files/Transiction.csv" && file.is_open())
         {
             file << "Trans ID" << "," << "Receiver" << "," << "Sender" << "," << "Amount" << "," << "Date" << "," << "Time" << "," << "Status" << endl;
 
         }
-        else if(path.string() == "D:/new ds/m7fazty/m7fazty/files/User.csv" && file.is_open()){
+        else if(path.string() == "D:/m7fazty/m7fazty/files/User.csv" && file.is_open()){
             file << "Username" << "," << "Password" << "," << "Address" << "," << "Email" << "," << "Age" << "," << "Balance" << "," << "Status" << endl;
         }
         else
@@ -40,14 +40,14 @@ void files::write_in_file(string file_path)
     }
 
     ofstream file(path, ios::app);
-    if (path.string() == "D:/new ds/m7fazty/m7fazty/files/Transiction.csv" && file.is_open()) {
-            for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_data) {
+    if (path.string() == "D:/m7fazty/m7fazty/files/Transiction.csv" && file.is_open()) {
+            for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
                 transiction* t = trans.second;
                 file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
             }
     }
-    else if(path.string() == "D:/new ds/m7fazty/m7fazty/files/User.csv" ){
-        for (unordered_map<string, user_c*>::value_type & u : sign_up::users_data) {
+    else if(path.string() == "D:/m7fazty/m7fazty/files/User.csv" ){
+        for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read) {
             user_c* user = u.second;
             file << u.first  << "," << user->user_acc.password << "," << user->user_acc.address << "," << user->user_acc.email << "," << user->user_acc.age << "," << user->balance << "," << user->user_acc.status << endl;
         }
@@ -177,10 +177,10 @@ void files::read_from_file(string file_path){
         }
         else
         {
-            if (file_path == "D:/new ds/m7fazty/m7fazty/files/Transiction.csv"){
+            if (file_path == "D:/m7fazty/m7fazty/files/Transiction.csv"){
                files::split(line, "tr");
             }
-            else if (file_path == "D:/new ds/m7fazty/m7fazty/files/User.csv"){
+            else if (file_path == "D:/m7fazty/m7fazty/files/User.csv"){
                 files::split(line, "ur");
             }
         }
