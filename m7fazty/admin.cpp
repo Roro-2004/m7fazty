@@ -22,8 +22,6 @@ admin::~admin()
 }
 
 
-
-
 void admin::hideAllElements()
 {
     ui->menu_Button->show();
@@ -124,5 +122,4 @@ void admin::on_adjustBalance_Button_clicked()
 void admin::on_logout_Button_clicked()
 {
     MainWindow::stackedWidget->setCurrentIndex(0);
-    //files::write_in_file("D:/new ds/m7fazty/m7fazty/files/Transiction.csv");
 }

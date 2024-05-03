@@ -9,8 +9,7 @@ class admin_c
 public:
     admin_c();
 
-    account admin_acc;
-    vector <user_c> users;
+    //account admin_acc;
 
     /*void traverse_users_tranisctions();
     void edit_acc(account acc);

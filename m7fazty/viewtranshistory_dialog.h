@@ -6,6 +6,7 @@
 #include<unordered_map>
 #include "transiction.h"
 using namespace std;
+
 namespace Ui {
 class viewTransHistory_dialog;
 }

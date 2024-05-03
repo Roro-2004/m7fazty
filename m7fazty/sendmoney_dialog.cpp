@@ -9,15 +9,18 @@
 #include<iostream>
 #include <QUuid>
 #include <unordered_set>
+#include"sign_up.h"
 using namespace std;
 
 
 unordered_set<string> sendMoney_dialog::usedIDs;
 
+
 sendMoney_dialog::sendMoney_dialog(QWidget *parent): QDialog(parent), ui(new Ui::sendMoney_dialog)
 {
     ui->setupUi(this);
 }
+
 
 string sendMoney_dialog::generateID()
 {
@@ -31,6 +34,7 @@ string sendMoney_dialog::generateID()
     return id;
 }
 
+
 string sendMoney_dialog::getCurrentDate() {
     // Get the current time
     std::time_t currentTime = std::time(nullptr);
@@ -40,6 +44,7 @@ string sendMoney_dialog::getCurrentDate() {
     std::strftime(buffer, sizeof(buffer), "%d/%m/%Y", std::localtime(&currentTime));
     return std::string(buffer);
 }
+
 
 string sendMoney_dialog::getCurrentTime() {
     // Get the current time
@@ -74,9 +79,27 @@ void sendMoney_dialog::on_send_Button_clicked()
     t->date=getCurrentDate();
     t->time=getCurrentTime();
     requestMoney_dialog::trans_read[generateID()] = t;
-    cout<<"trans done\n";
+
+    cout<<"send done\n";
+
+    for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read)
+    {
+        if(t->receiver==t->sender)
+        {
+            cout <<"cant do transiction";
+            break;
+        }
+        else
+        {
+            if(t->receiver==u.second->user_acc.username)
+               u.second->balance+=t->amount;
+            else if(t->sender==u.second->user_acc.username)
+               u.second->balance-=t->amount;
+        }
+    }
     close();
 }
+
 
 sendMoney_dialog::~sendMoney_dialog()
 {

@@ -1,9 +1,7 @@
-
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QPixmap>
 #include"login.h"
-
 #include <fstream>
 #include <filesystem>
 #include <iostream>
@@ -16,17 +14,9 @@ namespace fs = std::filesystem;
 QStackedWidget* MainWindow::stackedWidget = nullptr;
 
 
-
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-    stackedWidget = new QStackedWidget(this);
-    // Add the main window UI created with Qt Designer to the stacked widget
-    stackedWidget->addWidget(ui->centralwidget);
-
-    // Set the central widget to the stacked widget
-    setCentralWidget(stackedWidget);
 
     stackedWidget = new QStackedWidget(this);
     stackedWidget->addWidget(ui->centralwidget);
@@ -49,7 +39,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
         user_c* user = u.second;
         cout << u.first  << "," << user->user_acc.password << "," << user->user_acc.address << "," << user->user_acc.email << "," << user->user_acc.age << "," << user->balance << "," << user->user_acc.status << endl;
     }
-
 }
 
 
@@ -61,10 +50,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_login_clicked()
 {
-
     stackedWidget->setCurrentWidget(loginWidget);
-    // requestMoney_dialog::trans_data.clear();
 }
+
 
 void MainWindow::on_sign_up_clicked()
 {
@@ -73,6 +61,8 @@ void MainWindow::on_sign_up_clicked()
     stackedWidget->setCurrentWidget(sign_up_widget);
 
 }
+
+
 void MainWindow::closeEvent(QCloseEvent *event)
 {
     files::write_in_file("D:/Projects/2nd Year/DS/m7fazty//m7fazty/files/User.csv");

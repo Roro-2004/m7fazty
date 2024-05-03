@@ -8,6 +8,7 @@
 #include <iostream>
 #include <QUuid>
 #include <unordered_set>
+#include"sign_up.h"
 using namespace std;
 
 
@@ -17,8 +18,8 @@ unordered_set<string> requestMoney_dialog::usedIDs;
 
 requestMoney_dialog::requestMoney_dialog(QWidget *parent) : QDialog(parent), ui(new Ui::requestMoney_dialog) {
     ui->setupUi(this);
-    //cout<<trans_read.size()<<endl;
 }
+
 
 string requestMoney_dialog::generateID()
 {
@@ -27,8 +28,7 @@ string requestMoney_dialog::generateID()
     do {
         randomNumber = rand() % 900 + 100;
         id = "R" + to_string(randomNumber);
-    } while(usedIDs.count(id) > 0); // Check if the generated ID already exists in the set
-
+    } while(usedIDs.count(id) > 0);
     return id;
 }
 
@@ -43,6 +43,7 @@ string requestMoney_dialog::getCurrentDate()
     strftime(buffer, sizeof(buffer), "%d/%m/%Y", localtime(&currentTime));
     return string(buffer);
 }
+
 
 string requestMoney_dialog::getCurrentTime()
 {
@@ -63,6 +64,8 @@ string requestMoney_dialog::getCurrentTime()
     strftime(buffer, sizeof(buffer), "%I:%M", timeinfo); // %I for 12-hour format
     return string(buffer) + " " + am_pm;
 }
+
+
 void requestMoney_dialog::on_request_Button_clicked() {
     t = new transiction();
     t->id=generateID();
@@ -80,9 +83,28 @@ void requestMoney_dialog::on_request_Button_clicked() {
 
     trans_read[generateID()] = t;
 
+    cout<<"request done\n";
+
+    for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read)
+    {
+        if(t->receiver==t->sender)
+        {
+            cout <<"cant do transiction";
+            break;
+        }
+        else
+        {
+            if(t->receiver==u.second->user_acc.username )
+               u.second->balance+=t->amount;
+            else if(t->sender==u.second->user_acc.username)
+               u.second->balance-=t->amount;
+        }
+    }
     close();
 }
 
+
 requestMoney_dialog::~requestMoney_dialog()
 {
-    delete ui;}
+    delete ui;
+}

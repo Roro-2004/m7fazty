@@ -1,6 +1,5 @@
 #ifndef ADJUST_BALANCE_DIALOG_H
 #define ADJUST_BALANCE_DIALOG_H
-
 #include <QDialog>
 
 namespace Ui {

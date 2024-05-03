@@ -1,9 +1,10 @@
 #ifndef ADD_EDIT_DIALOG_H
 #define ADD_EDIT_DIALOG_H
-
 #include <QDialog>
 
 namespace Ui {
+
+
 class add_edit_dialog;
 }
 
