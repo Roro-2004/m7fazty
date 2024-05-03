@@ -3,8 +3,7 @@
 #include <QDialog>
 #include <unordered_map>
 #include <unordered_set>
-#include"headers.h"
-
+#include "transiction.h"
 using namespace std;
 
 namespace Ui {

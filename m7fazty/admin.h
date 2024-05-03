@@ -1,6 +1,6 @@
 #ifndef ADMIN_H
 #define ADMIN_H
-#include"headers.h"
+
 #include <QWidget>
 
 namespace Ui {

@@ -1,7 +1,6 @@
 #ifndef EDITPROFILE_DIALOG_H
 #define EDITPROFILE_DIALOG_H
 #include <QDialog>
-#include"headers.h"
 
 namespace Ui {
 class editProfile_dialog;

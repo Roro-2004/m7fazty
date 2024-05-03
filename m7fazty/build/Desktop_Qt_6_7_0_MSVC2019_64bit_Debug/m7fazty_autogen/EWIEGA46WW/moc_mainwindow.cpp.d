@@ -1,4 +1,10 @@
 D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/EWIEGA46WW/moc_mainwindow.cpp: D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/mainwindow.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QList \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QObject \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QRect \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QSize \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QSizeF \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QString \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20type_traits.h \
@@ -28,10 +34,16 @@ D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_D
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcontainerinfo.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcontainertools_impl.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcontiguouscache.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcoreapplication.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcoreapplication_platform.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcoreevent.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdatastream.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdeadlinetimer.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdebug.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qelapsedtimer.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qendian.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qeventloop.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qflags.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qfloat16.h \
@@ -43,12 +55,14 @@ D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_D
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qglobalstatic.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qhash.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qhashfunctions.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qiodevice.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qiterable.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qiterator.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlatin1stringview.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qline.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlist.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlocale.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlogging.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qmalloc.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qmap.h \
@@ -58,6 +72,7 @@ D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_D
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qmetatype.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qminmax.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qnamespace.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qnativeinterface.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qnumeric.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qobject.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qobject_impl.h \
@@ -110,39 +125,54 @@ D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_D
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtversionchecks.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtypeinfo.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtypes.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qurl.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qvariant.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtGui/QCloseEvent \
+  C:/Qt/6.7.0/msvc2019_64/include/QtGui/QTransform \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qaction.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qbitmap.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qbrush.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qcolor.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qcursor.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtGui/qevent.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtGui/qeventpoint.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qfont.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qfontinfo.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qfontmetrics.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtGui/qguiapplication.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtGui/qguiapplication_platform.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qicon.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qimage.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtGui/qinputdevice.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtGui/qinputmethod.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qpalette.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qpixmap.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtGui/qpointingdevice.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qpolygon.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qregion.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qrgb.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qrgba64.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtGui/qscreen.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtGui/qscreen_platform.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qtguiglobal.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qtransform.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtGui/qvector2d.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtGui/qvectornd.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QStackedWidget \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QWidget \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qframe.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qsizepolicy.h \
@@ -151,4 +181,10 @@ D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_D
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/Login.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/account.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/admin.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/sign_up.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user_c.h

@@ -1,8 +1,12 @@
 #include "requestmoney_dialog.h"
 #include "ui_requestmoney_dialog.h"
 #include <unordered_map>
+#include "transiction.h"
+#include "login.h"
+#include "viewtranshistory_dialog.h"
 #include <ctime>
 #include <iostream>
+#include <QUuid>
 #include <unordered_set>
 using namespace std;
 
@@ -14,7 +18,7 @@ unordered_set<string> requestMoney_dialog::usedIDs;
 
 requestMoney_dialog::requestMoney_dialog(QWidget *parent) : QDialog(parent), ui(new Ui::requestMoney_dialog) {
     ui->setupUi(this);
-    cout<<trans_read.size()<<endl;
+    //cout<<trans_data.size()<<endl;
 }
 
 string requestMoney_dialog::generateID()
@@ -66,7 +70,6 @@ void requestMoney_dialog::on_request_Button_clicked() {
     t->receiver = Login::current_user.user_acc.username;
     t->sender = ui->userName_textBox->text().toStdString();
     t->amount = ui->amount_textBox->text().toFloat();
-    requestMoney_dialog::trans_read[t->id] = t;
 
     if (t->amount <= 10000)
         t->status = "Successful";

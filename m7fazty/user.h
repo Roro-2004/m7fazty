@@ -1,10 +1,8 @@
 #ifndef USER_H
 #define USER_H
 #include <string>
-#include <QWidget>
-#include"headers.h"
 using namespace std;
-
+#include <QWidget>
 
 namespace Ui {
 class user;

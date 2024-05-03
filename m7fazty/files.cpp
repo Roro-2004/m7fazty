@@ -5,7 +5,8 @@
 #include<iostream>
 #include<unordered_map>
 #include<vector>
-
+#include"requestmoney_dialog.h"
+#include "sign_up.h"
 using namespace std;
 namespace fs = std::filesystem;
 
@@ -22,12 +23,12 @@ void files::write_in_file(string file_path)
     {
         ofstream file(path);
 
-        if (path.string() == "D:/m7fazty/m7fazty/files/Transiction.csv" && file.is_open())
+        if (path.string() == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv" && file.is_open())
         {
             file << "Trans ID" << "," << "Receiver" << "," << "Sender" << "," << "Amount" << "," << "Date" << "," << "Time" << "," << "Status" << endl;
 
         }
-        else if(path.string() == "D:/m7fazty/m7fazty/files/User.csv" && file.is_open()){
+        else if(path.string() == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/User.csv" && file.is_open()){
             file << "Username" << "," << "Password" << "," << "Address" << "," << "Email" << "," << "Age" << "," << "Balance" << "," << "Status" << endl;
         }
         else
@@ -40,19 +41,19 @@ void files::write_in_file(string file_path)
     }
 
     ofstream file(path, ios::app);
-    if (path.string() == "D:/m7fazty/m7fazty/files/Transiction.csv" && file.is_open()) {
-            for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
-                transiction* t = trans.second;
-                file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
-            }
+    if (path.string() == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv" && file.is_open()) {
+        for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
+            transiction* t = trans.second;
+            file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
+        }
     }
-    else if(path.string() == "D:/m7fazty/m7fazty/files/User.csv" ){
+    else if(path.string() == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/User.csv" ){
         for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read) {
             user_c* user = u.second;
             file << u.first  << "," << user->user_acc.password << "," << user->user_acc.address << "," << user->user_acc.email << "," << user->user_acc.age << "," << user->balance << "," << user->user_acc.status << endl;
         }
     }
-     else cerr << "Error: Unable to open the file for writing." << endl;
+    else cerr << "Error: Unable to open the file for writing." << endl;
     file.close();
     cout << "Data has been written to the file successfully." << endl;
 }
@@ -77,37 +78,37 @@ void files::split(string s, string path)
     v.push_back(temp);
     if(path == "tr" ){
 
-    if (v.size() <= 7)
-    {
-        t->id=v[0];
-        t->receiver = v[1];
-        t->sender = v[2];
-        if (!v[3].empty())
+        if (v.size() <= 7)
         {
-            try
+            t->id=v[0];
+            t->receiver = v[1];
+            t->sender = v[2];
+            if (!v[3].empty())
             {
-                t->amount = stof(v[3]); //convert the string to a float
+                try
+                {
+                    t->amount = stof(v[3]); //convert the string to a float
+                }
+                catch (const invalid_argument& e)
+                {
+                    cerr << "Error converting amount to float: " << e.what() << endl;
+                    t->amount = 0;
+                }
             }
-            catch (const invalid_argument& e)
+            else
             {
-                cerr << "Error converting amount to float: " << e.what() << endl;
                 t->amount = 0;
             }
+            t->date = v[4];
+            t->time = v[5];
+            t->status = v[6];
         }
         else
         {
-            t->amount = 0;
+            cout << "Error: Insufficient data in the input line." << endl;
         }
-        t->date = v[4];
-        t->time = v[5];
-        t->status = v[6];
-    }
-    else
-    {
-        cout << "Error: Insufficient data in the input line." << endl;
-    }
 
-    requestMoney_dialog::trans_read[v[0]] = t;
+        requestMoney_dialog::trans_read[v[0]] = t;
     }
     else if(path == "ur"){
         if (v.size() <= 7)
@@ -130,7 +131,7 @@ void files::split(string s, string path)
             }
             else
             {
-               users->user_acc.age = 0;
+                users->user_acc.age = 0;
             }
             if (!v[5].empty())
             {
@@ -177,10 +178,10 @@ void files::read_from_file(string file_path){
         }
         else
         {
-            if (file_path == "D:/m7fazty/m7fazty/files/Transiction.csv"){
-               files::split(line, "tr");
+            if (file_path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv"){
+                files::split(line, "tr");
             }
-            else if (file_path == "D:/m7fazty/m7fazty/files/User.csv"){
+            else if (file_path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/User.csv"){
                 files::split(line, "ur");
             }
         }

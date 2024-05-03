@@ -1,5 +1,12 @@
 #include "user.h"
 #include "ui_user.h"
+#include "mainwindow.h"
+#include"requestmoney_dialog.h"
+#include"sendmoney_dialog.h"
+#include"viewbalance_dialog.h"
+#include"viewtranshistory_dialog.h"
+#include"editprofile_dialog.h"
+#include "files.h"
 
 user::user(QWidget *parent): QWidget(parent), ui(new Ui::user)
 {
@@ -114,9 +121,6 @@ void user::on_editProfile_Button_clicked()
 void user::on_logout_Button_clicked()
 {
     MainWindow::stackedWidget->setCurrentIndex(0);
-    files::write_in_file("D:/m7fazty/m7fazty/files/Transiction.csv");
 
 
 }
-
-

@@ -1,8 +1,7 @@
 #ifndef TRANSICTION_H
 #define TRANSICTION_H
 #include<string>
-#include"headers.h"
-
+#include"user_c.h"
 using namespace std;
 class user_c;
 

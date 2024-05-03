@@ -1,8 +1,8 @@
 #ifndef USER_C_H
 #define USER_C_H
+#include "account.h"
 #include<vector>
 #include<unordered_map>
-#include"headers.h"
 using namespace std;
 class transiction;
 
@@ -19,7 +19,7 @@ public:
 
     //float balance_calc();
     //float points_calc();
-  /*  void transiction_history();
+    /*  void transiction_history();
     void search_by_month(string s);
     string encoding(string s);*/
 };

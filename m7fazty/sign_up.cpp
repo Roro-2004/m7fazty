@@ -12,6 +12,7 @@
 using namespace std;
 //unordered_map<string, user_c*> sign_up::users_data;
 unordered_map<string, user_c*> sign_up::users_read;
+
 sign_up::sign_up(QWidget *parent): QWidget(parent), ui(new Ui::sign_up)
 {
     ui->setupUi(this);
@@ -69,7 +70,6 @@ void sign_up::on_sign_up2_button_clicked()
     if (check){
         QMessageBox::information(this, "Sign up","Sign up successfully");
         MainWindow::stackedWidget->setCurrentIndex(1);
-        files::write_in_file("D:/m7fazty/m7fazty/files/User.csv");
     }
 
 }

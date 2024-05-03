@@ -1,5 +1,12 @@
 #include "admin.h"
 #include "ui_admin.h"
+#include "mainwindow.h"
+#include "add_edit_dialog.h"
+#include"delete_suspend_dialog.h"
+#include"adjust_balance_dialog.h"
+#include"view_trans_dialog.h"
+#include"view_users_dialog.h"
+#include"files.h"
 
 admin::admin(QWidget *parent)
     : QWidget(parent)
@@ -117,5 +124,5 @@ void admin::on_adjustBalance_Button_clicked()
 void admin::on_logout_Button_clicked()
 {
     MainWindow::stackedWidget->setCurrentIndex(0);
-    files::write_in_file("D:/new ds/m7fazty/m7fazty/files/Transiction.csv");
+    //files::write_in_file("D:/new ds/m7fazty/m7fazty/files/Transiction.csv");
 }

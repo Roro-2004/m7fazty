@@ -1,8 +1,9 @@
 #ifndef SIGN_UP_H
 #define SIGN_UP_H
+#include "Login.h"
+#include "user_c.h"
 #include<unordered_map>
 #include <QWidget>
-#include"headers.h"
 
 namespace Ui {
 class sign_up;
@@ -20,7 +21,7 @@ public:
     user_c *user;
 
 private slots:
-  //  void on_pushButton_clicked();
+               //  void on_pushButton_clicked();
     bool isStrongPassword(string &password);
     void on_back_button_clicked();
 

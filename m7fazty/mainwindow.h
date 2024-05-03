@@ -2,8 +2,9 @@
 #define MAINWINDOW_H
 #include <QMainWindow>
 #include <QStackedWidget>
-#include"headers.h"
-
+#include "Login.h"
+#include"sign_up.h"
+#include"QCloseEvent"
 namespace fs = std::filesystem;
 using namespace std;
 
@@ -21,7 +22,8 @@ public:
     ~MainWindow();
     QStackedWidget static *stackedWidget;
 
-
+protected:
+    void closeEvent(QCloseEvent *event) override;
 
 private slots:
     void on_login_clicked();
@@ -32,7 +34,7 @@ private:
     Ui::MainWindow *ui;
     Login *loginWidget;
     sign_up *sign_up_widget;
-  //  sign_up * signup_Widget;
+    //  sign_up * signup_Widget;
 
 };
 

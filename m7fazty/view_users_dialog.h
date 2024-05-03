@@ -1,6 +1,6 @@
 #ifndef VIEW_USERS_DIALOG_H
 #define VIEW_USERS_DIALOG_H
-#include"headers.h"
+
 #include <QDialog>
 
 namespace Ui {

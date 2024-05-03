@@ -1,8 +1,13 @@
+
 #include "sendmoney_dialog.h"
 #include "ui_sendmoney_dialog.h"
 #include <unordered_map>
+#include "transiction.h"
+#include "login.h"
+#include"requestmoney_dialog.h"
 #include <ctime>
 #include<iostream>
+#include <QUuid>
 #include <unordered_set>
 using namespace std;
 
