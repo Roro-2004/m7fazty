@@ -35,7 +35,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     loginWidget = new Login();
     stackedWidget->addWidget(loginWidget);
 
-    files::read_from_file("D:/new ds/m7fazty/m7fazty/files/Transiction.csv");
+    files::read_from_file("D:/m7fazty/m7fazty/files/Transiction.csv");
     for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
         transiction* t = trans.second;
         cout << trans.first << " " << t->receiver << " " << t->sender << " " << t->amount << " " << t->date << " " << t->time << " " << t->status << endl;
@@ -43,7 +43,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
         sendMoney_dialog::usedIDs.insert( trans.first);
     }
 
-    files::read_from_file("D:/new ds/m7fazty/m7fazty/files/User.csv");
+    files::read_from_file("D:/m7fazty/m7fazty/files/User.csv");
     for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read) {
         user_c* user = u.second;
         cout << u.first  << "," << user->user_acc.password << "," << user->user_acc.address << "," << user->user_acc.email << "," << user->user_acc.age << "," << user->balance << "," << user->user_acc.status << endl;
@@ -62,7 +62,7 @@ void MainWindow::on_login_clicked()
 {
 
     stackedWidget->setCurrentWidget(loginWidget);
-    requestMoney_dialog::trans_data.clear();
+    //requestMoney_dialog::trans_read.clear();
 }
 
 void MainWindow::on_sign_up_clicked()
