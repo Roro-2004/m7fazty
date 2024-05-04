@@ -11,8 +11,9 @@
 #include <regex>
 #include <QMainWindow>
 using namespace std;
-//unordered_map<string, user_c*> sign_up::users_data;
+
 unordered_map<string, user_c*> sign_up::users_read;
+
 
 sign_up::sign_up(QWidget *parent): QWidget(parent), ui(new Ui::sign_up)
 {
@@ -22,6 +23,7 @@ sign_up::sign_up(QWidget *parent): QWidget(parent), ui(new Ui::sign_up)
     MainWindow::stackedWidget->addWidget(loginWidget);
 }
 
+
 sign_up::~sign_up()
 {
     delete ui;
@@ -29,24 +31,22 @@ sign_up::~sign_up()
 
 
 bool sign_up::isStrongPassword(std::string &password) {
-    std::regex uppercase("[A-Z]");
-    std::regex lowercase("[a-z]");
-    std::regex digit("[0-9]");
-    std::regex special("[!@#$%^&*()_+{}|:<>?~-]");
+    regex uppercase("[A-Z]");
+    regex lowercase("[a-z]");
+    regex digit("[0-9]");
+    regex special("[!@#$%^&*()_+{}|:<>?~-]");
 
-    // Check if the password meets the criteria
     return (password.length() >= 8) &&
-           std::regex_search(password, uppercase) &&
-           std::regex_search(password, lowercase) &&
-           std::regex_search(password, digit) &&
-           std::regex_search(password, special);
+           regex_search(password, uppercase) &&
+           regex_search(password, lowercase) &&
+           regex_search(password, digit) &&
+           regex_search(password, special);
 }
 
 
 void sign_up::on_back_button_clicked()
 {
     MainWindow::stackedWidget->setCurrentIndex(0);
-
 }
 
 
@@ -90,6 +90,5 @@ void sign_up::on_sign_up2_button_clicked()
         users_read[user->user_acc.username] = user;
         MainWindow::stackedWidget->setCurrentIndex(1);
     }
-
 }
 

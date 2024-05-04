@@ -142,7 +142,9 @@ D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_D
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qtransform.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QDialog \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QWidget \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
@@ -152,4 +154,5 @@ D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_D
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/account.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/admin.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user.h \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user_c.h
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user_c.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/viewbalance_dialog.h

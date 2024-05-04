@@ -4,8 +4,9 @@
 #include"user_c.h"
 #include<vector>
 #include<unordered_map>
-
+#include<string>
 using namespace std;
+
 
 class admin_c
 {
@@ -13,17 +14,16 @@ public:
     admin_c();
 
     account admin_acc;
-    //vector <user_c> users;
-
-
-
-
+    vector <user_c> users;
+    bool add_acc(user_c *u);
+    bool edit_balance(string username,float new_balance);
+    void actviate(string);
+    void suspend(string);
+     bool delete_acc(string);
+    account View_current_account_data(string); //helper function
+    bool edit_acc(string s,user_c *u);
     /*void traverse_users_tranisctions();
-    void edit_acc(account acc);
-    void delete_acc(account acc);
-    void add_acc(account acc);
-    void traverse_transiction_history(user user);
-    void edit_balance(user user);*/
+    void traverse_transiction_history(user user);*/
 };
 
 #endif // ADMIN_C_H

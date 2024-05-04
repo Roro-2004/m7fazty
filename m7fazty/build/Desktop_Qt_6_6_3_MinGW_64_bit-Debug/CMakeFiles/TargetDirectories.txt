@@ -1,0 +1,9 @@
+D:/level 2 projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/m7fazty.dir
+D:/level 2 projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/level 2 projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/level 2 projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+D:/level 2 projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/install.dir
+D:/level 2 projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+D:/level 2 projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+D:/level 2 projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/m7fazty_autogen_timestamp_deps.dir
+D:/level 2 projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/m7fazty_autogen.dir

@@ -21,6 +21,7 @@ viewTransHistory_dialog::viewTransHistory_dialog(QWidget *parent) : QDialog(pare
     ui->history_table->show();
 }
 
+
 void viewTransHistory_dialog::show_whole_history()
 {
 
@@ -30,9 +31,8 @@ void viewTransHistory_dialog::show_whole_history()
 
     for (auto entry : transactions_map) {
         for (auto t : entry.second) {
-            ui->history_table->insertRow(row); // Add a new row
+            ui->history_table->insertRow(row);
 
-            // Populate the table with transaction data
             QTableWidgetItem *transIDItem = new QTableWidgetItem(QString::fromStdString(t->id));
             ui->history_table->setItem(row, 0, transIDItem);
 
@@ -54,27 +54,25 @@ void viewTransHistory_dialog::show_whole_history()
             QTableWidgetItem *statusItem = new QTableWidgetItem(QString::fromStdString(t->status));
             ui->history_table->setItem(row, 6, statusItem);
 
-            // Set text alignment for each item in the row
             for (int column = 0; column < ui->history_table->columnCount(); ++column) {
                 ui->history_table->item(row, column)->setTextAlignment(Qt::AlignCenter);
             }
-
-            ++row; // Increment row index for the next transaction
+            ++row;
         }
     }
 }
 
+
 void viewTransHistory_dialog::search_by_month(string s) {
     ui->history_table->clearContents();
-    ui->history_table->setRowCount(0); // Reset row count
-    int row = 0; // Initialize row index
+    ui->history_table->setRowCount(0);
+    int row = 0;
 
     auto it = transactions_map.find(s);
     if (it != transactions_map.end()) {
         for (auto t : it->second) {
-            ui->history_table->insertRow(row); // Add a new row
+            ui->history_table->insertRow(row);
 
-            // Populate the table with transaction data
             QTableWidgetItem *transIDItem = new QTableWidgetItem(QString::fromStdString(t->id));
             ui->history_table->setItem(row, 0, transIDItem);
 
@@ -103,10 +101,12 @@ void viewTransHistory_dialog::search_by_month(string s) {
 
             ++row; // Increment row index for the next transaction
         }
-    } else {
+    }
+    else {
         cout << "No data for the specified month." << endl;
     }
 }
+
 
 void viewTransHistory_dialog::transiction_history() {
     string name = Login::current_user.user_acc.username;
@@ -114,13 +114,13 @@ void viewTransHistory_dialog::transiction_history() {
     for (auto& tr : requestMoney_dialog::trans_read) {
         transiction* t = tr.second;
         if (t != nullptr && (t->receiver == name || t->sender == name)) {
-            string key = encoding(t->date.substr(3, 2)); // Assuming month is two characters long
+            string key = encoding(t->date.substr(3, 2));
             transactions_map[key].push_back(t);
         }
     }
 
     cout << "Transactions for user " << name << ":" << endl;
-    // Print out transactions for debugging
+
     for (auto& entry : transactions_map) {
         cout << "Month: " << entry.first << endl;
         for (auto t : entry.second) {
@@ -130,6 +130,7 @@ void viewTransHistory_dialog::transiction_history() {
         }
     }
 }
+
 
 string viewTransHistory_dialog::encoding(string s)
 {
@@ -167,9 +168,8 @@ viewTransHistory_dialog::~viewTransHistory_dialog()
     delete ui;
 }
 
+
 void viewTransHistory_dialog::on_month_cb_currentTextChanged(const QString &month)
 {
     search_by_month(month.toStdString());
-
 }
-

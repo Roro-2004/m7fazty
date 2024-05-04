@@ -13,27 +13,24 @@
 #include"requestmoney_dialog.h"
 using namespace std;
 
-
 user_c Login::current_user;
+
 
 Login::Login(QWidget *parent) :QWidget(parent),ui(new Ui::Login)
 {
     ui->setupUi(this);
 }
 
+
 void Login::on_back_button_clicked()
 {
     MainWindow::stackedWidget->setCurrentIndex(0);
-
 }
-
 
 
 void Login::on_Login_2_clicked()
 {
-   std::vector<account> users;
     bool check = false;
-    //current_user.user_acc.username = ui->userName_textBox->text().toStdString();
     string Enteredusername = ui->userName_textBox->text().toStdString();
     string Enteredpassword = current_user.user_acc.hashPassword(ui->password_textBox->text());
 
@@ -46,21 +43,28 @@ void Login::on_Login_2_clicked()
         }
     }
 
-    if (check) {
+    if (check)
+    {
         QMessageBox::information(this, "Login", "Login successful");
         user_widget=new user();
         MainWindow::stackedWidget->addWidget(user_widget);
         MainWindow::stackedWidget->setCurrentWidget(user_widget);
-    } else if(!check && Enteredusername== "admin" && Enteredpassword == "admin") {
+    }
+    else if(!check && Enteredusername== "admin" && Enteredpassword == "admin")
+    {
         QMessageBox::information(this, "Login", "Login successful");
         admin_widget=new admin();
         MainWindow::stackedWidget->addWidget(admin_widget);
         MainWindow::stackedWidget->setCurrentWidget(admin_widget);
-    }else{
+    }else
+    {
         QMessageBox::warning(this, "Login", "Login failed. Invalid username or password.");
     }
     ui->userName_textBox->clear();
     ui->password_textBox->clear();
+
+   // MainWindow::stackedWidget->setCurrentWidget(admin_edits_widget);
+
 
 }
 
@@ -69,3 +73,5 @@ Login::~Login()
 {
     delete ui;
 }
+
+

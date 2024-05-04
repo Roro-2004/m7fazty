@@ -34,8 +34,6 @@ private:
     Ui::MainWindow *ui;
     Login *loginWidget;
     sign_up *sign_up_widget;
-    //  sign_up * signup_Widget;
-
 };
 
 #endif // MAINWINDOW_H

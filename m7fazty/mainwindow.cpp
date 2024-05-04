@@ -1,4 +1,3 @@
-
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QPixmap>
@@ -16,17 +15,9 @@ namespace fs = std::filesystem;
 QStackedWidget* MainWindow::stackedWidget = nullptr;
 
 
-
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-    stackedWidget = new QStackedWidget(this);
-    // Add the main window UI created with Qt Designer to the stacked widget
-    stackedWidget->addWidget(ui->centralwidget);
-
-    // Set the central widget to the stacked widget
-    setCentralWidget(stackedWidget);
 
     stackedWidget = new QStackedWidget(this);
     stackedWidget->addWidget(ui->centralwidget);
@@ -60,10 +51,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_login_clicked()
 {
-
     stackedWidget->setCurrentWidget(loginWidget);
-    // requestMoney_dialog::trans_data.clear();
 }
+
 
 void MainWindow::on_sign_up_clicked()
 {
@@ -72,6 +62,8 @@ void MainWindow::on_sign_up_clicked()
     stackedWidget->setCurrentWidget(sign_up_widget);
 
 }
+
+
 void MainWindow::closeEvent(QCloseEvent *event)
 {
 

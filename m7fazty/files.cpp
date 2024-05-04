@@ -12,7 +12,6 @@ using namespace std;
 namespace fs = std::filesystem;
 
 
-
 files::files() {}
 
 
@@ -119,6 +118,7 @@ void files::split(const string& s, const string& path) {
     }
 }
 
+
 void files::read_from_file(const string& file_path) {
     ifstream inputFile(file_path);
     string line;
@@ -143,10 +143,8 @@ void files::read_from_file(const string& file_path) {
             }
         }
     }
-
     inputFile.close();
 }
-
 
 
 files::~files() {}

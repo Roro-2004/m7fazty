@@ -5,7 +5,6 @@
 using namespace std;
 class user_c;
 
-
 class transiction
 {
 public:

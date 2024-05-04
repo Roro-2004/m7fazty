@@ -40,12 +40,17 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         files.h files.cpp
         matrial.qrc
         admin.h admin.cpp admin.ui
-        add_edit_dialog.h add_edit_dialog.cpp add_edit_dialog.ui
-        delete_suspend_dialog.h delete_suspend_dialog.cpp delete_suspend_dialog.ui
+
+
         adjust_balance_dialog.h adjust_balance_dialog.cpp adjust_balance_dialog.ui
         view_users_dialog.h view_users_dialog.cpp view_users_dialog.ui
         view_trans_dialog.h view_trans_dialog.cpp view_trans_dialog.ui
 
+
+
+
+        add_edit_delete.h add_edit_delete.cpp add_edit_delete.ui
+        suspend_activate.h suspend_activate.cpp suspend_activate.ui
 
 
 

@@ -3,25 +3,23 @@
 #include "account.h"
 #include<vector>
 #include<unordered_map>
+#include<QString>
 using namespace std;
-class transiction;
 
+class transiction;
 
 class user_c
 {
 public:
     user_c();
-
+ user_c(float, account);
     account user_acc;
     float balance;
     int points;
-    //unordered_map<string, vector<transiction*>> transactions_map;
 
+    string View_current_balance();
     //float balance_calc();
     //float points_calc();
-    /*  void transiction_history();
-    void search_by_month(string s);
-    string encoding(string s);*/
 };
 
 #endif // USER_C_H

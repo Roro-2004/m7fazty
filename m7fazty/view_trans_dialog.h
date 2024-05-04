@@ -1,6 +1,5 @@
 #ifndef VIEW_TRANS_DIALOG_H
 #define VIEW_TRANS_DIALOG_H
-
 #include <QDialog>
 
 namespace Ui {
