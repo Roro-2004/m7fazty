@@ -10,4 +10,3 @@ account::account() {}
         cout<<hash_data.toStdString()<<endl;
         return hash_data.toStdString();
     }
-

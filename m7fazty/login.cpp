@@ -32,6 +32,7 @@ void Login::on_Login_2_clicked()
 {
     bool check = false;
     string Enteredusername = ui->userName_textBox->text().toStdString();
+    string admin_pass = ui->password_textBox->text().toStdString();
     string Enteredpassword = current_user.user_acc.hashPassword(ui->password_textBox->text());
 
     for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read) {
@@ -42,7 +43,6 @@ void Login::on_Login_2_clicked()
             break;
         }
     }
-
     if (check)
     {
         QMessageBox::information(this, "Login", "Login successful");
@@ -50,7 +50,7 @@ void Login::on_Login_2_clicked()
         MainWindow::stackedWidget->addWidget(user_widget);
         MainWindow::stackedWidget->setCurrentWidget(user_widget);
     }
-    else if(!check && Enteredusername== "admin" && Enteredpassword == "admin")
+    else if(!check && Enteredusername== "admin" && admin_pass == "admin")
     {
         QMessageBox::information(this, "Login", "Login successful");
         admin_widget=new admin();

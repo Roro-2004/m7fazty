@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-b1669f00e9ccc68014cb.json",
+					"jsonFile" : "directory-.-Debug-66fe7f91060d8688aa73.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "m7fazty::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-m7fazty-Debug-d65f64ed4d399b84ddcb.json",
+					"jsonFile" : "target-m7fazty-Debug-6576c9149977312c2ea9.json",
 					"name" : "m7fazty",
 					"projectIndex" : 0
 				},
