@@ -1,18 +1,9 @@
 #ifndef TRANSICTION_H
 #define TRANSICTION_H
-
 #include<string>
 #include"user_c.h"
-
-
-class user_c;
-
 using namespace std;
-// comment
-
-struct date{
-    int day,month,year;
-};
+class user_c;
 
 class transiction
 {
@@ -23,10 +14,9 @@ public:
     string  sender;
     string  receiver;
     float amount;
-    date trans_date;
-    bool status;
-
-    //bool status();
+    string date;
+    string time;
+    string status;
 };
 
 #endif // TRANSICTION_H

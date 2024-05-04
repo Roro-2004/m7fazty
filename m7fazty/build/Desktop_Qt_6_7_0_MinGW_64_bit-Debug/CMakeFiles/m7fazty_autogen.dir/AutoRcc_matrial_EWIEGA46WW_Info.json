@@ -1,0 +1,31 @@
+{
+	"BUILD_DIR" : "D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen",
+	"CMAKE_BINARY_DIR" : "D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/m7fazty/m7fazty",
+	"CMAKE_SOURCE_DIR" : "D:/m7fazty/m7fazty",
+	"INCLUDE_DIR" : "D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/include",
+	"INPUTS" : 
+	[
+		"D:/m7fazty/m7fazty/photos/arrow.png",
+		"D:/m7fazty/m7fazty/photos/white back button.png",
+		"D:/m7fazty/m7fazty/photos/person logo.png",
+		"D:/m7fazty/m7fazty/photos/logo.png",
+		"D:/m7fazty/m7fazty/photos/dialog_bg.png",
+		"D:/m7fazty/m7fazty/photos/plain_bg.png",
+		"D:/m7fazty/m7fazty/photos/menu.png",
+		"D:/m7fazty/m7fazty/photos/bg2.png",
+		"D:/m7fazty/m7fazty/photos/icon.png",
+		"D:/m7fazty/m7fazty/photos/bg.png"
+	],
+	"LOCK_FILE" : "D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/m7fazty_autogen.dir/AutoRcc_matrial_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "matrial" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_matrial.cpp",
+	"RCC_EXECUTABLE" : "D:/qt_cereator/6.7.0/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/m7fazty_autogen.dir/AutoRcc_matrial_EWIEGA46WW_Used.txt",
+	"SOURCE" : "D:/m7fazty/m7fazty/matrial.qrc",
+	"VERBOSITY" : 0
+}

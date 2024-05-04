@@ -6,16 +6,12 @@
 #include"viewbalance_dialog.h"
 #include"viewtranshistory_dialog.h"
 #include"editprofile_dialog.h"
+#include "files.h"
 
 user::user(QWidget *parent): QWidget(parent), ui(new Ui::user)
 {
     ui->setupUi(this);
 
-    QPixmap plain_background("D:/level 2 projects/m7fazty/m7fazty/photos/bg2.png");
-    ui->label_bg->setPixmap(plain_background);
-
-    QPixmap menu_icon("D:/level 2 projects/m7fazty/m7fazty/photos/menu.png");
-    ui->menu_label->setPixmap(menu_icon);
 // Create the viewBalance widget and add it to the stacked widget
     viewBalance_dialog_widget=new viewBalance_dialog();
     MainWindow::stackedWidget->addWidget(viewBalance_dialog_widget);
@@ -89,6 +85,7 @@ void user::on_close_list_Button_clicked()
 void user::on_viewBalance_Button_clicked()
 {
     viewBalance_dialog d;
+    d.setWindowTitle("Balance");
     d.exec();
 }
 
@@ -96,6 +93,7 @@ void user::on_viewBalance_Button_clicked()
 void user::on_sendMoney_Button_clicked()
 {
     sendMoney_dialog d;
+    d.setWindowTitle("Send Money");
     d.exec();
 }
 
@@ -103,6 +101,7 @@ void user::on_sendMoney_Button_clicked()
 void user::on_requestMoney_Button_clicked()
 {
     requestMoney_dialog d;
+    d.setWindowTitle("Request Money");
     d.exec();
 }
 
@@ -110,6 +109,7 @@ void user::on_requestMoney_Button_clicked()
 void user::on_viewHistory_Button_clicked()
 {
     viewTransHistory_dialog d;
+    d.setWindowTitle("Transiction History");
     d.exec();
 }
 
@@ -117,6 +117,7 @@ void user::on_viewHistory_Button_clicked()
 void user::on_editProfile_Button_clicked()
 {
     editProfile_dialog d;
+    d.setWindowTitle("Edit Profile");
     d.exec();
 }
 
@@ -124,7 +125,6 @@ void user::on_editProfile_Button_clicked()
 void user::on_logout_Button_clicked()
 {
     MainWindow::stackedWidget->setCurrentIndex(0);
-
 }
 
 

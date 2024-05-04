@@ -24,7 +24,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         user.h user.cpp user.ui
-        admin.h admin.cpp admin.ui
+
 
         sign_up.h sign_up.cpp sign_up.ui
         login.h login.cpp login.ui
@@ -38,9 +38,19 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         viewtranshistory_dialog.h viewtranshistory_dialog.cpp viewtranshistory_dialog.ui
         editprofile_dialog.h editprofile_dialog.cpp editprofile_dialog.ui
         files.h files.cpp
-        context.h context.cpp
-        nadminn.h nadminn.cpp nadminn.ui
-        admin_edits.h admin_edits.cpp admin_edits.ui
+        matrial.qrc
+        admin.h admin.cpp admin.ui
+
+
+        adjust_balance_dialog.h adjust_balance_dialog.cpp adjust_balance_dialog.ui
+        view_users_dialog.h view_users_dialog.cpp view_users_dialog.ui
+        view_trans_dialog.h view_trans_dialog.cpp view_trans_dialog.ui
+
+
+
+
+        add_edit_delete.h add_edit_delete.cpp add_edit_delete.ui
+        suspend_activate.h suspend_activate.cpp suspend_activate.ui
 
 
 
@@ -90,6 +100,3 @@ install(TARGETS m7fazty
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(m7fazty)
 endif()
-
-
-

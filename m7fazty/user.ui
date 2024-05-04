@@ -50,19 +50,7 @@
     </palette>
    </property>
    <property name="styleSheet">
-    <string>QPushButton{
-   
- background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
-text-align: left;
-}
-QPushButton:hover {
-    background-color: rgba(255, 170, 190, 0.05); /* Semi-transparent background color when hovered */
-}
-
-QPushButton:pressed {
-    background-color: rgba(255, 150, 200, 0.2); /* Semi-transparent background color when pressed */
-    border: 0.5px solid black; /* You can customize the border for the pressed state if needed */
-}</string>
+    <string notr="true">background-image: url(:/material/photos/bg2.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -71,7 +59,7 @@ QPushButton:pressed {
   <widget class="QListView" name="user_listView">
    <property name="geometry">
     <rect>
-     <x>-10</x>
+     <x>-20</x>
      <y>10</y>
      <width>371</width>
      <height>701</height>
@@ -239,6 +227,9 @@ border-radius: 15px;</string>
      <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/material/photos/menu.png);</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -254,6 +245,7 @@ border-radius: 15px;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
+	image: url(:/material/photos/menu.png);
 	color: rgb(226, 226, 255);
    
  background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
@@ -278,9 +270,9 @@ QPushButton:pressed {
   <widget class="QPushButton" name="close_list_Button">
    <property name="geometry">
     <rect>
-     <x>370</x>
+     <x>380</x>
      <y>0</y>
-     <width>611</width>
+     <width>591</width>
      <height>731</height>
     </rect>
    </property>
@@ -298,9 +290,9 @@ QPushButton:pressed {
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>-10</x>
-     <y>20</y>
-     <width>385</width>
+     <x>10</x>
+     <y>50</y>
+     <width>321</width>
      <height>601</height>
     </rect>
    </property>
@@ -1809,7 +1801,24 @@ QPushButton:pressed {
      </widget>
     </item>
    </layout>
+   <zorder>line_4</zorder>
+   <zorder>line_3</zorder>
+   <zorder>line_5</zorder>
+   <zorder>line_2</zorder>
+   <zorder>line</zorder>
+   <zorder>logout_Button</zorder>
+   <zorder>sendMoney_Button</zorder>
+   <zorder>viewBalance_Button</zorder>
+   <zorder>viewHistory_Button</zorder>
+   <zorder>requestMoney_Button</zorder>
+   <zorder>editProfile_Button</zorder>
   </widget>
+  <zorder>label_bg</zorder>
+  <zorder>user_listView</zorder>
+  <zorder>menu_label</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>menu_Button</zorder>
+  <zorder>close_list_Button</zorder>
  </widget>
  <resources/>
  <connections/>

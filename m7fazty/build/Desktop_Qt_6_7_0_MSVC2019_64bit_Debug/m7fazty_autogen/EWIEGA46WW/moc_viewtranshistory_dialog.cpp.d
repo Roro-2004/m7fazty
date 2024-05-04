@@ -1,4 +1,5 @@
 D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/EWIEGA46WW/moc_viewtranshistory_dialog.cpp: D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/viewtranshistory_dialog.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QString \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20type_traits.h \
@@ -147,4 +148,7 @@ D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_D
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/account.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/transiction.h \
+  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user_c.h

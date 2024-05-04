@@ -1,7 +1,9 @@
 #ifndef USER_H
 #define USER_H
+#include <string>
 #include"viewbalance_dialog.h"
 #include <QWidget>
+using namespace std;
 
 namespace Ui {
 class user;
@@ -14,6 +16,7 @@ class user : public QWidget
 public:
     explicit user(QWidget *parent = nullptr);
     ~user();
+
     void hideAllElements();
 
 
