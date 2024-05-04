@@ -20,8 +20,6 @@ private slots:
 
     void on_editBalance_pushButton_clicked();
 
-    void on_NadminN_accepted();
-
     void on_Activate_pushButton_clicked();
 
     void on_suspend_pushButton_clicked();
