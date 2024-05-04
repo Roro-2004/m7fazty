@@ -17,6 +17,7 @@ public:
 
     account();
     //string change_password(string);
+    string hashPassword(const QString &password);
 };
 
 #endif // ACCOUNT_H

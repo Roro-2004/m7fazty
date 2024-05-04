@@ -262,9 +262,9 @@
 			null
 		],
 		[
-			"D:/m7fazty/m7fazty/add_edit_dialog.h",
+			"D:/m7fazty/m7fazty/add_edit_delete.h",
 			"MU",
-			"EWIEGA46WW/moc_add_edit_dialog.cpp",
+			"EWIEGA46WW/moc_add_edit_delete.cpp",
 			null
 		],
 		[
@@ -278,12 +278,6 @@
 			"D:/m7fazty/m7fazty/admin_c.h",
 			"MU",
 			"EWIEGA46WW/moc_admin_c.cpp",
-			null
-		],
-		[
-			"D:/m7fazty/m7fazty/delete_suspend_dialog.h",
-			"MU",
-			"EWIEGA46WW/moc_delete_suspend_dialog.cpp",
 			null
 		],
 		[
@@ -316,6 +310,12 @@
 			"D:/m7fazty/m7fazty/sign_up.h",
 			"MU",
 			"EWIEGA46WW/moc_sign_up.cpp",
+			null
+		],
+		[
+			"D:/m7fazty/m7fazty/suspend_activate.h",
+			"MU",
+			"EWIEGA46WW/moc_suspend_activate.cpp",
 			null
 		],
 		[
@@ -428,11 +428,10 @@
 	"SOURCES" : 
 	[
 		[ "D:/m7fazty/m7fazty/account.cpp", "MU", null ],
-		[ "D:/m7fazty/m7fazty/add_edit_dialog.cpp", "MU", null ],
+		[ "D:/m7fazty/m7fazty/add_edit_delete.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/adjust_balance_dialog.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/admin.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/admin_c.cpp", "MU", null ],
-		[ "D:/m7fazty/m7fazty/delete_suspend_dialog.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/editprofile_dialog.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/files.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/login.cpp", "MU", null ],
@@ -441,6 +440,7 @@
 		[ "D:/m7fazty/m7fazty/requestmoney_dialog.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/sendmoney_dialog.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/sign_up.cpp", "MU", null ],
+		[ "D:/m7fazty/m7fazty/suspend_activate.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/transiction.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/user.cpp", "MU", null ],
 		[ "D:/m7fazty/m7fazty/user_c.cpp", "MU", null ],

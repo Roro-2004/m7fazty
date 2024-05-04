@@ -2,9 +2,9 @@ m7fazty_autogen/timestamp: \
   D:/m7fazty/m7fazty/CMakeLists.txt \
   D:/m7fazty/m7fazty/account.cpp \
   D:/m7fazty/m7fazty/account.h \
-  D:/m7fazty/m7fazty/add_edit_dialog.cpp \
-  D:/m7fazty/m7fazty/add_edit_dialog.h \
-  D:/m7fazty/m7fazty/add_edit_dialog.ui \
+  D:/m7fazty/m7fazty/add_edit_delete.cpp \
+  D:/m7fazty/m7fazty/add_edit_delete.h \
+  D:/m7fazty/m7fazty/add_edit_delete.ui \
   D:/m7fazty/m7fazty/adjust_balance_dialog.cpp \
   D:/m7fazty/m7fazty/adjust_balance_dialog.h \
   D:/m7fazty/m7fazty/adjust_balance_dialog.ui \
@@ -18,9 +18,6 @@ m7fazty_autogen/timestamp: \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
   m7fazty_autogen/moc_predefs.h \
-  D:/m7fazty/m7fazty/delete_suspend_dialog.cpp \
-  D:/m7fazty/m7fazty/delete_suspend_dialog.h \
-  D:/m7fazty/m7fazty/delete_suspend_dialog.ui \
   D:/m7fazty/m7fazty/editprofile_dialog.cpp \
   D:/m7fazty/m7fazty/editprofile_dialog.h \
   D:/m7fazty/m7fazty/editprofile_dialog.ui \
@@ -43,6 +40,9 @@ m7fazty_autogen/timestamp: \
   D:/m7fazty/m7fazty/sign_up.cpp \
   D:/m7fazty/m7fazty/sign_up.h \
   D:/m7fazty/m7fazty/sign_up.ui \
+  D:/m7fazty/m7fazty/suspend_activate.cpp \
+  D:/m7fazty/m7fazty/suspend_activate.h \
+  D:/m7fazty/m7fazty/suspend_activate.ui \
   D:/m7fazty/m7fazty/transiction.cpp \
   D:/m7fazty/m7fazty/transiction.h \
   D:/m7fazty/m7fazty/user.cpp \

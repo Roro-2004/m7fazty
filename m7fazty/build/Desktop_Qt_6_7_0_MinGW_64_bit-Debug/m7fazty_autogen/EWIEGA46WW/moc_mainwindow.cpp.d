@@ -6,6 +6,7 @@ D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/EWI
   D:/m7fazty/m7fazty/sign_up.h \
   D:/m7fazty/m7fazty/user.h \
   D:/m7fazty/m7fazty/user_c.h \
+  D:/m7fazty/m7fazty/viewbalance_dialog.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/QList \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/QObject \
   D:/qt_cereator/6.7.0/mingw_64/include/QtCore/QRect \
@@ -177,9 +178,11 @@ D:/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/EWI
   D:/qt_cereator/6.7.0/mingw_64/include/QtGui/qvectornd.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QDialog \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/QWidget \
+  D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qdialog.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qframe.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/qt_cereator/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
