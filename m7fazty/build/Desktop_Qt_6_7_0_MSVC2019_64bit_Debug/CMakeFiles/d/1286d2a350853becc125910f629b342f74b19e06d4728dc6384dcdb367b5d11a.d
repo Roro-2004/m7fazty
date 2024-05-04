@@ -385,8 +385,6 @@ m7fazty_autogen/timestamp: \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/context.cpp \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/context.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/editprofile_dialog.cpp \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/editprofile_dialog.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/editprofile_dialog.ui \
@@ -400,9 +398,6 @@ m7fazty_autogen/timestamp: \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/mainwindow.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/mainwindow.ui \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/matrial.qrc \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/nadminn.cpp \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/nadminn.h \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/nadminn.ui \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/requestmoney_dialog.cpp \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/requestmoney_dialog.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/requestmoney_dialog.ui \

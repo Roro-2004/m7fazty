@@ -152,7 +152,6 @@ D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_D
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/account.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/admin.h \
-  D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/nadminn.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/user_c.h \
   D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/viewbalance_dialog.h

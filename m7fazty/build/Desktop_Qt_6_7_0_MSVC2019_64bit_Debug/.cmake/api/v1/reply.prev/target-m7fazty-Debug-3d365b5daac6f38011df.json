@@ -389,20 +389,18 @@
 				53,
 				55,
 				58,
-				61,
-				64,
-				84
+				76
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "m7fazty_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "m7fazty_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "m7fazty_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "m7fazty::@6890427a1f51a3e7e1df",
@@ -530,9 +528,7 @@
 				53,
 				55,
 				58,
-				61,
-				64,
-				84
+				76
 			]
 		},
 		{
@@ -561,7 +557,11 @@
 				54,
 				57,
 				60,
+				61,
+				62,
 				63,
+				64,
+				65,
 				66,
 				67,
 				68,
@@ -570,15 +570,7 @@
 				71,
 				72,
 				73,
-				74,
-				75,
-				76,
-				77,
-				78,
-				79,
-				80,
-				81,
-				82
+				74
 			]
 		},
 		{
@@ -601,17 +593,15 @@
 				51,
 				56,
 				59,
-				62,
-				65,
-				83
+				75
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				85,
-				86
+				77,
+				78
 			]
 		}
 	],
@@ -911,38 +901,6 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "nadminn.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "nadminn.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "nadminn.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "admin_edits.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "admin_edits.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "admin_edits.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
 			"path" : "add_edit_delete.h",
 			"sourceGroupIndex" : 1
 		},
@@ -1049,18 +1007,6 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/include/ui_view_trans_dialog.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/include/ui_nadminn.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/m7fazty_autogen/include/ui_admin_edits.h",
 			"sourceGroupIndex" : 1
 		},
 		{

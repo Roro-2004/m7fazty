@@ -10,7 +10,6 @@
 #include<iostream>
 #include"account.h"
 #include "files.h"
-#include"nadminn.h"
 #include"requestmoney_dialog.h"
 using namespace std;
 

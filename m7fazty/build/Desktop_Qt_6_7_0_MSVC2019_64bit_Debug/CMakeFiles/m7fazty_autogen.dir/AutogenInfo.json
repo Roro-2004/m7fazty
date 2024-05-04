@@ -301,12 +301,6 @@
 			null
 		],
 		[
-			"D:/Projects/2nd Year/DS/m7fazty/m7fazty/context.h",
-			"MU",
-			"EWIEGA46WW/moc_context.cpp",
-			null
-		],
-		[
 			"D:/Projects/2nd Year/DS/m7fazty/m7fazty/editprofile_dialog.h",
 			"MU",
 			"EWIEGA46WW/moc_editprofile_dialog.cpp",
@@ -328,12 +322,6 @@
 			"D:/Projects/2nd Year/DS/m7fazty/m7fazty/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
-			null
-		],
-		[
-			"D:/Projects/2nd Year/DS/m7fazty/m7fazty/nadminn.h",
-			"MU",
-			"EWIEGA46WW/moc_nadminn.cpp",
 			null
 		],
 		[
@@ -471,7 +459,6 @@
 		],
 		[ "D:/Projects/2nd Year/DS/m7fazty/m7fazty/admin.cpp", "MU", null ],
 		[ "D:/Projects/2nd Year/DS/m7fazty/m7fazty/admin_c.cpp", "MU", null ],
-		[ "D:/Projects/2nd Year/DS/m7fazty/m7fazty/context.cpp", "MU", null ],
 		[
 			"D:/Projects/2nd Year/DS/m7fazty/m7fazty/editprofile_dialog.cpp",
 			"MU",
@@ -481,7 +468,6 @@
 		[ "D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.cpp", "MU", null ],
 		[ "D:/Projects/2nd Year/DS/m7fazty/m7fazty/main.cpp", "MU", null ],
 		[ "D:/Projects/2nd Year/DS/m7fazty/m7fazty/mainwindow.cpp", "MU", null ],
-		[ "D:/Projects/2nd Year/DS/m7fazty/m7fazty/nadminn.cpp", "MU", null ],
 		[
 			"D:/Projects/2nd Year/DS/m7fazty/m7fazty/requestmoney_dialog.cpp",
 			"MU",

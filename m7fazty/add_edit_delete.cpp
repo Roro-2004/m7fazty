@@ -8,6 +8,8 @@
 #include"user_c.h"
 using namespace std;
 
+admin_c currentAdmin;
+
 
 add_edit_delete::add_edit_delete(QWidget *parent)
     : QDialog(parent)
@@ -49,7 +51,6 @@ void add_edit_delete::on_editAcc_pushButton_clicked()
     edited_user->user_acc.email=ui->viewAndEditEmail_lineEdit->text().toStdString();
     edited_user->user_acc.age = ui->viewAndEditAge_lineEdit->text().toInt();
 
-    admin_c currentAdmin;
     string previousUsername=ui->viewCurrentAccData_lineEdit->text().toStdString();
 
 
@@ -97,8 +98,7 @@ void add_edit_delete::on_add_acc_pushButton_clicked()
     else
     {
 
-    admin_c current_admin;
-    bool is_exist= current_admin.add_acc(added_user);
+    bool is_exist= currentAdmin.add_acc(added_user);
     if(is_exist)
     {
         QMessageBox::warning(this,"Add Account","That Username is allready exist, Enter another one");
@@ -115,9 +115,8 @@ void add_edit_delete::on_add_acc_pushButton_clicked()
 //--------------------------------------DELETE-----------------------------------------
 void add_edit_delete::on_deleteacc_pushButton_clicked()
 {
-    admin_c current_admin;
     string username=ui->username_deleteacc_lineEdit->text().toStdString();
-    bool flag=current_admin.delete_acc(username);
+    bool flag=currentAdmin.delete_acc(username);
     if(flag)
     {
         QMessageBox::information(this,"Delete Account","Done Successfuly");

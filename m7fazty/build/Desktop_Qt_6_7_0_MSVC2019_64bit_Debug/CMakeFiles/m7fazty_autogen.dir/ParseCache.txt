@@ -191,7 +191,6 @@ D:/Projects/2nd Year/DS/m7fazty/m7fazty/mainwindow.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/account.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/admin.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/mainwindow.h
- mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/nadminn.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/sign_up.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/user.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/user_c.h
@@ -1122,7 +1121,6 @@ D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/account.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/admin.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.h
- mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/nadminn.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/user.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/user_c.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/viewbalance_dialog.h
@@ -1434,7 +1432,6 @@ D:/Projects/2nd Year/DS/m7fazty/m7fazty/sign_up.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/login.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/account.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/admin.h
- mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/nadminn.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/sign_up.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/user.h
  mdp:D:/Projects/2nd Year/DS/m7fazty/m7fazty/user_c.h

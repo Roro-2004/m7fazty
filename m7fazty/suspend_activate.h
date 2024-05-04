@@ -15,6 +15,11 @@ public:
     explicit suspend_activate(QWidget *parent = nullptr);
     ~suspend_activate();
 
+private slots:
+    void on_Activate_pushButton_clicked();
+
+    void on_suspend_pushButton_clicked();
+
 private:
     Ui::suspend_activate *ui;
 };

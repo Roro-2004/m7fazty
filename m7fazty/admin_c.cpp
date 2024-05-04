@@ -1,5 +1,4 @@
 #include "admin_c.h"
-#include"context.h"
 #include<QString>
 #include <string>
 #include"sign_up.h"
@@ -30,39 +29,29 @@ bool admin_c::add_acc(user_c *u)
 bool admin_c::edit_balance(string username,float new_balance)   //just convert the string u get from the box to a float and pass it to that function
 {
     bool is_exist=false;
-    for (int users_idx = 0; users_idx < context::users.size(); users_idx++)
-    {
-        if (username == context::users[users_idx].user_acc.username)
-        {
-            context::users[users_idx].balance = new_balance;
-            is_exist=true;
-            break;
-        }
+    if (sign_up::users_read[username] != NULL){
+        is_exist = true;
+        sign_up::users_read[username]->balance=new_balance;
     }
     return is_exist;
 }
+
+
 void admin_c:: actviate(string username)
 {
-    for (int accounts_idx = 0; accounts_idx < context::accounts.size(); accounts_idx++)
-    {
-        if (username == context::accounts[accounts_idx].username)
-        {
-            context::accounts[accounts_idx].status = true;
-            break;
-        }
+    if (sign_up::users_read[username] != NULL){
+        sign_up::users_read[username]->user_acc.status=true;
     }
 }
+
+
 void admin_c::suspend(string username)
 {
-    for (int accounts_idx = 0; accounts_idx < context::accounts.size(); accounts_idx++)
-    {
-        if (username == context::accounts[accounts_idx].username)
-        {
-            context::accounts[accounts_idx].status = false;
-            break;
-        }
+    if (sign_up::users_read[username] != NULL){
+        sign_up::users_read[username]->user_acc.status=false;
     }
 }
+
 
 bool admin_c::delete_acc(string username)
 {

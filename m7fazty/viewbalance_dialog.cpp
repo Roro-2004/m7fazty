@@ -1,6 +1,5 @@
 #include "viewbalance_dialog.h"
 #include "ui_viewbalance_dialog.h"
-#include"context.h"
 #include<string>
 #include <QString>
 #include"login.h"

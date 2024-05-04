@@ -8,7 +8,6 @@
 #include"admin.h"
 using namespace std;
 
-#include"nadminn.h"           //
 #include <QWidget>           //
 
 namespace Ui {

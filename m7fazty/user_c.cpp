@@ -5,7 +5,6 @@
 #include<string>
 using namespace std;
 
-#include"context.h"
 user_c::user_c() {}
 
 user_c::user_c(float val, account acc)
