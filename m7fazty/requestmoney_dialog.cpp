@@ -67,6 +67,7 @@ string requestMoney_dialog::getCurrentTime()
 
 
 void requestMoney_dialog::on_request_Button_clicked() {
+
     t = new transiction();
     t->id=generateID();
     t->receiver = Login::current_user.user_acc.username;
@@ -81,11 +82,6 @@ void requestMoney_dialog::on_request_Button_clicked() {
     t->date = getCurrentDate();
     t->time = getCurrentTime();
 
-    trans_read[generateID()] = t;
-
-    cout<<"request done\n";
-
-
     for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read)
     {
         bool exist=false;
@@ -95,17 +91,25 @@ void requestMoney_dialog::on_request_Button_clicked() {
             if(t->receiver==t->sender)
             {
                 cout <<"cant do transiction";
-                break;
+                return;
             }
             else
             {
                 if(t->receiver==u.second->user_acc.username)
                     u.second->balance+=t->amount;
-                else if(t->sender==u.second->user_acc.username && u.second->balance>=t->amount)
+                if(t->sender==u.second->user_acc.username && u.second->balance >= t->amount)
                     u.second->balance-=t->amount;
             }
         }
     }
+
+
+    trans_read[generateID()] = t;
+
+    cout<<"request done\n";
+
+
+
     close();
 }
 

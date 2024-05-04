@@ -1,1 +1,9 @@
 Trans ID,Receiver,Sender,Amount,Date,Time,Status
+S567,roaa,menna,200,03/05/2024,09:58 PM,Successful
+R500,menna,menna,10,03/05/2024,09:58 PM,Successful
+S134,nrmeen,menna,20,04/05/2024,03:28 AM,Successful
+R524,menna,roaa,100,03/05/2024,09:58 PM,Successful
+R567,menna,nrmeen,20,04/05/2024,03:19 AM,Successful
+S500,menna,menna,10,04/05/2024,03:19 AM,Successful
+S962,nrmeen,menna,50,04/05/2024,03:19 AM,Successful
+R778,menna,menna,10,04/05/2024,03:19 AM,Successful
