@@ -9,6 +9,7 @@
 #include"files.h"
 #include"requestmoney_dialog.h"
 #include "sendmoney_dialog.h"
+#include <QCryptographicHash>
 using namespace std;
 namespace fs = std::filesystem;
 
@@ -48,7 +49,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
         user_c* user = u.second;
         cout << u.first  << "," << user->user_acc.password << "," << user->user_acc.address << "," << user->user_acc.email << "," << user->user_acc.age << "," << user->balance << "," << user->user_acc.status << endl;
     }
-
 }
 
 
@@ -74,9 +74,9 @@ void MainWindow::on_sign_up_clicked()
 }
 void MainWindow::closeEvent(QCloseEvent *event)
 {
+
     files::write_in_file("D:/m7fazty/m7fazty/files/User.csv");
     files::write_in_file("D:/m7fazty/m7fazty/files/Transiction.csv");
 
-    qDebug() << "Closing the application...";
     QMainWindow::closeEvent(event);
 }

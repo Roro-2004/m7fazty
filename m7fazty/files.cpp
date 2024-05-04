@@ -44,8 +44,9 @@ void files::write_in_file(string file_path) {
         for (const auto& trans : requestMoney_dialog::trans_read) {
             transiction* t = trans.second;
             file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
-        }
-    } else if (path.string() == "D:/m7fazty/m7fazty/files/User.csv") {
+    }
+}
+        else if (path.string() == "D:/m7fazty/m7fazty/files/User.csv") {
         for (const auto& u : sign_up::users_read) {
             user_c* user = u.second;
             file << u.first << "," << user->user_acc.password << "," << user->user_acc.address << "," << user->user_acc.email << "," << user->user_acc.age << "," << user->balance << "," << user->user_acc.status << endl;
@@ -53,7 +54,6 @@ void files::write_in_file(string file_path) {
     } else {
         cerr << "Error: Invalid file path." << endl;
     }
-
     file.close();
     cout << "Data has been written to the file successfully." << endl;
 }

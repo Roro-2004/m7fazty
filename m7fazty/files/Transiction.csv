@@ -1,1 +1,5 @@
 Trans ID,Receiver,Sender,Amount,Date,Time,Status
+S567,maya,maria,900,04/05/2024,12:04 AM,Successful
+S134,maya,lala,300,04/05/2024,12:40 AM,Successful
+R369,lala,maria,1000,04/05/2024,12:40 AM,Successful
+S500,maya,lala,50,04/05/2024,01:02 AM,Successful

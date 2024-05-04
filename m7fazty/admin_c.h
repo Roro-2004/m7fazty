@@ -3,6 +3,9 @@
 #include "account.h"
 #include"user_c.h"
 #include<vector>
+#include<unordered_map>
+
+using namespace std;
 
 class admin_c
 {
@@ -10,7 +13,10 @@ public:
     admin_c();
 
     account admin_acc;
-    vector <user_c> users;
+    //vector <user_c> users;
+
+
+
 
     /*void traverse_users_tranisctions();
     void edit_acc(account acc);
