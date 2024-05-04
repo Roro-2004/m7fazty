@@ -35,7 +35,7 @@ void Login::on_Login_2_clicked()
     bool check = false;
     //current_user.user_acc.username = ui->userName_textBox->text().toStdString();
     string Enteredusername = ui->userName_textBox->text().toStdString();
-    string Enteredpassword = ui->password_textBox->text().toStdString();
+    string Enteredpassword = current_user.user_acc.hashPassword(ui->password_textBox->text());
 
     for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read) {
         user_c* user = u.second;

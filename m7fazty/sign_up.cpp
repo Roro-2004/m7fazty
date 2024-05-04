@@ -56,7 +56,7 @@ void sign_up::on_sign_up2_button_clicked()
 
     user = new user_c();
     user->user_acc.username = ui->userName_textBox->text().toStdString();
-    user->user_acc.password = ui->password_textBox->text().toStdString();
+    user->user_acc.password = user->user_acc.hashPassword(ui->password_textBox->text());
     user->user_acc.address = ui->city_textBox->text().toStdString();
     user->user_acc.email = ui->email_textBox->text().toStdString();
     user->user_acc.age = ui->age_textBox->text().toInt();
