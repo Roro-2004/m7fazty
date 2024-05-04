@@ -55,10 +55,13 @@ void view_users_dialog::updateTransactionsList(QString username)
         {
             ui->listWidget->addItem(QString::fromStdString(it->first));
             firstId = (QString::fromStdString(it->first));
-        }
+        }    
     }
-
     updateTransInfo(firstId);
+    if(ui->listWidget->count()==0){
+        clearLabels();
+        ui->listWidget->addItem("This user has no transactions");
+    }
 }
 
 
@@ -79,6 +82,15 @@ void view_users_dialog::updateTransInfo(QString transID){
         ui->label_17->setText(QString::fromStdString(requestMoney_dialog::trans_read[transID.toStdString()]->time));
         ui->label_19->setText(QString::fromStdString(requestMoney_dialog::trans_read[transID.toStdString()]->status));
     }
-
+}
+void view_users_dialog::clearLabels()
+{
+    ui->label_9->clear();
+    ui->label_10->clear();
+    ui->label_11->clear();
+    ui->label_13->clear();
+    ui->label_15->clear();
+    ui->label_17->clear();
+    ui->label_19->clear();
 }
 

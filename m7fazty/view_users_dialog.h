@@ -25,6 +25,7 @@ private slots:
     void updateLabels(QString username);
     void updateTransactionsList(QString username);
     void updateTransInfo(QString transID);
+    void clearLabels();
 
 private:
     Ui::view_users_dialog *ui;
