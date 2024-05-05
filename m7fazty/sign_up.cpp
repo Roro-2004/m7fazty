@@ -56,6 +56,7 @@ void sign_up::on_sign_up2_button_clicked()
 
     user = new user_c();
     user->user_acc.username = ui->userName_textBox->text().toStdString();
+    string pass_before_hashing = ui->password_textBox->text().toStdString();
     user->user_acc.password = user->user_acc.hashPassword(ui->password_textBox->text());
     user->user_acc.address = ui->city_textBox->text().toStdString();
     user->user_acc.email = ui->email_textBox->text().toStdString();
@@ -81,7 +82,7 @@ void sign_up::on_sign_up2_button_clicked()
         QMessageBox::warning(this, "Age", "Invalid age.The age must be older than 16");
         check = false;
     }
-     else if (!isStrongPassword(user->user_acc.password)) {
+     else if (!isStrongPassword(pass_before_hashing)) {
     QMessageBox::warning(this, "Password", "Password is not strong enough. Please use at least 8 characters including uppercase, lowercase, digits, and special characters.");
     check = false;
 }
