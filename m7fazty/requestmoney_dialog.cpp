@@ -9,6 +9,7 @@
 #include <QUuid>
 #include <unordered_set>
 #include"sign_up.h"
+#include<QMessageBox>
 using namespace std;
 
 
@@ -82,34 +83,28 @@ void requestMoney_dialog::on_request_Button_clicked() {
     t->date = getCurrentDate();
     t->time = getCurrentTime();
 
-    for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read)
-    {
-        bool exist=false;
-        if(t->sender==u.second->user_acc.username)
-            exist=true;
-        if(exist==true){
-            if(t->receiver==t->sender)
+    trans_read[generateID()] = t;
+
+
+    if(sign_up::users_read[t->sender]!= NULL){
+        if(t->receiver==t->sender)
+        {
+            QMessageBox::warning(this,"Transiction","can't do transiction");
+            return;
+        }
+        else
+        {
+            if(sign_up::users_read[t->sender]->balance >= t->amount)
             {
-                cout <<"cant do transiction";
-                return;
-            }
-            else
-            {
-                if(t->receiver==u.second->user_acc.username)
-                    u.second->balance+=t->amount;
-                if(t->sender==u.second->user_acc.username && u.second->balance >= t->amount)
-                    u.second->balance-=t->amount;
+                sign_up::users_read[t->receiver]->balance+=t->amount;
+                sign_up::users_read[t->sender]->balance-=t->amount;
             }
         }
     }
-
-
-    trans_read[generateID()] = t;
-
-    cout<<"request done\n";
-
-
-
+    else
+    {
+        QMessageBox::warning(this,"Transiction","user not found");
+    }
     close();
 }
 

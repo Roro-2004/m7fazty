@@ -63,9 +63,6 @@ void Login::on_Login_2_clicked()
     ui->userName_textBox->clear();
     ui->password_textBox->clear();
 
-   // MainWindow::stackedWidget->setCurrentWidget(admin_edits_widget);
-
-
 }
 
 

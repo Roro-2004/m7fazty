@@ -24,8 +24,6 @@ void adjust_balance_dialog::on_editBalance_pushButton_clicked()
     if(new_balance <0 ){
         QMessageBox::warning(this,"Editing Balance","Balance not valid");
     }
-
-
     else{
         bool done=current_admin.edit_balance(username,new_balance);
 

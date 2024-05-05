@@ -26,12 +26,12 @@ void files::write_in_file(string file_path) {
 
     // Write headers only if the file is empty
     if (fs::file_size(path) == 0) {
-        if (path.string() == "D:/m7fazty/m7fazty/files/Transiction.csv") {
+        if (path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv") {
             file << "Trans ID" << "," << "Receiver" << "," << "Sender" << "," << "Amount" << "," << "Date" << "," << "Time" << "," << "Status" << endl;
-        } else if (path.string() == "D:/m7fazty/m7fazty/files/User.csv") {
+        } else if (path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/User.csv") {
             file << "Username" << "," << "Password" << "," << "Address" << "," << "Email" << "," << "Age" << "," << "Balance" << "," << "Status" << endl;
         } else {
-            cerr << "Error: Invalid file path." << endl;
+            cerr << "Error: Invalid file path." <<endl<<file_path << endl<<path<<endl;
             file.close();
             return;
         }
@@ -39,19 +39,20 @@ void files::write_in_file(string file_path) {
     }
 
     // Write data
-    if (path.string() == "D:/m7fazty/m7fazty/files/Transiction.csv") {
+    if (path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv") {
         for (const auto& trans : requestMoney_dialog::trans_read) {
             transiction* t = trans.second;
             file << trans.first << "," << t->receiver << "," << t->sender << "," << t->amount << "," << t->date << "," << t->time << "," << t->status << endl;
+        }
     }
-}
-        else if (path.string() == "D:/m7fazty/m7fazty/files/User.csv") {
+    else if (path== "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/User.csv") {
         for (const auto& u : sign_up::users_read) {
             user_c* user = u.second;
             file << u.first << "," << user->user_acc.password << "," << user->user_acc.address << "," << user->user_acc.email << "," << user->user_acc.age << "," << user->balance << "," << user->user_acc.status << endl;
         }
     } else {
-        cerr << "Error: Invalid file path." << endl;
+        cerr << "Error: Invalid file path." <<endl<<file_path << endl<<path<<endl;
+
     }
     file.close();
     cout << "Data has been written to the file successfully." << endl;
@@ -84,7 +85,7 @@ void files::split(const string& s, const string& path) {
             t->status = v[6];
             requestMoney_dialog::trans_read[v[0]] = t;
         } else {
-            cerr << "Error: Insufficient data in the input line." << endl;
+            cerr << "Error: Insufficient data in the input line.    " << endl;
         }
     } else if (path == "ur") {
         if (v.size() >= 7) {
@@ -113,7 +114,7 @@ void files::split(const string& s, const string& path) {
             }
             sign_up::users_read[v[0]] = user;
         } else {
-            cerr << "Error: Insufficient data in the input line." << endl;
+            cerr << "Error: Insufficient data in the input line.     "<<v[1] << endl;
         }
     }
 }
@@ -136,9 +137,9 @@ void files::read_from_file(const string& file_path) {
             continue;
         }
         if (!line.empty()) {
-            if (file_path == "D:/m7fazty/m7fazty/files/Transiction.csv") {
+            if (file_path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv") {
                 split(line, "tr");
-            } else if (file_path == "D:/m7fazty/m7fazty/files/User.csv") {
+            } else if (file_path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/User.csv") {
                 split(line, "ur");
             }
         }

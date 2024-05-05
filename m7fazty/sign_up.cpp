@@ -62,7 +62,6 @@ void sign_up::on_sign_up2_button_clicked()
     user->user_acc.age = ui->age_textBox->text().toInt();
     user->balance = 0;
     user->user_acc.status =true;
-   // users_read[user->user_acc.username] = user;
 
 
     if (user->user_acc.username.empty() || user->user_acc.password.empty() || user->user_acc.address.empty() || user->user_acc.age == NULL){

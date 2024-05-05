@@ -20,6 +20,9 @@ view_users_dialog::~view_users_dialog()
 {
     delete ui;
 }
+
+
+
 void view_users_dialog::populateComboBox() {
     if(sign_up::users_read.empty())return;
     unordered_map<string,user_c*>::iterator it;
@@ -28,6 +31,7 @@ void view_users_dialog::populateComboBox() {
 
 }
 
+
 void view_users_dialog::on_comboBox_currentTextChanged(const QString &arg1)
 {
     updateLabels(arg1);
@@ -35,6 +39,8 @@ void view_users_dialog::on_comboBox_currentTextChanged(const QString &arg1)
 
 
 }
+
+
 void view_users_dialog::updateLabels(QString username)
 {
     auto it = sign_up::users_read.find(username.toStdString());
@@ -44,6 +50,8 @@ void view_users_dialog::updateLabels(QString username)
     }
 
 }
+
+
 void view_users_dialog::updateTransactionsList(QString username)
 {
     ui->listWidget->clear();
@@ -62,11 +70,12 @@ void view_users_dialog::updateTransactionsList(QString username)
 }
 
 
-
 void view_users_dialog::on_listWidget_currentTextChanged(const QString &currentText)
 {
     updateTransInfo(currentText);
 }
+
+
 void view_users_dialog::updateTransInfo(QString transID){
 
     auto it = requestMoney_dialog::trans_read.find(transID.toStdString());
