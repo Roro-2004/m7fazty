@@ -1,1 +1,6 @@
 Trans ID,Receiver,Sender,Amount,Date,Time,Status
+R141,nour,bank,500,05/05/2024,07:04 AM,Successful
+R134,nour,menna,13,05/05/2024,08:13 AM,Successful
+S567,menna,nour,100,05/05/2024,07:04 AM,Successful
+R567,nour,Bank,600,05/05/2024,07:19 AM,Successful
+R500,nour,bank,90,05/05/2024,07:22 AM,Successful

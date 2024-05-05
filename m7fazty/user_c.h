@@ -15,10 +15,10 @@ public:
  user_c(float, account);
     account user_acc;
     float balance;
+    float dept;
     int points;
 
     string View_current_balance();
-    //float balance_calc();
     //float points_calc();
 };
 
