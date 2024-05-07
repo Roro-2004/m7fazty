@@ -16,6 +16,33 @@ add_edit_delete::add_edit_delete(QWidget *parent)
     , ui(new Ui::add_edit_delete)
 {
     ui->setupUi(this);
+
+    ui->address_add_lineEdit->hide();
+    ui->add_acc_pushButton->hide();
+    ui->age_add_lineEdit->hide();
+    ui->age_label->hide();
+    ui->age_label_2->hide();
+    ui->city_label->hide();
+    ui->city_label_2->hide();
+    ui->deleteacc_pushButton->hide();
+    ui->editAcc_pushButton->hide();
+    ui->email_add_lineEdit->hide();
+    ui->email_label->hide();
+    ui->email_label_2->hide();
+    ui->password_add_lineEdit->hide();
+    ui->password_label->hide();
+    ui->password_label_2->hide();
+    ui->username_add_lineEdit->hide();
+    ui->username_deleteacc_lineEdit->hide();
+    ui->username_label->hide();
+    ui->username_label_2->hide();
+    ui->username_label_3->hide();
+    ui->viewAndEditAddress_lineEdit->hide();
+    ui->viewAndEditAge_lineEdit->hide();
+    ui->viewAndEditEmail_lineEdit->hide();
+    ui->viewAndEditPassword_lineEdit->hide();
+    ui->viewAndEditusername_lineEdit->hide();
+    ui->viewCurrentAccData_CB->hide();
 }
 
 add_edit_delete::~add_edit_delete()
@@ -25,22 +52,9 @@ add_edit_delete::~add_edit_delete()
 
 
 //--------------------------------------EDIT-------------------------------------------
-void add_edit_delete::on_viewCurrentAccData_pushButton_clicked()
-{
-    if(sign_up::users_read[ui->viewCurrentAccData_lineEdit->text().toStdString()] != NULL)
-    {
-    user_c *u = sign_up::users_read[ui->viewCurrentAccData_lineEdit->text().toStdString()];
-    ui->viewAndEditusername_lineEdit->setText(QString::fromStdString(u->user_acc.username));
-    ui->viewAndEditPassword_lineEdit->setText(QString::fromStdString(u->user_acc.password));
-    ui->viewAndEditAddress_lineEdit->setText(QString::fromStdString(u->user_acc.address));
-    ui->viewAndEditEmail_lineEdit->setText(QString::fromStdString(u->user_acc.email));
-    ui->viewAndEditAge_lineEdit->setText(QString::fromStdString(to_string(u->user_acc.age)));
- }
-    else
-        QMessageBox::warning(this,"view info","user not found!");
-}
 
-void add_edit_delete::on_editAcc_pushButton_clicked()
+
+void add_edit_delete::on_editAcc_pushButton_clicked(const QString &user)
 {
 
     user_c *edited_user= new user_c();
@@ -51,7 +65,7 @@ void add_edit_delete::on_editAcc_pushButton_clicked()
     edited_user->user_acc.email=ui->viewAndEditEmail_lineEdit->text().toStdString();
     edited_user->user_acc.age = ui->viewAndEditAge_lineEdit->text().toInt();
 
-    string previousUsername=ui->viewCurrentAccData_lineEdit->text().toStdString();
+    string previousUsername=user.toStdString();
 
 
     if(edited_user->user_acc.username=="\0" || edited_user->user_acc.password=="\0"|| edited_user->user_acc.address=="\0"||edited_user->user_acc.email=="\0"||edited_user->user_acc.age ==       0)
@@ -127,5 +141,142 @@ void add_edit_delete::on_deleteacc_pushButton_clicked()
     }
 }
 //-------------------------------------------------------------------------------------
+
+void add_edit_delete::on_add_button_clicked()
+{
+    ui->add_button->hide();
+    ui->delete_button->show();
+    ui->edit_button->show();
+
+    ui->username_label_2->show();
+    ui->username_add_lineEdit->show();
+    ui->password_label_2->show();
+    ui->password_add_lineEdit->show();
+    ui->email_label_2->show();
+    ui->email_add_lineEdit->show();
+    ui->city_label_2->show();
+    ui->age_label_2->show();
+    ui->address_add_lineEdit->show();
+    ui->add_acc_pushButton->show();
+    ui->age_add_lineEdit->show();
+
+    ui->viewAndEditAddress_lineEdit->hide();
+    ui->viewAndEditAge_lineEdit->hide();
+    ui->viewAndEditEmail_lineEdit->hide();
+    ui->viewAndEditPassword_lineEdit->hide();
+    ui->viewAndEditusername_lineEdit->hide();
+    ui->viewCurrentAccData_CB->hide();
+    ui->username_label->hide();
+    ui->password_label->hide();
+    ui->email_label->hide();
+    ui->editAcc_pushButton->hide();
+    ui->city_label->hide();
+    ui->age_label->hide();
+
+    ui->deleteacc_pushButton->hide();
+    ui->username_deleteacc_lineEdit->hide();
+    ui->username_label_3->hide();
+}
+
+
+void add_edit_delete::on_edit_button_clicked()
+{
+    populateComboBox();
+    ui->edit_button->hide();
+    ui->delete_button->show();
+    ui->add_button->show();
+
+    ui->viewAndEditAddress_lineEdit->show();
+    ui->viewAndEditAge_lineEdit->show();
+    ui->viewAndEditEmail_lineEdit->show();
+    ui->viewAndEditPassword_lineEdit->show();
+    ui->viewAndEditusername_lineEdit->show();
+    ui->viewCurrentAccData_CB->show();
+    ui->username_label->show();
+    ui->password_label->show();
+    ui->email_label->show();
+    ui->editAcc_pushButton->show();
+    ui->city_label->show();
+    ui->age_label->show();
+
+    ui->username_label_2->hide();
+    ui->username_add_lineEdit->hide();
+    ui->password_label_2->hide();
+    ui->password_add_lineEdit->hide();
+    ui->email_label_2->hide();
+    ui->email_add_lineEdit->hide();
+    ui->city_label_2->hide();
+    ui->age_label_2->hide();
+    ui->address_add_lineEdit->hide();
+    ui->add_acc_pushButton->hide();
+    ui->age_add_lineEdit->hide();
+
+    ui->deleteacc_pushButton->hide();
+    ui->username_deleteacc_lineEdit->hide();
+    ui->username_label_3->hide();
+}
+
+
+void add_edit_delete::on_delete_button_clicked()
+{
+    ui->delete_button->hide();
+    ui->edit_button->show();
+    ui->add_button->show();
+
+    ui->deleteacc_pushButton->show();
+    ui->username_deleteacc_lineEdit->show();
+    ui->username_label_3->show();
+
+    ui->username_label_2->hide();
+    ui->username_add_lineEdit->hide();
+    ui->password_label_2->hide();
+    ui->password_add_lineEdit->hide();
+    ui->email_label_2->hide();
+    ui->email_add_lineEdit->hide();
+    ui->city_label_2->hide();
+    ui->age_label_2->hide();
+    ui->address_add_lineEdit->hide();
+    ui->add_acc_pushButton->hide();
+    ui->age_add_lineEdit->hide();
+
+    ui->viewAndEditAddress_lineEdit->hide();
+    ui->viewAndEditAge_lineEdit->hide();
+    ui->viewAndEditEmail_lineEdit->hide();
+    ui->viewAndEditPassword_lineEdit->hide();
+    ui->viewAndEditusername_lineEdit->hide();
+    ui->viewCurrentAccData_CB->hide();
+    ui->username_label->hide();
+    ui->password_label->hide();
+    ui->email_label->hide();
+    ui->editAcc_pushButton->hide();
+    ui->city_label->hide();
+    ui->age_label->hide();
+}
+
+
+void add_edit_delete::populateComboBox() {
+    if(sign_up::users_read.empty())return;
+    unordered_map<string,user_c*>::iterator it;
+    for(it = sign_up::users_read.begin();it!=sign_up::users_read.end();it++){
+        ui->viewCurrentAccData_CB->addItem(QString::fromStdString(it->first));}
+}
+
+void add_edit_delete::on_viewCurrentAccData_CB_currentTextChanged(const QString &user)
+{
+    if(sign_up::users_read[user.toStdString()] != NULL)
+    {
+        user_c *u = sign_up::users_read[user.toStdString()];
+        ui->viewAndEditusername_lineEdit->setText(QString::fromStdString(u->user_acc.username));
+        ui->viewAndEditPassword_lineEdit->setText(QString::fromStdString(u->user_acc.password));
+        ui->viewAndEditAddress_lineEdit->setText(QString::fromStdString(u->user_acc.address));
+        ui->viewAndEditEmail_lineEdit->setText(QString::fromStdString(u->user_acc.email));
+        ui->viewAndEditAge_lineEdit->setText(QString::fromStdString(to_string(u->user_acc.age)));
+    }
+    else
+        QMessageBox::warning(this,"view info","user not found!");
+}
+
+
+
 
 

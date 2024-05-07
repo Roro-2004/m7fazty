@@ -19,7 +19,7 @@ suspend_activate::~suspend_activate()
 
 void suspend_activate::on_Activate_pushButton_clicked()
 {
-    string username=ui->username_Activate_lineEdit->text().toStdString();
+    string username=ui->username_lineEdit->text().toStdString();
     current_admin.actviate(username);
     QMessageBox::information(this,"Add Account","Done Successfuly");
 }
@@ -27,7 +27,7 @@ void suspend_activate::on_Activate_pushButton_clicked()
 
 void suspend_activate::on_suspend_pushButton_clicked()
 {
-    string username=ui->username_suspend_lineEdit->text().toStdString();
+    string username=ui->username_lineEdit->text().toStdString();
     current_admin.suspend(username);
     QMessageBox::information(this,"Add Account","Done Successfuly");
 }

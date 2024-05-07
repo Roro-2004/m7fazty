@@ -387,9 +387,8 @@
 				47,
 				50,
 				53,
-				55,
-				58,
-				76
+				56,
+				74
 			]
 		}
 	],
@@ -526,9 +525,8 @@
 				47,
 				50,
 				53,
-				55,
-				58,
-				76
+				56,
+				74
 			]
 		},
 		{
@@ -554,8 +552,9 @@
 				46,
 				49,
 				52,
-				54,
-				57,
+				55,
+				58,
+				59,
 				60,
 				61,
 				62,
@@ -568,9 +567,7 @@
 				69,
 				70,
 				71,
-				72,
-				73,
-				74
+				72
 			]
 		},
 		{
@@ -591,17 +588,17 @@
 				45,
 				48,
 				51,
-				56,
-				59,
-				75
+				54,
+				57,
+				73
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				77,
-				78
+				75,
+				76
 			]
 		}
 	],
@@ -887,17 +884,6 @@
 			"backtrace" : 4,
 			"path" : "view_trans_dialog.ui",
 			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "context.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "context.cpp",
-			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,

@@ -37,3 +37,5 @@ void adjust_balance_dialog::on_editBalance_pushButton_clicked()
     }
     }
 }
+
+
