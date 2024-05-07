@@ -14,6 +14,11 @@ public:
     explicit view_trans_dialog(QWidget *parent = nullptr);
     ~view_trans_dialog();
 
+private slots:
+    void on_listWidget_currentTextChanged(const QString &currentText);
+    void updateTransInfo(QString transID);
+    void populateList();
+
 private:
     Ui::view_trans_dialog *ui;
 };
