@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label_18">
+  <widget class="QLabel" name="statusText">
    <property name="geometry">
     <rect>
      <x>250</x>
@@ -49,7 +49,7 @@
     <string>Choose transaction ID:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_15">
+  <widget class="QLabel" name="label_date">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -82,7 +82,7 @@
     </font>
    </property>
   </widget>
-  <widget class="QLabel" name="label_12">
+  <widget class="QLabel" name="receiverText">
    <property name="geometry">
     <rect>
      <x>250</x>
@@ -100,7 +100,7 @@
     <string>receiver:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_16">
+  <widget class="QLabel" name="timeText">
    <property name="geometry">
     <rect>
      <x>250</x>
@@ -118,7 +118,7 @@
     <string>Time:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="idText">
    <property name="geometry">
     <rect>
      <x>248</x>
@@ -136,7 +136,7 @@
     <string>trans id :</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_8">
+  <widget class="QLabel" name="senderText">
    <property name="geometry">
     <rect>
      <x>250</x>
@@ -154,7 +154,7 @@
     <string>sender:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_13">
+  <widget class="QLabel" name="label_receiver">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -172,7 +172,7 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_7">
+  <widget class="QLabel" name="amountText">
    <property name="geometry">
     <rect>
      <x>250</x>
@@ -190,7 +190,7 @@
     <string>amount :</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_11">
+  <widget class="QLabel" name="label_sender">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -208,7 +208,7 @@
     <string>text</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_17">
+  <widget class="QLabel" name="label_time">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -226,7 +226,7 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_10">
+  <widget class="QLabel" name="label_amount">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -244,7 +244,7 @@
     <string>text</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_19">
+  <widget class="QLabel" name="label_status">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -262,7 +262,7 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_9">
+  <widget class="QLabel" name="label_id">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -280,7 +280,7 @@
     <string>text</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_14">
+  <widget class="QLabel" name="dateText">
    <property name="geometry">
     <rect>
      <x>250</x>

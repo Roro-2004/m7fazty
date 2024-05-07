@@ -18,34 +18,6 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>150</y>
-     <width>201</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Choose transaction ID:</string>
-   </property>
-  </widget>
-  <widget class="QListWidget" name="listWidget">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>180</y>
-     <width>256</width>
-     <height>192</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QComboBox" name="comboBox">
    <property name="geometry">
     <rect>
@@ -141,190 +113,25 @@
     </font>
    </property>
    <property name="text">
-    <string>current balance:</string>
+    <string>Current balance:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QTableWidget" name="transTable">
    <property name="geometry">
     <rect>
-     <x>318</x>
-     <y>184</y>
-     <width>56</width>
-     <height>20</height>
+     <x>10</x>
+     <y>120</y>
+     <width>591</width>
+     <height>251</height>
     </rect>
    </property>
-   <property name="text">
-    <string>trans id :</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>210</y>
-     <width>58</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>amount :</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_8">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>236</y>
-     <width>47</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>sender:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_12">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>262</y>
-     <width>55</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>receiver:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_14">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>288</y>
-     <width>35</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Date:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_16">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>314</y>
-     <width>36</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Time:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_18">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>340</y>
-     <width>43</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Status:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_17">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>314</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_19">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>340</y>
-     <width>111</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_11">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>236</y>
-     <width>101</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>text</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_13">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>262</y>
-     <width>121</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_9">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>184</y>
-     <width>131</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>text</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_15">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>288</y>
-     <width>101</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_10">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>210</y>
-     <width>121</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>text</string>
-   </property>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
   </widget>
  </widget>
  <resources/>

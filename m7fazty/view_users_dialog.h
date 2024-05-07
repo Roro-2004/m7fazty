@@ -16,20 +16,15 @@ public:
     ~view_users_dialog();
 
     void populateComboBox();
-    void showUserInfo(int index);
 
 private slots:
     void on_comboBox_currentTextChanged(const QString &arg1);
-
-    void on_listWidget_currentTextChanged(const QString &currentText);
+    void populateTable(QString username);
     void updateLabels(QString username);
-    void updateTransactionsList(QString username);
-    void updateTransInfo(QString transID);
-    void clearLabels();
 
 private:
     Ui::view_users_dialog *ui;
-    QString currentUser;
+
 };
 
 #endif // VIEW_USERS_DIALOG_H
