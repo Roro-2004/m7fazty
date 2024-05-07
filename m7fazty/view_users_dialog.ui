@@ -66,7 +66,7 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>220</x>
      <y>95</y>
      <width>41</width>
      <height>20</height>
@@ -510,7 +510,7 @@ QTableView QTableCornerButton::section {
     <rect>
      <x>40</x>
      <y>90</y>
-     <width>151</width>
+     <width>161</width>
      <height>31</height>
     </rect>
    </property>
@@ -566,7 +566,7 @@ QTableView QTableCornerButton::section {
     </font>
    </property>
    <property name="text">
-    <string>User's Balance</string>
+    <string>User's Balance : </string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">
@@ -574,7 +574,7 @@ QTableView QTableCornerButton::section {
     <rect>
      <x>20</x>
      <y>90</y>
-     <width>181</width>
+     <width>191</width>
      <height>31</height>
     </rect>
    </property>
@@ -678,10 +678,10 @@ QTableView QTableCornerButton::section {
   <zorder>label_3</zorder>
   <zorder>comboBox</zorder>
   <zorder>transTable</zorder>
-  <zorder>label_4</zorder>
   <zorder>pushButton_3</zorder>
   <zorder>pushButton_4</zorder>
   <zorder>label_7</zorder>
+  <zorder>label_4</zorder>
  </widget>
  <resources/>
  <connections/>
