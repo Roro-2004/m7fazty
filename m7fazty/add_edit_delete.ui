@@ -162,11 +162,11 @@
 }
 
 QPushButton:hover {
-    background-color: rgba(255, 170, 190, 0.4); /* Semi-transparent background color when hovered */
+    background-color: rgba(255, 90, 130, 0.3);
 }
 
 QPushButton:pressed {
-    background-color: rgba(255, 150, 200, 0.7); /* Semi-transparent background color when pressed */
+    background-color: rgba(255, 90, 130, 0.4);
     border: 2px solid black; /* You can customize the border for the pressed state if needed */
 }
 </string>
@@ -308,11 +308,11 @@ QPushButton:pressed {
 }
 
 QPushButton:hover {
-    background-color: rgba(255, 170, 190, 0.4); /* Semi-transparent background color when hovered */
+    background-color: rgba(255, 90, 130, 0.3);
 }
 
 QPushButton:pressed {
-    background-color: rgba(255, 150, 200, 0.7); /* Semi-transparent background color when pressed */
+    background-color: rgba(255, 90, 130, 0.4);
     border: 2px solid black; /* You can customize the border for the pressed state if needed */
 }
 </string>
@@ -454,11 +454,11 @@ QPushButton:pressed {
 }
 
 QPushButton:hover {
-    background-color: rgba(255, 170, 190, 0.4); /* Semi-transparent background color when hovered */
+    background-color: rgba(255, 90, 130, 0.3);
 }
 
 QPushButton:pressed {
-    background-color: rgba(255, 150, 200, 0.7); /* Semi-transparent background color when pressed */
+    background-color: rgba(255, 90, 130, 0.4);
     border: 2px solid black; /* You can customize the border for the pressed state if needed */
 }
 </string>

@@ -14,6 +14,8 @@ view_users_dialog::view_users_dialog(QWidget *parent)
     ui->setupUi(this);
     populateComboBox();
     ui->transTable->setHorizontalHeaderLabels({"Trans ID", "Receiver", "Sender", "Amount", "Date", "Time", "Status"});
+    ui->label_5->hide();
+
 }
 
 view_users_dialog::~view_users_dialog()
@@ -79,14 +81,13 @@ void view_users_dialog::on_comboBox_currentTextChanged(const QString &arg1)
 {
     updateLabels(arg1);
     populateTable(arg1);
-
-
 }
+
 void view_users_dialog::updateLabels(QString username)
 {
     auto it = sign_up::users_read.find(username.toStdString());
     if (it != sign_up::users_read.end()) {
-        ui->label_4->setText(username);
+        ui->label_5->show();
         ui->label_5->setText(QString::number(sign_up::users_read[username.toStdString()]->balance, 'f', 2));
     }
 
