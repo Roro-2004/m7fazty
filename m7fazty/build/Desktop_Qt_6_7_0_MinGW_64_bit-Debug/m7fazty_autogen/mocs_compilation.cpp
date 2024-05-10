@@ -7,6 +7,7 @@
 #include "EWIEGA46WW/moc_login.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 #include "EWIEGA46WW/moc_requestmoney_dialog.cpp"
+#include "EWIEGA46WW/moc_secondwindow.cpp"
 #include "EWIEGA46WW/moc_sendmoney_dialog.cpp"
 #include "EWIEGA46WW/moc_sign_up.cpp"
 #include "EWIEGA46WW/moc_user.cpp"

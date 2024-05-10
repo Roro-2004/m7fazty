@@ -19,7 +19,7 @@ public:
 
     //float balance_calc();
     //float points_calc();
-  /*  void transiction_history();
+    /*  void transiction_history();
     void search_by_month(string s);
     string encoding(string s);*/
 };
