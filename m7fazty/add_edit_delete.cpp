@@ -52,20 +52,17 @@ add_edit_delete::~add_edit_delete()
 
 
 //--------------------------------------EDIT-------------------------------------------
-
-
-void add_edit_delete::on_editAcc_pushButton_clicked(const QString &user)
+void add_edit_delete::on_editAcc_pushButton_clicked()
 {
-
     user_c *edited_user= new user_c();
+    string previousUsername=ui->viewCurrentAccData_CB->currentText().toStdString();
 
     edited_user->user_acc.username=ui->viewAndEditusername_lineEdit->text().toStdString();
-    edited_user->user_acc.password=ui->viewAndEditPassword_lineEdit->text().toStdString();
+    edited_user->user_acc.password = account::hashPassword(ui->viewAndEditPassword_lineEdit->text());
     edited_user->user_acc.address=ui->viewAndEditAddress_lineEdit->text().toStdString();
     edited_user->user_acc.email=ui->viewAndEditEmail_lineEdit->text().toStdString();
     edited_user->user_acc.age = ui->viewAndEditAge_lineEdit->text().toInt();
 
-    string previousUsername=user.toStdString();
 
 
     if(edited_user->user_acc.username=="\0" || edited_user->user_acc.password=="\0"|| edited_user->user_acc.address=="\0"||edited_user->user_acc.email=="\0"||edited_user->user_acc.age ==       0)
@@ -261,13 +258,13 @@ void add_edit_delete::populateComboBox() {
         ui->viewCurrentAccData_CB->addItem(QString::fromStdString(it->first));}
 }
 
+
 void add_edit_delete::on_viewCurrentAccData_CB_currentTextChanged(const QString &user)
 {
     if(sign_up::users_read[user.toStdString()] != NULL)
     {
         user_c *u = sign_up::users_read[user.toStdString()];
         ui->viewAndEditusername_lineEdit->setText(QString::fromStdString(u->user_acc.username));
-        ui->viewAndEditPassword_lineEdit->setText(QString::fromStdString(u->user_acc.password));
         ui->viewAndEditAddress_lineEdit->setText(QString::fromStdString(u->user_acc.address));
         ui->viewAndEditEmail_lineEdit->setText(QString::fromStdString(u->user_acc.email));
         ui->viewAndEditAge_lineEdit->setText(QString::fromStdString(to_string(u->user_acc.age)));
@@ -275,6 +272,9 @@ void add_edit_delete::on_viewCurrentAccData_CB_currentTextChanged(const QString 
     else
         QMessageBox::warning(this,"view info","user not found!");
 }
+
+
+
 
 
 

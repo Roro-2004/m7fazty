@@ -19,6 +19,7 @@ bool admin_c::add_acc(user_c *u)
     {
         u->balance=0;
         u->user_acc.status = true; //activated
+        u->dept =0;
         sign_up::users_read[u->user_acc.username] = u;
     }
 
@@ -81,6 +82,7 @@ bool admin_c::edit_acc(string previous_username, user_c *u)
     {
         u->balance=sign_up::users_read[previous_username]->balance;
         u->user_acc.status=sign_up::users_read[previous_username]->user_acc.status;
+        u->dept=sign_up::users_read[previous_username]->dept;
         sign_up::users_read.erase(previous_username);
         sign_up::users_read[u->user_acc.username]= u;
 

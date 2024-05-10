@@ -23,7 +23,6 @@ public:
     ~Login();
     user_c static current_user;
 
-
 private slots:
     void on_back_button_clicked();
 
@@ -33,8 +32,6 @@ private:
     Ui::Login *ui;
     user *user_widget;
     admin *admin_widget;
-   // NadminN* NadminNWidget;  //
-
 };
 
 #endif // LOGIN_H

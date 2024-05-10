@@ -30,7 +30,7 @@ sign_up::~sign_up()
 }
 
 
-bool sign_up::isStrongPassword(std::string &password) {
+bool sign_up::isStrongPassword(string &password) {
     regex uppercase("[A-Z]");
     regex lowercase("[a-z]");
     regex digit("[0-9]");

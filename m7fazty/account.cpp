@@ -11,6 +11,6 @@ account::account() {}
         string hashedPassword = hashed_bytes.toHex().toStdString();
 
         hashedPassword.erase(remove(hashedPassword.begin(), hashedPassword.end(), ','), hashedPassword.end());
-        cout<<hashedPassword<<endl;
+        //cout<<hashedPassword<<endl;
         return hashedPassword;
     }

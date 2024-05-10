@@ -2,6 +2,7 @@
 #include "EWIEGA46WW/moc_add_edit_delete.cpp"
 #include "EWIEGA46WW/moc_adjust_balance_dialog.cpp"
 #include "EWIEGA46WW/moc_admin.cpp"
+#include "EWIEGA46WW/moc_confirm_pass_dialog.cpp"
 #include "EWIEGA46WW/moc_editprofile_dialog.cpp"
 #include "EWIEGA46WW/moc_login.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"

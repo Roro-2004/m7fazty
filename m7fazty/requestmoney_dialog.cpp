@@ -68,24 +68,22 @@ string requestMoney_dialog::getCurrentTime()
 
 
 void requestMoney_dialog::on_request_Button_clicked() {
+    string dept_time_tracker;
+
     t = new transiction();
     t->id = generateID();
     t->receiver = Login::current_user.user_acc.username;
     t->sender = ui->userName_textBox->text().toStdString();
     t->amount = ui->amount_textBox->text().toFloat();
-
-    if (t->amount <= 10000)
+    if (t->amount <= 10000&&t->amount>0)
     {
         t->status = "Successful";
     }
     else
     {
         t->status = "Failed";
-        QMessageBox::warning(this, "Transiction", "Transaction failed: Amount exceeds limit");
-        delete t;
-        return;
+        QMessageBox::warning(this, "Transiction", "Transaction failed: Invalid Amount");
     }
-
     t->date = getCurrentDate();
     t->time = getCurrentTime();
 
@@ -101,43 +99,23 @@ void requestMoney_dialog::on_request_Button_clicked() {
             }
             else
             {
+                t->status="Failed";
                 QMessageBox::warning(this, "Transiction", "Transaction failed: Dept Limit Exceeded");
-                delete t;
-                return;
             }
         }
         else
         {
-            // Handle sender's balance and debt deduction
-            /*if (sign_up::users_read[t->sender]->balance >= sign_up::users_read[t->sender]->dept) {
-                if (sign_up::users_read[t->sender]->balance == sign_up::users_read[t->sender]->dept && t->amount <= sign_up::users_read[t->sender]->dept) {
-                    // If the balance equals the debt and the transaction amount is less than or equal to the debt
-                    sign_up::users_read[t->sender]->balance -= t->amount;
-                    sign_up::users_read[t->sender]->dept -= t->amount;
-                } else {
-                    // Regular deduction when balance is greater than or equal to the debt
-                    sign_up::users_read[t->sender]->balance -= sign_up::users_read[t->sender]->dept;
-                    sign_up::users_read[t->sender]->dept = 0; // Reset the debt to zero
-                }
-            } else {
-                // If the sender's balance is less than the debt, deduct the remaining balance from the debt
-                sign_up::users_read[t->sender]->dept -= sign_up::users_read[t->sender]->balance;
-                sign_up::users_read[t->sender]->balance = 0; // Set the balance to zero
-            */
-
             if (sign_up::users_read.find(t->sender) != sign_up::users_read.end())
             {
                 if(sign_up::users_read[t->sender]->user_acc.status==0)
                 {
+                    t->status="Failed";
                     QMessageBox::warning(this, "Transiction", "Transaction failed: User is Suspended");
-                    delete t;
-                    return;
                 }
                 if (t->receiver == t->sender)
                 {
+                    t->status="Failed";
                     QMessageBox::warning(this, "Transiction", "Transaction failed: Invalid transaction");
-                    delete t;
-                    return;
                 }
                 else
                 {
@@ -148,25 +126,45 @@ void requestMoney_dialog::on_request_Button_clicked() {
                     }
                     else
                     {
+                        t->status="Failed";
                         QMessageBox::warning(this, "Transiction", "Transaction failed: Insufficient balance");
-                        delete t;
-                        return;
                     }
                 }
             }
             else
             {
+                t->status="Failed";
                 QMessageBox::warning(this, "Transiction", "Transaction failed: User not found");
-                delete t;
-                return;
             }
         }
     }
     else
     {
+        t->status="Failed";
         QMessageBox::warning(this, "Transiction", "Transaction failed: Your account is Suspended");
-        delete t;
-        return;
+    }
+
+
+    if(sign_up::users_read[t->receiver]->balance > sign_up::users_read[t->receiver]->dept)
+    {
+        sign_up::users_read[t->receiver]->balance -=sign_up::users_read[t->receiver]->dept;
+        sign_up::users_read[t->receiver]->dept=0;
+    }
+
+
+//MSH 3ARFA A7OTHA FEEN
+    //suspend if dept not paid within 30 days
+    string lastTransactionDate;
+    for (unordered_map<string, transiction*>::value_type & tr : trans_read) {
+        transiction* trans = tr.second;
+
+        if (trans->sender == "bank" && trans->receiver ==t->receiver ) {
+            lastTransactionDate = trans->date;
+        }
+    }
+    if( stoi(getCurrentDate().substr(3,2)) - stoi(lastTransactionDate.substr(3,2)) >=1)
+    {
+        sign_up::users_read[t->receiver]->user_acc.status=0;
     }
 
 

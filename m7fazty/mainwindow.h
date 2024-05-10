@@ -30,6 +30,7 @@ private slots:
 
     void on_sign_up_clicked();
 
+
 private:
     Ui::MainWindow *ui;
     Login *loginWidget;

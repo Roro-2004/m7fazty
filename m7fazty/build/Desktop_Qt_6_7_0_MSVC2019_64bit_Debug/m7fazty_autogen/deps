@@ -381,6 +381,8 @@ m7fazty_autogen/timestamp: \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MSVC2019_64bit_Debug/CMakeFiles/3.27.7/CMakeSystem.cmake \
+	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/confirm_pass_dialog.cpp \
+	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/confirm_pass_dialog.h \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/editprofile_dialog.cpp \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/editprofile_dialog.h \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/files.cpp \
@@ -416,6 +418,7 @@ m7fazty_autogen/timestamp: \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/add_edit_delete.ui \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/adjust_balance_dialog.ui \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/admin.ui \
+	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/confirm_pass_dialog.ui \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/editprofile_dialog.ui \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/login.ui \
 	D:/Projects/2nd\ Year/DS/m7fazty/m7fazty/mainwindow.ui \

@@ -4,6 +4,7 @@
 #include<vector>
 #include<unordered_map>
 #include<QString>
+#include<string>
 using namespace std;
 
 class transiction;
@@ -12,13 +13,12 @@ class user_c
 {
 public:
     user_c();
- user_c(float, account);
     account user_acc;
     float balance;
     float dept;
     int points;
+    time_t lastTransactionTime;
 
-    string View_current_balance();
     //float points_calc();
 };
 

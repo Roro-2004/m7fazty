@@ -15,7 +15,6 @@ using namespace std;
 
 user_c Login::current_user;
 
-
 Login::Login(QWidget *parent) :QWidget(parent),ui(new Ui::Login)
 {
     ui->setupUi(this);
