@@ -16,13 +16,14 @@ class sign_up : public QWidget
 public:
     explicit sign_up(QWidget *parent = nullptr);
     ~sign_up();
+     static bool isStrongPassword(string &password);
     //static unordered_map<string, user_c*> users_data;
     static unordered_map<string, user_c*> users_read;
     user_c *user;
 
 private slots:
                //  void on_pushButton_clicked();
-    bool isStrongPassword(string &password);
+   // bool isStrongPassword(string &password);
     void on_back_button_clicked();
 
     void on_sign_up2_button_clicked();

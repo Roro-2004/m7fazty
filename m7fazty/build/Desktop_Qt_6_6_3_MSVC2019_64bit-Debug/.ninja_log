@@ -1,9 +1,0 @@
-# ninja log v5
-7	315	7352536033119180	m7fazty_autogen/timestamp	25b6fb9794382819
-7	315	7352536033119180	m7fazty_autogen/mocs_compilation.cpp	25b6fb9794382819
-7	315	7352536033119180	C:/Users/Nrmeen Araby/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/m7fazty_autogen/timestamp	25b6fb9794382819
-7	315	7352536033119180	C:/Users/Nrmeen Araby/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MSVC2019_64bit-Debug/m7fazty_autogen/mocs_compilation.cpp	25b6fb9794382819
-318	2323	7352536053644242	CMakeFiles/m7fazty.dir/main.cpp.obj	8140cf26762cc669
-316	2326	7352536053634255	CMakeFiles/m7fazty.dir/m7fazty_autogen/mocs_compilation.cpp.obj	72ae496955a9740c
-321	2339	7352536053803800	CMakeFiles/m7fazty.dir/mainwindow.cpp.obj	242fcb3d53fbddef
-2339	2567	7352536055983137	m7fazty.exe	8bc7cb8486bbd45e

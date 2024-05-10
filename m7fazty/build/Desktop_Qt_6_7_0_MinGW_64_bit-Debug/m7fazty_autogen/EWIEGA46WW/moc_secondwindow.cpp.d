@@ -1,5 +1,9 @@
-C:/Users/Esc/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/EWIEGA46WW/moc_user.cpp: C:/Users/Esc/Documents/GitHub/m7fazty/m7fazty/user.h \
+C:/Users/Esc/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/EWIEGA46WW/moc_secondwindow.cpp: C:/Users/Esc/Documents/GitHub/m7fazty/m7fazty/secondwindow.h \
   C:/Users/Esc/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h \
+  C:/Users/Esc/Documents/GitHub/m7fazty/m7fazty/account.h \
+  C:/Users/Esc/Documents/GitHub/m7fazty/m7fazty/editprofile_dialog.h \
+  C:/Users/Esc/Documents/GitHub/m7fazty/m7fazty/user_c.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/QString \
   D:/QT/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
@@ -142,7 +146,8 @@ C:/Users/Esc/Documents/GitHub/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bi
   D:/QT/6.7.0/mingw_64/include/QtGui/qtransform.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
-  D:/QT/6.7.0/mingw_64/include/QtWidgets/QWidget \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/QDialog \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qdialog.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
