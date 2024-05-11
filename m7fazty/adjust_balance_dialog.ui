@@ -32,42 +32,330 @@
   <widget class="QLineEdit" name="username_editBalance_lineEdit">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>110</x>
      <y>110</y>
-     <width>113</width>
-     <height>26</height>
+     <width>251</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="placeholderText">
-    <string>username</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="editBalance_pushButton">
-   <property name="geometry">
-    <rect>
-     <x>360</x>
-     <y>110</y>
-     <width>93</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Edit Balance</string>
+    <string>Enter Username</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="newBalance_editBalance_lineEdit">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>110</y>
-     <width>113</width>
-     <height>26</height>
+     <x>110</x>
+     <y>220</y>
+     <width>251</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="placeholderText">
+    <string>Enter New Balance</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>20</y>
+     <width>431</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+ background-color: rgba(255, 90, 130, 0.15);
+    border-radius: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="username_label">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>80</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>219</green>
+         <blue>252</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="ButtonText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>219</green>
+         <blue>252</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="ButtonText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled/>
+    </palette>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Rounded MT Bold</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Username</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="new_balance_label">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>190</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>219</green>
+         <blue>252</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="ButtonText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>219</green>
+         <blue>252</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="ButtonText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled/>
+    </palette>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Rounded MT Bold</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
     <string>New Balance</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="editBalance_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>300</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="178">
+         <red>255</red>
+         <green>170</green>
+         <blue>190</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="ButtonText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>67</red>
+         <green>27</green>
+         <blue>55</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="178">
+         <red>255</red>
+         <green>170</green>
+         <blue>190</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="178">
+         <red>255</red>
+         <green>170</green>
+         <blue>190</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="178">
+         <red>255</red>
+         <green>170</green>
+         <blue>190</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="ButtonText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>67</red>
+         <green>27</green>
+         <blue>55</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="178">
+         <red>255</red>
+         <green>170</green>
+         <blue>190</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="178">
+         <red>255</red>
+         <green>170</green>
+         <blue>190</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="178">
+         <red>255</red>
+         <green>170</green>
+         <blue>190</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="178">
+         <red>255</red>
+         <green>170</green>
+         <blue>190</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="178">
+         <red>255</red>
+         <green>170</green>
+         <blue>190</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Rounded MT Bold</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+/*background-color: rgba(230, 170, 245, 0.7);*/
+    background-color: rgba(255, 170, 190, 0.7);
+    border-radius: 13px;
+    border: 1px solid rgb(0, 0, 10);
+}
+
+QPushButton:hover {
+    background-color: rgba(255, 170, 190, 0.4); /* Semi-transparent background color when hovered */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 150, 200, 0.7); /* Semi-transparent background color when pressed */
+    border: 2px solid black; /* You can customize the border for the pressed state if needed */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <zorder>label_bg</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>username_editBalance_lineEdit</zorder>
+  <zorder>newBalance_editBalance_lineEdit</zorder>
+  <zorder>username_label</zorder>
+  <zorder>new_balance_label</zorder>
+  <zorder>editBalance_pushButton</zorder>
  </widget>
  <resources/>
  <connections/>

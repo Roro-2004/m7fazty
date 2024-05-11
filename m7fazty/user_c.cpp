@@ -3,13 +3,10 @@
 #include <vector>
 #include <sstream>
 #include<string>
+#include"sign_up.h"
 using namespace std;
 
 user_c::user_c() {}
 
-user_c::user_c(float val, account acc)
-{
-    balance = val;
-    user_acc = acc;
-}
+
 

@@ -9,7 +9,7 @@ class files
 public:
     files();
     void static read_from_file( const string &file_path);
-    void static write_in_file( string file_path);
+    void static write_in_file(  string file_path);
     void static split(const string &s, const string &path);
     ~files();
 };

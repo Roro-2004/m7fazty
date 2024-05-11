@@ -51,6 +51,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
         add_edit_delete.h add_edit_delete.cpp add_edit_delete.ui
         suspend_activate.h suspend_activate.cpp suspend_activate.ui
+        confirm_pass_dialog.h confirm_pass_dialog.cpp confirm_pass_dialog.ui
 
 
 

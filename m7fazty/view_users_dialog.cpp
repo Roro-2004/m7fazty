@@ -3,82 +3,86 @@
 #include"requestmoney_dialog.h"
 #include"transiction.h"
 #include"sign_up.h"
-
+#include"QTableWidgetItem"
 
 
 view_users_dialog::view_users_dialog(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::view_users_dialog)
 {
-
     ui->setupUi(this);
     populateComboBox();
-
+    ui->transTable->setHorizontalHeaderLabels({"Trans ID", "Receiver", "Sender", "Amount", "Date", "Time", "Status"});
+    ui->label_5->hide();
 }
+
 
 view_users_dialog::~view_users_dialog()
 {
     delete ui;
 }
+
+
 void view_users_dialog::populateComboBox() {
     if(sign_up::users_read.empty())return;
     unordered_map<string,user_c*>::iterator it;
     for(it = sign_up::users_read.begin();it!=sign_up::users_read.end();it++)
     ui->comboBox->addItem(QString::fromStdString(it->first));
-
 }
 
-void view_users_dialog::on_comboBox_currentTextChanged(const QString &arg1)
-{
-    updateLabels(arg1);
-    updateTransactionsList(arg1);
 
-
-}
-void view_users_dialog::updateLabels(QString username)
-{
-    auto it = sign_up::users_read.find(username.toStdString());
-    if (it != sign_up::users_read.end()) {
-        ui->label_4->setText(username);
-        ui->label_5->setText(QString::number(sign_up::users_read[username.toStdString()]->balance, 'f', 2));
-    }
-
-}
-void view_users_dialog::updateTransactionsList(QString username)
-{
-    ui->listWidget->clear();
-
-    QString firstId;
+void view_users_dialog::populateTable(QString username){
+    ui->transTable->clearContents();
+    ui->transTable->setRowCount(0);
+    int row = 0;
     unordered_map<string,transiction*>::iterator it;
     for (it=requestMoney_dialog::trans_read.begin();it!=requestMoney_dialog::trans_read.end();it++){
         if(it->second->receiver == username.toStdString()||it->second->sender ==username.toStdString())
         {
-            ui->listWidget->addItem(QString::fromStdString(it->first));
-            firstId = (QString::fromStdString(it->first));
+            ui->transTable->insertRow(row);
+
+            QTableWidgetItem *transIDItem = new QTableWidgetItem(QString::fromStdString(it->first));
+            ui->transTable->setItem(row, 0, transIDItem);
+
+            QTableWidgetItem *receiverItem = new QTableWidgetItem(QString::fromStdString(it->second->receiver));
+            ui->transTable->setItem(row, 1, receiverItem);
+
+            QTableWidgetItem *senderItem = new QTableWidgetItem(QString::fromStdString(it->second->sender));
+            ui->transTable->setItem(row, 2, senderItem);
+
+            QTableWidgetItem *amountItem = new QTableWidgetItem(QString::number(it->second->amount));
+            ui->transTable->setItem(row, 3, amountItem);
+
+            QTableWidgetItem *dateItem = new QTableWidgetItem(QString::fromStdString(it->second->date));
+            ui->transTable->setItem(row, 4, dateItem);
+
+            QTableWidgetItem *timeItem = new QTableWidgetItem(QString::fromStdString(it->second->time));
+            ui->transTable->setItem(row, 5, timeItem);
+
+            QTableWidgetItem *statusItem = new QTableWidgetItem(QString::fromStdString(it->second->status));
+            ui->transTable->setItem(row, 6, statusItem);
+
+            for (int column = 0; column < ui->transTable->columnCount(); ++column) {
+                ui->transTable->item(row, column)->setTextAlignment(Qt::AlignCenter);
+            }
+            ++row;
         }
     }
-
-    updateTransInfo(firstId);
 }
 
 
-
-void view_users_dialog::on_listWidget_currentTextChanged(const QString &currentText)
+void view_users_dialog::on_comboBox_currentTextChanged(const QString &arg1)
 {
-    updateTransInfo(currentText);
+    updateLabels(arg1);
+    populateTable(arg1);
 }
-void view_users_dialog::updateTransInfo(QString transID){
 
-    auto it = requestMoney_dialog::trans_read.find(transID.toStdString());
-    if (it != requestMoney_dialog::trans_read.end()) {
-        ui->label_9->setText(transID);
-        ui->label_10->setText(QString::number(requestMoney_dialog::trans_read[transID.toStdString()]->amount, 'f', 2));
-        ui->label_11->setText(QString::fromStdString(requestMoney_dialog::trans_read[transID.toStdString()]->sender));
-        ui->label_13->setText(QString::fromStdString(requestMoney_dialog::trans_read[transID.toStdString()]->receiver));
-        ui->label_15->setText(QString::fromStdString(requestMoney_dialog::trans_read[transID.toStdString()]->date));
-        ui->label_17->setText(QString::fromStdString(requestMoney_dialog::trans_read[transID.toStdString()]->time));
-        ui->label_19->setText(QString::fromStdString(requestMoney_dialog::trans_read[transID.toStdString()]->status));
+
+void view_users_dialog::updateLabels(QString username)
+{
+    auto it = sign_up::users_read.find(username.toStdString());
+    if (it != sign_up::users_read.end()) {
+        ui->label_5->show();
+        ui->label_5->setText(QString::number(sign_up::users_read[username.toStdString()]->balance, 'f', 2));
     }
-
 }
-

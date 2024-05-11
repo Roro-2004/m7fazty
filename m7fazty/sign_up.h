@@ -21,7 +21,6 @@ public:
     user_c *user;
     bool static isStrongPassword(string &password);
 
-
 private slots:
 
     void on_back_button_clicked();

@@ -1,4 +1,3 @@
-
 #include "sendmoney_dialog.h"
 #include "ui_sendmoney_dialog.h"
 #include <unordered_map>
@@ -10,8 +9,8 @@
 #include <QUuid>
 #include <unordered_set>
 #include"sign_up.h"
+#include<QMessageBox>
 using namespace std;
-
 
 unordered_set<string> sendMoney_dialog::usedIDs;
 
@@ -20,6 +19,7 @@ sendMoney_dialog::sendMoney_dialog(QWidget *parent): QDialog(parent), ui(new Ui:
 {
     ui->setupUi(this);
 }
+
 
 
 string sendMoney_dialog::generateID()
@@ -66,47 +66,88 @@ string sendMoney_dialog::getCurrentTime() {
 void sendMoney_dialog::on_send_Button_clicked()
 {
     t = new transiction();
-    t->id=generateID();
-    t->sender=Login::current_user.user_acc.username;
+    t->id = generateID();
+    t->sender = Login::current_user.user_acc.username;
     t->receiver = ui->userName_textBox->text().toStdString();
     t->amount = ui->amount_textBox->text().toFloat();
 
-    if(t->amount<=10000)
-        t->status ="Successful";
-    else
-        t->status ="Failed";
-
-    t->date=getCurrentDate();
-    t->time=getCurrentTime();
-
-    for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read)
+    if (t->amount <= 10000&&t->amount>0)
     {
-        bool exist=false;
-        if(t->receiver==u.second->user_acc.username)
-            exist=true;
-        if(exist==true){
-            if(t->receiver==t->sender)
+        t->status = "Successful";
+    }
+    else
+    {
+        t->status = "Failed";
+        QMessageBox::warning(this, "Transiction", "Transaction Failed: Invalid Amount");
+    }
+
+    t->date = getCurrentDate();
+    t->time = getCurrentTime();
+
+
+
+    if (sign_up::users_read[t->sender]->user_acc.status==1)
+    {
+
+        if (sign_up::users_read.find(t->receiver) != sign_up::users_read.end())
             {
-                cout <<"cant do transiction";
-                return;            }
-            else
-            {
-                if(t->receiver==u.second->user_acc.username)
-                    u.second->balance+=t->amount;
-                if(t->sender==u.second->user_acc.username && u.second->balance>=t->amount)
-                    u.second->balance-=t->amount;
+                if(sign_up::users_read[t->receiver]->user_acc.status==0)
+                {
+                t->status="Failed";
+                    QMessageBox::warning(this, "Transiction", "Transaction Failed: User is Suspended");
+                }
+                if (t->receiver == t->sender)
+                {
+                    t->status="Failed";
+                    QMessageBox::warning(this, "Transiction", "Transaction Failed: Invalid transaction");
+                }
+                else
+                {
+                    if (sign_up::users_read[t->sender]->balance >= t->amount)
+                    {
+                        sign_up::users_read[t->receiver]->balance += t->amount;
+                        sign_up::users_read[t->sender]->balance -= t->amount;
+                        Login::current_user.balance-=t->amount;
+                    }
+                    else
+                    {
+                        t->status="Failed";
+                        QMessageBox::warning(this, "Transiction", "Transaction Failed: Insufficient balance");
+
+                    }
+                }
             }
-        }
+        else
+            {
+            t->status="Failed";
+                QMessageBox::warning(this, "Transiction", "Transaction Failed: User Not Found");
+            }
+    }
+    else
+    {
+        t->status="Failed";
+        QMessageBox::warning(this, "Transiction", "Transaction Failed: Your account is Suspended");
     }
 
 
-    requestMoney_dialog::trans_read[generateID()] = t;
+    if(sign_up::users_read[t->receiver]->balance > sign_up::users_read[t->receiver]->dept)
+    {
+        sign_up::users_read[t->receiver]->balance -=sign_up::users_read[t->receiver]->dept;
+        sign_up::users_read[t->receiver]->dept=0;
+        Login::current_user.balance-=Login::current_user.dept;
+        Login::current_user.dept=0;
+    }
 
-    cout<<"send done\n";
+
+    if(t->status=="Successful"){
+        QMessageBox::information(this, "Transaction", "Transaction Successful");
+    }
 
 
+    requestMoney_dialog::trans_read[t->id] = t;
     close();
 }
+
 
 
 sendMoney_dialog::~sendMoney_dialog()

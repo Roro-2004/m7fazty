@@ -10,7 +10,9 @@ viewBalance_dialog::viewBalance_dialog(QWidget *parent)
     , ui(new Ui::viewBalance_dialog)
 {
     ui->setupUi(this);
+    ui->viewCurrentBalance_label->hide();
 }
+
 
 viewBalance_dialog::~viewBalance_dialog()
 {
@@ -21,5 +23,11 @@ viewBalance_dialog::~viewBalance_dialog()
 void viewBalance_dialog::on_viewCurrentBalance_pushButton_clicked()
 {
     ui->viewCurrentBalance_label->setText(QString::number(Login::current_user.balance));
+    ui->viewCurrentBalance_label->show();
+    ui->viewDept_label->setText(QString::number(Login::current_user.dept));
+    ui->viewDept_label->show();
 }
+
+
+
 

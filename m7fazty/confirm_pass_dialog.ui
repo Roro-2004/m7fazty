@@ -1,72 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>sendMoney_dialog</class>
- <widget class="QDialog" name="sendMoney_dialog">
+ <class>confirm_pass_dialog</class>
+ <widget class="QDialog" name="confirm_pass_dialog">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>475</width>
-    <height>410</height>
+    <width>373</width>
+    <height>356</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLineEdit" name="amount_textBox">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>220</y>
-     <width>251</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="placeholderText">
-    <string>Enter Amount</string>
-   </property>
-   <property name="clearButtonEnabled">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="userName_textBox">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>110</y>
-     <width>251</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="inputMask">
-    <string/>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="frame">
-    <bool>true</bool>
-   </property>
-   <property name="echoMode">
-    <enum>QLineEdit::Normal</enum>
-   </property>
-   <property name="placeholderText">
-    <string>Enter Username</string>
-   </property>
-   <property name="clearButtonEnabled">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_bg">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>475</width>
-     <height>412</height>
+     <x>2</x>
+     <y>-1</y>
+     <width>373</width>
+     <height>356</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -76,122 +29,82 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="amount_label">
+  <widget class="QPushButton" name="pushButton1">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>190</y>
-     <width>111</width>
+     <x>25</x>
+     <y>15</y>
+     <width>331</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+ background-color: rgba(255, 90, 130, 0.15);
+    border-radius: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>90</y>
+     <width>251</width>
      <height>31</height>
     </rect>
    </property>
-   <property name="palette">
-    <palette>
-     <active>
-      <colorrole role="WindowText">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>255</red>
-         <green>219</green>
-         <blue>252</blue>
-        </color>
-       </brush>
-      </colorrole>
-     </active>
-     <inactive>
-      <colorrole role="WindowText">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>255</red>
-         <green>219</green>
-         <blue>252</blue>
-        </color>
-       </brush>
-      </colorrole>
-     </inactive>
-     <disabled/>
-    </palette>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial Rounded MT Bold</family>
-     <pointsize>12</pointsize>
-    </font>
+   <property name="acceptDrops">
+    <bool>true</bool>
    </property>
    <property name="text">
-    <string>Amount</string>
+    <string/>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Normal</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Enter Current Password</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="username_label">
+  <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>80</y>
-     <width>111</width>
+     <x>60</x>
+     <y>180</y>
+     <width>251</width>
      <height>31</height>
     </rect>
    </property>
-   <property name="palette">
-    <palette>
-     <active>
-      <colorrole role="WindowText">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>255</red>
-         <green>219</green>
-         <blue>252</blue>
-        </color>
-       </brush>
-      </colorrole>
-      <colorrole role="ButtonText">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </brush>
-      </colorrole>
-     </active>
-     <inactive>
-      <colorrole role="WindowText">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>255</red>
-         <green>219</green>
-         <blue>252</blue>
-        </color>
-       </brush>
-      </colorrole>
-      <colorrole role="ButtonText">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </brush>
-      </colorrole>
-     </inactive>
-     <disabled/>
-    </palette>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial Rounded MT Bold</family>
-     <pointsize>12</pointsize>
-    </font>
+   <property name="acceptDrops">
+    <bool>true</bool>
    </property>
    <property name="text">
-    <string>Username</string>
+    <string/>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Enter New Password</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="send_Button">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>300</y>
-     <width>141</width>
+     <x>110</x>
+     <y>250</y>
+     <width>131</width>
      <height>31</height>
     </rect>
    </property>
@@ -329,36 +242,101 @@ QPushButton:pressed {
 </string>
    </property>
    <property name="text">
-    <string>Send</string>
+    <string>Confirm</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QLabel" name="password_label">
    <property name="geometry">
     <rect>
-     <x>25</x>
-     <y>20</y>
-     <width>431</width>
-     <height>371</height>
+     <x>60</x>
+     <y>60</y>
+     <width>201</width>
+     <height>31</height>
     </rect>
    </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
- background-color: rgba(255, 90, 130, 0.15);
-    border-radius: 15px;
-}
-</string>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>219</green>
+         <blue>252</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>219</green>
+         <blue>252</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled/>
+    </palette>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Rounded MT Bold</family>
+     <pointsize>12</pointsize>
+    </font>
    </property>
    <property name="text">
-    <string/>
+    <string>Current Passsword</string>
    </property>
   </widget>
-  <zorder>label_bg</zorder>
-  <zorder>pushButton</zorder>
-  <zorder>amount_textBox</zorder>
-  <zorder>userName_textBox</zorder>
-  <zorder>amount_label</zorder>
-  <zorder>username_label</zorder>
-  <zorder>send_Button</zorder>
+  <widget class="QLabel" name="password_label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>150</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>219</green>
+         <blue>252</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>219</green>
+         <blue>252</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled/>
+    </palette>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Rounded MT Bold</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>New Passsword</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

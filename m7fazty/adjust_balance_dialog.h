@@ -17,6 +17,7 @@ public:
 private slots:
     void on_editBalance_pushButton_clicked();
 
+
 private:
     Ui::adjust_balance_dialog *ui;
 };

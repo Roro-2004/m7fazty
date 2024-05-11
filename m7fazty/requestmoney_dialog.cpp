@@ -9,8 +9,8 @@
 #include <QUuid>
 #include <unordered_set>
 #include"sign_up.h"
+#include<QMessageBox>
 using namespace std;
-
 
 unordered_map<string, transiction*> requestMoney_dialog::trans_read;
 unordered_set<string> requestMoney_dialog::usedIDs;
@@ -19,6 +19,7 @@ unordered_set<string> requestMoney_dialog::usedIDs;
 requestMoney_dialog::requestMoney_dialog(QWidget *parent) : QDialog(parent), ui(new Ui::requestMoney_dialog) {
     ui->setupUi(this);
 }
+
 
 
 string requestMoney_dialog::generateID()
@@ -66,52 +67,102 @@ string requestMoney_dialog::getCurrentTime()
 }
 
 
-void requestMoney_dialog::on_request_Button_clicked() {
-
+void requestMoney_dialog::on_request_Button_clicked()
+{
     t = new transiction();
-    t->id=generateID();
+    t->id = generateID();
     t->receiver = Login::current_user.user_acc.username;
     t->sender = ui->userName_textBox->text().toStdString();
     t->amount = ui->amount_textBox->text().toFloat();
-
-    if (t->amount <= 10000)
+    if (t->amount <= 10000&&t->amount>0)
+    {
         t->status = "Successful";
+    }
     else
+    {
         t->status = "Failed";
-
+        QMessageBox::warning(this, "Transiction", "Transaction failed: Invalid Amount");
+    }
     t->date = getCurrentDate();
     t->time = getCurrentTime();
 
-    for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read)
+
+
+    if (sign_up::users_read[t->receiver]->user_acc.status==1)
     {
-        bool exist=false;
-        if(t->sender==u.second->user_acc.username)
-            exist=true;
-        if(exist==true){
-            if(t->receiver==t->sender)
-            {
-                cout <<"cant do transiction";
-                return;
+        if ((t->sender == "Bank" || t->sender == "bank"))
+        {
+            if((sign_up::users_read[t->receiver]->dept+t->amount)  <= 1000){
+               sign_up::users_read[t->receiver]->balance += t->amount;
+               sign_up::users_read[t->receiver]->dept += t->amount;
+               Login::current_user.balance+=t->amount;
+               Login::current_user.dept+=t->amount;
             }
             else
             {
-                if(t->receiver==u.second->user_acc.username)
-                    u.second->balance+=t->amount;
-                if(t->sender==u.second->user_acc.username && u.second->balance >= t->amount)
-                    u.second->balance-=t->amount;
+                t->status="Failed";
+                QMessageBox::warning(this, "Transiction", "Transaction Failed: Dept Limit Exceeded");
+            }
+        }
+        else
+        {
+            if (sign_up::users_read.find(t->sender) != sign_up::users_read.end())
+            {
+                if(sign_up::users_read[t->sender]->user_acc.status==0)
+                {
+                    t->status="Failed";
+                    QMessageBox::warning(this, "Transiction", "Transaction Failed: User is Suspended");
+                }
+                if (t->receiver == t->sender)
+                {
+                    t->status="Failed";
+                    QMessageBox::warning(this, "Transiction", "Transaction Failed: Invalid Transaction");
+                }
+                else
+                {
+                    if (sign_up::users_read[t->sender]->balance >= t->amount)
+                    {
+                        sign_up::users_read[t->receiver]->balance += t->amount;
+                        sign_up::users_read[t->sender]->balance -= t->amount;
+                        Login::current_user.balance+=t->amount;
+                    }
+                    else
+                    {
+                        t->status="Failed";
+                        QMessageBox::warning(this, "Transiction", "Transaction Failed: Insufficient Balance");
+                    }
+                }
+            }
+            else
+            {
+                t->status="Failed";
+                QMessageBox::warning(this, "Transiction", "Transaction Failed: User Not Found");
             }
         }
     }
+    else
+    {
+        t->status="Failed";
+        QMessageBox::warning(this, "Transiction", "Transaction Failed: Your account is Suspended");
+    }
 
 
-    trans_read[generateID()] = t;
+    if(sign_up::users_read[t->receiver]->balance > sign_up::users_read[t->receiver]->dept)
+    {
+        sign_up::users_read[t->receiver]->balance -=sign_up::users_read[t->receiver]->dept;
+        sign_up::users_read[t->receiver]->dept=0;
+        Login::current_user.balance-=Login::current_user.dept;
+        Login::current_user.dept=0;
+    }
 
-    cout<<"request done\n";
+    if(t->status=="Successful"){
+        QMessageBox::information(this, "Transaction", "Transaction Successful");
+    }
 
-
-
+    trans_read[t->id] = t;
     close();
 }
+
 
 
 requestMoney_dialog::~requestMoney_dialog()

@@ -22,7 +22,6 @@ public:
     static unordered_set<string> usedIDs;
 
     transiction* t;
-
     string generateID();
     string getCurrentDate();
     string getCurrentTime();

@@ -1,5 +1,6 @@
 #ifndef EDITPROFILE_DIALOG_H
 #define EDITPROFILE_DIALOG_H
+#include"user_c.h"
 #include <QDialog>
 
 namespace Ui {
@@ -13,9 +14,17 @@ class editProfile_dialog : public QDialog
 public:
     explicit editProfile_dialog(QWidget *parent = nullptr);
     ~editProfile_dialog();
+    user_c *user2;
+
+
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::editProfile_dialog *ui;
+
 };
 
 #endif // EDITPROFILE_DIALOG_H

@@ -30,7 +30,7 @@ sign_up::~sign_up()
 }
 
 
-bool sign_up::isStrongPassword(std::string &password) {
+bool sign_up::isStrongPassword(string &password) {
     regex uppercase("[A-Z]");
     regex lowercase("[a-z]");
     regex digit("[0-9]");
@@ -62,12 +62,12 @@ void sign_up::on_sign_up2_button_clicked()
     user->user_acc.email = ui->email_textBox->text().toStdString();
     user->user_acc.age = ui->age_textBox->text().toInt();
     user->balance = 0;
+    user->dept=0;
     user->user_acc.status =true;
-   // users_read[user->user_acc.username] = user;
 
 
     if (user->user_acc.username.empty() || user->user_acc.password.empty() || user->user_acc.address.empty() || user->user_acc.age == NULL){
-        QMessageBox::warning(this, "Empty Fields", "Please fill in all fields.");
+        QMessageBox::warning(this, "Empty Fields", " Empty fields Not Allowed");
         check = false;
     }
     else if(users_read[user->user_acc.username] != NULL){
@@ -75,17 +75,17 @@ void sign_up::on_sign_up2_button_clicked()
         check = false;
     }
     else if (user->user_acc.email.empty() || user->user_acc.email.find("@gmail.com") == std::string::npos) {
-        QMessageBox::warning(this, "Email", "Invalid email address. Please enter a valid Gmail address.");
+        QMessageBox::warning(this, "Email", "Invalid Email Address, Should have this format -----@gmail.com");
         check = false;
     }
     else if(user->user_acc.age < 16){
-        QMessageBox::warning(this, "Age", "Invalid age.The age must be older than 16");
+        QMessageBox::warning(this, "Age", "Invalid Age, You must be older than 16");
         check = false;
     }
      else if (!isStrongPassword(pass_before_hashing)) {
     QMessageBox::warning(this, "Password", "Password is not strong enough. Please use at least 8 characters including uppercase, lowercase, digits, and special characters.");
     check = false;
-}
+    }
     if (check){
         QMessageBox::information(this, "Sign up","Sign up successfully");
         users_read[user->user_acc.username] = user;
