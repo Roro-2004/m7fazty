@@ -16,10 +16,6 @@ public:
     account user_acc;
     float balance;
     float dept;
-    int points;
-    time_t lastTransactionTime;
-
-    //float points_calc();
 };
 
 #endif // USER_C_H

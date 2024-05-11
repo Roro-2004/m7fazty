@@ -17,7 +17,6 @@ public:
 private slots:
     void on_viewCurrentBalance_pushButton_clicked();
 
-
 private:
     Ui::viewBalance_dialog *ui;
 };

@@ -12,7 +12,6 @@
 #include<QMessageBox>
 using namespace std;
 
-
 unordered_map<string, transiction*> requestMoney_dialog::trans_read;
 unordered_set<string> requestMoney_dialog::usedIDs;
 
@@ -20,6 +19,7 @@ unordered_set<string> requestMoney_dialog::usedIDs;
 requestMoney_dialog::requestMoney_dialog(QWidget *parent) : QDialog(parent), ui(new Ui::requestMoney_dialog) {
     ui->setupUi(this);
 }
+
 
 
 string requestMoney_dialog::generateID()
@@ -67,9 +67,8 @@ string requestMoney_dialog::getCurrentTime()
 }
 
 
-void requestMoney_dialog::on_request_Button_clicked() {
-    string dept_time_tracker;
-
+void requestMoney_dialog::on_request_Button_clicked()
+{
     t = new transiction();
     t->id = generateID();
     t->receiver = Login::current_user.user_acc.username;
@@ -96,11 +95,13 @@ void requestMoney_dialog::on_request_Button_clicked() {
             if((sign_up::users_read[t->receiver]->dept+t->amount)  <= 1000){
                sign_up::users_read[t->receiver]->balance += t->amount;
                sign_up::users_read[t->receiver]->dept += t->amount;
+               Login::current_user.balance+=t->amount;
+               Login::current_user.dept+=t->amount;
             }
             else
             {
                 t->status="Failed";
-                QMessageBox::warning(this, "Transiction", "Transaction failed: Dept Limit Exceeded");
+                QMessageBox::warning(this, "Transiction", "Transaction Failed: Dept Limit Exceeded");
             }
         }
         else
@@ -110,12 +111,12 @@ void requestMoney_dialog::on_request_Button_clicked() {
                 if(sign_up::users_read[t->sender]->user_acc.status==0)
                 {
                     t->status="Failed";
-                    QMessageBox::warning(this, "Transiction", "Transaction failed: User is Suspended");
+                    QMessageBox::warning(this, "Transiction", "Transaction Failed: User is Suspended");
                 }
                 if (t->receiver == t->sender)
                 {
                     t->status="Failed";
-                    QMessageBox::warning(this, "Transiction", "Transaction failed: Invalid transaction");
+                    QMessageBox::warning(this, "Transiction", "Transaction Failed: Invalid Transaction");
                 }
                 else
                 {
@@ -123,25 +124,26 @@ void requestMoney_dialog::on_request_Button_clicked() {
                     {
                         sign_up::users_read[t->receiver]->balance += t->amount;
                         sign_up::users_read[t->sender]->balance -= t->amount;
+                        Login::current_user.balance+=t->amount;
                     }
                     else
                     {
                         t->status="Failed";
-                        QMessageBox::warning(this, "Transiction", "Transaction failed: Insufficient balance");
+                        QMessageBox::warning(this, "Transiction", "Transaction Failed: Insufficient Balance");
                     }
                 }
             }
             else
             {
                 t->status="Failed";
-                QMessageBox::warning(this, "Transiction", "Transaction failed: User not found");
+                QMessageBox::warning(this, "Transiction", "Transaction Failed: User Not Found");
             }
         }
     }
     else
     {
         t->status="Failed";
-        QMessageBox::warning(this, "Transiction", "Transaction failed: Your account is Suspended");
+        QMessageBox::warning(this, "Transiction", "Transaction Failed: Your account is Suspended");
     }
 
 
@@ -149,24 +151,13 @@ void requestMoney_dialog::on_request_Button_clicked() {
     {
         sign_up::users_read[t->receiver]->balance -=sign_up::users_read[t->receiver]->dept;
         sign_up::users_read[t->receiver]->dept=0;
+        Login::current_user.balance-=Login::current_user.dept;
+        Login::current_user.dept=0;
     }
 
-
-//MSH 3ARFA A7OTHA FEEN
-    //suspend if dept not paid within 30 days
-    string lastTransactionDate;
-    for (unordered_map<string, transiction*>::value_type & tr : trans_read) {
-        transiction* trans = tr.second;
-
-        if (trans->sender == "bank" && trans->receiver ==t->receiver ) {
-            lastTransactionDate = trans->date;
-        }
+    if(t->status=="Successful"){
+        QMessageBox::information(this, "Transaction", "Transaction Successful");
     }
-    if( stoi(getCurrentDate().substr(3,2)) - stoi(lastTransactionDate.substr(3,2)) >=1)
-    {
-        sign_up::users_read[t->receiver]->user_acc.status=0;
-    }
-
 
     trans_read[t->id] = t;
     close();

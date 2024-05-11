@@ -10,25 +10,26 @@ view_users_dialog::view_users_dialog(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::view_users_dialog)
 {
-
     ui->setupUi(this);
     populateComboBox();
     ui->transTable->setHorizontalHeaderLabels({"Trans ID", "Receiver", "Sender", "Amount", "Date", "Time", "Status"});
     ui->label_5->hide();
-
 }
+
 
 view_users_dialog::~view_users_dialog()
 {
     delete ui;
 }
+
+
 void view_users_dialog::populateComboBox() {
     if(sign_up::users_read.empty())return;
     unordered_map<string,user_c*>::iterator it;
     for(it = sign_up::users_read.begin();it!=sign_up::users_read.end();it++)
     ui->comboBox->addItem(QString::fromStdString(it->first));
-
 }
+
 
 void view_users_dialog::populateTable(QString username){
     ui->transTable->clearContents();
@@ -38,9 +39,8 @@ void view_users_dialog::populateTable(QString username){
     for (it=requestMoney_dialog::trans_read.begin();it!=requestMoney_dialog::trans_read.end();it++){
         if(it->second->receiver == username.toStdString()||it->second->sender ==username.toStdString())
         {
-            ui->transTable->insertRow(row); // Add a new row
+            ui->transTable->insertRow(row);
 
-            // Populate the table with transaction data
             QTableWidgetItem *transIDItem = new QTableWidgetItem(QString::fromStdString(it->first));
             ui->transTable->setItem(row, 0, transIDItem);
 
@@ -65,16 +65,10 @@ void view_users_dialog::populateTable(QString username){
             for (int column = 0; column < ui->transTable->columnCount(); ++column) {
                 ui->transTable->item(row, column)->setTextAlignment(Qt::AlignCenter);
             }
-
             ++row;
         }
-
-
     }
 }
-
-
-
 
 
 void view_users_dialog::on_comboBox_currentTextChanged(const QString &arg1)
@@ -83,6 +77,7 @@ void view_users_dialog::on_comboBox_currentTextChanged(const QString &arg1)
     populateTable(arg1);
 }
 
+
 void view_users_dialog::updateLabels(QString username)
 {
     auto it = sign_up::users_read.find(username.toStdString());
@@ -90,5 +85,4 @@ void view_users_dialog::updateLabels(QString username)
         ui->label_5->show();
         ui->label_5->setText(QString::number(sign_up::users_read[username.toStdString()]->balance, 'f', 2));
     }
-
 }

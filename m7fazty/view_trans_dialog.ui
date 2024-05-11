@@ -77,7 +77,7 @@
     </font>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QListWidget" name="listWidget">
@@ -111,7 +111,7 @@
     </font>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_sender">
@@ -130,7 +130,7 @@
     </font>
    </property>
    <property name="text">
-    <string>text</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_time">
@@ -149,7 +149,7 @@
     </font>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_amount">
@@ -168,7 +168,7 @@
     </font>
    </property>
    <property name="text">
-    <string>text</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_status">
@@ -187,7 +187,7 @@
     </font>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_id">
@@ -215,71 +215,7 @@
     <enum>QFrame::Plain</enum>
    </property>
    <property name="text">
-    <string>text</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>0</y>
-     <width>161</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="palette">
-    <palette>
-     <active>
-      <colorrole role="WindowText">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>255</red>
-         <green>219</green>
-         <blue>252</blue>
-        </color>
-       </brush>
-      </colorrole>
-      <colorrole role="ButtonText">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </brush>
-      </colorrole>
-     </active>
-     <inactive>
-      <colorrole role="WindowText">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>255</red>
-         <green>219</green>
-         <blue>252</blue>
-        </color>
-       </brush>
-      </colorrole>
-      <colorrole role="ButtonText">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </brush>
-      </colorrole>
-     </inactive>
-     <disabled/>
-    </palette>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial Rounded MT Bold</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>All Transactions</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="idText">
@@ -769,26 +705,6 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>5</y>
-     <width>211</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
- background-color: rgba(255, 90, 130, 0.15);
-    border-radius: 15px;
-}
-</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QLabel" name="idText_2">
    <property name="geometry">
     <rect>
@@ -994,7 +910,6 @@
    </property>
   </widget>
   <zorder>label_2</zorder>
-  <zorder>pushButton_2</zorder>
   <zorder>pushButton</zorder>
   <zorder>pushButton_6</zorder>
   <zorder>pushButton_8</zorder>
@@ -1011,7 +926,6 @@
   <zorder>label_amount</zorder>
   <zorder>label_status</zorder>
   <zorder>label_id</zorder>
-  <zorder>label_4</zorder>
   <zorder>idText</zorder>
   <zorder>amountText</zorder>
   <zorder>senderText_2</zorder>

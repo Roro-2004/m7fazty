@@ -36,7 +36,7 @@ void confirm_pass_dialog::on_pushButton_clicked()
 
     if(account::hashPassword(ui->lineEdit->text())!=Login::current_user.user_acc.password )
     {
-        QMessageBox :: warning (this,"WARNING","Incorrect Password, Try Again");
+        QMessageBox :: warning (this,"Pssword","Incorrect Password, Try Again");
     }
 
     if (!sign_up::isStrongPassword(pass_before_hashing)) {
@@ -46,7 +46,7 @@ void confirm_pass_dialog::on_pushButton_clicked()
 
     if (check)
     {
-        QMessageBox::information(this, "edit password"," Edited successfully");
+        QMessageBox::information(this, "password","Password Confirmed");
         this->hide();
     }
 }

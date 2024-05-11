@@ -20,7 +20,6 @@ public:
     static unordered_map<string, user_c*> users_read;
     user_c *user;
     bool static isStrongPassword(string &password);
-    string pass_before_hashing;
 
 private slots:
 

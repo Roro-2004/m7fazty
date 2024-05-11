@@ -3,7 +3,6 @@
 #include"user_c.h"
 #include <QDialog>
 
-
 namespace Ui {
 class editProfile_dialog;
 }

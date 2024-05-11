@@ -94,12 +94,11 @@ void viewTransHistory_dialog::search_by_month(string s) {
             QTableWidgetItem *statusItem = new QTableWidgetItem(QString::fromStdString(t->status));
             ui->history_table->setItem(row, 6, statusItem);
 
-            // Set text alignment for each item in the row
             for (int column = 0; column < ui->history_table->columnCount(); ++column) {
                 ui->history_table->item(row, column)->setTextAlignment(Qt::AlignCenter);
             }
 
-            ++row; // Increment row index for the next transaction
+            ++row;
         }
     }
     else {
@@ -116,17 +115,6 @@ void viewTransHistory_dialog::transiction_history() {
         if (t != nullptr && (t->receiver == name || t->sender == name)) {
             string key = encoding(t->date.substr(3, 2));
             transactions_map[key].push_back(t);
-        }
-    }
-
-    cout << "Transactions for user " << name << ":" << endl;
-
-    for (auto& entry : transactions_map) {
-        cout << "Month: " << entry.first << endl;
-        for (auto t : entry.second) {
-            cout << "Trans ID: " << t->id << ", Receiver: " << t->receiver << ", Sender: " << t->sender
-                 << ", Amount: " << t->amount << ", Date: " << t->date << ", Time: " << t->time
-                 << ", Status: " << t->status << endl;
         }
     }
 }

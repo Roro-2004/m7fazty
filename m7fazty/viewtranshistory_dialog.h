@@ -25,8 +25,6 @@ public:
     string encoding(string s);
     void show_whole_history();
 
-
-
 private slots:
 
     void on_month_cb_currentTextChanged(const QString &arg1);

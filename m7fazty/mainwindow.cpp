@@ -60,7 +60,6 @@ void MainWindow::on_sign_up_clicked()
     sign_up_widget = new sign_up(this);
     stackedWidget->addWidget(sign_up_widget);
     stackedWidget->setCurrentWidget(sign_up_widget);
-
 }
 
 
@@ -68,7 +67,5 @@ void MainWindow::closeEvent(QCloseEvent *event)
 {
     files::write_in_file("D:/Projects/2nd Year/DS/m7fazty//m7fazty/files/User.csv");
     files::write_in_file("D:/Projects/2nd Year/DS/m7fazty//m7fazty/files/Transiction.csv");
-
-    qDebug() << "Closing the application...";
     QMainWindow::closeEvent(event);
 }

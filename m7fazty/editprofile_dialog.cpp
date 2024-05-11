@@ -57,24 +57,24 @@ void editProfile_dialog::on_pushButton_clicked()
         user2->dept=Login::current_user.dept;
 
         if(user2->user_acc.username.empty() || user2->user_acc.password.empty() || user2->user_acc.address.empty() || user2->user_acc.age == NULL){
-            QMessageBox::warning(this, "Empty Fields", "Please fill in all fields.");
+            QMessageBox::warning(this, "Empty Fields", "Empty fields Not Allowed");
             edit_check = false;
         }
 
         else if (user2->user_acc.email.empty() || user2->user_acc.email.find("@gmail.com") == string::npos) {
-            QMessageBox::warning(this, "Email", "Invalid email address. Please enter a valid Gmail address.");
+            QMessageBox::warning(this, "Email", "Invalid Email Address, Should have this format -----@gmail.com");
             edit_check = false;
         }
 
         else if(user2->user_acc.age < 16){
-            QMessageBox::warning(this, "Age", "Invalid age.The age must be older than 16");
+            QMessageBox::warning(this, "Age", "Invalid Age, You must be older than 16");
             edit_check = false;
         }
 
         if(edit_check)
         {
             sign_up::users_read[new_username] = user2;
-            QMessageBox::information(this, "Edit user data", "Editing successfully");
+            QMessageBox::information(this, "Edit user data", "Edited Successfully");
             this->hide();
         }
 
@@ -83,7 +83,7 @@ void editProfile_dialog::on_pushButton_clicked()
     {
         if (sign_up::users_read.find(new_username) != sign_up::users_read.end())
         {
-            QMessageBox::information(this, "Edit user data", "This username already exists");
+            QMessageBox::information(this, "Edit user data", "Username already exists");
         }
         else
         {
@@ -106,24 +106,24 @@ void editProfile_dialog::on_pushButton_clicked()
             sign_up::users_read.erase(Login::current_user.user_acc.username);
 
             if(user2->user_acc.username.empty() || user2->user_acc.password.empty() || user2->user_acc.address.empty() || user2->user_acc.age == NULL){
-                QMessageBox::warning(this, "Empty Fields", "Please fill in all fields.");
+                QMessageBox::warning(this, "Empty Fields", "Empty fields Not Allowed");
                 edit_check = false;
             }
 
             else if (user2->user_acc.email.empty() || user2->user_acc.email.find("@gmail.com") == std::string::npos) {
-                QMessageBox::warning(this, "Email", "Invalid email address. Please enter a valid Gmail address.");
+                QMessageBox::warning(this, "Email", "Invalid Email Address, Should have this format -----@gmail.com");
                 edit_check = false;
             }
 
             else if(user2->user_acc.age < 16){
-                QMessageBox::warning(this, "Age", "Invalid age.The age must be older than 16");
+                QMessageBox::warning(this, "Age", "Invalid Age, You must be older than 16");
                 edit_check = false;
             }
 
             if(edit_check)
             {
                 sign_up::users_read[new_username] = user2;
-                QMessageBox::information(this, "Edit user data", "Editing successfully");
+                QMessageBox::information(this, "Edit user data", "Edited successfully");
                 this->hide();
             }
         }

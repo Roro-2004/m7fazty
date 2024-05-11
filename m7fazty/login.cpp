@@ -44,20 +44,20 @@ void Login::on_Login_2_clicked()
     }
     if (check)
     {
-        QMessageBox::information(this, "Login", "Login successful");
+        QMessageBox::information(this, "Login", "Login Successful");
         user_widget=new user();
         MainWindow::stackedWidget->addWidget(user_widget);
         MainWindow::stackedWidget->setCurrentWidget(user_widget);
     }
     else if(!check && Enteredusername== "admin" && admin_pass == "admin")
     {
-        QMessageBox::information(this, "Login", "Login successful");
+        QMessageBox::information(this, "Login", "Login Successful");
         admin_widget=new admin();
         MainWindow::stackedWidget->addWidget(admin_widget);
         MainWindow::stackedWidget->setCurrentWidget(admin_widget);
     }else
     {
-        QMessageBox::warning(this, "Login", "Login failed. Invalid username or password.");
+        QMessageBox::warning(this, "Login", "Login failed. Invalid Username or Password.");
 
     }
     ui->userName_textBox->clear();

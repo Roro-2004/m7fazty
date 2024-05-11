@@ -13,6 +13,7 @@ viewBalance_dialog::viewBalance_dialog(QWidget *parent)
     ui->viewCurrentBalance_label->hide();
 }
 
+
 viewBalance_dialog::~viewBalance_dialog()
 {
     delete ui;

@@ -54,9 +54,12 @@ add_edit_delete::~add_edit_delete()
 //--------------------------------------EDIT-------------------------------------------
 void add_edit_delete::on_editAcc_pushButton_clicked()
 {
+    bool check = true;
+
     user_c *edited_user= new user_c();
     string previousUsername=ui->viewCurrentAccData_CB->currentText().toStdString();
 
+    string pass_before_hashing=ui->viewAndEditPassword_lineEdit->text().toStdString();
     edited_user->user_acc.username=ui->viewAndEditusername_lineEdit->text().toStdString();
     edited_user->user_acc.password = account::hashPassword(ui->viewAndEditPassword_lineEdit->text());
     edited_user->user_acc.address=ui->viewAndEditAddress_lineEdit->text().toStdString();
@@ -65,20 +68,29 @@ void add_edit_delete::on_editAcc_pushButton_clicked()
 
 
 
-    if(edited_user->user_acc.username=="\0" || edited_user->user_acc.password=="\0"|| edited_user->user_acc.address=="\0"||edited_user->user_acc.email=="\0"||edited_user->user_acc.age ==       0)
+    if(edited_user->user_acc.username=="\0" || edited_user->user_acc.password=="\0"|| edited_user->user_acc.address=="\0"||edited_user->user_acc.email=="\0"||edited_user->user_acc.age ==0)
     {
-        QMessageBox::warning(this,"Edit Account","Empty fields not allowed!");
+        QMessageBox::warning(this,"Edit Account","Empty fields Not Allowed");
+    }
+    else if (edited_user->user_acc.email.empty() || edited_user->user_acc.email.find("@gmail.com") ==string::npos) {
+        QMessageBox::warning(this, "Email", "Invalid Email Address, Should have this format -----@gmail.com");
+    }
+    else if(edited_user->user_acc.age < 16){
+        QMessageBox::warning(this, "Age", "Invalid Age, You must be older than 16");
+    }
+    else if (!sign_up::isStrongPassword(pass_before_hashing)) {
+        QMessageBox::warning(this, "Password", "Password is not strong enough. Please use at least 8 characters including uppercase, lowercase, digits, and special characters.");
     }
     else
     {
         bool is_exist= currentAdmin.edit_acc(previousUsername,edited_user);
         if(is_exist)
         {
-            QMessageBox::warning(this,"Edit Account","That Username is allready exist, Enter another one");
+            QMessageBox::warning(this,"Edit Account","Username already exists");
         }
         else
         {
-            QMessageBox::information(this,"Edit Account","Done Successfuly");
+            QMessageBox::information(this,"Edit Account","Edited Successfuly");
         }
     }
 }
@@ -90,9 +102,10 @@ void add_edit_delete::on_add_acc_pushButton_clicked()
 {
 
     user_c *added_user= new user_c();
+    string pass_before_hashing=ui->password_add_lineEdit ->text().toStdString();
 
     added_user->user_acc.username=ui->username_add_lineEdit ->text().toStdString();
-    added_user->user_acc.password=ui->password_add_lineEdit ->text().toStdString();
+    added_user->user_acc.password=account::hashPassword(ui->password_add_lineEdit ->text());
     added_user->user_acc.address=ui->address_add_lineEdit ->text().toStdString();
     added_user->user_acc.email=ui->email_add_lineEdit ->text().toStdString();
     added_user->user_acc.age = ui->age_add_lineEdit ->text().toInt();
@@ -100,11 +113,17 @@ void add_edit_delete::on_add_acc_pushButton_clicked()
 
     if(added_user->user_acc.username=="\0" || added_user->user_acc.password=="\0"|| added_user->user_acc.address=="\0"||added_user->user_acc.email=="\0"||added_user->user_acc.age ==0)
     {
-        QMessageBox::warning(this,"Add Account","Empty fields not allowed!");
+        QMessageBox::warning(this,"Add Account","Empty fields Not Allowed");
     }
-    else if(!sign_up::isStrongPassword(added_user->user_acc.password))
+    else if(!sign_up::isStrongPassword(pass_before_hashing))
     {
         QMessageBox::warning(this, "Add Account", "Password is not strong enough. Please use at least 8 characters including uppercase, lowercase, digits, and special characters.");
+    }
+    else if (added_user->user_acc.email.empty() || added_user->user_acc.email.find("@gmail.com") ==string::npos) {
+        QMessageBox::warning(this, "Email", "Invalid Email Address, Should have this format -----@gmail.com");
+    }
+    else if(added_user->user_acc.age < 16){
+        QMessageBox::warning(this, "Age", "Invalid Age, You must be older than 16");
     }
     else
     {
@@ -112,11 +131,11 @@ void add_edit_delete::on_add_acc_pushButton_clicked()
     bool is_exist= currentAdmin.add_acc(added_user);
     if(is_exist)
     {
-        QMessageBox::warning(this,"Add Account","That Username is allready exist, Enter another one");
+        QMessageBox::warning(this,"Add Account","Username already exists");
     }
     else
     {
-        QMessageBox::information(this,"Add Account","Done Successfuly");
+        QMessageBox::information(this,"Add Account","Added Successfuly");
     }
     }
 }
@@ -130,12 +149,13 @@ void add_edit_delete::on_deleteacc_pushButton_clicked()
     bool flag=currentAdmin.delete_acc(username);
     if(flag)
     {
-        QMessageBox::information(this,"Delete Account","Done Successfuly");
+        QMessageBox::information(this,"Delete Account","Deleted Successfuly");
     }
     else
     {
-        QMessageBox::information(this,"Delete Account","That Account is not exist allready, Enter another one");
+        QMessageBox::information(this,"Delete Account","User Not Found");
     }
+    ui->username_deleteacc_lineEdit->clear();
 }
 //-------------------------------------------------------------------------------------
 
@@ -269,8 +289,6 @@ void add_edit_delete::on_viewCurrentAccData_CB_currentTextChanged(const QString 
         ui->viewAndEditEmail_lineEdit->setText(QString::fromStdString(u->user_acc.email));
         ui->viewAndEditAge_lineEdit->setText(QString::fromStdString(to_string(u->user_acc.age)));
     }
-    else
-        QMessageBox::warning(this,"view info","user not found!");
 }
 
 

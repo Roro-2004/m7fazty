@@ -12,7 +12,6 @@
 #include<QMessageBox>
 using namespace std;
 
-
 unordered_set<string> sendMoney_dialog::usedIDs;
 
 
@@ -20,6 +19,7 @@ sendMoney_dialog::sendMoney_dialog(QWidget *parent): QDialog(parent), ui(new Ui:
 {
     ui->setupUi(this);
 }
+
 
 
 string sendMoney_dialog::generateID()
@@ -78,7 +78,7 @@ void sendMoney_dialog::on_send_Button_clicked()
     else
     {
         t->status = "Failed";
-        QMessageBox::warning(this, "Transiction", "Transaction failed: Invalid Amount");
+        QMessageBox::warning(this, "Transiction", "Transaction Failed: Invalid Amount");
     }
 
     t->date = getCurrentDate();
@@ -94,12 +94,12 @@ void sendMoney_dialog::on_send_Button_clicked()
                 if(sign_up::users_read[t->receiver]->user_acc.status==0)
                 {
                 t->status="Failed";
-                    QMessageBox::warning(this, "Transiction", "Transaction failed: User is Suspended");
+                    QMessageBox::warning(this, "Transiction", "Transaction Failed: User is Suspended");
                 }
                 if (t->receiver == t->sender)
                 {
                     t->status="Failed";
-                    QMessageBox::warning(this, "Transiction", "Transaction failed: Invalid transaction");
+                    QMessageBox::warning(this, "Transiction", "Transaction Failed: Invalid transaction");
                 }
                 else
                 {
@@ -107,11 +107,12 @@ void sendMoney_dialog::on_send_Button_clicked()
                     {
                         sign_up::users_read[t->receiver]->balance += t->amount;
                         sign_up::users_read[t->sender]->balance -= t->amount;
+                        Login::current_user.balance-=t->amount;
                     }
                     else
                     {
                         t->status="Failed";
-                        QMessageBox::warning(this, "Transiction", "Transaction failed: Insufficient balance");
+                        QMessageBox::warning(this, "Transiction", "Transaction Failed: Insufficient balance");
 
                     }
                 }
@@ -119,13 +120,13 @@ void sendMoney_dialog::on_send_Button_clicked()
         else
             {
             t->status="Failed";
-                QMessageBox::warning(this, "Transiction", "Transaction failed: User not found");
+                QMessageBox::warning(this, "Transiction", "Transaction Failed: User Not Found");
             }
     }
     else
     {
         t->status="Failed";
-        QMessageBox::warning(this, "Transiction", "Transaction failed: Your account is Suspended");
+        QMessageBox::warning(this, "Transiction", "Transaction Failed: Your account is Suspended");
     }
 
 
@@ -133,12 +134,20 @@ void sendMoney_dialog::on_send_Button_clicked()
     {
         sign_up::users_read[t->receiver]->balance -=sign_up::users_read[t->receiver]->dept;
         sign_up::users_read[t->receiver]->dept=0;
+        Login::current_user.balance-=Login::current_user.dept;
+        Login::current_user.dept=0;
+    }
+
+
+    if(t->status=="Successful"){
+        QMessageBox::information(this, "Transaction", "Transaction Successful");
     }
 
 
     requestMoney_dialog::trans_read[t->id] = t;
     close();
 }
+
 
 
 sendMoney_dialog::~sendMoney_dialog()

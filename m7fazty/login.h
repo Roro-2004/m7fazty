@@ -6,9 +6,8 @@
 #include<string>
 #include"user_c.h"
 #include"admin.h"
+#include <QWidget>
 using namespace std;
-
-#include <QWidget>           //
 
 namespace Ui {
 class Login;
