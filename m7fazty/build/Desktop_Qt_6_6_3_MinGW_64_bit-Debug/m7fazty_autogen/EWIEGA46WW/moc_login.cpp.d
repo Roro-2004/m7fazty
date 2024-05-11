@@ -1,5 +1,6 @@
 D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/EWIEGA46WW/moc_login.cpp: D:/level\ 2\ projects/m7fazty/m7fazty/login.h \
   D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h \
+  C:/Qt/6.6.3/mingw_64/include/QtCore/QString \
   C:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -345,7 +346,8 @@ D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-  D:/level\ 2\ projects/m7fazty/m7fazty/admin_edits.h \
-  D:/level\ 2\ projects/m7fazty/m7fazty/nadminn.h \
+  D:/level\ 2\ projects/m7fazty/m7fazty/account.h \
+  D:/level\ 2\ projects/m7fazty/m7fazty/admin.h \
   D:/level\ 2\ projects/m7fazty/m7fazty/user.h \
+  D:/level\ 2\ projects/m7fazty/m7fazty/user_c.h \
   D:/level\ 2\ projects/m7fazty/m7fazty/viewbalance_dialog.h

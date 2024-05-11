@@ -1,5 +1,6 @@
 D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/EWIEGA46WW/moc_sign_up.cpp: D:/level\ 2\ projects/m7fazty/m7fazty/sign_up.h \
   D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h \
+  C:/Qt/6.6.3/mingw_64/include/QtCore/QString \
   C:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -138,7 +139,9 @@ D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/
   C:/Qt/6.6.3/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.6.3/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
@@ -342,4 +345,10 @@ D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+  D:/level\ 2\ projects/m7fazty/m7fazty/Login.h \
+  D:/level\ 2\ projects/m7fazty/m7fazty/account.h \
+  D:/level\ 2\ projects/m7fazty/m7fazty/admin.h \
+  D:/level\ 2\ projects/m7fazty/m7fazty/user.h \
+  D:/level\ 2\ projects/m7fazty/m7fazty/user_c.h \
+  D:/level\ 2\ projects/m7fazty/m7fazty/viewbalance_dialog.h

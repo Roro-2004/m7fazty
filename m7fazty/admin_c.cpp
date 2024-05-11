@@ -48,9 +48,11 @@ void admin_c:: actviate(string username)
 
 void admin_c::suspend(string username)
 {
+
     if (sign_up::users_read[username] != NULL){
         sign_up::users_read[username]->user_acc.status=false;
     }
+
 }
 
 

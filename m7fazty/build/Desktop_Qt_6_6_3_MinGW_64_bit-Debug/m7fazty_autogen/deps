@@ -1,4 +1,10 @@
 m7fazty_autogen/timestamp: \
+	C:/Qt/6.6.3/mingw_64/include/QtCore/QList \
+	C:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
+	C:/Qt/6.6.3/mingw_64/include/QtCore/QRect \
+	C:/Qt/6.6.3/mingw_64/include/QtCore/QSize \
+	C:/Qt/6.6.3/mingw_64/include/QtCore/QSizeF \
+	C:/Qt/6.6.3/mingw_64/include/QtCore/QString \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -27,6 +33,7 @@ m7fazty_autogen/timestamp: \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qcontainerinfo.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qcontainertools_impl.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qcontiguouscache.h \
+	C:/Qt/6.6.3/mingw_64/include/QtCore/qcoreevent.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qdarwinhelpers.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qdatastream.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h \
@@ -41,6 +48,7 @@ m7fazty_autogen/timestamp: \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qglobalstatic.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qhash.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qhashfunctions.h \
+	C:/Qt/6.6.3/mingw_64/include/QtCore/qiodevice.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qiodevicebase.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qiterable.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qiterator.h \
@@ -56,6 +64,7 @@ m7fazty_autogen/timestamp: \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qmetatype.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qminmax.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qnamespace.h \
+	C:/Qt/6.6.3/mingw_64/include/QtCore/qnativeinterface.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qnumeric.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qobject.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qobject_impl.h \
@@ -64,6 +73,7 @@ m7fazty_autogen/timestamp: \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qoverload.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qpair.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qpoint.h \
+	C:/Qt/6.6.3/mingw_64/include/QtCore/qpointer.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qprocessordetection.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qrect.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qrefcount.h \
@@ -107,34 +117,44 @@ m7fazty_autogen/timestamp: \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qtversionchecks.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qtypeinfo.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qtypes.h \
+	C:/Qt/6.6.3/mingw_64/include/QtCore/qurl.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
 	C:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
+	C:/Qt/6.6.3/mingw_64/include/QtGui/QCloseEvent \
+	C:/Qt/6.6.3/mingw_64/include/QtGui/QTransform \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qaction.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qbrush.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qcolor.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qcursor.h \
+	C:/Qt/6.6.3/mingw_64/include/QtGui/qevent.h \
+	C:/Qt/6.6.3/mingw_64/include/QtGui/qeventpoint.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qfont.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qfontinfo.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qfontmetrics.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qicon.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qimage.h \
+	C:/Qt/6.6.3/mingw_64/include/QtGui/qinputdevice.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qkeysequence.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qpaintdevice.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qpalette.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qpixelformat.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qpixmap.h \
+	C:/Qt/6.6.3/mingw_64/include/QtGui/qpointingdevice.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qpolygon.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qregion.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qrgb.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qrgba64.h \
+	C:/Qt/6.6.3/mingw_64/include/QtGui/qscreen.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qtgui-config.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qtguiexports.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qtguiglobal.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qtransform.h \
+	C:/Qt/6.6.3/mingw_64/include/QtGui/qvector2d.h \
+	C:/Qt/6.6.3/mingw_64/include/QtGui/qvectornd.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
 	C:/Qt/6.6.3/mingw_64/include/QtWidgets/QDialog \
@@ -402,6 +422,7 @@ m7fazty_autogen/timestamp: \
 	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
 	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_ptr.h \
 	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_map.h \
+	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_set.h \
 	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uses_allocator.h \
 	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc \
 	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype \
@@ -466,6 +487,7 @@ m7fazty_autogen/timestamp: \
 	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
 	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo \
 	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_map \
+	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_set \
 	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility \
 	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/variant \
 	C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector \
@@ -520,19 +542,21 @@ m7fazty_autogen/timestamp: \
 	D:/level\ 2\ projects/m7fazty/m7fazty/CMakeLists.txt \
 	D:/level\ 2\ projects/m7fazty/m7fazty/account.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/account.h \
+	D:/level\ 2\ projects/m7fazty/m7fazty/add_edit_delete.cpp \
+	D:/level\ 2\ projects/m7fazty/m7fazty/add_edit_delete.h \
+	D:/level\ 2\ projects/m7fazty/m7fazty/adjust_balance_dialog.cpp \
+	D:/level\ 2\ projects/m7fazty/m7fazty/adjust_balance_dialog.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/admin.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/admin.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/admin_c.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/admin_c.h \
-	D:/level\ 2\ projects/m7fazty/m7fazty/admin_edits.cpp \
-	D:/level\ 2\ projects/m7fazty/m7fazty/admin_edits.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
 	D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
 	D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeSystem.cmake \
 	D:/level\ 2\ projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/moc_predefs.h \
-	D:/level\ 2\ projects/m7fazty/m7fazty/context.cpp \
-	D:/level\ 2\ projects/m7fazty/m7fazty/context.h \
+	D:/level\ 2\ projects/m7fazty/m7fazty/confirm_pass_dialog.cpp \
+	D:/level\ 2\ projects/m7fazty/m7fazty/confirm_pass_dialog.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/editprofile_dialog.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/editprofile_dialog.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/files.cpp \
@@ -542,34 +566,43 @@ m7fazty_autogen/timestamp: \
 	D:/level\ 2\ projects/m7fazty/m7fazty/main.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/mainwindow.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/mainwindow.h \
-	D:/level\ 2\ projects/m7fazty/m7fazty/nadminn.cpp \
-	D:/level\ 2\ projects/m7fazty/m7fazty/nadminn.h \
+	D:/level\ 2\ projects/m7fazty/m7fazty/matrial.qrc \
 	D:/level\ 2\ projects/m7fazty/m7fazty/requestmoney_dialog.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/requestmoney_dialog.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/sendmoney_dialog.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/sendmoney_dialog.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/sign_up.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/sign_up.h \
+	D:/level\ 2\ projects/m7fazty/m7fazty/suspend_activate.cpp \
+	D:/level\ 2\ projects/m7fazty/m7fazty/suspend_activate.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/transiction.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/transiction.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/user.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/user.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/user_c.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/user_c.h \
+	D:/level\ 2\ projects/m7fazty/m7fazty/view_trans_dialog.cpp \
+	D:/level\ 2\ projects/m7fazty/m7fazty/view_trans_dialog.h \
+	D:/level\ 2\ projects/m7fazty/m7fazty/view_users_dialog.cpp \
+	D:/level\ 2\ projects/m7fazty/m7fazty/view_users_dialog.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/viewbalance_dialog.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/viewbalance_dialog.h \
 	D:/level\ 2\ projects/m7fazty/m7fazty/viewtranshistory_dialog.cpp \
 	D:/level\ 2\ projects/m7fazty/m7fazty/viewtranshistory_dialog.h \
+	D:/level\ 2\ projects/m7fazty/m7fazty/add_edit_delete.ui \
+	D:/level\ 2\ projects/m7fazty/m7fazty/adjust_balance_dialog.ui \
 	D:/level\ 2\ projects/m7fazty/m7fazty/admin.ui \
-	D:/level\ 2\ projects/m7fazty/m7fazty/admin_edits.ui \
+	D:/level\ 2\ projects/m7fazty/m7fazty/confirm_pass_dialog.ui \
 	D:/level\ 2\ projects/m7fazty/m7fazty/editprofile_dialog.ui \
 	D:/level\ 2\ projects/m7fazty/m7fazty/login.ui \
 	D:/level\ 2\ projects/m7fazty/m7fazty/mainwindow.ui \
-	D:/level\ 2\ projects/m7fazty/m7fazty/nadminn.ui \
 	D:/level\ 2\ projects/m7fazty/m7fazty/requestmoney_dialog.ui \
 	D:/level\ 2\ projects/m7fazty/m7fazty/sendmoney_dialog.ui \
 	D:/level\ 2\ projects/m7fazty/m7fazty/sign_up.ui \
+	D:/level\ 2\ projects/m7fazty/m7fazty/suspend_activate.ui \
 	D:/level\ 2\ projects/m7fazty/m7fazty/user.ui \
+	D:/level\ 2\ projects/m7fazty/m7fazty/view_trans_dialog.ui \
+	D:/level\ 2\ projects/m7fazty/m7fazty/view_users_dialog.ui \
 	D:/level\ 2\ projects/m7fazty/m7fazty/viewbalance_dialog.ui \
 	D:/level\ 2\ projects/m7fazty/m7fazty/viewtranshistory_dialog.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

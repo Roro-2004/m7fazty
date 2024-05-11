@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 83,
+				"line" : 95,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 66,
+				"line" : 78,
 				"parent" : 0
 			},
 			{
@@ -369,29 +369,34 @@
 				9,
 				12,
 				15,
-				18,
-				20,
-				22,
-				24,
+				17,
+				19,
+				21,
+				23,
 				26,
 				29,
 				32,
 				35,
 				38,
 				41,
-				43,
-				45
+				44,
+				47,
+				50,
+				53,
+				56,
+				59,
+				78
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "m7fazty_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "m7fazty_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "m7fazty_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "m7fazty::@6890427a1f51a3e7e1df",
@@ -508,18 +513,23 @@
 				9,
 				12,
 				15,
-				18,
-				20,
-				22,
-				24,
+				17,
+				19,
+				21,
+				23,
 				26,
 				29,
 				32,
 				35,
 				38,
 				41,
-				43,
-				45
+				44,
+				47,
+				50,
+				53,
+				56,
+				59,
+				78
 			]
 		},
 		{
@@ -531,29 +541,38 @@
 				8,
 				11,
 				14,
-				17,
-				19,
-				21,
-				23,
+				16,
+				18,
+				20,
+				22,
 				25,
 				28,
 				31,
 				34,
 				37,
 				40,
-				42,
-				44,
-				47,
-				48,
+				43,
+				46,
 				49,
-				50,
-				51,
 				52,
-				53,
-				54,
 				55,
-				56,
-				57
+				58,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76
 			]
 		},
 		{
@@ -564,21 +583,28 @@
 				7,
 				10,
 				13,
-				16,
+				24,
 				27,
 				30,
 				33,
 				36,
 				39,
-				46,
-				58
+				42,
+				45,
+				48,
+				51,
+				54,
+				57,
+				60,
+				77
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				59
+				79,
+				80
 			]
 		}
 	],
@@ -627,22 +653,6 @@
 		{
 			"backtrace" : 4,
 			"path" : "user.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "admin.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "admin.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "admin.ui",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -814,29 +824,119 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "context.h",
+			"path" : "matrial.qrc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "admin.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "context.cpp",
+			"path" : "admin.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
-			"path" : "nadminn.h",
+			"path" : "admin.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "adjust_balance_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "nadminn.cpp",
+			"path" : "adjust_balance_dialog.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
-			"path" : "nadminn.ui",
+			"path" : "adjust_balance_dialog.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "view_users_dialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "view_users_dialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "view_users_dialog.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "view_trans_dialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "view_trans_dialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "view_trans_dialog.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "add_edit_delete.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "add_edit_delete.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "add_edit_delete.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "suspend_activate.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "suspend_activate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "suspend_activate.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "confirm_pass_dialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "confirm_pass_dialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "confirm_pass_dialog.ui",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -849,12 +949,6 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/include/ui_user.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/include/ui_admin.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -902,7 +996,43 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/include/ui_nadminn.h",
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/include/ui_admin.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/include/ui_adjust_balance_dialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/include/ui_view_users_dialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/include/ui_view_trans_dialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/include/ui_add_edit_delete.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/include/ui_suspend_activate.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/include/ui_confirm_pass_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -913,8 +1043,21 @@
 		},
 		{
 			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

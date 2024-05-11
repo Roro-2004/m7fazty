@@ -247,7 +247,8 @@
 		"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets.cmake",
 		"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginAdditionalTargetInfo.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake",
+		"D:/level 2 projects/m7fazty/m7fazty/matrial.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "D:/level 2 projects/m7fazty/m7fazty",
 	"DEP_FILE" : "D:/level 2 projects/m7fazty/m7fazty/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/m7fazty_autogen/deps",
@@ -258,6 +259,18 @@
 			"D:/level 2 projects/m7fazty/m7fazty/account.h",
 			"MU",
 			"EWIEGA46WW/moc_account.cpp",
+			null
+		],
+		[
+			"D:/level 2 projects/m7fazty/m7fazty/add_edit_delete.h",
+			"MU",
+			"EWIEGA46WW/moc_add_edit_delete.cpp",
+			null
+		],
+		[
+			"D:/level 2 projects/m7fazty/m7fazty/adjust_balance_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_adjust_balance_dialog.cpp",
 			null
 		],
 		[
@@ -273,15 +286,9 @@
 			null
 		],
 		[
-			"D:/level 2 projects/m7fazty/m7fazty/admin_edits.h",
+			"D:/level 2 projects/m7fazty/m7fazty/confirm_pass_dialog.h",
 			"MU",
-			"EWIEGA46WW/moc_admin_edits.cpp",
-			null
-		],
-		[
-			"D:/level 2 projects/m7fazty/m7fazty/context.h",
-			"MU",
-			"EWIEGA46WW/moc_context.cpp",
+			"EWIEGA46WW/moc_confirm_pass_dialog.cpp",
 			null
 		],
 		[
@@ -309,12 +316,6 @@
 			null
 		],
 		[
-			"D:/level 2 projects/m7fazty/m7fazty/nadminn.h",
-			"MU",
-			"EWIEGA46WW/moc_nadminn.cpp",
-			null
-		],
-		[
 			"D:/level 2 projects/m7fazty/m7fazty/requestmoney_dialog.h",
 			"MU",
 			"EWIEGA46WW/moc_requestmoney_dialog.cpp",
@@ -333,6 +334,12 @@
 			null
 		],
 		[
+			"D:/level 2 projects/m7fazty/m7fazty/suspend_activate.h",
+			"MU",
+			"EWIEGA46WW/moc_suspend_activate.cpp",
+			null
+		],
+		[
 			"D:/level 2 projects/m7fazty/m7fazty/transiction.h",
 			"MU",
 			"EWIEGA46WW/moc_transiction.cpp",
@@ -348,6 +355,18 @@
 			"D:/level 2 projects/m7fazty/m7fazty/user_c.h",
 			"MU",
 			"EWIEGA46WW/moc_user_c.cpp",
+			null
+		],
+		[
+			"D:/level 2 projects/m7fazty/m7fazty/view_trans_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_view_trans_dialog.cpp",
+			null
+		],
+		[
+			"D:/level 2 projects/m7fazty/m7fazty/view_users_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_view_users_dialog.cpp",
 			null
 		],
 		[
@@ -434,10 +453,19 @@
 	"SOURCES" : 
 	[
 		[ "D:/level 2 projects/m7fazty/m7fazty/account.cpp", "MU", null ],
+		[ "D:/level 2 projects/m7fazty/m7fazty/add_edit_delete.cpp", "MU", null ],
+		[
+			"D:/level 2 projects/m7fazty/m7fazty/adjust_balance_dialog.cpp",
+			"MU",
+			null
+		],
 		[ "D:/level 2 projects/m7fazty/m7fazty/admin.cpp", "MU", null ],
 		[ "D:/level 2 projects/m7fazty/m7fazty/admin_c.cpp", "MU", null ],
-		[ "D:/level 2 projects/m7fazty/m7fazty/admin_edits.cpp", "MU", null ],
-		[ "D:/level 2 projects/m7fazty/m7fazty/context.cpp", "MU", null ],
+		[
+			"D:/level 2 projects/m7fazty/m7fazty/confirm_pass_dialog.cpp",
+			"MU",
+			null
+		],
 		[
 			"D:/level 2 projects/m7fazty/m7fazty/editprofile_dialog.cpp",
 			"MU",
@@ -447,7 +475,6 @@
 		[ "D:/level 2 projects/m7fazty/m7fazty/login.cpp", "MU", null ],
 		[ "D:/level 2 projects/m7fazty/m7fazty/main.cpp", "MU", null ],
 		[ "D:/level 2 projects/m7fazty/m7fazty/mainwindow.cpp", "MU", null ],
-		[ "D:/level 2 projects/m7fazty/m7fazty/nadminn.cpp", "MU", null ],
 		[
 			"D:/level 2 projects/m7fazty/m7fazty/requestmoney_dialog.cpp",
 			"MU",
@@ -459,9 +486,24 @@
 			null
 		],
 		[ "D:/level 2 projects/m7fazty/m7fazty/sign_up.cpp", "MU", null ],
+		[
+			"D:/level 2 projects/m7fazty/m7fazty/suspend_activate.cpp",
+			"MU",
+			null
+		],
 		[ "D:/level 2 projects/m7fazty/m7fazty/transiction.cpp", "MU", null ],
 		[ "D:/level 2 projects/m7fazty/m7fazty/user.cpp", "MU", null ],
 		[ "D:/level 2 projects/m7fazty/m7fazty/user_c.cpp", "MU", null ],
+		[
+			"D:/level 2 projects/m7fazty/m7fazty/view_trans_dialog.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/level 2 projects/m7fazty/m7fazty/view_users_dialog.cpp",
+			"MU",
+			null
+		],
 		[
 			"D:/level 2 projects/m7fazty/m7fazty/viewbalance_dialog.cpp",
 			"MU",
