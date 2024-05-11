@@ -11,6 +11,8 @@
 #include"confirm_pass_dialog.h"
 #include<string>
 #include<iostream>
+#include"requestmoney_dialog.h"
+#include"viewtranshistory_dialog.h"
 using namespace std;
 
 account a;
@@ -35,6 +37,8 @@ void editProfile_dialog::on_pushButton_clicked()
 {
     bool edit_check=true;
     user_c* user2 = new user_c();
+
+    string old_username = Login::current_user.user_acc.username;
 
     string new_username = ui->lineEdit_username->text().toStdString();
 
@@ -128,6 +132,22 @@ void editProfile_dialog::on_pushButton_clicked()
             }
         }
     }
+
+    viewTransHistory_dialog d;
+
+    d.onUsernameChanged(new_username);
+
+
+    /*if(new_username!=old_username)
+    {
+        for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
+            transiction* t = trans.second;
+            if(t->receiver==old_username)
+                t->receiver=new_username;
+            if(t->sender==old_username)
+                t->sender=new_username;
+        }
+    }*/
 }
 
 
