@@ -74,6 +74,14 @@ void requestMoney_dialog::on_request_Button_clicked()
     t->receiver = Login::current_user.user_acc.username;
     t->sender = ui->userName_textBox->text().toStdString();
     t->amount = ui->amount_textBox->text().toFloat();
+
+    if(ui->amount_textBox->text().toStdString().empty() || ui->userName_textBox->text().toStdString().empty())
+    {
+        QMessageBox::warning(this, "Transaction", "Empty Fields Not Allowed");
+        close();
+        return;
+    }
+
     if (t->amount <= 10000&&t->amount>0)
     {
         t->status = "Successful";

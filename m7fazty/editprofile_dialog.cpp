@@ -27,16 +27,11 @@ editProfile_dialog::editProfile_dialog(QWidget *parent): QDialog(parent), ui(new
     ui->lineEdit_age->setText(QString::number(Login::current_user.user_acc.age));
 }
 
-editProfile_dialog::~editProfile_dialog()
-{
-    delete ui;
-}
-
 
 void editProfile_dialog::on_pushButton_clicked()
 {
     bool edit_check=true;
-    user_c* user2 = new user_c();
+    user2 = new user_c();
 
     string old_username = Login::current_user.user_acc.username;
 
@@ -134,20 +129,7 @@ void editProfile_dialog::on_pushButton_clicked()
     }
 
     viewTransHistory_dialog d;
-
-    d.onUsernameChanged(new_username);
-
-
-    /*if(new_username!=old_username)
-    {
-        for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
-            transiction* t = trans.second;
-            if(t->receiver==old_username)
-                t->receiver=new_username;
-            if(t->sender==old_username)
-                t->sender=new_username;
-        }
-    }*/
+    d.onUsernameChanged(new_username,old_username);
 }
 
 
@@ -157,5 +139,10 @@ void editProfile_dialog::on_pushButton_2_clicked()
     secwin.setModal(true);
     secwin.setWindowTitle("Change Password");
     secwin.exec();
+}
+
+editProfile_dialog::~editProfile_dialog()
+{
+    delete ui;
 }
 

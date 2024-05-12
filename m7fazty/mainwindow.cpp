@@ -38,15 +38,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     files::read_from_file("D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/User.csv");
     for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read) {
         user_c* user = u.second;
-        cout << u.first  << "," << user->user_acc.password << "," << user->user_acc.address << "," << user->user_acc.email << "," << user->user_acc.age << "," << user->balance << "," << user->user_acc.status << endl;
+        cout << u.first  << "," << user->user_acc.password << "," << user->user_acc.address << "," << user->user_acc.email << "," << user->user_acc.age << "," << user->balance << "," << user->dept<<","<<user->user_acc.status<< endl;
     }
 }
 
-
-MainWindow::~MainWindow()
-{
-    delete ui;
-}
 
 
 void MainWindow::on_login_clicked()
@@ -68,4 +63,10 @@ void MainWindow::closeEvent(QCloseEvent *event)
     files::write_in_file("D:/Projects/2nd Year/DS/m7fazty//m7fazty/files/User.csv");
     files::write_in_file("D:/Projects/2nd Year/DS/m7fazty//m7fazty/files/Transiction.csv");
     QMainWindow::closeEvent(event);
+}
+
+
+MainWindow::~MainWindow()
+{
+    delete ui;
 }

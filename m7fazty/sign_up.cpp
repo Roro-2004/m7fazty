@@ -24,10 +24,7 @@ sign_up::sign_up(QWidget *parent): QWidget(parent), ui(new Ui::sign_up)
 }
 
 
-sign_up::~sign_up()
-{
-    delete ui;
-}
+
 
 
 bool sign_up::isStrongPassword(string &password) {
@@ -93,3 +90,8 @@ void sign_up::on_sign_up2_button_clicked()
     }
 }
 
+
+sign_up::~sign_up()
+{
+    delete ui;
+}

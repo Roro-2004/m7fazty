@@ -11,10 +11,6 @@ adjust_balance_dialog::adjust_balance_dialog(QWidget *parent)
     ui->setupUi(this);
 }
 
-adjust_balance_dialog::~adjust_balance_dialog()
-{
-    delete ui;
-}
 
 
 void adjust_balance_dialog::on_editBalance_pushButton_clicked()
@@ -48,3 +44,7 @@ void adjust_balance_dialog::on_editBalance_pushButton_clicked()
 }
 
 
+adjust_balance_dialog::~adjust_balance_dialog()
+{
+    delete ui;
+}

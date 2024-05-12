@@ -24,7 +24,7 @@ public:
     void search_by_month(string s);
     string encoding(string s);
     void show_whole_history();
-    void  onUsernameChanged(string newUsername);
+    void  onUsernameChanged(string newUsername,string oldUsername);
     void updateTransactionsMap( string oldUsername,  string newUsername);
 
 private slots:

@@ -34,14 +34,15 @@ void Login::on_Login_2_clicked()
     string admin_pass = ui->password_textBox->text().toStdString();
     string Enteredpassword = current_user.user_acc.hashPassword(ui->password_textBox->text());
 
-    for (unordered_map<string, user_c*>::value_type & u : sign_up::users_read) {
-        user_c* user = u.second;
-        if(u.first == Enteredusername && user->user_acc.password == Enteredpassword){
-            current_user = *sign_up::users_read[u.first];
+    auto it = sign_up::users_read.find(Enteredusername);
+    if (it != sign_up::users_read.end()) {
+        user_c* user = it->second;
+        if (user->user_acc.password == Enteredpassword) {
+            current_user = *sign_up::users_read[it->first];
             check = true;
-            break;
         }
     }
+
     if (check)
     {
         QMessageBox::information(this, "Login", "Login Successful");

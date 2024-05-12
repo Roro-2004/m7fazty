@@ -16,6 +16,7 @@ public:
     account user_acc;
     float balance;
     float dept;
+    int pin_code;
 };
 
 #endif // USER_C_H

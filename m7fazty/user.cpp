@@ -18,12 +18,6 @@ user::user(QWidget *parent): QWidget(parent), ui(new Ui::user)
 }
 
 
-user::~user()
-{
-    delete ui;
-}
-
-
 void user::hideAllElements()
 {
     ui->menu_Button->show();
@@ -127,3 +121,8 @@ void user::on_logout_Button_clicked()
 }
 
 
+
+user::~user()
+{
+    delete ui;
+}

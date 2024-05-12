@@ -23,8 +23,8 @@ viewTransHistory_dialog::viewTransHistory_dialog(QWidget *parent) : QDialog(pare
 
 
 void viewTransHistory_dialog::updateTransactionsMap( string oldUsername,  string newUsername) {
-    for (auto& entry : transactions_map) {
-        for (auto& t : entry.second) {
+    for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
+        transiction* t = trans.second;
             if (t->sender == oldUsername) {
                 t->sender = newUsername;
             }
@@ -33,13 +33,12 @@ void viewTransHistory_dialog::updateTransactionsMap( string oldUsername,  string
             }
         }
     }
-}
 
-void viewTransHistory_dialog::onUsernameChanged( string newUsername) {
-    string oldUsername = Login::current_user.user_acc.username;
+void viewTransHistory_dialog::onUsernameChanged( string newUsername,string oldUsername) {
     if (oldUsername != newUsername) {
         updateTransactionsMap(oldUsername, newUsername);
-        show_whole_history(); // Refresh the transaction history display
+        Login::current_user.user_acc.username=newUsername;
+        show_whole_history();
     }
 }
 

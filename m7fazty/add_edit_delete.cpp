@@ -6,6 +6,7 @@
 #include<QMessageBox>
 #include"sign_up.h"
 #include"user_c.h"
+#include"viewtranshistory_dialog.h"
 using namespace std;
 
 admin_c currentAdmin;
@@ -45,19 +46,16 @@ add_edit_delete::add_edit_delete(QWidget *parent)
     ui->viewCurrentAccData_CB->hide();
 }
 
-add_edit_delete::~add_edit_delete()
-{
-    delete ui;
-}
+
 
 
 //--------------------------------------EDIT-------------------------------------------
 void add_edit_delete::on_editAcc_pushButton_clicked()
 {
-    bool check = true;
-
-    user_c *edited_user= new user_c();
+    edited_user= new user_c();
     string previousUsername=ui->viewCurrentAccData_CB->currentText().toStdString();
+
+    string new_username=ui->viewAndEditusername_lineEdit->text().toStdString();
 
     string pass_before_hashing=ui->viewAndEditPassword_lineEdit->text().toStdString();
     edited_user->user_acc.username=ui->viewAndEditusername_lineEdit->text().toStdString();
@@ -93,6 +91,15 @@ void add_edit_delete::on_editAcc_pushButton_clicked()
             QMessageBox::information(this,"Edit Account","Edited Successfuly");
         }
     }
+
+    viewTransHistory_dialog d;
+    d.onUsernameChanged(new_username,previousUsername);
+
+    ui->viewAndEditAddress_lineEdit->clear();
+    ui->viewAndEditAge_lineEdit->clear();
+    ui->viewAndEditEmail_lineEdit->clear();
+    ui->viewAndEditPassword_lineEdit->clear();
+    ui->viewAndEditusername_lineEdit->clear();
 }
 //-------------------------------------------------------------------------------------
 
@@ -101,7 +108,7 @@ void add_edit_delete::on_editAcc_pushButton_clicked()
 void add_edit_delete::on_add_acc_pushButton_clicked()
 {
 
-    user_c *added_user= new user_c();
+   added_user= new user_c();
     string pass_before_hashing=ui->password_add_lineEdit ->text().toStdString();
 
     added_user->user_acc.username=ui->username_add_lineEdit ->text().toStdString();
@@ -138,6 +145,12 @@ void add_edit_delete::on_add_acc_pushButton_clicked()
         QMessageBox::information(this,"Add Account","Added Successfuly");
     }
     }
+
+    ui->address_add_lineEdit->clear();
+    ui->age_add_lineEdit->clear();
+    ui->email_add_lineEdit->clear();
+    ui->password_add_lineEdit->clear();
+    ui->username_add_lineEdit->clear();
 }
 //-------------------------------------------------------------------------------------
 
@@ -153,7 +166,7 @@ void add_edit_delete::on_deleteacc_pushButton_clicked()
     }
     else
     {
-        QMessageBox::information(this,"Delete Account","User Not Found");
+        QMessageBox::warning(this,"Delete Account","User Not Found");
     }
     ui->username_deleteacc_lineEdit->clear();
 }
@@ -283,7 +296,7 @@ void add_edit_delete::on_viewCurrentAccData_CB_currentTextChanged(const QString 
 {
     if(sign_up::users_read[user.toStdString()] != NULL)
     {
-        user_c *u = sign_up::users_read[user.toStdString()];
+        u = sign_up::users_read[user.toStdString()];
         ui->viewAndEditusername_lineEdit->setText(QString::fromStdString(u->user_acc.username));
         ui->viewAndEditAddress_lineEdit->setText(QString::fromStdString(u->user_acc.address));
         ui->viewAndEditEmail_lineEdit->setText(QString::fromStdString(u->user_acc.email));
@@ -293,7 +306,10 @@ void add_edit_delete::on_viewCurrentAccData_CB_currentTextChanged(const QString 
 
 
 
-
+add_edit_delete::~add_edit_delete()
+{
+    delete ui;
+}
 
 
 

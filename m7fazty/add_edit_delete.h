@@ -1,7 +1,8 @@
 #ifndef ADD_EDIT_DELETE_H
 #define ADD_EDIT_DELETE_H
-
 #include <QDialog>
+#include"user_c.h"
+
 
 namespace Ui {
 class add_edit_delete;
@@ -36,6 +37,9 @@ private slots:
 
 private:
     Ui::add_edit_delete *ui;
+    user_c *u;
+    user_c *added_user;
+    user_c *edited_user;
 };
 
 #endif // ADD_EDIT_DELETE_H

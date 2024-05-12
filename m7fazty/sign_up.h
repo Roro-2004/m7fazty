@@ -27,6 +27,7 @@ private slots:
 
     void on_sign_up2_button_clicked();
 
+
 private:
     Ui::sign_up *ui;
     Login *loginWidget;

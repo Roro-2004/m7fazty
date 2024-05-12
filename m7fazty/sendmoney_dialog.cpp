@@ -71,80 +71,67 @@ void sendMoney_dialog::on_send_Button_clicked()
     t->receiver = ui->userName_textBox->text().toStdString();
     t->amount = ui->amount_textBox->text().toFloat();
 
-    if (t->amount <= 10000&&t->amount>0)
+    if(ui->amount_textBox->text().toStdString().empty() || ui->userName_textBox->text().toStdString().empty())
     {
-        t->status = "Successful";
+        QMessageBox::warning(this, "Transaction", "Empty Fields Not Allowed");
+        close();
+        return;
     }
-    else
-    {
+
+    if (t->amount <= 10000 && t->amount > 0) {
+        t->status = "Successful";
+    } else {
         t->status = "Failed";
-        QMessageBox::warning(this, "Transiction", "Transaction Failed: Invalid Amount");
+        QMessageBox::warning(this, "Transaction", "Transaction Failed: Invalid Amount");
     }
 
     t->date = getCurrentDate();
     t->time = getCurrentTime();
 
 
-
-    if (sign_up::users_read[t->sender]->user_acc.status==1)
-    {
-
-        if (sign_up::users_read.find(t->receiver) != sign_up::users_read.end())
-            {
-                if(sign_up::users_read[t->receiver]->user_acc.status==0)
-                {
-                t->status="Failed";
-                    QMessageBox::warning(this, "Transiction", "Transaction Failed: User is Suspended");
-                }
-                if (t->receiver == t->sender)
-                {
-                    t->status="Failed";
-                    QMessageBox::warning(this, "Transiction", "Transaction Failed: Invalid transaction");
-                }
-                else
-                {
-                    if (sign_up::users_read[t->sender]->balance >= t->amount)
-                    {
-                        sign_up::users_read[t->receiver]->balance += t->amount;
-                        sign_up::users_read[t->sender]->balance -= t->amount;
-                        Login::current_user.balance-=t->amount;
-                    }
-                    else
-                    {
-                        t->status="Failed";
-                        QMessageBox::warning(this, "Transiction", "Transaction Failed: Insufficient balance");
-
-                    }
+    if (sign_up::users_read.find(t->receiver) != sign_up::users_read.end()) {
+        if (sign_up::users_read[t->sender]->user_acc.status == 1) {
+            if (sign_up::users_read[t->receiver]->user_acc.status == 0) {
+                t->status = "Failed";
+                QMessageBox::warning(this, "Transaction", "Transaction Failed: User is Suspended");
+            } else if (t->receiver == t->sender) {
+                t->status = "Failed";
+                QMessageBox::warning(this, "Transaction", "Transaction Failed: Invalid transaction");
+            } else {
+                if (sign_up::users_read[t->sender]->balance >= t->amount) {
+                    sign_up::users_read[t->receiver]->balance += t->amount;
+                    sign_up::users_read[t->sender]->balance -= t->amount;
+                    Login::current_user.balance -= t->amount;
+                } else {
+                    t->status = "Failed";
+                    QMessageBox::warning(this, "Transaction", "Transaction Failed: Insufficient balance");
                 }
             }
-        else
-            {
-            t->status="Failed";
-                QMessageBox::warning(this, "Transiction", "Transaction Failed: User Not Found");
-            }
+        } else {
+            t->status = "Failed";
+            QMessageBox::warning(this, "Transaction", "Transaction Failed: Your account is Suspended");
+        }
+
+        if (sign_up::users_read[t->receiver]->balance > sign_up::users_read[t->receiver]->dept) {
+            sign_up::users_read[t->receiver]->balance -= sign_up::users_read[t->receiver]->dept;
+            sign_up::users_read[t->receiver]->dept = 0;
+            Login::current_user.balance -= Login::current_user.dept;
+            Login::current_user.dept = 0;
+        }
+
+        if (t->status == "Successful") {
+            QMessageBox::information(this, "Transaction", "Transaction Successful");
+        }
+
+
+    } else {
+        t->status = "Failed";
+        QMessageBox::warning(this, "Transaction", "Transaction Failed: User Not Found");
     }
-    else
-    {
-        t->status="Failed";
-        QMessageBox::warning(this, "Transiction", "Transaction Failed: Your account is Suspended");
-    }
-
-
-    if(sign_up::users_read[t->receiver]->balance > sign_up::users_read[t->receiver]->dept)
-    {
-        sign_up::users_read[t->receiver]->balance -=sign_up::users_read[t->receiver]->dept;
-        sign_up::users_read[t->receiver]->dept=0;
-        Login::current_user.balance-=Login::current_user.dept;
-        Login::current_user.dept=0;
-    }
-
-
-    if(t->status=="Successful"){
-        QMessageBox::information(this, "Transaction", "Transaction Successful");
-    }
-
-
     requestMoney_dialog::trans_read[t->id] = t;
+
+
+
     close();
 }
 

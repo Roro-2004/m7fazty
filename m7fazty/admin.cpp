@@ -16,10 +16,6 @@ admin::admin(QWidget *parent)
     hideAllElements();
 }
 
-admin::~admin()
-{
-    delete ui;
-}
 
 
 void admin::hideAllElements()
@@ -122,4 +118,10 @@ void admin::on_adjustBalance_Button_clicked()
 void admin::on_logout_Button_clicked()
 {
     MainWindow::stackedWidget->setCurrentIndex(0);
+}
+
+
+admin::~admin()
+{
+    delete ui;
 }

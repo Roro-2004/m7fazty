@@ -31,6 +31,7 @@ private:
     Ui::Login *ui;
     user *user_widget;
     admin *admin_widget;
+    user_c* userr ;
 };
 
 #endif // LOGIN_H
