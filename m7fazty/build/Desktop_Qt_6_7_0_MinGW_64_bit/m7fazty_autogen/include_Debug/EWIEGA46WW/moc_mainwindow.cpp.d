@@ -171,9 +171,11 @@ D:/new\ ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/i
   D:/QTT/6.7.0/mingw_64/include/QtGui/qvectornd.h \
   D:/QTT/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/QTT/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/QTT/6.7.0/mingw_64/include/QtWidgets/QDialog \
   D:/QTT/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
   D:/QTT/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
   D:/QTT/6.7.0/mingw_64/include/QtWidgets/QWidget \
+  D:/QTT/6.7.0/mingw_64/include/QtWidgets/qdialog.h \
   D:/QTT/6.7.0/mingw_64/include/QtWidgets/qframe.h \
   D:/QTT/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/QTT/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -387,4 +389,5 @@ D:/new\ ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/i
   D:/new\ ds/m7fazty/m7fazty/admin.h \
   D:/new\ ds/m7fazty/m7fazty/sign_up.h \
   D:/new\ ds/m7fazty/m7fazty/user.h \
-  D:/new\ ds/m7fazty/m7fazty/user_c.h
+  D:/new\ ds/m7fazty/m7fazty/user_c.h \
+  D:/new\ ds/m7fazty/m7fazty/viewbalance_dialog.h

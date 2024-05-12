@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 88,
+				"line" : 95,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 71,
+				"line" : 78,
 				"parent" : 0
 			},
 			{
@@ -384,18 +384,19 @@
 				50,
 				53,
 				56,
-				74
+				59,
+				78
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "m7fazty_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "m7fazty_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "m7fazty_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "m7fazty::@6890427a1f51a3e7e1df",
@@ -527,7 +528,8 @@
 				50,
 				53,
 				56,
-				74
+				59,
+				78
 			]
 		},
 		{
@@ -555,8 +557,6 @@
 				52,
 				55,
 				58,
-				59,
-				60,
 				61,
 				62,
 				63,
@@ -568,7 +568,11 @@
 				69,
 				70,
 				71,
-				72
+				72,
+				73,
+				74,
+				75,
+				76
 			]
 		},
 		{
@@ -591,15 +595,16 @@
 				51,
 				54,
 				57,
-				73
+				60,
+				77
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				75,
-				76
+				79,
+				80
 			]
 		}
 	],
@@ -840,38 +845,6 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "add_edit_dialog.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "add_edit_dialog.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "add_edit_dialog.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "delete_suspend_dialog.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "delete_suspend_dialog.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "delete_suspend_dialog.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
 			"path" : "adjust_balance_dialog.h",
 			"sourceGroupIndex" : 1
 		},
@@ -916,6 +889,54 @@
 		{
 			"backtrace" : 4,
 			"path" : "view_trans_dialog.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "add_edit_delete.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "add_edit_delete.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "add_edit_delete.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "suspend_activate.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "suspend_activate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "suspend_activate.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "confirm_pass_dialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "confirm_pass_dialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "confirm_pass_dialog.ui",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -981,18 +1002,6 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_add_edit_dialog.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_delete_suspend_dialog.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_adjust_balance_dialog.h",
 			"sourceGroupIndex" : 1
 		},
@@ -1006,6 +1015,24 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_view_trans_dialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_add_edit_delete.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_suspend_activate.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/include_Debug/ui_confirm_pass_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
