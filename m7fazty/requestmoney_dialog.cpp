@@ -98,22 +98,6 @@ void requestMoney_dialog::on_request_Button_clicked()
 
     if (sign_up::users_read[t->receiver]->user_acc.status==1)
     {
-        if ((t->sender == "Bank" || t->sender == "bank"))
-        {
-            if((sign_up::users_read[t->receiver]->dept+t->amount)  <= 1000){
-               sign_up::users_read[t->receiver]->balance += t->amount;
-               sign_up::users_read[t->receiver]->dept += t->amount;
-               Login::current_user.balance+=t->amount;
-               Login::current_user.dept+=t->amount;
-            }
-            else
-            {
-                t->status="Failed";
-                QMessageBox::warning(this, "Transiction", "Transaction Failed: Dept Limit Exceeded");
-            }
-        }
-        else
-        {
             if (sign_up::users_read.find(t->sender) != sign_up::users_read.end())
             {
                 if(sign_up::users_read[t->sender]->user_acc.status==0)
@@ -146,7 +130,6 @@ void requestMoney_dialog::on_request_Button_clicked()
                 t->status="Failed";
                 QMessageBox::warning(this, "Transiction", "Transaction Failed: User Not Found");
             }
-        }
     }
     else
     {
@@ -154,14 +137,6 @@ void requestMoney_dialog::on_request_Button_clicked()
         QMessageBox::warning(this, "Transiction", "Transaction Failed: Your account is Suspended");
     }
 
-
-    if(sign_up::users_read[t->receiver]->balance > sign_up::users_read[t->receiver]->dept)
-    {
-        sign_up::users_read[t->receiver]->balance -=sign_up::users_read[t->receiver]->dept;
-        sign_up::users_read[t->receiver]->dept=0;
-        Login::current_user.balance-=Login::current_user.dept;
-        Login::current_user.dept=0;
-    }
 
     if(t->status=="Successful"){
         QMessageBox::information(this, "Transaction", "Transaction Successful");

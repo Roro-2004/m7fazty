@@ -53,7 +53,6 @@ void editProfile_dialog::on_pushButton_clicked()
         user2->user_acc.age = ui->lineEdit_age->text().toInt();
         user2->user_acc.status=Login::current_user.user_acc.status;
         user2->balance=Login::current_user.balance;
-        user2->dept=Login::current_user.dept;
 
         if(user2->user_acc.username.empty() || user2->user_acc.password.empty() || user2->user_acc.address.empty() || user2->user_acc.age == NULL){
             QMessageBox::warning(this, "Empty Fields", "Empty fields Not Allowed");
@@ -100,7 +99,6 @@ void editProfile_dialog::on_pushButton_clicked()
             user2->user_acc.age = ui->lineEdit_age->text().toInt();
             user2->user_acc.status=Login::current_user.user_acc.status;
             user2->balance=Login::current_user.balance;
-            user2->dept=Login::current_user.dept;
 
             sign_up::users_read.erase(Login::current_user.user_acc.username);
 

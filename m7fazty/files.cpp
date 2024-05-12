@@ -29,7 +29,7 @@ void files::write_in_file(string file_path) {
         if (path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv") {
             file << "Trans ID" << "," << "Receiver" << "," << "Sender" << "," << "Amount" << "," << "Date" << "," << "Time" << "," << "Status" << endl;
         } else if (path == "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/User.csv") {
-            file << "Username" << "," << "Password" << "," << "Address" << "," << "Email" << "," << "Age" << "," << "Balance" << ","<<"Dept"<<"," << "Status" <<","<<"Pin Code"<< endl;
+            file << "Username" << "," << "Password" << "," << "Address" << "," << "Email" << "," << "Age" << "," << "Balance" <<"," << "Status" << endl;
         } else {
             cerr << "Error: Invalid file path." <<endl<<file_path << endl<<path<<endl;
             file.close();
@@ -48,7 +48,7 @@ void files::write_in_file(string file_path) {
     else if (path== "D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/User.csv") {
         for (const auto& u : sign_up::users_read) {
             user_c* user = u.second;
-            file << u.first << "," << user->user_acc.password << "," << user->user_acc.address << "," << user->user_acc.email << "," << user->user_acc.age << "," << user->balance << "," <<user->dept<<","<< user->user_acc.status<<endl;
+            file << u.first << "," << user->user_acc.password << "," << user->user_acc.address << "," << user->user_acc.email << "," << user->user_acc.age << "," << user->balance << "," << user->user_acc.status<<endl;
         }
     } else {
         cerr << "Error: Invalid file path." <<endl<<file_path << endl<<path<<endl;
@@ -88,7 +88,7 @@ void files::split(const string& s, const string& path) {
             cerr << "Error: Insufficient data in the input line.    " << endl;
         }
     } else if (path == "ur") {
-        if (v.size() >= 8) {
+        if (v.size() >= 7) {
             user_c* user = new user_c();
             user->user_acc.username = v[0];
             user->user_acc.password = v[1];
@@ -109,14 +109,7 @@ void files::split(const string& s, const string& path) {
             }
 
             try {
-                user->dept = stof(v[6]);
-            } catch (const invalid_argument& e) {
-                cerr << "Error converting balance to float: " << e.what() << endl;
-                user->dept = 0;
-            }
-
-            try {
-                user->user_acc.status = stoi(v[7]);
+                user->user_acc.status = stoi(v[6]);
             } catch (const invalid_argument& e) {
                 cerr << "Error converting status to integer: " << e.what() << endl;
                 user->user_acc.status = 0;

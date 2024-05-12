@@ -59,7 +59,6 @@ void sign_up::on_sign_up2_button_clicked()
     user->user_acc.email = ui->email_textBox->text().toStdString();
     user->user_acc.age = ui->age_textBox->text().toInt();
     user->balance = 0;
-    user->dept=0;
     user->user_acc.status =true;
 
 

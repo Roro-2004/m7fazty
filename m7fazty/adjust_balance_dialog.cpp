@@ -34,13 +34,6 @@ void adjust_balance_dialog::on_editBalance_pushButton_clicked()
         QMessageBox::warning(this,"Editing Balance","User Not Found");
     }
     }
-
-
-    if(sign_up::users_read[username]->balance > sign_up::users_read[username]->dept)
-    {
-        sign_up::users_read[username]->balance -=sign_up::users_read[username]->dept;
-        sign_up::users_read[username]->dept=0;
-    }
 }
 
 
