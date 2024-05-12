@@ -6,8 +6,8 @@
 #include <QTableWidgetItem>
 #include <iostream>
 #include <vector>
-
 using namespace std;
+
 
 viewTransHistory_dialog::viewTransHistory_dialog(QWidget *parent) : QDialog(parent), ui(new Ui::viewTransHistory_dialog) {
 
@@ -22,37 +22,49 @@ viewTransHistory_dialog::viewTransHistory_dialog(QWidget *parent) : QDialog(pare
 }
 
 
-void viewTransHistory_dialog::updateTransactionsMap( string oldUsername,  string newUsername) {
-    for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
+
+//---------------------------------------------- Changing Username handeling ------------------------------------------------
+void viewTransHistory_dialog::updateTransactionsMap( string oldUsername,  string newUsername)
+{
+    //using & here allows us to directly modify the elements in the map
+    //value_type -> stores pairs <string, *transiction> , trans -> holds a reference to one pair in the map.
+    for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read)
+    {
         transiction* t = trans.second;
-            if (t->sender == oldUsername) {
-                t->sender = newUsername;
-            }
-            if (t->receiver == oldUsername) {
-                t->receiver = newUsername;
-            }
+        if (t->sender == oldUsername)
+        {
+            t->sender = newUsername;
+        }
+        if (t->receiver == oldUsername)
+        {
+            t->receiver = newUsername;
         }
     }
+}
 
 void viewTransHistory_dialog::onUsernameChanged( string newUsername,string oldUsername) {
-    if (oldUsername != newUsername) {
+    if (oldUsername != newUsername)
+    {
         updateTransactionsMap(oldUsername, newUsername);
         Login::current_user.user_acc.username=newUsername;
         show_whole_history();
     }
 }
+//---------------------------------------------------------------------------------------------------------------------------
 
 
-
+//---------------------------------------------- History Table GUI ----------------------------------------------------------
 void viewTransHistory_dialog::show_whole_history()
 {
-
     ui->history_table->clearContents();
     ui->history_table->setRowCount(0);
     int row = 0;
 
-    for (auto entry : transactions_map) {
-        for (auto t : entry.second) {
+    string name = Login::current_user.user_acc.username;
+    for (auto& tr : requestMoney_dialog::trans_read) {
+        transiction* t = tr.second;
+        if (t != nullptr && (t->receiver == name || t->sender == name)) {
+
             ui->history_table->insertRow(row);
 
             QTableWidgetItem *transIDItem = new QTableWidgetItem(QString::fromStdString(t->id));
@@ -84,8 +96,8 @@ void viewTransHistory_dialog::show_whole_history()
     }
 }
 
-
-void viewTransHistory_dialog::search_by_month(string s) {
+void viewTransHistory_dialog::search_by_month(string s)
+{
     ui->history_table->clearContents();
     ui->history_table->setRowCount(0);
     int row = 0;
@@ -127,21 +139,10 @@ void viewTransHistory_dialog::search_by_month(string s) {
         cout << "No data for the specified month." << endl;
     }
 }
+//---------------------------------------------------------------------------------------------------------------------------
 
 
-void viewTransHistory_dialog::transiction_history() {
-    string name = Login::current_user.user_acc.username;
-
-    for (auto& tr : requestMoney_dialog::trans_read) {
-        transiction* t = tr.second;
-        if (t != nullptr && (t->receiver == name || t->sender == name)) {
-            string key = encoding(t->date.substr(3, 2));
-            transactions_map[key].push_back(t);
-        }
-    }
-}
-
-
+//---------------------------------------------- Searching By Month ----------------------------------------------------------
 string viewTransHistory_dialog::encoding(string s)
 {
     if (s == "01")
@@ -172,14 +173,29 @@ string viewTransHistory_dialog::encoding(string s)
         return "Invalid month";
 }
 
-
-viewTransHistory_dialog::~viewTransHistory_dialog()
+void viewTransHistory_dialog::transiction_history()
 {
-    delete ui;
-}
+    string name = Login::current_user.user_acc.username;
 
+    for (auto& tr : requestMoney_dialog::trans_read) {
+        transiction* t = tr.second;
+        if (t != nullptr && (t->receiver == name || t->sender == name)) {
+            //takes the month as substr from the date and make it a key of a map (map<month , vector of transictions>)
+            string key = encoding(t->date.substr(3, 2));
+            transactions_map[key].push_back(t); //pushes each transiction happend in that month in the vector
+        }
+    }
+}
 
 void viewTransHistory_dialog::on_month_cb_currentTextChanged(const QString &month)
 {
     search_by_month(month.toStdString());
+}
+//----------------------------------------------------------------------------------------------------------------------------
+
+
+
+viewTransHistory_dialog::~viewTransHistory_dialog()
+{
+    delete ui;
 }

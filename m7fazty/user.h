@@ -19,6 +19,7 @@ public:
 
     void hideAllElements();
 
+    viewBalance_dialog *viewBalance_dialog_widget;
 
 private slots:
     void on_menu_Button_clicked();
@@ -39,7 +40,6 @@ private slots:
 
 private:
     Ui::user *ui;
-    viewBalance_dialog *viewBalance_dialog_widget;
 };
 
 #endif // USER_H

@@ -14,6 +14,7 @@ class editProfile_dialog : public QDialog
 public:
     explicit editProfile_dialog(QWidget *parent = nullptr);
     ~editProfile_dialog();
+    user_c* user2 ;
 
 
 private slots:
@@ -23,7 +24,6 @@ private slots:
 
 private:
     Ui::editProfile_dialog *ui;
-    user_c* user2 ;
 };
 
 #endif // EDITPROFILE_DIALOG_H

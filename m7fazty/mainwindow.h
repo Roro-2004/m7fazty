@@ -22,6 +22,8 @@ public:
     ~MainWindow();
     QStackedWidget static *stackedWidget;
 
+    Login *loginWidget;
+    sign_up *sign_up_widget;
 protected:
     void closeEvent(QCloseEvent *event) override;
 
@@ -33,8 +35,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    Login *loginWidget;
-    sign_up *sign_up_widget;
+
 };
 
 #endif // MAINWINDOW_H

@@ -22,6 +22,9 @@ public:
     ~Login();
     user_c static current_user;
 
+    user *user_widget;
+    admin *admin_widget;
+    user_c* userr ;
 private slots:
     void on_back_button_clicked();
 
@@ -29,9 +32,7 @@ private slots:
 
 private:
     Ui::Login *ui;
-    user *user_widget;
-    admin *admin_widget;
-    user_c* userr ;
+
 };
 
 #endif // LOGIN_H

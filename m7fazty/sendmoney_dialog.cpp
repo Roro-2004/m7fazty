@@ -14,63 +14,85 @@ using namespace std;
 
 unordered_set<string> sendMoney_dialog::usedIDs;
 
-
 sendMoney_dialog::sendMoney_dialog(QWidget *parent): QDialog(parent), ui(new Ui::sendMoney_dialog)
 {
     ui->setupUi(this);
 }
 
 
-
+//----------------------------------------------------- Generating ID -------------------------------------------------------
 string sendMoney_dialog::generateID()
 {
     string id;
     int randomNumber;
-    do {
-        randomNumber = rand() % 900 + 100;
+    //do-while 3shan howa lazm y3ml id 2bl ma yt-check awel mara
+    do{
+        randomNumber = rand() % 900 + 100; // random number between 100 and 999
         id = "S" + to_string(randomNumber);
-    } while(usedIDs.count(id) > 0); // Check if the generated ID already exists in the set
+    } while(usedIDs.count(id) > 0); // count btrg3ly 3dd el 7aga el heya l2to mn el ana b3taholha
 
     return id;
 }
+//---------------------------------------------------------------------------------------------------------------------------
 
 
-string sendMoney_dialog::getCurrentDate() {
-    // Get the current time
-    std::time_t currentTime = std::time(nullptr);
+//----------------------------------------------- Getting Current Date/Time -------------------------------------------------
+string sendMoney_dialog::getCurrentDate()
+{
+    time_t currentDate = time(nullptr); //get current date
+    char formatted_date[11];
+    //built-in function to format the date
+    strftime(formatted_date, sizeof(formatted_date), "%d/%m/%Y", localtime(&currentDate));
 
-    // Format the current date as a string (DD/MM/YYYY)
-    char buffer[11]; // Buffer to store the formatted date
-    std::strftime(buffer, sizeof(buffer), "%d/%m/%Y", std::localtime(&currentTime));
-    return std::string(buffer);
+    return string(formatted_date);
 }
 
+string sendMoney_dialog::getCurrentTime()
+{
+    time_t currentTime = time(nullptr);   // get the current time
+    tm* timeinfo = localtime(&currentTime);   // format the current time as a string (HH:MM AM/PM)
 
-string sendMoney_dialog::getCurrentTime() {
-    // Get the current time
-    std::time_t currentTime = std::time(nullptr);
-
-    // Format the current time as a string (HH:MM AM/PM)
-    std::tm* timeinfo = std::localtime(&currentTime);
-    std::string am_pm = (timeinfo->tm_hour < 12) ? "AM" : "PM";
-    int hour = (timeinfo->tm_hour < 12) ? timeinfo->tm_hour : timeinfo->tm_hour - 12;
-    if (hour == 0) {
-        hour = 12;  // Convert midnight (0) to 12 AM
+    string am_pm;
+    if (timeinfo->tm_hour < 12){
+        am_pm = "AM";
     }
-    char buffer[9]; // Buffer to store the formatted time
-    std::strftime(buffer, sizeof(buffer), "%I:%M", timeinfo); // %I for 12-hour format
-    return std::string(buffer) + " " + am_pm;
+    else{
+        am_pm = "PM";
+    }
+
+    //to make 12-hours mode not 24-hours
+    int hour;
+    if (timeinfo->tm_hour < 12){
+        hour = timeinfo->tm_hour;
+    }
+    else {
+        hour = timeinfo->tm_hour - 12;
+    }
+
+    //to handle midnight 0 to 12 (hour 24)
+    if (hour == 0){
+        hour = 12;
+    }
+
+    char formatted_time[9];
+    strftime(formatted_time, sizeof(formatted_time), "%I:%M", timeinfo); // %I for 12-hour format
+
+    return string(formatted_time) + " " + am_pm;
 }
+//---------------------------------------------------------------------------------------------------------------------------
 
 
+//-------------------------------------------------------- Send Money -------------------------------------------------------
 void sendMoney_dialog::on_send_Button_clicked()
 {
+    //COLLECTING TRANS DATA
     t = new transiction();
     t->id = generateID();
     t->sender = Login::current_user.user_acc.username;
     t->receiver = ui->userName_textBox->text().toStdString();
     t->amount = ui->amount_textBox->text().toFloat();
 
+    //empty fields handeling
     if(ui->amount_textBox->text().toStdString().empty() || ui->userName_textBox->text().toStdString().empty())
     {
         QMessageBox::warning(this, "Transaction", "Empty Fields Not Allowed");
@@ -78,9 +100,13 @@ void sendMoney_dialog::on_send_Button_clicked()
         return;
     }
 
-    if (t->amount <= 10000 && t->amount > 0) {
+    //amount handeling
+    if (t->amount <= 10000 && t->amount > 0)
+    {
         t->status = "Successful";
-    } else {
+    }
+    else
+    {
         t->status = "Failed";
         QMessageBox::warning(this, "Transaction", "Transaction Failed: Invalid Amount");
     }
@@ -89,6 +115,7 @@ void sendMoney_dialog::on_send_Button_clicked()
     t->time = getCurrentTime();
 
 
+    //LOGIC
     if (sign_up::users_read.find(t->receiver) != sign_up::users_read.end())
     {
         if (sign_up::users_read[t->sender]->user_acc.status == 1)
@@ -105,6 +132,7 @@ void sendMoney_dialog::on_send_Button_clicked()
             }
             else
             {
+                //insufficient balance handeling
                 if (sign_up::users_read[t->sender]->balance >= t->amount)
                 {
                     sign_up::users_read[t->receiver]->balance += t->amount;
@@ -136,11 +164,9 @@ void sendMoney_dialog::on_send_Button_clicked()
     }
 
     requestMoney_dialog::trans_read[t->id] = t;
-
-
-
     close();
 }
+//---------------------------------------------------------------------------------------------------------------------------
 
 
 

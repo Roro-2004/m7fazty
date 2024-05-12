@@ -19,6 +19,7 @@ public:
 
     static unordered_map<string, user_c*> users_read;
     user_c *user;
+    Login *loginWidget;
     bool static isStrongPassword(string &password);
 
 private slots:
@@ -30,7 +31,6 @@ private slots:
 
 private:
     Ui::sign_up *ui;
-    Login *loginWidget;
 };
 
 #endif // SIGN_UP_H

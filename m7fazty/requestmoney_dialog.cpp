@@ -22,59 +22,79 @@ requestMoney_dialog::requestMoney_dialog(QWidget *parent) : QDialog(parent), ui(
 
 
 
+//----------------------------------------------------- Generating ID -------------------------------------------------------
 string requestMoney_dialog::generateID()
 {
     string id;
     int randomNumber;
-    do {
-        randomNumber = rand() % 900 + 100;
+    //do-while 3shan howa lazm y3ml id 2bl ma yt-check awel mara
+    do{
+        randomNumber = rand() % 900 + 100; // random number between 100 and 999
         id = "R" + to_string(randomNumber);
-    } while(usedIDs.count(id) > 0);
+    } while(usedIDs.count(id) > 0); // count btrg3ly 3dd el 7aga el heya l2to mn el ana b3taholha
+
     return id;
 }
+//---------------------------------------------------------------------------------------------------------------------------
 
 
+//----------------------------------------------- Getting Current Date/Time -------------------------------------------------
 string requestMoney_dialog::getCurrentDate()
 {
-    // Get the current time
-    time_t currentTime = time(nullptr);
+    time_t currentDate = time(nullptr); //get current date
+    char formatted_date[11];
+    //built-in function to format the date
+    strftime(formatted_date, sizeof(formatted_date), "%d/%m/%Y", localtime(&currentDate));
 
-    // Format the current date as a string (DD/MM/YYYY)
-    char buffer[11]; // Buffer to store the formatted date
-    strftime(buffer, sizeof(buffer), "%d/%m/%Y", localtime(&currentTime));
-    return string(buffer);
+    return string(formatted_date);
 }
-
 
 string requestMoney_dialog::getCurrentTime()
 {
-    // Get the current time
-    time_t currentTime = time(nullptr);
+    time_t currentTime = time(nullptr);   // get the current time
+    tm* timeinfo = localtime(&currentTime);   // format the current time as a string (HH:MM AM/PM)
 
-    // Format the current time as a string (HH:MM AM/PM)
-    tm* timeinfo = localtime(&currentTime);
+    string am_pm;
+    if (timeinfo->tm_hour < 12){
+        am_pm = "AM";
+    }
+    else{
+        am_pm = "PM";
+    }
 
-    string am_pm = (timeinfo->tm_hour < 12) ? "AM" : "PM";
-    int hour = (timeinfo->tm_hour < 12) ? timeinfo->tm_hour : timeinfo->tm_hour - 12; //to convert it to the 12-hour format.
-    if (hour == 0)
-    {
+    //to make 12-hours mode not 24-hours
+    int hour;
+    if (timeinfo->tm_hour < 12){
+        hour = timeinfo->tm_hour;
+    }
+    else {
+        hour = timeinfo->tm_hour - 12;
+    }
+
+    //to handle midnight 0 to 12 (hour 24)
+    if (hour == 0){
         hour = 12;
     }
 
-    char buffer[9];
-    strftime(buffer, sizeof(buffer), "%I:%M", timeinfo); // %I for 12-hour format
-    return string(buffer) + " " + am_pm;
+    char formatted_time[9];
+    strftime(formatted_time, sizeof(formatted_time), "%I:%M", timeinfo); // %I for 12-hour format
+
+    return string(formatted_time) + " " + am_pm;
 }
+//---------------------------------------------------------------------------------------------------------------------------
 
 
+//-------------------------------------------------------- Send Money -------------------------------------------------------
 void requestMoney_dialog::on_request_Button_clicked()
 {
+    //COLLECTING TRANS DATA
     t = new transiction();
     t->id = generateID();
     t->receiver = Login::current_user.user_acc.username;
     t->sender = ui->userName_textBox->text().toStdString();
     t->amount = ui->amount_textBox->text().toFloat();
 
+    //empty fields handeling
     if(ui->amount_textBox->text().toStdString().empty() || ui->userName_textBox->text().toStdString().empty())
     {
         QMessageBox::warning(this, "Transaction", "Empty Fields Not Allowed");
@@ -82,6 +102,7 @@ void requestMoney_dialog::on_request_Button_clicked()
         return;
     }
 
+    //amount handeling
     if (t->amount <= 10000&&t->amount>0)
     {
         t->status = "Successful";
@@ -91,11 +112,12 @@ void requestMoney_dialog::on_request_Button_clicked()
         t->status = "Failed";
         QMessageBox::warning(this, "Transiction", "Transaction failed: Invalid Amount");
     }
+
     t->date = getCurrentDate();
     t->time = getCurrentTime();
 
 
-
+    //LOGIC
     if (sign_up::users_read[t->receiver]->user_acc.status==1)
     {
             if (sign_up::users_read.find(t->sender) != sign_up::users_read.end())
@@ -137,7 +159,6 @@ void requestMoney_dialog::on_request_Button_clicked()
         QMessageBox::warning(this, "Transiction", "Transaction Failed: Your account is Suspended");
     }
 
-
     if(t->status=="Successful"){
         QMessageBox::information(this, "Transaction", "Transaction Successful");
     }
@@ -145,6 +166,7 @@ void requestMoney_dialog::on_request_Button_clicked()
     trans_read[t->id] = t;
     close();
 }
+//---------------------------------------------------------------------------------------------------------------------------
 
 
 

@@ -9,6 +9,8 @@
 #include"requestmoney_dialog.h"
 #include "sendmoney_dialog.h"
 #include <QCryptographicHash>
+#include"add_edit_delete.h"
+#include"editprofile_dialog.h"
 using namespace std;
 namespace fs = std::filesystem;
 
@@ -23,14 +25,16 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     stackedWidget->addWidget(ui->centralwidget);
     setCentralWidget(stackedWidget);
     stackedWidget->show();
-
     loginWidget = new Login();
     stackedWidget->addWidget(loginWidget);
+
 
     files::read_from_file("D:/Projects/2nd Year/DS/m7fazty/m7fazty/files/Transiction.csv");
     for (unordered_map<string, transiction*>::value_type & trans : requestMoney_dialog::trans_read) {
         transiction* t = trans.second;
         cout << trans.first << " " << t->receiver << " " << t->sender << " " << t->amount << " " << t->date << " " << t->time << " " << t->status << endl;
+
+        //inserting transictions id in a set to check on it when genertaing a new one
         requestMoney_dialog::usedIDs.insert( trans.first);
         sendMoney_dialog::usedIDs.insert( trans.first);
     }
@@ -58,12 +62,15 @@ void MainWindow::on_sign_up_clicked()
 }
 
 
+
 void MainWindow::closeEvent(QCloseEvent *event)
 {
     files::write_in_file("D:/Projects/2nd Year/DS/m7fazty//m7fazty/files/User.csv");
     files::write_in_file("D:/Projects/2nd Year/DS/m7fazty//m7fazty/files/Transiction.csv");
+
     QMainWindow::closeEvent(event);
 }
+
 
 
 MainWindow::~MainWindow()
