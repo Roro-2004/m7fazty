@@ -11,6 +11,7 @@
 2082	2745	7364673481906605	D:/new ds/m7fazty/m7fazty/build/Desktop_Qt_6_7_0_MinGW_64_bit/m7fazty_autogen/EWIEGA46WW/qrc_matrial.cpp	f487314886fccca
 357	10258	7371755910730816	CMakeFiles/m7fazty.dir/Debug/editprofile_dialog.cpp.obj	a94a516afe2676fd
 447	19942	7364721905703808	CMakeFiles/m7fazty.dir/Debug/delete_suspend_dialog.cpp.obj	b67a842779b9cd8c
+<<<<<<< Updated upstream
 336	10256	7371755909793306	CMakeFiles/m7fazty.dir/Debug/view_trans_dialog.cpp.obj	98ca2d72089f57b3
 7515	12618	7370787144739584	CMakeFiles/m7fazty.dir/Debug/main.cpp.obj	1d750e9e0a30b641
 362	11243	7371755921263840	CMakeFiles/m7fazty.dir/Debug/add_edit_delete.cpp.obj	76b7bab9f07c1389
@@ -32,3 +33,23 @@
 14672	19410	7371756002947917	Debug/m7fazty.exe	6ecb2c32c1225c5a
 9940	14558	7371755954378384	CMakeFiles/m7fazty.dir/Debug/suspend_activate.cpp.obj	8aa3d12cb4497bc5
 10013	14671	7371755955530389	CMakeFiles/m7fazty.dir/Debug/confirm_pass_dialog.cpp.obj	42e1e0b5b68e8fd3
+=======
+10371	21303	7364673667497332	CMakeFiles/m7fazty.dir/Debug/main.cpp.obj	1d750e9e0a30b641
+19173	26863	7364721975683951	CMakeFiles/m7fazty.dir/Debug/view_trans_dialog.cpp.obj	98ca2d72089f57b3
+469	19172	7364721897296149	CMakeFiles/m7fazty.dir/Debug/view_users_dialog.cpp.obj	884686be3275e557
+361	21361	7364721920379222	CMakeFiles/m7fazty.dir/Debug/adjust_balance_dialog.cpp.obj	4cc2d22ccb0552e5
+2779	9557	7364673549399293	CMakeFiles/m7fazty.dir/Debug/account.cpp.obj	ffe60366c5986cf
+332	21985	7364721926798147	CMakeFiles/m7fazty.dir/Debug/viewbalance_dialog.cpp.obj	e9f11fea93c77227
+16252	20389	7364673658355062	CMakeFiles/m7fazty.dir/Debug/admin_c.cpp.obj	dbc3a3880b18f6d
+460	23455	7364721941581662	CMakeFiles/m7fazty.dir/Debug/admin.cpp.obj	858f8039b29c750c
+2757	10369	7364673557460486	CMakeFiles/m7fazty.dir/Debug/transiction.cpp.obj	3bd2d302d25c275a
+340	20614	7364721912170835	CMakeFiles/m7fazty.dir/Debug/sendmoney_dialog.cpp.obj	616009c5e7fe75d9
+778	22402	7364676041519468	CMakeFiles/m7fazty.dir/Debug/files.cpp.obj	97a87bccc602f518
+348	21172	7364721918521392	CMakeFiles/m7fazty.dir/Debug/viewtranshistory_dialog.cpp.obj	8862c27f6ad1a85d
+630	29016	7364721997112476	CMakeFiles/m7fazty.dir/Debug/sign_up.cpp.obj	1c64ef033c60621c
+639	22720	7364721934198885	CMakeFiles/m7fazty.dir/Debug/login.cpp.obj	d1706baab651bbe3
+16974	24787	7364673702341199	CMakeFiles/m7fazty.dir/Debug/m7fazty_autogen/mocs_compilation_Debug.cpp.obj	c8a1f769135acda2
+478	20387	7364721910657462	CMakeFiles/m7fazty.dir/Debug/user.cpp.obj	e8584de07c5671c9
+492	25187	7364721958920566	CMakeFiles/m7fazty.dir/Debug/mainwindow.cpp.obj	9ad2a05d7c94cfbe
+29017	34951	7364722056477916	Debug/m7fazty.exe	67df6e3e2805a2cd
+>>>>>>> Stashed changes
